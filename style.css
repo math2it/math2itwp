@@ -1,0 +1,350 @@
+/*
+Theme Name: Math2ITwp
+Author: Anh-Thi Dinh
+Description: Math2IT based Wordpress Theme
+Version: 0.0.1
+Tags: bootstrap 4.1
+*/
+/* line 1, sass/_partials/_font.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+/* line 6, sass/_partials/_font.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-weight: normal;
+  color: #333;
+}
+
+/* line 2, sass/_partials/_nav.scss */
+.nav-bg {
+  background: #272a34;
+}
+
+/* line 6, sass/_partials/_nav.scss */
+.current-menu-item {
+  color: #fff !important;
+}
+
+@media (max-width: 599px) {
+  /* line 11, sass/_partials/_nav.scss */
+  .nav-home, .nav-about {
+    text-align: left !important;
+  }
+
+  /* line 15, sass/_partials/_nav.scss */
+  .nav-reading, .nav-thought {
+    text-align: right !important;
+  }
+
+  /* line 19, sass/_partials/_nav.scss */
+  .nav-search, .nav-lang {
+    margin-top: 10px;
+  }
+
+  /* line 23, sass/_partials/_nav.scss */
+  .navbar-custom i {
+    margin-right: 5px;
+  }
+
+  /* line 27, sass/_partials/_nav.scss */
+  .nav-search i {
+    margin-right: 0;
+  }
+}
+/* line 33, sass/_partials/_nav.scss */
+.navbar {
+  padding: 0 1rem;
+}
+/* line 35, sass/_partials/_nav.scss */
+.navbar .menu {
+  list-style-type: none;
+}
+@media (max-width: 991px) {
+  /* line 33, sass/_partials/_nav.scss */
+  .navbar {
+    padding: .5rem 1rem 1.1rem 1rem;
+  }
+}
+/* line 43, sass/_partials/_nav.scss */
+.navbar a {
+  color: #a1a7b9;
+  -webkit-box-flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.25rem;
+}
+/* line 49, sass/_partials/_nav.scss */
+.navbar a:hover {
+  color: #fff;
+  background: #20232b;
+  text-decoration: none;
+}
+@media (min-width: 600px) {
+  /* line 43, sass/_partials/_nav.scss */
+  .navbar a {
+    -webkit-box-flex: 1;
+    flex: 1;
+    -ms-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    display: flex;
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    height: 100%;
+    text-align: center;
+  }
+}
+/* line 69, sass/_partials/_nav.scss */
+.navbar a i {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  /* line 33, sass/_partials/_nav.scss */
+  .navbar {
+    font-size: .95rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 77, sass/_partials/_nav.scss */
+  .navbar .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/* line 84, sass/_partials/_nav.scss */
+.nav-search {
+  display: block;
+  margin-left: 10px;
+}
+@media (max-width: 991px) {
+  /* line 84, sass/_partials/_nav.scss */
+  .nav-search {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 84, sass/_partials/_nav.scss */
+  .nav-search {
+    font-size: .95rem;
+    height: 40px;
+  }
+}
+/* line 98, sass/_partials/_nav.scss */
+.nav-search .nav-search-input {
+  border: 0;
+  border-radius: 6px;
+  background: #3d4251;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem;
+  height: 45px;
+  width: 200px;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  /* line 98, sass/_partials/_nav.scss */
+  .nav-search .nav-search-input {
+    width: calc(100% - 39px);
+  }
+}
+/* line 114, sass/_partials/_nav.scss */
+.nav-search .nav-search-input:focus {
+  outline: none;
+  border: 0;
+  background: #484d60;
+}
+/* line 119, sass/_partials/_nav.scss */
+.nav-search .nav-search-input:hover {
+  background: #484d60;
+}
+@media (min-width: 1200px) {
+  /* line 98, sass/_partials/_nav.scss */
+  .nav-search .nav-search-input {
+    width: 300px;
+  }
+}
+/* line 126, sass/_partials/_nav.scss */
+.nav-search .nav-search-submit {
+  background: 0 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #aaa;
+  font-weight: 700;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 137, sass/_partials/_nav.scss */
+.nav-search .nav-search-submit:hover {
+  background: 0 0;
+  color: #5eeda3;
+}
+/* line 142, sass/_partials/_nav.scss */
+.nav-search .nav-search-submit:focus {
+  border: 0;
+  outline: none;
+}
+@media (max-width: 599px) {
+  /* line 126, sass/_partials/_nav.scss */
+  .nav-search .nav-search-submit {
+    margin-left: 10px;
+  }
+}
+
+/* line 153, sass/_partials/_nav.scss */
+.nav-lang {
+  color: #fff;
+  width: 2rem;
+  margin-left: .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1px 0 2px 0;
+  line-height: 1.3;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  /* line 153, sass/_partials/_nav.scss */
+  .nav-lang {
+    font-size: .95rem;
+  }
+}
+/* line 168, sass/_partials/_nav.scss */
+.nav-lang span {
+  color: #bbb;
+}
+/* line 172, sass/_partials/_nav.scss */
+.nav-lang a {
+  padding: 0;
+  font-size: initial;
+  color: #aaa;
+}
+/* line 176, sass/_partials/_nav.scss */
+.nav-lang a:hover {
+  background: initial;
+  color: #5eeda3;
+}
+/* line 182, sass/_partials/_nav.scss */
+.nav-lang .active {
+  color: #fff;
+}
+
+/* line 1, sass/_partials/_header.scss */
+#idx-header {
+  background: linear-gradient(to bottom right, #111217, #484d60);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 3rem 0 6rem 0;
+  position: relative;
+  overflow-x: hidden;
+}
+/* line 9, sass/_partials/_header.scss */
+#idx-header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 50vw solid white;
+  border-right: 50vw solid white;
+  border-top: 6vw solid transparent;
+}
+
+/* line 23, sass/_partials/_header.scss */
+.img-avatar {
+  max-width: 200px;
+  margin: 0 auto;
+}
+/* line 26, sass/_partials/_header.scss */
+.img-avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+@media (max-width: 450px) {
+  /* line 23, sass/_partials/_header.scss */
+  .img-avatar {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 35, sass/_partials/_header.scss */
+  .idx-abt {
+    margin-top: 2rem;
+  }
+}
+/* line 39, sass/_partials/_header.scss */
+.idx-abt h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+@media (max-width: 450px) {
+  /* line 39, sass/_partials/_header.scss */
+  .idx-abt h1 {
+    font-size: 3rem;
+  }
+}
+/* line 47, sass/_partials/_header.scss */
+.idx-abt a {
+  color: #ffeead;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* line 51, sass/_partials/_header.scss */
+.idx-abt a:hover {
+  text-decoration: none;
+  color: #fbe17d;
+}
+@media screen and (max-width: 400px) {
+  /* line 47, sass/_partials/_header.scss */
+  .idx-abt a {
+    font-weight: normal;
+  }
+}
+/* line 59, sass/_partials/_header.scss */
+.idx-abt p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  /* line 63, sass/_partials/_header.scss */
+  .idx-social {
+    font-size: 1rem;
+  }
+}
+/* line 67, sass/_partials/_header.scss */
+.idx-social .mr-s {
+  margin-right: 1.5rem;
+}
+@media screen and (max-width: 400px) {
+  /* line 67, sass/_partials/_header.scss */
+  .idx-social .mr-s {
+    margin-right: 0.5rem;
+  }
+}
+
+/* line 76, sass/_partials/_header.scss */
+.idx-lang a {
+  margin: 1rem;
+}
+/* line 79, sass/_partials/_header.scss */
+.idx-lang img {
+  width: 1.2rem;
+  display: inline-block;
+  margin-top: -2px;
+  margin-right: 2px;
+}

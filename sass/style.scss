@@ -1,0 +1,36 @@
+/*
+Theme Name: Math2ITwp
+Author: Anh-Thi Dinh
+Description: Math2IT based Wordpress Theme
+Version: 0.0.1
+Tags: bootstrap 4.1
+*/
+
+@import "compass";
+// @import "compass/reset";
+
+// grid size
+$s-xs: 350px;
+$s-sm: 576px;
+$s-md: 768px;
+$s-lg: 992px;
+$s-xl: 1200px;
+
+// main color
+$c-green: #5eeda3;
+$c-red: #fc5d76;
+$c-blue: #3292f6;
+$c-yellow: #fdb54b;
+$c-violet: #bd96f6;
+
+// nav-icon color
+$c-home: #ffeead;
+$c-toan-hoc: #81befd;
+$c-cong-nghe: #f5c175;
+$c-latex: #92f1bf;
+$c-bai-dich: #d2b4ff;
+$c-gioi-thieu: #ff8094;
+
+@import "_partials/font";
+@import "_partials/nav";
+@import "_partials/header";
