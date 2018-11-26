@@ -1,27 +1,23 @@
 #idx-header{
-  background: linear-gradient(to bottom right,#111217,#484d60);
-  color: hsla(0,0%,100%,.8);
-  padding: 3rem 0 6rem 0;
-
-  position: relative;
-  overflow-x: hidden;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 50vw solid white;
-    border-right: 50vw solid white;
-    border-top: 6vw solid transparent;
+  margin-bottom: 2rem;
+  .intro{
+    background: linear-gradient(to bottom right,#111217,#484d60);
+    color: hsla(0,0%,100%,.8);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem;
+    text-align: center;
+    h1{
+      margin-top: 1rem;
+      color: #fff;
+      font-weight: 600;
+    }
+    p{
+      font-size: 1.5rem;
+    }
   }
-
 }
 .img-avatar{
-  max-width: 200px;
+  max-width: 150px;
   margin: 0 auto;
   img{
     height: 100%;

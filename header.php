@@ -35,9 +35,4 @@
     <!-- navigation -->
     <?php get_template_part( 'parts/nav' ); ?>
 
-    <!-- intro -->
-    <?php get_template_part( 'parts/header-intro-idx' ); ?>
-
   </header>
-
-  <div class="container">

@@ -242,106 +242,107 @@ h6, .h6 {
 
 /* line 1, sass/_partials/_header.scss */
 #idx-header {
+  margin-bottom: 2rem;
+}
+/* line 3, sass/_partials/_header.scss */
+#idx-header .intro {
   background: linear-gradient(to bottom right, #111217, #484d60);
   color: rgba(255, 255, 255, 0.8);
-  padding: 3rem 0 6rem 0;
-  position: relative;
-  overflow-x: hidden;
+  border-radius: 0 0 1rem 1rem;
+  padding: 2rem;
+  text-align: center;
 }
 /* line 9, sass/_partials/_header.scss */
-#idx-header:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 50vw solid white;
-  border-right: 50vw solid white;
-  border-top: 6vw solid transparent;
+#idx-header .intro h1 {
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+/* line 14, sass/_partials/_header.scss */
+#idx-header .intro p {
+  font-size: 1.5rem;
 }
 
-/* line 23, sass/_partials/_header.scss */
+/* line 19, sass/_partials/_header.scss */
 .img-avatar {
-  max-width: 200px;
+  max-width: 150px;
   margin: 0 auto;
 }
-/* line 26, sass/_partials/_header.scss */
+/* line 22, sass/_partials/_header.scss */
 .img-avatar img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
 }
 @media (max-width: 450px) {
-  /* line 23, sass/_partials/_header.scss */
+  /* line 19, sass/_partials/_header.scss */
   .img-avatar {
     max-width: 150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* line 35, sass/_partials/_header.scss */
+  /* line 31, sass/_partials/_header.scss */
   .idx-abt {
     margin-top: 2rem;
   }
 }
-/* line 39, sass/_partials/_header.scss */
+/* line 35, sass/_partials/_header.scss */
 .idx-abt h1 {
   font-size: 4rem;
   color: #fff;
   text-shadow: 2px 2px 4px #000;
 }
 @media (max-width: 450px) {
-  /* line 39, sass/_partials/_header.scss */
+  /* line 35, sass/_partials/_header.scss */
   .idx-abt h1 {
     font-size: 3rem;
   }
 }
-/* line 47, sass/_partials/_header.scss */
+/* line 43, sass/_partials/_header.scss */
 .idx-abt a {
   color: #ffeead;
   font-size: 1.2rem;
   font-weight: bold;
 }
-/* line 51, sass/_partials/_header.scss */
+/* line 47, sass/_partials/_header.scss */
 .idx-abt a:hover {
   text-decoration: none;
   color: #fbe17d;
 }
 @media screen and (max-width: 400px) {
-  /* line 47, sass/_partials/_header.scss */
+  /* line 43, sass/_partials/_header.scss */
   .idx-abt a {
     font-weight: normal;
   }
 }
-/* line 59, sass/_partials/_header.scss */
+/* line 55, sass/_partials/_header.scss */
 .idx-abt p {
   font-size: 1.2rem;
 }
 
 @media screen and (max-width: 400px) {
-  /* line 63, sass/_partials/_header.scss */
+  /* line 59, sass/_partials/_header.scss */
   .idx-social {
     font-size: 1rem;
   }
 }
-/* line 67, sass/_partials/_header.scss */
+/* line 63, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 67, sass/_partials/_header.scss */
+  /* line 63, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
 }
 
-/* line 76, sass/_partials/_header.scss */
+/* line 72, sass/_partials/_header.scss */
 .idx-lang a {
   margin: 1rem;
 }
-/* line 79, sass/_partials/_header.scss */
+/* line 75, sass/_partials/_header.scss */
 .idx-lang img {
   width: 1.2rem;
   display: inline-block;

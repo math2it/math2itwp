@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<!-- intro -->
+<?php get_template_part( 'parts/sec-idx-intro' ); ?>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-8 blog-main">
