@@ -19,8 +19,10 @@ add_action( 'wp_enqueue_scripts', 'math2itwp_scripts' );
 // Add Google Fonts
 // ---------------------------------------------------------------------
 function math2itwp_google_fonts() {
-  wp_register_style('OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
-  wp_enqueue_style( 'OpenSans');
+  wp_register_style('Comfortaa', 'http://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=vietnamese');
+  wp_enqueue_style( 'Comfortaa'); // default font
+  wp_register_style('Righteous', 'http://fonts.googleapis.com/css?family=Righteous'); // math2it's index title
+  wp_enqueue_style( 'Righteous');
 }
 add_action('wp_print_styles', 'math2itwp_google_fonts');
 
@@ -44,14 +46,14 @@ add_theme_support( 'post-thumbnails' );
 // Custom settings
 // ---------------------------------------------------------------------
 function custom_settings_add_menu() {
-  add_menu_page( 'Custom Settings', 'Custom Settings', 'manage_options', 'custom-settings', 'custom_settings_page', null, 99 );
+  add_menu_page( 'Math2IT Settings', 'Math2IT Settings', 'manage_options', 'custom-settings', 'custom_settings_page', null, 99 );
 }
 add_action( 'admin_menu', 'custom_settings_add_menu' );
 
 // Create Custom Global Settings
 function custom_settings_page() { ?>
   <div class="wrap">
-    <h1>Custom Settings</h1>
+    <h1>Math2IT Settings</h1>
     <form method="post" action="options.php">
        <?php
            settings_fields( 'section' );
@@ -72,15 +74,27 @@ function setting_github() { ?>
   <input type="text" name="github" id="github" value="<?php echo get_option('github'); ?>" />
 <?php }
 
+// Facebook
+function setting_facebook() { ?>
+  <input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>" />
+<?php }
+function setting_facebook_group() { ?>
+  <input type="text" name="facebook-group" id="facebook-group" value="<?php echo get_option('facebook-group'); ?>" />
+<?php }
+
 
 // set up the page to show, accept and save the option fields.
 function custom_settings_page_setup() {
   add_settings_section( 'section', 'All Settings', null, 'theme-options' );
   add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section' );
   add_settings_field( 'github', 'Github URL', 'setting_github', 'theme-options', 'section' );
+  add_settings_field( 'facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section' );
+  add_settings_field( 'facebook-group', 'Facebook Group URL', 'setting_facebook_group', 'theme-options', 'section' );
 
   register_setting('section', 'twitter');
   register_setting('section', 'github');
+  register_setting('section', 'facebook');
+  register_setting('section', 'facebook-group');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
@@ -124,7 +138,6 @@ function wp_custom_new_menu() {
   register_nav_menus(
     array(
       'math2it-custom-menu' => __( 'Math2IT Menu' ),
-      // 'extra-menu' => __( 'Extra Menu' )
     )
   );
 }
@@ -218,4 +231,63 @@ function header_nav()
 		'walker'          => new Description_Walker
 		)
 	);
+}
+
+
+
+// ---------------------------------------------------------------------
+// Additional setting field
+// cf. http://bit.ly/2BCZW3m
+// cf. http://bit.ly/2E1ELdt
+// ---------------------------------------------------------------------
+add_action('admin_init', 'my_general_section');  
+function my_general_section() {  
+    add_settings_section(  
+        'my_settings_section', // Section ID 
+        'My Options Title', // Section Title
+        'my_section_options_callback', // Callback
+        'general' // What Page?  This makes the section show up on the General Settings Page
+    );
+
+    add_settings_field( // Option 1
+        'option_1', // Option ID
+        'Option 1', // Label
+        'my_textbox_callback', // !important - This is where the args go!
+        'general', // Page it will be displayed (General Settings)
+        'my_settings_section', // Name of our section
+        array( // The $args
+            'option_1' // Should match Option ID
+        )  
+    ); 
+
+    add_settings_field( // Option 2
+        'option_2', // Option ID
+        'Option 2', // Label
+        'my_textbox_callback', // !important - This is where the args go!
+        'general', // Page it will be displayed
+        'my_settings_section', // Name of our section (General Settings)
+        array( // The $args
+            'option_2' // Should match Option ID
+        )  
+    ); 
+
+    register_setting('general','option_1', 'esc_attr');
+    register_setting('general','option_2', 'esc_attr');
+}
+
+function my_section_options_callback() { // Section Callback
+    echo '<p>A little message on editing info</p>';  
+}
+
+function my_textbox_callback($args) {  // Textbox Callback
+    $option = get_option($args[0]);
+    echo '<input type="text" id="'. $args[0] .'" name="'. $args[0] .'" value="' . $option . '" />';
+}
+
+
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
 }

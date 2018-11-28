@@ -7,7 +7,7 @@ Tags: bootstrap 4.1
 */
 /* line 1, sass/_partials/_font.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
   color: #555;
 }
 
@@ -21,6 +21,11 @@ h6, .h6 {
   margin-top: 0;
   font-weight: normal;
   color: #333;
+}
+
+/* line 17, sass/_partials/_font.scss */
+.tgreen {
+  color: #5eeda3;
 }
 
 /* line 2, sass/_partials/_nav.scss */
@@ -244,7 +249,7 @@ h6, .h6 {
 #idx-header {
   background: linear-gradient(to bottom right, #111217, #484d60);
   margin-bottom: 4rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 /* line 5, sass/_partials/_header.scss */
 #idx-header .intro {
@@ -255,104 +260,74 @@ h6, .h6 {
 }
 /* line 10, sass/_partials/_header.scss */
 #idx-header .intro h1 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: #fff;
   font-weight: 600;
 }
 /* line 15, sass/_partials/_header.scss */
 #idx-header .intro h4 {
   color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
-/* line 18, sass/_partials/_header.scss */
+/* line 20, sass/_partials/_header.scss */
 #idx-header .intro p {
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-/* line 24, sass/_partials/_header.scss */
+/* line 26, sass/_partials/_header.scss */
 .img-avatar {
-  max-width: 150px;
+  font-family: 'Righteous', cursive;
   margin: 0 auto;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
 }
-/* line 27, sass/_partials/_header.scss */
-.img-avatar img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-}
-@media (max-width: 450px) {
-  /* line 24, sass/_partials/_header.scss */
-  .img-avatar {
-    max-width: 150px;
-  }
+/* line 32, sass/_partials/_header.scss */
+.img-avatar .icon-math2it {
+  font-size: 9rem;
+  color: #f15f5f;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  vertical-align: middle;
 }
 
-@media screen and (max-width: 768px) {
-  /* line 36, sass/_partials/_header.scss */
-  .idx-abt {
-    margin-top: 2rem;
-  }
-}
 /* line 40, sass/_partials/_header.scss */
-.idx-abt h1 {
-  font-size: 4rem;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000;
-}
-@media (max-width: 450px) {
-  /* line 40, sass/_partials/_header.scss */
-  .idx-abt h1 {
-    font-size: 3rem;
-  }
-}
-/* line 48, sass/_partials/_header.scss */
-.idx-abt a {
-  color: #ffeead;
+.idx-social {
   font-size: 1.2rem;
-  font-weight: bold;
 }
-/* line 52, sass/_partials/_header.scss */
-.idx-abt a:hover {
+/* line 42, sass/_partials/_header.scss */
+.idx-social a {
+  color: #ffeead;
+}
+/* line 44, sass/_partials/_header.scss */
+.idx-social a:hover {
   text-decoration: none;
   color: #fbe17d;
 }
 @media screen and (max-width: 400px) {
-  /* line 48, sass/_partials/_header.scss */
-  .idx-abt a {
-    font-weight: normal;
-  }
-}
-/* line 60, sass/_partials/_header.scss */
-.idx-abt p {
-  font-size: 1.2rem;
-}
-
-/* line 65, sass/_partials/_header.scss */
-.idx-social a {
-  color: #ffeead;
-}
-@media screen and (max-width: 400px) {
-  /* line 64, sass/_partials/_header.scss */
+  /* line 40, sass/_partials/_header.scss */
   .idx-social {
     font-size: 1rem;
   }
 }
-/* line 71, sass/_partials/_header.scss */
+/* line 52, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 71, sass/_partials/_header.scss */
+  /* line 52, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
 }
 
-/* line 80, sass/_partials/_header.scss */
+/* line 61, sass/_partials/_header.scss */
 .idx-lang a {
   margin: 1rem;
 }
-/* line 83, sass/_partials/_header.scss */
+/* line 64, sass/_partials/_header.scss */
 .idx-lang img {
   width: 1.2rem;
   display: inline-block;
@@ -360,34 +335,38 @@ h6, .h6 {
   margin-right: 2px;
 }
 
-/* line 95, sass/_partials/_header.scss */
+/* line 76, sass/_partials/_header.scss */
 .newest-list .new-title {
+  font-family: 'Comfortaa', cursive;
   color: #fff;
   border-bottom: 0.5px solid #aaa;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
-/* line 100, sass/_partials/_header.scss */
+/* line 84, sass/_partials/_header.scss */
 .newest-list .new-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-/* line 104, sass/_partials/_header.scss */
+/* line 88, sass/_partials/_header.scss */
 .newest-list .new-item .cat-icon {
-  width: 3rem;
+  width: 3.5rem;
   color: #ddd;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
-/* line 109, sass/_partials/_header.scss */
+/* line 93, sass/_partials/_header.scss */
 .newest-list .new-item .new-post {
-  width: calc(100% - 3rem);
+  width: calc(100% - 3.5rem);
 }
-/* line 111, sass/_partials/_header.scss */
+/* line 95, sass/_partials/_header.scss */
 .newest-list .new-item .new-post .post-date {
   font-size: 0.8rem;
   color: #ccc;
+  margin-bottom: 0.3rem;
 }
-/* line 115, sass/_partials/_header.scss */
+/* line 100, sass/_partials/_header.scss */
 .newest-list .new-item .new-post .post-title {
   font-size: 1.1rem;
   font-weight: 600;

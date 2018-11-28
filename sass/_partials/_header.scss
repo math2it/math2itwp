@@ -1,69 +1,50 @@
 #idx-header{
   background: linear-gradient(to bottom right,#111217,#484d60);
   margin-bottom: 4rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
   .intro{
     color: hsla(0,0%,100%,.8);
     border-radius: 0 0 1rem 1rem;
     padding: 2rem;
     text-align: center;
     h1{
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       color: #fff;
       font-weight: 600;
     }
     h4{
       color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
     }
     p{
       margin-top: 2rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
 }
 .img-avatar{
-  max-width: 150px;
+  font-family: 'Righteous', cursive;
   margin: 0 auto;
-  img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-  }
-  @media (max-width: 450px){
-    max-width: 150px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  .icon-math2it{
+    font-size: 9rem;
+    color: #f15f5f;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    vertical-align: middle;
   }
 }
-.idx-abt{
-  @media screen and (max-width: 768px){
-    margin-top: 2rem;
-  }
-  h1{
-    font-size: 4rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000;
-    @media (max-width: 450px){
-      font-size: 3rem;
-    }
-  }
+.idx-social{
+  font-size: 1.2rem;
   a{
     color: #ffeead;
-    font-size: 1.2rem;
-    font-weight: bold;
     &:hover{
       text-decoration: none;
       color: #fbe17d;
     }
-    @media screen and (max-width: 400px){
-      font-weight: normal;
-    }
-  }
-  p{
-    font-size: 1.2rem;
-  }
-}
-.idx-social{
-  a{
-    color: #ffeead;
   }
   @media screen and (max-width: 400px){
     font-size: 1rem;
@@ -93,24 +74,28 @@
 // newest list
 .newest-list{
   .new-title{
+    font-family: 'Comfortaa', cursive;
     color: #fff;
     border-bottom: 0.5px solid #aaa;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
   .new-item{
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.5rem;
     .cat-icon{
-      width: 3rem;
+      width: 3.5rem;
       color: #ddd;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     .new-post{
-      width: calc(100% - 3rem);
+      width: calc(100% - 3.5rem);
       .post-date{
         font-size: 0.8rem;
         color:#ccc;
+        margin-bottom: 0.3rem;
       }
       .post-title{
         font-size: 1.1rem;
