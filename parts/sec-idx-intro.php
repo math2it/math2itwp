@@ -26,10 +26,12 @@
             'numberposts' => get_option('header_number_latest_post_idx'), // Number of recent posts to display
             'post_status' => 'publish' // Show only the published posts
         ));
-        foreach($recent_posts as $post) : ?>
+        foreach($recent_posts as $post) : 
+          $first_cat = get_the_category($post['ID']);
+          $post_cat_icon = get_field('cat-icon', $first_cat[0]);?>
           <a href="<?php echo get_permalink($post['ID']) ?>">
             <div class="new-item">
-              <div class="cat-icon"><i class="icon-tex2"></i></div>
+              <div class="cat-icon"><i class="<?php echo $post_cat_icon ?>"></i></div>
               <div class="new-post">
                 <div class="post-date"><?php echo date('n-j-Y', strtotime($post['post_date'])); ?></div>
                 <h4 class="post-title">
