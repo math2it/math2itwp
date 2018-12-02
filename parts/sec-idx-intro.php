@@ -5,19 +5,21 @@
         <div class="img-avatar">
           Math<i class="icon-math2it"></i>IT
         </div>
-        <h4>Toán học - Công nghệ - Giáo dục</h4>
-        <hr />
+        <h4><?php echo get_bloginfo( 'description' ); ?></h4>
         <p>
-          Tại sao <span class="tgreen">toán học khô khan</span> lại có liên hệ với <span class="tgreen">thế giới thực tiễn</span>? Công nghệ ngày nay giúp ích gì cho chúng ta trong cuộc sống, học tập và nghiên cứu?
+          <?php echo get_option('site_short_description') ?>
         </p>
         <div class="idx-social">
           <a class="mr-s" href=""><i class="icon-heart"></i> Giới thiệu</a>
-          <a class="mr-s" target="_blank" href="/files/thi_mycv.pdf"><i class="icon-group"></i> Math2IT Group</a>
-          <a class="mr-s" target="_blank" href="/files/thi_mycv.pdf"><i class="icon-facebook-squared"></i> FB Math2IT</a>
+          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i> Math2IT Group</a>
+          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook'); ?>"><i class="icon-facebook-squared"></i> FB Math2IT</a>
         </div>
       </div>
       <div class="newest-list col-md-5">
-        <h3 class="new-title">Mới nhất</h3>
+        <div class="latest-top">
+          <h3 class="new-title">Mới nhất</h3>
+          <a href="" class="view-all">xem thêm</a>
+        </div>
         <div class="new-item">
           <div class="cat-icon"><i class="icon-tex2"></i></div>
           <div class="new-post">

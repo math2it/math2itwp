@@ -9,6 +9,9 @@
     <meta name="description" content="Math2IT's Wordpress Theme">
     <meta name="author" content="Anh-Thi Dinh">
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.gif" />
+
     <!-- css with php -->
     <style id="math2it-inline-css" type="text/css">
       /* nav element color depends on color defined in wp admin */
