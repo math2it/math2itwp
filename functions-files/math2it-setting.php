@@ -54,14 +54,27 @@ function ch_essentials_options(){
   /* Header Options Section */
   add_settings_section( 
     'header_setting',
-    'Header options',
+    'Header: Home page',
     'header_setting_callback',
-    'math2it_setting_header'
+    'header_setting_option'
   );
 
+  add_settings_field(
+    'header_number_latest_post_idx', 
+    'Number of latest post', 
+    'header_number_latest_post_idx_call',  // function to call
+    'header_setting_option', 
+    'header_setting' // sectom id 
+  );
+
+  // site's setting
   register_setting('site_setting_option', 'facebook');
   register_setting('site_setting_option', 'facebook-group');
   register_setting('site_setting_option', 'site_short_description');
+
+
+  // header
+  register_setting('header_setting_option','header_number_latest_post_idx');
 } // end ch_essentials_admin
 
 
@@ -90,8 +103,8 @@ function math2it_setting_display() {
             settings_fields( 'site_setting_option' );
             do_settings_sections( 'site_setting_option' ); 
         } else if( $active_tab == 'header_tab' ) {
-            settings_fields( 'math2it_setting_header' );
-            do_settings_sections( 'math2it_setting_header' ); 
+            settings_fields( 'header_setting_option' );
+            do_settings_sections( 'header_setting_option' ); 
 
         }
         ?>             
@@ -116,4 +129,9 @@ function site_setting_facebook_group() { ?>
 // Site's short discription
 function site_setting_site_short_description() { ?>
   <input type="text" name="site_short_description" id="site_short_description" value="<?php echo get_option('site_short_description'); ?>" />
+<?php }
+
+// Number of latest post in home page
+function header_number_latest_post_idx_call() { ?>
+  <input type="text" name="header_number_latest_post_idx" id="header_number_latest_post_idx" value="<?php echo get_option('header_number_latest_post_idx'); ?>" />
 <?php }
