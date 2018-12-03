@@ -1,0 +1,4 @@
+/* line 1, sass/style_admin.scss */
+input[type=text] {
+  width: 300px;
+}

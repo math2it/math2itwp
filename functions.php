@@ -24,11 +24,14 @@ function cyb_document_title_separator( $sep ) {
     return $sep;
 }
 
-
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
 
-
+// css admin page
+function admin_panel_css() {
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/style_admin.css' );
+}
+add_action( 'admin_head', 'admin_panel_css' );
 
 
 
