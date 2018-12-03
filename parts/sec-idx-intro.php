@@ -33,7 +33,7 @@
             <div class="new-item">
               <div class="cat-icon"><i class="<?php echo $post_cat_icon ?>"></i></div>
               <div class="new-post">
-                <div class="post-date"><?php echo date('n-j-Y', strtotime($post['post_date'])); ?></div>
+                <div class="post-date"><?php echo date('d-m-y', strtotime($post['post_date'])); ?></div>
                 <h4 class="post-title">
                   <?php echo $post['post_title'] ?>
                 </h4>
