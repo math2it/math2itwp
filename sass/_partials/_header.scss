@@ -1,7 +1,6 @@
 #idx-header{
   background: linear-gradient(to bottom right,#111217,#484d60);
   margin-bottom: 4rem;
-  padding: 3rem 0;
   .intro{
     color: hsla(0,0%,100%,.8);
     border-radius: 0 0 1rem 1rem;
@@ -21,6 +20,11 @@
       margin-top: 2rem;
       font-size: 1.1rem;
     }
+    @media (max-width: 450px){
+      h4{
+        font-size: 1.2rem;
+      }
+    }
   }
 }
 .img-avatar{
@@ -38,6 +42,14 @@
     display: inline-block;
     animation: rotate 2s infinite;
     -webkit-animation: rotate 2s infinite;
+  }
+  @media (max-width: 767px){
+    font-size: 3rem;
+    .icon-math2it{
+      font-size: 5rem;
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
   }
 }
 
@@ -77,14 +89,19 @@
       .icon-group, .icon-facebook-squared, .icon-heart{color:#fff;}
     }
   }
-  @media screen and (max-width: 400px){
-    font-size: 1rem;
-  }
+  
   .mr-s{
     margin-right: 1.5rem;
     @media screen and (max-width: 400px){
       margin-right: 0.5rem;
     }
+  }
+
+  @media (max-width: 575px){
+    .mr-s:last-of-type{
+      margin-right: 0;
+    }
+    font-size: 2rem;
   }
 }
 

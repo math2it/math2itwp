@@ -1,0 +1,6 @@
+@media (max-width: 575px) {
+  /* line 1, ../sass/_partials/other.scss */
+  .hide-on-xs {
+    display: none;
+  }
+}

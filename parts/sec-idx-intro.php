@@ -1,4 +1,4 @@
-<section id="idx-header">
+<section id="idx-header" class="py-md-5 pb-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7 intro">
@@ -10,9 +10,9 @@
           <?php echo get_option('site_short_description') ?>
         </p>
         <div class="idx-social">
-          <a class="mr-s" href="<?php echo get_bloginfo( 'wpurl' ) ?>/gioi-thieu"><i class="icon-heart"></i> Giới thiệu</a>
-          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i> Math2IT Group</a>
-          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook'); ?>"><i class="icon-facebook-squared"></i> FB Math2IT</a>
+          <a class="mr-s" href="<?php echo get_bloginfo( 'wpurl' ) ?>/gioi-thieu"><i class="icon-heart"></i><span class="hide-on-xs"> Giới thiệu</span></a>
+          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i><span class="hide-on-xs"> Nhóm Math2IT</span></a>
+          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook'); ?>"><i class="icon-facebook-squared"></i><span class="hide-on-xs"> FB Math2IT</span></a>
         </div>
       </div>
       <div class="newest-list col-md-5">
