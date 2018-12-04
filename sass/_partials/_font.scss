@@ -17,3 +17,28 @@ h6, .h6 {
 .tgreen{
   color: #5eeda3;
 }
+
+.sec-title{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  .new-title{
+    font-weight: bold;
+  }
+  a{
+    font-style: italic;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+// category (temporary)
+.cat-math{
+  color: #3d78b5;
+  &a:hover{
+    color: #0b4888;
+  }
+}

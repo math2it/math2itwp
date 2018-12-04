@@ -28,6 +28,36 @@ h6, .h6 {
   color: #5eeda3;
 }
 
+/* line 21, sass/_partials/_font.scss */
+.sec-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 27, sass/_partials/_font.scss */
+.sec-title .new-title {
+  font-weight: bold;
+}
+/* line 30, sass/_partials/_font.scss */
+.sec-title a {
+  font-style: italic;
+}
+/* line 32, sass/_partials/_font.scss */
+.sec-title a:hover {
+  text-decoration: none;
+}
+
+/* line 39, sass/_partials/_font.scss */
+.cat-math {
+  color: #3d78b5;
+}
+/* line 41, sass/_partials/_font.scss */
+.cat-matha:hover {
+  color: #0b4888;
+}
+
 /* line 2, sass/_partials/_nav.scss */
 .nav-bg {
   background: #272a34;
@@ -298,69 +328,75 @@ h6, .h6 {
   }
 }
 
-/* line 90, sass/_partials/_header.scss */
+/* line 89, sass/_partials/_header.scss */
 .latest-top {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: inset 0 -1px 0 0 rgba(251, 251, 251, 0.36);
+  border-bottom: 0.5px #969494 solid;
 }
-/* line 97, sass/_partials/_header.scss */
+/* line 91, sass/_partials/_header.scss */
 .latest-top .new-title {
-  font-weight: 700;
   font-size: 1.5rem;
   color: #5eeda3;
 }
-/* line 102, sass/_partials/_header.scss */
+/* line 95, sass/_partials/_header.scss */
 .latest-top a {
   font-size: 1.1rem;
-  font-style: italic;
   color: #a1a7b9;
   line-height: 2;
 }
-/* line 107, sass/_partials/_header.scss */
+/* line 99, sass/_partials/_header.scss */
 .latest-top a:hover {
   color: #fff;
-  text-decoration: none;
 }
 
-/* line 114, sass/_partials/_header.scss */
+/* line 105, sass/_partials/_header.scss */
 .newest-list a {
   text-decoration: none;
 }
-/* line 116, sass/_partials/_header.scss */
+/* line 107, sass/_partials/_header.scss */
 .newest-list a .new-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-/* line 120, sass/_partials/_header.scss */
+/* line 111, sass/_partials/_header.scss */
 .newest-list a .new-item .cat-icon {
   width: 3.5rem;
   color: #ddd;
   font-size: 2rem;
 }
-/* line 125, sass/_partials/_header.scss */
+/* line 116, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post {
   width: calc(100% - 3.5rem);
 }
-/* line 127, sass/_partials/_header.scss */
+/* line 118, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-date {
   font-size: 0.8rem;
   color: #ccc;
   margin-bottom: 0.3rem;
 }
-/* line 132, sass/_partials/_header.scss */
+/* line 123, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
 }
-/* line 140, sass/_partials/_header.scss */
+/* line 131, sass/_partials/_header.scss */
 .newest-list a:hover .post-title {
   color: #ffeead !important;
+}
+
+/* line 2, sass/_partials/_layout_1_4.scss */
+.layout-title .new-title {
+  font-size: 2.5rem;
+}
+/* line 5, sass/_partials/_layout_1_4.scss */
+.layout-title .view-all {
+  line-height: 3.5rem;
+}
+
+/* line 12, sass/_partials/_layout_1_4.scss */
+.style-1-2 .featured-image img {
+  width: 100%;
 }
 
 @media (max-width: 575px) {
