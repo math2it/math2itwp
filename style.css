@@ -35,25 +35,22 @@ h6, .h6 {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-/* line 27, sass/_partials/_font.scss */
-.sec-title .new-title {
-  font-weight: bold;
-}
-/* line 30, sass/_partials/_font.scss */
+/* line 28, sass/_partials/_font.scss */
 .sec-title a {
   font-style: italic;
 }
-/* line 32, sass/_partials/_font.scss */
+/* line 30, sass/_partials/_font.scss */
 .sec-title a:hover {
   text-decoration: none;
 }
 
-/* line 39, sass/_partials/_font.scss */
+/* line 37, sass/_partials/_font.scss */
 .cat-math {
   color: #3d78b5;
 }
-/* line 41, sass/_partials/_font.scss */
+/* line 39, sass/_partials/_font.scss */
 .cat-matha:hover {
   color: #0b4888;
 }
@@ -222,44 +219,43 @@ h6, .h6 {
 /* line 1, sass/_partials/_header.scss */
 #idx-header {
   background: linear-gradient(to bottom right, #111217, #484d60);
-  margin-bottom: 4rem;
 }
-/* line 4, sass/_partials/_header.scss */
+/* line 3, sass/_partials/_header.scss */
 #idx-header .intro {
   color: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 1rem 1rem;
   padding: 2rem;
   text-align: center;
 }
-/* line 9, sass/_partials/_header.scss */
+/* line 8, sass/_partials/_header.scss */
 #idx-header .intro h1 {
   margin-top: 1.5rem;
   color: #fff;
   font-weight: 600;
 }
-/* line 14, sass/_partials/_header.scss */
+/* line 13, sass/_partials/_header.scss */
 #idx-header .intro h4 {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 700;
 }
-/* line 19, sass/_partials/_header.scss */
+/* line 18, sass/_partials/_header.scss */
 #idx-header .intro p {
   margin-top: 2rem;
   font-size: 1.1rem;
 }
 @media (max-width: 450px) {
-  /* line 24, sass/_partials/_header.scss */
+  /* line 23, sass/_partials/_header.scss */
   #idx-header .intro h4 {
     font-size: 1.2rem;
   }
 }
-/* line 30, sass/_partials/_header.scss */
+/* line 29, sass/_partials/_header.scss */
 #idx-header:hover .icon-math2it {
   transform: rotate(-14deg);
 }
 
-/* line 35, sass/_partials/_header.scss */
+/* line 34, sass/_partials/_header.scss */
 .img-avatar {
   font-family: 'Righteous', cursive;
   margin: 0 auto;
@@ -267,7 +263,7 @@ h6, .h6 {
   font-weight: 800;
   color: #fff;
 }
-/* line 41, sass/_partials/_header.scss */
+/* line 40, sass/_partials/_header.scss */
 .img-avatar .icon-math2it {
   font-size: 9rem;
   color: #f15f5f;
@@ -278,11 +274,11 @@ h6, .h6 {
   transition: transform .4s;
 }
 @media (max-width: 767px) {
-  /* line 35, sass/_partials/_header.scss */
+  /* line 34, sass/_partials/_header.scss */
   .img-avatar {
     font-size: 3rem;
   }
-  /* line 52, sass/_partials/_header.scss */
+  /* line 51, sass/_partials/_header.scss */
   .img-avatar .icon-math2it {
     font-size: 5rem;
     margin-left: -0.5rem;
@@ -290,52 +286,53 @@ h6, .h6 {
   }
 }
 
-/* line 61, sass/_partials/_header.scss */
+/* line 60, sass/_partials/_header.scss */
 .idx-social {
   font-size: 1.2rem;
 }
-/* line 63, sass/_partials/_header.scss */
+/* line 62, sass/_partials/_header.scss */
 .idx-social a {
   color: #ffeead;
 }
-/* line 65, sass/_partials/_header.scss */
+/* line 64, sass/_partials/_header.scss */
 .idx-social a:hover {
   text-decoration: none;
   color: #ffd120;
 }
-/* line 68, sass/_partials/_header.scss */
+/* line 67, sass/_partials/_header.scss */
 .idx-social a:hover .icon-group, .idx-social a:hover .icon-facebook-squared, .idx-social a:hover .icon-heart {
   color: #fff;
 }
-/* line 72, sass/_partials/_header.scss */
+/* line 71, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 72, sass/_partials/_header.scss */
+  /* line 71, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
 }
 @media (max-width: 575px) {
-  /* line 61, sass/_partials/_header.scss */
+  /* line 60, sass/_partials/_header.scss */
   .idx-social {
     font-size: 2rem;
   }
-  /* line 80, sass/_partials/_header.scss */
+  /* line 79, sass/_partials/_header.scss */
   .idx-social .mr-s:last-of-type {
     margin-right: 0;
   }
 }
 
-/* line 89, sass/_partials/_header.scss */
+/* line 88, sass/_partials/_header.scss */
 .latest-top {
   border-bottom: 0.5px #969494 solid;
 }
-/* line 91, sass/_partials/_header.scss */
+/* line 90, sass/_partials/_header.scss */
 .latest-top .new-title {
+  font-weight: bold;
   font-size: 1.5rem;
-  color: #5eeda3;
+  color: #eee;
 }
 /* line 95, sass/_partials/_header.scss */
 .latest-top a {
@@ -387,58 +384,79 @@ h6, .h6 {
 
 /* line 1, sass/_partials/_layout_1_4.scss */
 .layout-1-4 {
-  margin: 1rem 0 3rem 0;
+  padding: 5rem 0;
 }
 
 /* line 5, sass/_partials/_layout_1_4.scss */
+.sec-math {
+  background: #f4f8fb;
+}
+
+/* line 9, sass/_partials/_layout_1_4.scss */
+.sec-tech {
+  background: #f9e4c682;
+}
+
+/* line 13, sass/_partials/_layout_1_4.scss */
 .layout-title {
   margin-bottom: 1rem;
 }
-/* line 7, sass/_partials/_layout_1_4.scss */
-.layout-title .new-title {
-  font-size: 2.5rem;
-}
-/* line 10, sass/_partials/_layout_1_4.scss */
-.layout-title .view-all {
-  line-height: 3.5rem;
-}
-
-/* line 16, sass/_partials/_layout_1_4.scss */
-.style-1-2 .featured-image {
-  border-radius: 5px;
+/* line 15, sass/_partials/_layout_1_4.scss */
+.layout-title h2 {
+  margin-bottom: 0;
 }
 /* line 18, sass/_partials/_layout_1_4.scss */
+.layout-title .new-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+/* line 22, sass/_partials/_layout_1_4.scss */
+.layout-title .view-all {
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+/* line 25, sass/_partials/_layout_1_4.scss */
+.layout-title .view-all:hover {
+  opacity: 1;
+}
+
+/* line 31, sass/_partials/_layout_1_4.scss */
+.style-1-2 {
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  border-radius: 8px;
+  background: #fff;
+}
+/* line 37, sass/_partials/_layout_1_4.scss */
 .style-1-2 .featured-image img {
-  border-radius: inherit;
+  border-radius: 8px 8px 0 0;
   width: 100%;
 }
-/* line 24, sass/_partials/_layout_1_4.scss */
+/* line 43, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-title {
   text-align: center;
   font-size: 1.6rem;
   margin-top: 1rem;
   font-weight: bold;
 }
-/* line 31, sass/_partials/_layout_1_4.scss */
+/* line 50, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta {
   text-align: center;
   font-size: 0.9rem;
 }
-/* line 36, sass/_partials/_layout_1_4.scss */
-.style-1-2 .post-info {
+/* line 55, sass/_partials/_layout_1_4.scss */
+.style-1-2 .post-intro {
   font-size: 1rem;
-  margin-top: 1rem;
-  color: #aaa;
+  color: #636262;
   text-align: center;
+  padding: 1rem;
 }
 
-/* line 44, sass/_partials/_layout_1_4.scss */
+/* line 63, sass/_partials/_layout_1_4.scss */
 .style-1-4 {
   height: 100%;
 }
-/* line 46, sass/_partials/_layout_1_4.scss */
+/* line 65, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item {
-  background-image: linear-gradient(to right top, #3d78b5, #2e75c4, #2672d2, #2d6cdf, #4065e9);
   padding: 1rem;
   height: 100%;
   border-radius: 5px;
@@ -447,17 +465,36 @@ h6, .h6 {
   align-items: center;
   flex-wrap: wrap;
 }
-/* line 56, sass/_partials/_layout_1_4.scss */
+/* line 74, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-title {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
-/* line 62, sass/_partials/_layout_1_4.scss */
+/* line 80, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-meta {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9rem;
+  text-align: center;
+}
+/* line 85, sass/_partials/_layout_1_4.scss */
+.style-1-4 .item .post-meta span {
+  display: block;
+}
+
+/* line 95, sass/_partials/_layout_1_4.scss */
+.sec-math .style-1-4 .item {
+  background-image: linear-gradient(to right top, #3d78b5, #2e75c4, #2672d2, #2d6cdf, #4065e9);
+}
+
+/* line 104, sass/_partials/_layout_1_4.scss */
+.sec-tech .style-1-4 .item {
+  background-image: linear-gradient(to right top, #de650f, #e37709, #e68806, #e99809, #eba912);
+}
+/* line 108, sass/_partials/_layout_1_4.scss */
+.sec-tech .sec-title h2 {
+  color: #de8a0f;
 }
 
 @media (max-width: 575px) {

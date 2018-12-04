@@ -24,9 +24,7 @@ h6, .h6 {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  .new-title{
-    font-weight: bold;
-  }
+  align-items: flex-end;
   a{
     font-style: italic;
     &:hover{

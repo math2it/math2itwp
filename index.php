@@ -6,6 +6,9 @@
 <!-- math -->
 <?php get_template_part( 'parts/sec-idx-math' ); ?>
 
+<!-- tech -->
+<?php get_template_part( 'parts/sec-idx-tech' ); ?>
+
 <?php get_footer(); ?>
 
 

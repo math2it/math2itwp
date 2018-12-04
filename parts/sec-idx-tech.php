@@ -1,18 +1,18 @@
-<section class="layout-1-4 sec-math">
+<section class="layout-1-4 sec-tech">
   <div class="container">
     <div class="row">
       
       <div class="col-12">
         <div class="sec-title layout-title">
-          <h2 class="new-title cat-math">
-            <i class="icon-pi-outline"></i>
-            Toán học
+          <h2 class="new-title">
+            <i class="icon-cog-alt"></i>
+            Công nghệ
           </h2>
-          <a href="" class="view-all cat-math">xem thêm</a>
+          <a href="" class="view-all">xem thêm</a>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 order-md-2">
         <div class="style-1-2">
           <div class="featured-image">
             <img src="<?php echo get_bloginfo('template_directory'); ?>/img/math.jpeg">
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 order-md-1">
         <div class="row style-1-4">
           <div class="col-md-6 py-md-1">
             <div class="item">

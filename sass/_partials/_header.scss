@@ -1,6 +1,5 @@
 #idx-header{
   background: linear-gradient(to bottom right,#111217,#484d60);
-  margin-bottom: 4rem;
   .intro{
     color: hsla(0,0%,100%,.8);
     border-radius: 0 0 1rem 1rem;
@@ -89,8 +88,9 @@
 .latest-top{
   border-bottom: 0.5px #969494 solid;
   .new-title{
+    font-weight: bold;
     font-size: 1.5rem;
-    color: #5eeda3;
+    color: #eee;
   }
   a{
     font-size: 1.1rem;
