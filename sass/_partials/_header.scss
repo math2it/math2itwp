@@ -26,6 +26,11 @@
       }
     }
   }
+  &:hover{
+    .icon-math2it{
+      transform: rotate(-14deg);
+    }
+  }
 }
 .img-avatar{
   font-family: 'Righteous', cursive;
@@ -40,8 +45,7 @@
     margin-right: -1.5rem;
     vertical-align: middle;
     display: inline-block;
-    animation: rotate 2s infinite;
-    -webkit-animation: rotate 2s infinite;
+    transition: transform .4s;
   }
   @media (max-width: 767px){
     font-size: 3rem;
@@ -53,31 +57,6 @@
   }
 }
 
-@-o-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@-moz-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@-ms-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@-webkit-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
 
 .idx-social{
   font-size: 1.2rem;
@@ -118,7 +97,7 @@
   .new-title{
     font-weight: 700;
     font-size: 1.5rem;
-    color: #fff;
+    color: #5eeda3;
   }
   a{
     font-size: 1.1rem;

@@ -116,6 +116,7 @@ h6, .h6 {
 .nav-search {
   display: block;
   margin-left: 10px;
+  margin: 0.5rem 0;
 }
 @media (max-width: 991px) {
   /* line 74, sass/_partials/_nav.scss */
@@ -131,7 +132,7 @@ h6, .h6 {
     height: 40px;
   }
 }
-/* line 88, sass/_partials/_nav.scss */
+/* line 89, sass/_partials/_nav.scss */
 .nav-search .nav-search-input {
   border: 0;
   border-radius: 6px;
@@ -144,28 +145,28 @@ h6, .h6 {
   display: inline-block;
 }
 @media (max-width: 991px) {
-  /* line 88, sass/_partials/_nav.scss */
+  /* line 89, sass/_partials/_nav.scss */
   .nav-search .nav-search-input {
     width: calc(100% - 39px);
   }
 }
-/* line 104, sass/_partials/_nav.scss */
+/* line 105, sass/_partials/_nav.scss */
 .nav-search .nav-search-input:focus {
   outline: none;
   border: 0;
   background: #484d60;
 }
-/* line 109, sass/_partials/_nav.scss */
+/* line 110, sass/_partials/_nav.scss */
 .nav-search .nav-search-input:hover {
   background: #484d60;
 }
 @media (min-width: 1200px) {
-  /* line 88, sass/_partials/_nav.scss */
+  /* line 89, sass/_partials/_nav.scss */
   .nav-search .nav-search-input {
     width: 300px;
   }
 }
-/* line 116, sass/_partials/_nav.scss */
+/* line 117, sass/_partials/_nav.scss */
 .nav-search .nav-search-submit {
   background: 0 0;
   border: 0;
@@ -177,12 +178,12 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
 }
-/* line 127, sass/_partials/_nav.scss */
+/* line 128, sass/_partials/_nav.scss */
 .nav-search .nav-search-submit:hover {
   background: 0 0;
   color: #5eeda3;
 }
-/* line 132, sass/_partials/_nav.scss */
+/* line 133, sass/_partials/_nav.scss */
 .nav-search .nav-search-submit:focus {
   border: 0;
   outline: none;
@@ -223,8 +224,12 @@ h6, .h6 {
     font-size: 1.2rem;
   }
 }
-
 /* line 30, sass/_partials/_header.scss */
+#idx-header:hover .icon-math2it {
+  transform: rotate(-14deg);
+}
+
+/* line 35, sass/_partials/_header.scss */
 .img-avatar {
   font-family: 'Righteous', cursive;
   margin: 0 auto;
@@ -232,7 +237,7 @@ h6, .h6 {
   font-weight: 800;
   color: #fff;
 }
-/* line 36, sass/_partials/_header.scss */
+/* line 41, sass/_partials/_header.scss */
 .img-avatar .icon-math2it {
   font-size: 9rem;
   color: #f15f5f;
@@ -240,15 +245,14 @@ h6, .h6 {
   margin-right: -1.5rem;
   vertical-align: middle;
   display: inline-block;
-  animation: rotate 2s infinite;
-  -webkit-animation: rotate 2s infinite;
+  transition: transform .4s;
 }
 @media (max-width: 767px) {
-  /* line 30, sass/_partials/_header.scss */
+  /* line 35, sass/_partials/_header.scss */
   .img-avatar {
     font-size: 3rem;
   }
-  /* line 48, sass/_partials/_header.scss */
+  /* line 52, sass/_partials/_header.scss */
   .img-avatar .icon-math2it {
     font-size: 5rem;
     margin-left: -0.5rem;
@@ -256,70 +260,45 @@ h6, .h6 {
   }
 }
 
-@-o-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@-moz-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@-ms-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@-webkit-keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-@keyframes rotate {
-  50% {
-    transform: rotate(-14deg);
-  }
-}
-/* line 82, sass/_partials/_header.scss */
+/* line 61, sass/_partials/_header.scss */
 .idx-social {
   font-size: 1.2rem;
 }
-/* line 84, sass/_partials/_header.scss */
+/* line 63, sass/_partials/_header.scss */
 .idx-social a {
   color: #ffeead;
 }
-/* line 86, sass/_partials/_header.scss */
+/* line 65, sass/_partials/_header.scss */
 .idx-social a:hover {
   text-decoration: none;
   color: #ffd120;
 }
-/* line 89, sass/_partials/_header.scss */
+/* line 68, sass/_partials/_header.scss */
 .idx-social a:hover .icon-group, .idx-social a:hover .icon-facebook-squared, .idx-social a:hover .icon-heart {
   color: #fff;
 }
-/* line 93, sass/_partials/_header.scss */
+/* line 72, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 93, sass/_partials/_header.scss */
+  /* line 72, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
 }
 @media (max-width: 575px) {
-  /* line 82, sass/_partials/_header.scss */
+  /* line 61, sass/_partials/_header.scss */
   .idx-social {
     font-size: 2rem;
   }
-  /* line 101, sass/_partials/_header.scss */
+  /* line 80, sass/_partials/_header.scss */
   .idx-social .mr-s:last-of-type {
     margin-right: 0;
   }
 }
 
-/* line 111, sass/_partials/_header.scss */
+/* line 90, sass/_partials/_header.scss */
 .latest-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -328,58 +307,58 @@ h6, .h6 {
   justify-content: space-between;
   box-shadow: inset 0 -1px 0 0 rgba(251, 251, 251, 0.36);
 }
-/* line 118, sass/_partials/_header.scss */
+/* line 97, sass/_partials/_header.scss */
 .latest-top .new-title {
   font-weight: 700;
   font-size: 1.5rem;
-  color: #fff;
+  color: #5eeda3;
 }
-/* line 123, sass/_partials/_header.scss */
+/* line 102, sass/_partials/_header.scss */
 .latest-top a {
   font-size: 1.1rem;
   font-style: italic;
   color: #a1a7b9;
   line-height: 2;
 }
-/* line 128, sass/_partials/_header.scss */
+/* line 107, sass/_partials/_header.scss */
 .latest-top a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 135, sass/_partials/_header.scss */
+/* line 114, sass/_partials/_header.scss */
 .newest-list a {
   text-decoration: none;
 }
-/* line 137, sass/_partials/_header.scss */
+/* line 116, sass/_partials/_header.scss */
 .newest-list a .new-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-/* line 141, sass/_partials/_header.scss */
+/* line 120, sass/_partials/_header.scss */
 .newest-list a .new-item .cat-icon {
   width: 3.5rem;
   color: #ddd;
   font-size: 2rem;
 }
-/* line 146, sass/_partials/_header.scss */
+/* line 125, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post {
   width: calc(100% - 3.5rem);
 }
-/* line 148, sass/_partials/_header.scss */
+/* line 127, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-date {
   font-size: 0.8rem;
   color: #ccc;
   margin-bottom: 0.3rem;
 }
-/* line 153, sass/_partials/_header.scss */
+/* line 132, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
 }
-/* line 161, sass/_partials/_header.scss */
+/* line 140, sass/_partials/_header.scss */
 .newest-list a:hover .post-title {
   color: #ffeead !important;
 }
