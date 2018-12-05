@@ -4,11 +4,11 @@
       
       <div class="col-12">
         <div class="sec-title layout-title">
-          <h2 class="new-title cat-math">
+          <h2 class="new-title">
             <i class="icon-pi-outline"></i>
             Toán học
           </h2>
-          <a href="" class="view-all cat-math">xem thêm</a>
+          <a href="" class="view-all">xem thêm</a>
         </div>
       </div>
 
@@ -32,7 +32,7 @@
 
       <div class="col-md-6">
         <div class="row style-1-4">
-          <div class="col-md-6 py-md-1">
+          <div class="col-12 col-md-6">
             <div class="item">
               <div class="post-title">
                 Lược sử hình thành khái niệm giới hạn trong Toán học
@@ -43,7 +43,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 py-md-1">
+          <div class="col-12 col-md-6">
             <div class="item">
               <div class="post-title">
                 Toán học là gì và như thế nào?
@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 py-md-1">
+          <div class="col-12 col-md-6">
             <div class="item">
               <div class="post-title">
                 Lược sử hình thành khái niệm giới hạn trong Toán học
@@ -65,7 +65,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 py-md-1">
+          <div class="col-12 col-md-6">
             <div class="item">
               <div class="post-title">
                 Toán học là gì và như thế nào?
