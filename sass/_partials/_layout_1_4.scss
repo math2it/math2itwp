@@ -2,14 +2,6 @@
   padding: 5rem 0;
 }
 
-.sec-math{
-  background: #f4f8fb;
-}
-
-.sec-tech{
-  background: #f9e4c682;
-}
-
 .layout-title{
   margin-bottom: 1rem;
   h2{
@@ -18,11 +10,21 @@
   .new-title{
     font-size: 2.2rem;
     font-weight: 800;
+    i{
+      font-size: 4rem;
+      padding-top: calc(5rem + 2px);
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      border-radius: 0 0 7px 7px;
+      color: #fff;
+    }
   }
   .view-all{
     opacity: 0.8;
     letter-spacing: 2px;
     line-height: 2;
+    color: #111;
     &:hover{
       opacity: 1;
     }
@@ -53,7 +55,7 @@
   .post-title{
     text-align: center;
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -115,6 +117,7 @@
 
 
 .sec-math{
+  background: #f4f8fb;
   .style-1-4{
     .item{
       background-image: linear-gradient(to right top, #3d78b5, #2e75c4, #2672d2, #2d6cdf, #4065e9);
@@ -122,13 +125,14 @@
   }
   .sec-title h2{
     color: #3d78b5;
-  }
-  .view-all{
-    color: #3d78b5;
+    i{
+      background: #3d78b5;
+    }
   }
 }
 
 .sec-tech{
+  background: #f9f1e5;
   .style-1-4{
     .item{
       background-image: linear-gradient(to right top, #de650f, #e37709, #e68806, #e99809, #eba912);
@@ -136,10 +140,8 @@
   }
   .sec-title h2{
     color: #de8a0f;
-  }
-  .view-all{
-    color: #de8a0f;
+    i{
+      background: #de8a0f;
+    }
   }
 }
-
-
