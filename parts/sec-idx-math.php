@@ -34,45 +34,57 @@
         <div class="row style-1-4">
           <div class="col-12 col-md-6">
             <div class="item">
+              <div class="post-icon">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hinh-1.svg" />
+              </div>
               <div class="post-title">
                 Lược sử hình thành khái niệm giới hạn trong Toán học
               </div>
               <div class="post-meta">
                 <span class="date">21-01-18</span>
-                <span class="author">Nguyen Van A</span>
+                <!-- <span class="author">Nguyen Van A</span> -->
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="item">
+              <div class="post-icon">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hinh-2.svg" />
+              </div>
               <div class="post-title">
                 Toán học là gì và như thế nào?
               </div>
               <div class="post-meta">
                 <span class="date">02-11-18</span>
-                <span class="author">Tran Thi B</span>
+                <!-- <span class="author">Tran Thi B</span> -->
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="item">
+              <div class="post-icon">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hinh-3.svg" />
+              </div>
               <div class="post-title">
                 Lược sử hình thành khái niệm giới hạn trong Toán học
               </div>
               <div class="post-meta">
                 <span class="date">21-01-18</span>
-                <span class="author">Nguyen Van A</span>
+                <!-- <span class="author">Nguyen Van A</span> -->
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="item">
+              <div class="post-icon">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hinh-4.svg" />
+              </div>
               <div class="post-title">
                 Toán học là gì và như thế nào?
               </div>
               <div class="post-meta">
                 <span class="date">02-11-18</span>
-                <span class="author">Tran Thi B</span>
+                <!-- <span class="author">Tran Thi B</span> -->
               </div>
             </div>
           </div>
