@@ -8,7 +8,7 @@ Tags: bootstrap 4.1
 /* line 1, sass/_partials/_font.scss */
 body {
   font-family: 'Comfortaa', cursive;
-  color: #555;
+  color: #222;
 }
 
 /* line 6, sass/_partials/_font.scss */
@@ -454,16 +454,22 @@ h6, .h6 {
   transition: box-shadow 150ms ease;
   -webkit-transition: box-shadow 150ms ease;
 }
-/* line 63, sass/_partials/_layout_1_4.scss */
+/* line 60, sass/_partials/_layout_1_4.scss */
+.style-1-2 a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 68, sass/_partials/_layout_1_4.scss */
 .style-1-2:hover {
   box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
 }
-/* line 68, sass/_partials/_layout_1_4.scss */
+/* line 73, sass/_partials/_layout_1_4.scss */
 .style-1-2 .featured-image img {
   border-radius: 8px 8px 0 0;
   width: 100%;
+  object-fit: cover;
 }
-/* line 74, sass/_partials/_layout_1_4.scss */
+/* line 80, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-title {
   text-align: center;
   font-size: 1.6rem;
@@ -472,12 +478,12 @@ h6, .h6 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
-/* line 83, sass/_partials/_layout_1_4.scss */
+/* line 89, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta {
   text-align: center;
   font-size: 0.9rem;
 }
-/* line 88, sass/_partials/_layout_1_4.scss */
+/* line 94, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-intro {
   font-size: 1rem;
   color: #636262;
@@ -485,15 +491,15 @@ h6, .h6 {
   padding: 1rem;
 }
 
-/* line 96, sass/_partials/_layout_1_4.scss */
+/* line 102, sass/_partials/_layout_1_4.scss */
 .style-1-4 {
   height: 100%;
 }
-/* line 99, sass/_partials/_layout_1_4.scss */
+/* line 105, sass/_partials/_layout_1_4.scss */
 .style-1-4 .col-12, .style-1-4 .col-md-6 {
   padding: 10px;
 }
-/* line 103, sass/_partials/_layout_1_4.scss */
+/* line 109, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item {
   padding: 1rem;
   height: 100%;
@@ -505,72 +511,72 @@ h6, .h6 {
   transition: transform .2s;
   -webkit-transition: transform .2s;
 }
-/* line 114, sass/_partials/_layout_1_4.scss */
+/* line 120, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item:hover {
   transform: scale(1.03);
   box-shadow: 0 0 6px 4px #e3e3e3;
 }
-/* line 120, sass/_partials/_layout_1_4.scss */
+/* line 126, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-icon {
   width: 80px;
   margin: 0 auto 0.5rem auto;
 }
-/* line 123, sass/_partials/_layout_1_4.scss */
+/* line 129, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-icon img {
   width: 100%;
 }
-/* line 128, sass/_partials/_layout_1_4.scss */
+/* line 134, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-title {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
-/* line 134, sass/_partials/_layout_1_4.scss */
+/* line 140, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-meta {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9rem;
   text-align: center;
 }
-/* line 139, sass/_partials/_layout_1_4.scss */
+/* line 145, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-meta span {
   display: block;
 }
 
-/* line 147, sass/_partials/_layout_1_4.scss */
+/* line 153, sass/_partials/_layout_1_4.scss */
 .sec-math {
   background: #f4f8fb;
 }
-/* line 150, sass/_partials/_layout_1_4.scss */
+/* line 156, sass/_partials/_layout_1_4.scss */
 .sec-math .style-1-4 .item {
   background-image: linear-gradient(to top, #1d6a84 0%, #5970bf 100%);
 }
-/* line 154, sass/_partials/_layout_1_4.scss */
+/* line 160, sass/_partials/_layout_1_4.scss */
 .sec-math .style-1-4 .post-meta {
   color: #a8d4e8;
 }
-/* line 158, sass/_partials/_layout_1_4.scss */
+/* line 164, sass/_partials/_layout_1_4.scss */
 .sec-math .sec-title h2 {
   color: #3d78b5;
 }
-/* line 160, sass/_partials/_layout_1_4.scss */
+/* line 166, sass/_partials/_layout_1_4.scss */
 .sec-math .sec-title h2 i {
   background-image: linear-gradient(to bottom, #313542, #424a65, #4b6189, #476c9f, #3d78b5);
 }
 
-/* line 166, sass/_partials/_layout_1_4.scss */
+/* line 172, sass/_partials/_layout_1_4.scss */
 .sec-tech {
   background: #f9f1e5;
 }
-/* line 169, sass/_partials/_layout_1_4.scss */
+/* line 175, sass/_partials/_layout_1_4.scss */
 .sec-tech .style-1-4 .item {
   background-image: linear-gradient(to right top, #de650f, #e37709, #e68806, #e99809, #eba912);
 }
-/* line 173, sass/_partials/_layout_1_4.scss */
+/* line 179, sass/_partials/_layout_1_4.scss */
 .sec-tech .sec-title h2 {
   color: #de8a0f;
 }
-/* line 175, sass/_partials/_layout_1_4.scss */
+/* line 181, sass/_partials/_layout_1_4.scss */
 .sec-tech .sec-title h2 i {
   background: #de8a0f;
 }

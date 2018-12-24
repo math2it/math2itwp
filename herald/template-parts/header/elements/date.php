@@ -1,0 +1,1 @@
+<span class="herald-calendar"><i class="fa fa-calendar"></i><?php echo date_i18n(get_option('date_format')); ?></span>

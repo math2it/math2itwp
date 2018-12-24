@@ -57,6 +57,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
 
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   transition: box-shadow 150ms ease;
   -webkit-transition: box-shadow 150ms ease;
@@ -68,6 +73,7 @@
     img{
       border-radius: 8px 8px 0 0;
       width: 100%;
+      object-fit: cover;
     }
   }
 

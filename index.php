@@ -1,3 +1,5 @@
+<!-- wp:admin thi - pass: ctlae -->
+
 <?php get_header(); ?>
 
 <!-- intro -->
