@@ -45,5 +45,10 @@ function add_file_types_to_uploads($file_types){
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
 
+// layout 1-4
+function get_cat_layout_1_4($catID, $leftOrRight){
+    
+}
+
 
 
