@@ -17,7 +17,12 @@
 <?php get_template_part( 'parts/cat-layout-1-4' ); ?>
 <?php wp_reset_query(); ?> <!-- reset -->
 
-<!-- tech -->
+<!-- book -->
+<?php set_query_var('cat_id', 16); ?>
+<?php get_template_part( 'parts/cat-layout-book' ); ?>
+<?php wp_reset_query(); ?> <!-- reset -->
+
+<!-- translate -->
 <?php set_query_var('cat_id', 6); ?>
 <?php set_query_var('left_or_right', 'left'); ?>
 <?php get_template_part( 'parts/cat-layout-1-4' ); ?>

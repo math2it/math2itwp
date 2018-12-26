@@ -19,7 +19,7 @@ $cat_post_args = array(
 $cat_posts = get_posts($cat_post_args);
 if ( $cat_posts ) {?>
 
-  <section class="layout-1-4 sec-cat-<?php echo $cat_id ?>">
+  <section class="layout-1-4 sec-cat sec-cat-<?php echo $cat_id ?>">
     <div class="container">
       <div class="row">
 
@@ -92,11 +92,11 @@ if ( $cat_posts ) {?>
                 $post_count = $post_count + 1;
             ?>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-sm-6">
               <a class="no-a-effect" href="<?php echo get_permalink($postID) ?>">
               <div class="item">
                 <div class="post-icon">
-                  <?php 
+                  <?php
                     $featureIcon = get_field('feature_icon',$postID);
                     if ( empty($featureIcon) ):
                       $featureIcon = get_field('default_posts_icon','category_'.$cat_id);
