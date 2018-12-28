@@ -1,5 +1,6 @@
 .sec-cat{
   padding: 3rem 0 7rem 0;
+  border-top: 1px solid #eee;
 }
 
 a.no-a-effect{
@@ -8,7 +9,7 @@ a.no-a-effect{
 }
 
 .sec-title{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -93,6 +94,62 @@ a.no-a-effect{
   }
 }
 
+
+// sec-title-middle
+.sec-title-middle{
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+
+  a{
+    font-style: italic;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .new-title{
+    background: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding: 0 2rem;
+    i{
+      display: none;
+    }
+    @media (max-width: 500px){
+      font-size: 2rem;
+    }
+    @media (max-width: 400px){
+      font-size: 1.7rem;
+    }
+    &+div{
+      border-top: 5px solid #ccc;
+      margin-top: -2rem;
+      margin-bottom: 1.2rem;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .view-all{
+    display: block;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    color: #111;
+    font-weight: bold;
+    &:hover{
+      opacity: 1;
+    }
+    @media (max-width: 500px){
+      font-size: 0.95rem;
+    }
+    @media (max-width: 400px){
+      font-size: 0.9rem;
+    }
+  }
+}
+
 .sec-cat-1{ // math
   background: #f4f8fb;
   .new-title{
@@ -131,9 +188,11 @@ a.no-a-effect{
 
 .sec-cat-16{ // book
   background: #fff;
-  padding: 5rem 0;
   .new-title{
     color: #0a7b83;
+  }
+  .sec-title-big i{
+    background-image: linear-gradient(to bottom, #0a7b83, #0d8088, #0f858d, #128b93, #149098);
   }
 }
 
