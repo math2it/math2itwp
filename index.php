@@ -5,6 +5,11 @@
 <!-- intro -->
 <?php get_template_part( 'parts/sec-idx-intro' ); ?>
 
+<!-- editor's choice -->
+<?php set_query_var('cat_id', 1); ?>
+<?php get_template_part( 'parts/cat-layout-photo-intro' ); ?>
+<?php wp_reset_query(); ?> <!-- reset -->
+
 <!-- math -->
 <?php set_query_var('cat_id', 1); ?>
 <?php set_query_var('left_or_right', 'left'); ?>

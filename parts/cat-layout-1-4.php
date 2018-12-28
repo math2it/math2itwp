@@ -23,15 +23,8 @@ if ( $cat_posts ) {?>
     <div class="container">
       <div class="row">
 
-        <div class="col-12">
-          <div class="sec-title layout-title">
-            <h2 class="new-title">
-              <i class="<?php echo get_field('cat-icon', 'category_'.$cat_id) ?>"></i>
-              <?php echo get_cat_name($cat_id);?>
-            </h2>
-            <a href="<?php echo get_category_link($cat_id) ?>" class="view-all">xem thêm</a>
-          </div>
-        </div>
+        <!-- title -->
+        <?php get_template_part( 'parts/sec-title' ); ?>
 
         <!-- the 1st big post -->
         <?php 
@@ -67,7 +60,13 @@ if ( $cat_posts ) {?>
                   </span>
                 </div>
                 <div class="post-intro">
-                  <?php echo get_field('abstract',$post->ID); ?> 
+                  <?php
+                    if (get_field('abstract',$post->ID)):
+                      echo get_field('abstract',$post->ID);
+                    else:
+                      the_excerpt();
+                    endif;
+                  ?>
                 </div>
             </div> <!-- /style-1-2 -->
             </a>

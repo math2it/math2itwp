@@ -19,10 +19,17 @@
 .icon-clock:before { content: '\e811'; } /* '' */
 .icon-user:before { content: '\e812'; } /* '' */
 .icon-user-outline:before { content: '\e813'; } /* '' */
+.icon-star-circled:before { content: '\e814'; } /* '' */
+.icon-star:before { content: '\e815'; } /* '' */
+.icon-star-filled:before { content: '\e816'; } /* '' */
+.icon-star-half:before { content: '\e817'; } /* '' */
+.icon-star-1:before { content: '\e818'; } /* '' */
+.icon-star-empty:before { content: '\e819'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
+.icon-star-half-alt:before { content: '\f123'; } /* '' */
 .icon-youtube-squared:before { content: '\f166'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */

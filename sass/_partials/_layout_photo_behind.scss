@@ -1,0 +1,59 @@
+.layout-photo-behind{
+  .item{
+    background-size: cover;
+    min-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    &:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      bottom: 0;
+      left: 15px;
+      background: #0000005e;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    &:hover{
+      &::before{
+        background: #000000b8;
+      }
+    }
+
+    .item-content{
+      padding: 20px 10px 10px 10px;
+
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      .book-title{
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-shadow: 2px 2px 4px #000;
+
+        flex-grow: 1;
+        position: relative;
+        display: block;
+      }
+      .item-footer{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: end;
+        align-items: flex-end;
+      }
+    }
+  }
+}

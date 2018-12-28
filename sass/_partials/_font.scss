@@ -18,17 +18,3 @@ h6, .h6 {
   color: #5eeda3;
 }
 
-.sec-title{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  a{
-    font-style: italic;
-    &:hover{
-      text-decoration: none;
-    }
-  }
-}

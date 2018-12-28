@@ -16,7 +16,7 @@
     <div class="row row-eq-height justify-content-center">
 
       <div class="col-12">
-        <div class="sec-title layout-title">
+        <div class="sec-title sec-title-small">
           <h2 class="new-title">
             <i class="<?php echo get_field('cat-icon', 'category_'.$cat_id) ?>"></i>
             <?php echo get_cat_name($cat_id);?>

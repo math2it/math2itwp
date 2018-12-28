@@ -87,10 +87,11 @@
 // newest list
 .latest-top{
   border-bottom: 0.5px #969494 solid;
+  padding-bottom: 5px;
   .new-title{
     font-weight: bold;
     font-size: 1.5rem;
-    color: #eee;
+    color: #fff;
   }
   a{
     font-size: 1.1rem;
@@ -99,6 +100,9 @@
     &:hover{
       color: #fff;
     }
+  }
+  .view-all{
+    color: #eee!important;
   }
 }
 .newest-list{
