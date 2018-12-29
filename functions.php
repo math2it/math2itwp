@@ -16,6 +16,9 @@ require_once( __DIR__ . '/functions-files/menu.php');
 // Navigation
 require_once( __DIR__ . '/functions-files/nav.php');
 
+// Quick edit post metta field
+require_once( __DIR__ . '/functions-files/quick-edit.php');
+
 // wordpress title
 add_theme_support( 'title-tag' );
 add_filter( 'document_title_separator', 'cyb_document_title_separator' );
@@ -24,15 +27,16 @@ function cyb_document_title_separator( $sep ) {
     return $sep;
 }
 
+
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
+
 
 // css admin page
 function admin_panel_css() {
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style_admin.css' );
 }
 add_action( 'admin_head', 'admin_panel_css' );
-
 
 
 // Support svg image 
@@ -45,10 +49,6 @@ function add_file_types_to_uploads($file_types){
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
 
-// layout 1-4
-function get_cat_layout_1_4($catID, $leftOrRight){
-    
-}
 
 
 

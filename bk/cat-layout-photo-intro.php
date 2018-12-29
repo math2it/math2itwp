@@ -1,11 +1,11 @@
 <!-- Idea of layout: https://blog.ghost.org -->
 
 <?php 
+  $cat_id = get_query_var('cat_id'); // get category
+
   $cat_post_args = array(
-    'meta_key'         => 'top_choice',
-    'meta_value'       => 1,
+    'category'         => $cat_id,
     'numberposts' 		 => 4,
-    'orderby'          => 'rand'
   );
   $cat_posts = get_posts($cat_post_args);
 ?>

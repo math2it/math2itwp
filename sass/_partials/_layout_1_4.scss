@@ -18,6 +18,9 @@
     .featured-image img{
       transform: scale(1.1);
     }
+    .post-title{
+      color: #366494;
+    }
   }
   
   .featured-image{
@@ -83,7 +86,10 @@
     &:hover{
       transform: scale(1.03);
       box-shadow: 0 0 6px 4px #e3e3e3;
-      // box-shadow: 0 10px 30px -5px rgba(10, 16, 34, .2);
+      
+      .post-title{
+        color: #366494;
+      }
     }
 
     .post-icon{

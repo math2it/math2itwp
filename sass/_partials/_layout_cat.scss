@@ -127,9 +127,11 @@ a.no-a-effect{
       border-top: 5px solid #ccc;
       margin-top: -2rem;
       margin-bottom: 1.2rem;
-      width: 70%;
       margin-left: auto;
       margin-right: auto;
+      @media (min-width: 768px){
+        width: 70%;
+      }
     }
   }
   .view-all{
@@ -182,6 +184,18 @@ a.no-a-effect{
   .sec-title-big{
     i{
       background-image: linear-gradient(to bottom, #341164, #48247a, #5c3691, #7149a9, #865dc1);
+    }
+  }
+}
+
+.sec-cat-7{ // latex
+  background: #9ffbbc3b;
+  .new-title{
+    color: #0f8044;
+  }
+  .sec-title-big{
+    i{
+      background-image: linear-gradient(to bottom, #189252, #25a360, #31b56e, #3cc77d, #47d98c);
     }
   }
 }

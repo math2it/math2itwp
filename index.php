@@ -33,6 +33,12 @@
 <?php get_template_part( 'parts/cat-layout-1-4' ); ?>
 <?php wp_reset_query(); ?> <!-- reset -->
 
+<!-- latex -->
+<?php set_query_var('cat_id', 7); ?>
+<?php set_query_var('left_or_right', 'right'); ?>
+<?php get_template_part( 'parts/cat-layout-1-4' ); ?>
+<?php wp_reset_query(); ?> <!-- reset -->
+
 <!-- footer -->
 <?php get_footer(); ?>
 
