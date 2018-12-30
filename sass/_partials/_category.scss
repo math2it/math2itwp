@@ -1,0 +1,31 @@
+#header-cat-1{ // toan-hoc
+  background-image: radial-gradient(715px at 10.8% 89.3%, rgb(13, 65, 130) 5.4%, rgb(3, 33, 71) 100.2%);
+}
+
+.cat-intro{
+  .intro{
+    h2{
+      color: #fff;
+      font-family: 'Pacifico', cursive;
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .img-avatar{
+      margin-bottom: 1rem;
+      i{
+        border: 5px solid #fff;
+        border-radius: 50%;
+        padding: 5px 0;
+      }
+    }
+    p{
+      color: #fff;
+    }
+
+    .idx-social{
+      span{
+        text-shadow: 2px 2px 4px #000;
+      }
+    } 
+  } // intro
+}

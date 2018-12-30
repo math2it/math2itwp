@@ -1,5 +1,8 @@
 #idx-header{
   background: linear-gradient(to bottom right,#111217,#484d60);
+}
+
+.header-intro{
   .intro{
     color: hsla(0,0%,100%,.8);
     border-radius: 0 0 1rem 1rem;
@@ -60,11 +63,13 @@
 .idx-social{
   font-size: 1.2rem;
   a{
-    color: #ffeead;
+    color: #fffaad;
+    span{
+      text-shadow: 2px 2px 4px #000;
+    }
     &:hover{
       text-decoration: none;
-      color: #ffd120;
-      .icon-group, .icon-facebook-squared, .icon-heart{color:#fff;}
+      color: #ffe066;
     }
   }
   

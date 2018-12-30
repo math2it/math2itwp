@@ -1,33 +1,16 @@
 <!-- Idea of layout: https://blog.ghost.org -->
 
-<?php 
-  $cat_post_args = array(
-    'meta_key'         => 'top_choice',
-    'meta_value'       => 1,
-    'numberposts' 		 => 4,
-    'orderby'          => 'rand'
-  );
-  $cat_posts = get_posts($cat_post_args);
-?>
+<?php if ( $list_posts ) {?>
 
-<?php if ( $cat_posts ) {?>
-
-<section class="layout-photo-intro sec-choice">
+<section class="layout-photo-intro <?php if($customSecClass){echo $customSecClass;} ?>">
 
   <div class="container">
     <div class="row row-eq-height justify-content-center">
       
-      <div class="col-12">
-        <div class="sec-title sec-title-small">
-          <h2 class="new-title">
-            <i class="icon-star-circled"></i>
-            Tuyển chọn
-          </h2>
-          <a href="<?php echo get_category_link($cat_id) ?>" class="view-all">xem thêm</a>
-        </div>
-      </div>
+      <!-- title? -->
+      <?php if ($typeTitle){get_template_part( 'parts/sec-title' );} ?>
 
-      <?php foreach($cat_posts as $post) : ?>
+      <?php foreach($list_posts as $post) : ?>
       <div class="col-12 col-sm-6 col-lg-3">
           <div class="item">
             <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
@@ -57,6 +40,10 @@
               <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
                 <?php echo $post->post_title; ?>
               </a>
+            </div>
+            <div class="post-date">
+              <i class="icon-clock"></i>
+              <?php echo date('d-m-y', strtotime($post->post_date)); ?>
             </div>
             <div class="post-excerpt">
               <?php

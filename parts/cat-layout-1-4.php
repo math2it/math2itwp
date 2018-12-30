@@ -1,6 +1,4 @@
 <?php 
-  $cat_id = get_query_var('cat_id'); // get category
-  $left_or_right = get_query_var('left_or_right'); // left or right, big post?
   if ($left_or_right == 'left'):
     $leftOrRight = '1';
     $leftOrRightOther = '2';
@@ -12,23 +10,18 @@
 
 
 <?php
-$cat_post_args = array(
-  'category'         => $cat_id,
-  'numberposts' 		 => 5,
-);
-$cat_posts = get_posts($cat_post_args);
-if ( $cat_posts ) {?>
+if ( $list_posts ) {?>
 
-  <section class="layout-1-4 sec-cat sec-cat-<?php echo $cat_id ?>">
+  <section class="layout-1-4 sec-cat <?php if($customSecClass){echo $customSecClass;} ?>">
     <div class="container">
       <div class="row">
 
-        <!-- title -->
-        <?php get_template_part( 'parts/sec-title' ); ?>
+        <!-- title? -->
+        <?php if ($typeTitle){get_template_part( 'parts/sec-title' );} ?>
 
         <!-- the 1st big post -->
         <?php 
-        foreach($cat_posts as $post) : 
+        foreach($list_posts as $post) : 
         ?>
 
           <div class="col-md-6 order-md-<?php echo $leftOrRight ?>">
@@ -84,7 +77,7 @@ if ( $cat_posts ) {?>
             <?php 
             $post_count = 0; // for 4 small posts
             $not_first_post = false;
-            foreach($cat_posts as $post) :
+            foreach($list_posts as $post) :
               $postID = $post->ID;
               $post_author = get_the_author($postID);
               if (($not_first_post) and ($post_count < 4)):

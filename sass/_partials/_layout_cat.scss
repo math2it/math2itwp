@@ -19,7 +19,6 @@ a.no-a-effect{
   align-items: flex-end;
 
   a{
-    font-style: italic;
     &:hover{
       text-decoration: none;
     }
@@ -28,8 +27,15 @@ a.no-a-effect{
   .new-title{
     font-weight: 800;
     margin-bottom: 0;
+    a{
+      color: inherit;
+      &:hover{
+        filter: brightness(110%);
+      }
+    }
   }
   .view-all{
+    font-style: italic;
     opacity: 0.8;
     letter-spacing: 2px;
     line-height: 2;
@@ -103,6 +109,8 @@ a.no-a-effect{
 
   a{
     font-style: italic;
+    color: inherit;
+    font-style: inherit;
     &:hover{
       text-decoration: none;
     }
@@ -189,13 +197,13 @@ a.no-a-effect{
 }
 
 .sec-cat-7{ // latex
-  background: #9ffbbc3b;
+  background: #54b57d24;
   .new-title{
     color: #0f8044;
   }
   .sec-title-big{
     i{
-      background-image: linear-gradient(to bottom, #189252, #25a360, #31b56e, #3cc77d, #47d98c);
+      background-image: linear-gradient(to bottom, #1b814c, #208f55, #269d5f, #2bab68, #31ba72);
     }
   }
 }
@@ -210,7 +218,7 @@ a.no-a-effect{
   }
 }
 
-.sec-choice{
+.sec-choice{ // editor's choice
   background: #fffef1;
   padding: 5rem 0;
   .new-title{

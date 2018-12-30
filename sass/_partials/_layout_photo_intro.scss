@@ -31,15 +31,22 @@
     padding: 3px 5px;
     color: #fff;
     text-align: center;
+    font-size: 0.95rem;
     &:hover{
       filter: brightness(110%);
     }
   }
   .post-title{
-    line-height: 1.2;
-    padding: 10px;
+    line-height: 1.4;
+    padding: 10px 10px 5px 10px;
     text-align: center;
     font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
+  }
+  .post-date{
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
     margin-bottom: 1rem;
   }
   .post-excerpt{
