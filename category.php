@@ -22,7 +22,7 @@
   set_query_var('typeTitle', 'small'); 
   set_query_var('customTitle', 'Tuyển chọn');
   set_query_var('customIcon', 'icon-star-circled');
-  set_query_var('customSecClass', 'sec-choice');
+  set_query_var('customSecClass', 'sec-choice-cat');
   // list of posts
   $list_post_args = array(
     'meta_key'         => 'top_choice',
@@ -47,7 +47,7 @@
     'category'          => $cat_id,
     'paged'             => $paged,
     'post_status'       => 'publish',
-    'posts_per_page'    => 15
+    'posts_per_page'    => 16
   );
   $list_posts1 = get_posts($list_post_args);
 ?>
@@ -103,25 +103,26 @@
         </div>
       </div>
     <?php endforeach ?>
-    </div>
-  </div>
 
-  <?php
-    global $wp_query;
-  
-    $big = 999999999; // need an unlikely integer
-    echo '<div class="paginate-links">';
-      echo paginate_links( array(
-      'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-      'format' => '?paged=%#%',
-      'prev_text' => __('<<'),
-      'next_text' => __('>>'),
-      'current' => max( 1, get_query_var('paged') ),
-      'total' => $wp_query->max_num_pages-1
-      ) );
-    echo '</div>';
-  ?>
+      <div class="col-12">
+        <?php
+          global $wp_query;
+          $big = 999999999; // need an unlikely integer
+          echo '<div class="paginate-links">';
+            echo paginate_links( array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'format' => '?paged=%#%',
+            'prev_text' => __('«'),
+            'next_text' => __('»'),
+            'current' => max( 1, get_query_var('paged') ),
+            'total' => $wp_query->max_num_pages-1
+            ) );
+          echo '</div>';
+        ?>
+      </div>
 
+    </div> <!-- /row -->
+  </div> <!-- /container -->
 </section>
 <?php } // end if $list_posts ?> 
 

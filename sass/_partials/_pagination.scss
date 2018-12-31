@@ -1,0 +1,32 @@
+.paginate-links{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: 10px 10px 8px 10px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  color: #999;
+	line-height: 1;
+  text-decoration: none;
+  
+  &.next, &.prev{
+    padding: 10px;
+  }
+}
+
+.page-numbers.current{
+  zoom: 1.2;
+}
+
+.page-numbers.current,
+a.page-numbers:hover {
+  background: #3d78b5;
+  border: 1px solid #3d78b5;
+  color: #fff;
+  text-decoration: none;
+}

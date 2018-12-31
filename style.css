@@ -197,6 +197,43 @@ h6, .h6 {
   outline: none;
 }
 
+/* line 1, sass/_partials/_pagination.scss */
+.paginate-links {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* line 7, sass/_partials/_pagination.scss */
+.page-numbers {
+  display: inline-block;
+  padding: 10px 10px 8px 10px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  color: #999;
+  line-height: 1;
+  text-decoration: none;
+}
+/* line 17, sass/_partials/_pagination.scss */
+.page-numbers.next, .page-numbers.prev {
+  padding: 10px;
+}
+
+/* line 22, sass/_partials/_pagination.scss */
+.page-numbers.current {
+  zoom: 1.2;
+}
+
+/* line 26, sass/_partials/_pagination.scss */
+.page-numbers.current,
+a.page-numbers:hover {
+  background: #3d78b5;
+  border: 1px solid #3d78b5;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* line 1, sass/_partials/_header.scss */
 #idx-header {
   background: linear-gradient(to bottom right, #111217, #484d60);
@@ -374,28 +411,38 @@ h6, .h6 {
   background-image: radial-gradient(715px at 10.8% 89.3%, #0d4182 5.4%, #032147 100.2%);
 }
 
-/* line 7, sass/_partials/_category.scss */
+/* line 5, sass/_partials/_category.scss */
+.sec-choice-cat {
+  background: #fffef1;
+  padding: 4rem 0;
+}
+/* line 8, sass/_partials/_category.scss */
+.sec-choice-cat .new-title {
+  color: #e4a200;
+}
+
+/* line 15, sass/_partials/_category.scss */
 .cat-intro .intro h2 {
   color: #fff;
   font-family: 'Pacifico', cursive;
   font-size: 4rem;
   text-shadow: 2px 2px 4px #000;
 }
-/* line 13, sass/_partials/_category.scss */
+/* line 21, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar {
   margin-bottom: 1rem;
 }
-/* line 15, sass/_partials/_category.scss */
+/* line 23, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar i {
   border: 5px solid #fff;
   border-radius: 50%;
   padding: 5px 0;
 }
-/* line 21, sass/_partials/_category.scss */
+/* line 29, sass/_partials/_category.scss */
 .cat-intro .intro p {
   color: #fff;
 }
-/* line 26, sass/_partials/_category.scss */
+/* line 34, sass/_partials/_category.scss */
 .cat-intro .intro .idx-social span {
   text-shadow: 2px 2px 4px #000;
 }
