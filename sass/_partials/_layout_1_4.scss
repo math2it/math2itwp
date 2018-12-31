@@ -19,7 +19,10 @@
       transform: scale(1.1);
     }
     .post-title{
-      color: #366494;
+      color: $a-hover;
+    }
+    .post-intro{
+      color: #111;
     }
   }
   

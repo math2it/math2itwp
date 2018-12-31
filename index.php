@@ -20,7 +20,8 @@
     'meta_key'         => 'top_choice',
     'meta_value'       => 1,
     'numberposts' 		 => 4,
-    'orderby'          => 'rand'
+    'orderby'          => 'rand',
+    'post_status'      => 'publish'
   );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
@@ -43,6 +44,7 @@
   $list_post_args = array(
     'category'         => $cat_id,
     'numberposts' 		 => 5,
+    'post_status'      => 'publish'
   );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
@@ -65,6 +67,7 @@
   $list_post_args = array(
     'category'         => $cat_id,
     'numberposts' 		 => 5,
+    'post_status'      => 'publish'
   );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
@@ -87,6 +90,7 @@
   $list_post_args = array(
     'category'         => $cat_id,
     'numberposts' 		 => 4,
+    'post_status'      => 'publish'
   );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
@@ -109,6 +113,7 @@
   $list_post_args = array(
     'category'         => $cat_id,
     'numberposts' 		 => 5,
+    'post_status'      => 'publish'
   );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
@@ -131,6 +136,7 @@
   $list_post_args = array(
     'category'         => $cat_id,
     'numberposts' 		 => 5,
+    'post_status'      => 'publish'
   );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);

@@ -427,14 +427,18 @@ h6, .h6 {
 }
 /* line 21, sass/_partials/_layout_1_4.scss */
 .style-1-2:hover .post-title {
-  color: #366494;
+  color: #1e558e;
 }
-/* line 26, sass/_partials/_layout_1_4.scss */
+/* line 24, sass/_partials/_layout_1_4.scss */
+.style-1-2:hover .post-intro {
+  color: #111;
+}
+/* line 29, sass/_partials/_layout_1_4.scss */
 .style-1-2 .featured-image {
   height: 220px;
   overflow: hidden;
 }
-/* line 29, sass/_partials/_layout_1_4.scss */
+/* line 32, sass/_partials/_layout_1_4.scss */
 .style-1-2 .featured-image img {
   border-radius: 8px 8px 0 0;
   width: 100%;
@@ -442,7 +446,7 @@ h6, .h6 {
   object-fit: cover;
   transition: transform .2s;
 }
-/* line 38, sass/_partials/_layout_1_4.scss */
+/* line 41, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-title {
   text-align: center;
   font-size: 1.6rem;
@@ -452,20 +456,20 @@ h6, .h6 {
   margin-bottom: 0.5rem;
   color: #555;
 }
-/* line 48, sass/_partials/_layout_1_4.scss */
+/* line 51, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta {
   text-align: center;
   font-size: 0.9rem;
 }
-/* line 51, sass/_partials/_layout_1_4.scss */
+/* line 54, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta .date {
   margin-right: 10px;
 }
-/* line 54, sass/_partials/_layout_1_4.scss */
+/* line 57, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta i {
   margin-right: -5px;
 }
-/* line 59, sass/_partials/_layout_1_4.scss */
+/* line 62, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-intro {
   font-size: 1rem;
   color: #636262;
@@ -473,15 +477,15 @@ h6, .h6 {
   padding: 1rem;
 }
 
-/* line 67, sass/_partials/_layout_1_4.scss */
+/* line 70, sass/_partials/_layout_1_4.scss */
 .style-1-4 {
   height: 104%;
 }
-/* line 70, sass/_partials/_layout_1_4.scss */
+/* line 73, sass/_partials/_layout_1_4.scss */
 .style-1-4 .col-12, .style-1-4 .col-md-6 {
   padding: 10px;
 }
-/* line 74, sass/_partials/_layout_1_4.scss */
+/* line 77, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item {
   padding: 1rem;
   height: 100%;
@@ -494,32 +498,32 @@ h6, .h6 {
   transition: transform .2s;
   -webkit-transition: transform .2s;
 }
-/* line 86, sass/_partials/_layout_1_4.scss */
+/* line 89, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item:hover {
   transform: scale(1.03);
   box-shadow: 0 0 6px 4px #e3e3e3;
 }
-/* line 90, sass/_partials/_layout_1_4.scss */
+/* line 93, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item:hover .post-title {
   color: #366494;
 }
-/* line 95, sass/_partials/_layout_1_4.scss */
+/* line 98, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-icon {
   width: 80px;
   margin: 0 auto 0.5rem auto;
 }
-/* line 98, sass/_partials/_layout_1_4.scss */
+/* line 101, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-icon img {
   width: 100%;
   filter: invert(70%);
 }
-/* line 104, sass/_partials/_layout_1_4.scss */
+/* line 107, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-title {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
-/* line 110, sass/_partials/_layout_1_4.scss */
+/* line 113, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-meta {
   margin-left: auto;
   margin-right: auto;
@@ -527,7 +531,7 @@ h6, .h6 {
   text-align: center;
   color: #555;
 }
-/* line 116, sass/_partials/_layout_1_4.scss */
+/* line 119, sass/_partials/_layout_1_4.scss */
 .style-1-4 .item .post-meta span {
   display: block;
 }
@@ -583,7 +587,7 @@ h6, .h6 {
 }
 /* line 55, sass/_partials/_layout_book.scss */
 .layout-book .item:hover .book-title {
-  color: #366494;
+  color: #1e558e;
 }
 /* line 58, sass/_partials/_layout_book.scss */
 .layout-book .item:hover .book-author {
@@ -945,40 +949,48 @@ a.no-a-effect {
 /* line 9, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .item:hover {
   box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07), 1px 6px 12px rgba(39, 44, 49, 0.04);
-  transition: all .4s ease;
-  transform: translate3D(0, -1px, 0) scale(1.02);
 }
-/* line 13, sass/_partials/_layout_photo_intro.scss */
+/* line 11, sass/_partials/_layout_photo_intro.scss */
+.layout-photo-intro .item:hover .post-image img {
+  transform: scale(1.1);
+}
+/* line 14, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .item:hover .post-excerpt {
   opacity: 1;
 }
-/* line 16, sass/_partials/_layout_photo_intro.scss */
+/* line 17, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .item:hover .post-title {
-  color: #366494;
+  color: #1e558e;
 }
-/* line 21, sass/_partials/_layout_photo_intro.scss */
+/* line 20, sass/_partials/_layout_photo_intro.scss */
+.layout-photo-intro .item:hover .post-date {
+  color: #111;
+}
+/* line 25, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-image {
   height: 150px;
+  overflow: hidden;
 }
-/* line 23, sass/_partials/_layout_photo_intro.scss */
+/* line 28, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  transition: transform .2s;
 }
-/* line 30, sass/_partials/_layout_photo_intro.scss */
+/* line 36, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-cat {
   padding: 3px 5px;
   color: #fff;
   text-align: center;
   font-size: 0.95rem;
 }
-/* line 35, sass/_partials/_layout_photo_intro.scss */
+/* line 41, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-cat:hover {
   filter: brightness(110%);
 }
-/* line 39, sass/_partials/_layout_photo_intro.scss */
+/* line 45, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-title {
   line-height: 1.4;
   padding: 10px 10px 5px 10px;
@@ -986,14 +998,14 @@ a.no-a-effect {
   font-size: 1.2rem;
   margin: 0.5rem 0 0 0;
 }
-/* line 46, sass/_partials/_layout_photo_intro.scss */
+/* line 52, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-date {
   font-size: 0.8rem;
   color: #666;
   text-align: center;
   margin-bottom: 1rem;
 }
-/* line 52, sass/_partials/_layout_photo_intro.scss */
+/* line 58, sass/_partials/_layout_photo_intro.scss */
 .layout-photo-intro .post-excerpt {
   font-size: 0.9rem;
   text-align: center;
