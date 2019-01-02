@@ -2,6 +2,22 @@
   background-image: radial-gradient(715px at 10.8% 89.3%, rgb(13, 65, 130) 5.4%, rgb(3, 33, 71) 100.2%);
 }
 
+#header-cat-2{ // cong-nghe
+  background-image: linear-gradient(to left bottom, #b53f00, #c24b08, #cf5812, #dc641b, #e97023);
+}
+
+#header-cat-7{ // latex
+  background-image: radial-gradient(circle at 49.1% 57.5%, #0e401e 0%, #137d54 90%);
+}
+
+#header-cat-6{ // bai-dich
+  background-image: linear-gradient(to bottom, #341164, #48247a, #5c3691, #7149a9, #865dc1);
+}
+
+#header-cat-16{ // sach-hay
+  background-image: linear-gradient(90deg,#298263 10%,#0d3967 90%);
+}
+
 .sec-choice-cat{
   background: #fffef1;
   padding: 4rem 0;
@@ -19,10 +35,8 @@
       text-shadow: 2px 2px 4px #000;
     }
     .img-avatar{
-      margin-bottom: 1rem;
+      font-size: 5rem;
       i{
-        border: 5px solid #fff;
-        border-radius: 50%;
         padding: 5px 0;
       }
     }

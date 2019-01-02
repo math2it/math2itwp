@@ -26,8 +26,8 @@
             <?php echo get_field('post_book_author',$post->ID); ?>
           </div>
         </div>
+        </a>
       </div>
-      </a>
       <?php endforeach ?>
 
     </div> <!-- /div row -->

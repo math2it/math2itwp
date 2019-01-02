@@ -201,31 +201,30 @@ h6, .h6 {
 .paginate-links {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 2rem;
 }
 
-/* line 7, sass/_partials/_pagination.scss */
+/* line 6, sass/_partials/_pagination.scss */
 .page-numbers {
   display: inline-block;
   padding: 10px 10px 8px 10px;
   background: #fff;
   border: 1px solid #dfdfdf;
   border-radius: 5px;
-  color: #999;
+  color: #666;
   line-height: 1;
   text-decoration: none;
 }
-/* line 17, sass/_partials/_pagination.scss */
+/* line 16, sass/_partials/_pagination.scss */
 .page-numbers.next, .page-numbers.prev {
   padding: 10px;
 }
 
-/* line 22, sass/_partials/_pagination.scss */
+/* line 21, sass/_partials/_pagination.scss */
 .page-numbers.current {
   zoom: 1.2;
 }
 
-/* line 26, sass/_partials/_pagination.scss */
+/* line 25, sass/_partials/_pagination.scss */
 .page-numbers.current,
 a.page-numbers:hover {
   background: #3d78b5;
@@ -412,37 +411,55 @@ a.page-numbers:hover {
 }
 
 /* line 5, sass/_partials/_category.scss */
+#header-cat-2 {
+  background-image: linear-gradient(to left bottom, #b53f00, #c24b08, #cf5812, #dc641b, #e97023);
+}
+
+/* line 9, sass/_partials/_category.scss */
+#header-cat-7 {
+  background-image: radial-gradient(circle at 49.1% 57.5%, #0e401e 0%, #137d54 90%);
+}
+
+/* line 13, sass/_partials/_category.scss */
+#header-cat-6 {
+  background-image: linear-gradient(to bottom, #341164, #48247a, #5c3691, #7149a9, #865dc1);
+}
+
+/* line 17, sass/_partials/_category.scss */
+#header-cat-16 {
+  background-image: linear-gradient(90deg, #298263 10%, #0d3967 90%);
+}
+
+/* line 21, sass/_partials/_category.scss */
 .sec-choice-cat {
   background: #fffef1;
   padding: 4rem 0;
 }
-/* line 8, sass/_partials/_category.scss */
+/* line 24, sass/_partials/_category.scss */
 .sec-choice-cat .new-title {
   color: #e4a200;
 }
 
-/* line 15, sass/_partials/_category.scss */
+/* line 31, sass/_partials/_category.scss */
 .cat-intro .intro h2 {
   color: #fff;
   font-family: 'Pacifico', cursive;
   font-size: 4rem;
   text-shadow: 2px 2px 4px #000;
 }
-/* line 21, sass/_partials/_category.scss */
+/* line 37, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar {
-  margin-bottom: 1rem;
+  font-size: 5rem;
 }
-/* line 23, sass/_partials/_category.scss */
+/* line 39, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar i {
-  border: 5px solid #fff;
-  border-radius: 50%;
   padding: 5px 0;
 }
-/* line 29, sass/_partials/_category.scss */
+/* line 43, sass/_partials/_category.scss */
 .cat-intro .intro p {
   color: #fff;
 }
-/* line 34, sass/_partials/_category.scss */
+/* line 48, sass/_partials/_category.scss */
 .cat-intro .intro .idx-social span {
   text-shadow: 2px 2px 4px #000;
 }
@@ -501,7 +518,7 @@ a.page-numbers:hover {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  color: #555;
+  color: #444;
 }
 /* line 51, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta {
@@ -519,7 +536,7 @@ a.page-numbers:hover {
 /* line 62, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-intro {
   font-size: 1rem;
-  color: #636262;
+  color: #444;
   text-align: center;
   padding: 1rem;
 }
