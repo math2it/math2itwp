@@ -138,6 +138,7 @@
 </section>
 <?php } // end if $list_posts ?> 
 
+
 <!-- footer -->
 <!-- ====================================== -->
 <?php get_footer(); ?>

@@ -1,0 +1,56 @@
+.gioi-thieu{
+  padding: 3rem 0 7rem 0;
+  @media (max-width: 767px){
+    padding: 0;
+  }
+}
+
+
+.layout-photo-intro.gioi-thieu{
+  background-color: #e1eaf8;
+  .item{
+    @media (min-width: 768px){
+      height: calc(100% - 1.5rem);
+    }
+    @media(max-width: 767px){
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+  }
+  .post-image{
+    &.h-250{
+      height: 250px;
+      @media (max-width: 767px){
+        height: 200px;
+      }
+    }
+    &.h-200{
+      height: 200px;
+    }
+    border-radius: 10px 10px 0 0;
+  }
+  .post-cat{
+    font-size: 1.3rem;
+  }
+  .post-intro{
+    padding: 1rem 2rem;
+    @media (max-width: 767px){
+      padding: 1rem;
+    }
+    text-align: center;
+  }
+}
+
+.pt-md--3{
+  @media (min-width: 768px){
+    position: relative;
+    top: -8rem;
+  }
+}
+
+.pt-sm--3{
+  @media (min-width: 576px){
+    position: relative;
+    top: -8rem;
+  }
+}

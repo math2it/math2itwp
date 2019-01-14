@@ -74,6 +74,9 @@
     &:hover{
       text-decoration: none;
       color: #ffe066;
+      .icon-home{
+        color: inherit;
+      }
     }
   }
   

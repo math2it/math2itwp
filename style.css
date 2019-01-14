@@ -328,12 +328,16 @@ a.page-numbers:hover {
   text-decoration: none;
   color: #ffe066;
 }
-/* line 80, sass/_partials/_header.scss */
+/* line 77, sass/_partials/_header.scss */
+.idx-social a:hover .icon-home {
+  color: inherit;
+}
+/* line 83, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 80, sass/_partials/_header.scss */
+  /* line 83, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
@@ -343,71 +347,71 @@ a.page-numbers:hover {
   .idx-social {
     font-size: 2rem;
   }
-  /* line 88, sass/_partials/_header.scss */
+  /* line 91, sass/_partials/_header.scss */
   .idx-social .mr-s:last-of-type {
     margin-right: 0;
   }
 }
 
-/* line 97, sass/_partials/_header.scss */
+/* line 100, sass/_partials/_header.scss */
 .latest-top {
   border-bottom: 0.5px #969494 solid;
   padding-bottom: 5px;
 }
-/* line 100, sass/_partials/_header.scss */
+/* line 103, sass/_partials/_header.scss */
 .latest-top .new-title {
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff;
 }
-/* line 105, sass/_partials/_header.scss */
+/* line 108, sass/_partials/_header.scss */
 .latest-top a {
   font-size: 1.1rem;
   color: #a1a7b9;
   line-height: 2;
 }
-/* line 109, sass/_partials/_header.scss */
+/* line 112, sass/_partials/_header.scss */
 .latest-top a:hover {
   color: #fff;
 }
-/* line 113, sass/_partials/_header.scss */
+/* line 116, sass/_partials/_header.scss */
 .latest-top .view-all {
   color: #eee !important;
 }
 
-/* line 118, sass/_partials/_header.scss */
+/* line 121, sass/_partials/_header.scss */
 .newest-list a {
   text-decoration: none;
 }
-/* line 120, sass/_partials/_header.scss */
+/* line 123, sass/_partials/_header.scss */
 .newest-list a .new-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-/* line 124, sass/_partials/_header.scss */
+/* line 127, sass/_partials/_header.scss */
 .newest-list a .new-item .cat-icon {
   width: 3.5rem;
   color: #ddd;
   font-size: 2rem;
 }
-/* line 129, sass/_partials/_header.scss */
+/* line 132, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post {
   width: calc(100% - 3.5rem);
 }
-/* line 131, sass/_partials/_header.scss */
+/* line 134, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-date {
   font-size: 0.8rem;
   color: #ccc;
   margin-bottom: 0.3rem;
 }
-/* line 136, sass/_partials/_header.scss */
+/* line 139, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
 }
-/* line 144, sass/_partials/_header.scss */
+/* line 147, sass/_partials/_header.scss */
 .newest-list a:hover .post-title {
   color: #ffeead !important;
 }
@@ -1085,13 +1089,176 @@ a.no-a-effect {
   display: none;
 }
 
-/* line 2, sass/_partials/_page.scss */
-#page-intro h4 {
-  color: #5eeda3;
+/* line 1, sass/_partials/_page.scss */
+.gioi-thieu {
+  padding: 3rem 0 7rem 0;
 }
-/* line 5, sass/_partials/_page.scss */
-#page-intro p {
+@media (max-width: 767px) {
+  /* line 1, sass/_partials/_page.scss */
+  .gioi-thieu {
+    padding: 0;
+  }
+}
+
+/* line 8, sass/_partials/_page.scss */
+.section {
+  padding: 3rem 1rem;
+}
+
+/* line 12, sass/_partials/_page.scss */
+.style-2-3 {
+  background-image: linear-gradient(to bottom, #313542, #424a65, #4b6189, #476c9f, #3d78b5);
+  border-top: 1px solid #5d5d5d;
+}
+/* line 15, sass/_partials/_page.scss */
+.style-2-3 .item {
+  background: #fff;
+  border: #ddd solid 1px;
+  border-radius: 7px;
+  transition: transform .2s;
+  padding: 2rem;
+  height: calc(100% - 2rem);
+  text-align: center;
+  margin: 1rem 0;
+}
+/* line 24, sass/_partials/_page.scss */
+.style-2-3 .item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 3px 2px #e3e3e3;
+}
+/* line 27, sass/_partials/_page.scss */
+.style-2-3 .item:hover .post-cat {
+  color: #366494;
+}
+/* line 32, sass/_partials/_page.scss */
+.style-2-3 .post-image {
+  font-size: 4rem;
+}
+/* line 35, sass/_partials/_page.scss */
+.style-2-3 .post-cat {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+/* line 40, sass/_partials/_page.scss */
+.style-2-3 .post-intro {
+  text-align: center;
+}
+/* line 44, sass/_partials/_page.scss */
+.style-2-3 .container {
+  padding: 3rem;
+}
+@media (min-width: 768px) {
+  /* line 44, sass/_partials/_page.scss */
+  .style-2-3 .container {
+    position: relative;
+    top: -5rem;
+    padding: 0;
+  }
+}
+
+/* line 54, sass/_partials/_page.scss */
+.community {
+  padding-top: 6rem;
+}
+@media (max-width: 575px) {
+  /* line 56, sass/_partials/_page.scss */
+  .community .des {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+/* line 62, sass/_partials/_page.scss */
+.community h2 {
+  font-size: 1.7rem;
+  color: #e4556e;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+/* line 68, sass/_partials/_page.scss */
+.community a {
+  font-weight: bold;
+  color: #2173cc;
+}
+/* line 71, sass/_partials/_page.scss */
+.community a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+/* line 77, sass/_partials/_page.scss */
+.community .photo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 85, sass/_partials/_page.scss */
+.newsletter {
+  border: 1px solid #ddd;
+  background: #eee;
+  padding: 1.5rem;
+  border-radius: 10px;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  /* line 85, sass/_partials/_page.scss */
+  .newsletter {
+    display: flex;
+    display: -ms-flexbox;
+  }
+}
+/* line 95, sass/_partials/_page.scss */
+.newsletter .photo {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 95, sass/_partials/_page.scss */
+  .newsletter .photo {
+    max-width: 300px;
+  }
+}
+/* line 102, sass/_partials/_page.scss */
+.newsletter .photo img {
+  width: 100%;
+  height: 100%;
+}
+/* line 107, sass/_partials/_page.scss */
+.newsletter .form {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+/* line 111, sass/_partials/_page.scss */
+.newsletter .form .newsletter-text {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+/* line 116, sass/_partials/_page.scss */
+.newsletter .form .newsletter-form .email {
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 1rem;
+  width: calc(100% - 70px);
+}
+/* line 125, sass/_partials/_page.scss */
+.newsletter .form .newsletter-form .submit {
+  padding: 1rem;
+  border-radius: 5px 50% 50% 5px;
+  border: 0;
+  font-size: 1.1rem;
+  background: #2bacaf;
   color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 139, sass/_partials/_page.scss */
+.contact {
+  padding-bottom: 6rem;
 }
 
 @media (max-width: 575px) {

@@ -31,6 +31,9 @@ function cyb_document_title_separator( $sep ) {
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
 
+// remove p tag from category description
+remove_filter('term_description','wpautop');
+
 
 // css admin page
 function admin_panel_css() {

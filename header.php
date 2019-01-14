@@ -14,9 +14,10 @@
 
     <!-- css with php -->
     <style id="math2it-inline-css" type="text/css">
-      /* nav element color depends on color defined in wp admin */
-      /* cf. http://bit.ly/2KAagM9 */
       <?php
+        // nav element color depends on color defined in wp admin
+        // cf. http://bit.ly/2KAagM9
+        
         // hover color nav item
         $menuLocations = get_nav_menu_locations();
         $menuID = $menuLocations['math2it-custom-menu'];
@@ -24,7 +25,7 @@
         foreach ( $primaryNav as $navItem ) {
           $nav_icon = get_field('nav-icon', $navItem);
           $nav_color = get_field('nav-color', $navItem);
-          echo 'a:hover .'.$nav_icon.'{color:'.$nav_color.';}';
+          echo '.navbar a:hover .'.$nav_icon.'{color:'.$nav_color.';}';
         }
 
         // hover color for cat
@@ -35,7 +36,7 @@
         foreach ($list_categories as $cat_item){
           $cat_icon = get_field('cat-icon', $cat_item);
           $cat_color = get_field('cat-color', $cat_item);
-          echo 'a:hover .'.$cat_icon.'{color:'.$cat_color.';}';
+          echo '.navbar a:hover .'.$cat_icon.'{color:'.$cat_color.';}';
         }
       ?>
     </style>
