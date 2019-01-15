@@ -24,7 +24,7 @@
                   echo $postThumbnail;
                 }else{
                   $first_cat = get_the_category($post->ID);
-                  $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
+                  $postThumbnail = get_field('default_posts_feature_image',$first_cat[0]);
                   echo wp_get_attachment_image( $postThumbnail['id'],'medium');
                 }
               ?>
