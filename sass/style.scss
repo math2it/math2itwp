@@ -51,3 +51,11 @@ $c-gioi-thieu: #ff8094;
 @import "_partials/other";
 
 @import "_partials/footer";
+
+.row-eq-height>[class*=col-] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}

@@ -52,6 +52,8 @@
   $list_posts1 = get_posts($list_post_args);
 
   // pagination
+  global $wp_query;
+  $big = 999999999; // need an unlikely integer
   $pag_arg = array(
     'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
     'format' => '?paged=%#%',
@@ -60,22 +62,23 @@
     'current' => max( 1, get_query_var('paged') ),
     'total' => $wp_query->max_num_pages-1
   );
-  global $wp_query;
-  $big = 999999999; // need an unlikely integer
 ?>
 
 <?php if ( $list_posts1 ) {?>
 <section class="layout-photo-intro sec-cat sec-cat-<?php echo $cat_id ?>">
   <div class="container">
-    <div class="row row-eq-height justify-content-center">
 
-    <div class="col-12">
-      <?php
-        echo '<div class="paginate-links mb-5">';
-          echo paginate_links( $pag_arg );
-        echo '</div>';
-      ?>
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <?php
+          echo '<div class="paginate-links mb-5">';
+            echo paginate_links( $pag_arg );
+          echo '</div>';
+        ?>
+      </div>
     </div>
+
+    <div class="row row-eq-height justify-content-center">
 
     <?php foreach($list_posts1 as $post) : ?>
       <div class="col-12 col-sm-6 col-lg-3">
@@ -125,6 +128,9 @@
       </div>
     <?php endforeach ?>
 
+    </div> <!-- /row -->
+    
+    <div class="row justify-content-center">
       <div class="col-12">
         <?php
           echo '<div class="paginate-links mt-5">';
@@ -132,8 +138,8 @@
           echo '</div>';
         ?>
       </div>
+    </div>
 
-    </div> <!-- /row -->
   </div> <!-- /container -->
 </section>
 <?php } // end if $list_posts ?> 

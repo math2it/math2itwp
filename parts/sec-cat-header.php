@@ -2,7 +2,7 @@
   $cat_id = get_query_var('cat_id'); // get category
 ?>
 
-<section id="header-cat-<?php echo $cat_id ?>" class="py-5 header-intro cat-intro">
+<section class="py-5 header-intro cat-intro bg-cat-<?php echo $cat_id ?>">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 offset-md-2 col-12 intro">

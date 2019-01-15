@@ -5,10 +5,13 @@
 <section class="layout-photo-intro <?php if($customSecClass){echo $customSecClass;} ?>">
 
   <div class="container">
-    <div class="row row-eq-height justify-content-center">
-      
+
+    <div class="row justify-content-center">
       <!-- title? -->
       <?php if ($typeTitle){get_template_part( 'parts/sec-title' );} ?>
+    </div>
+
+    <div class="row row-eq-height justify-content-center">
 
       <?php foreach($list_posts as $post) : ?>
       <div class="col-12 col-sm-6 col-lg-3">

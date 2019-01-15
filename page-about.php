@@ -8,7 +8,7 @@
 
 <!-- intro header -->
 <!-- ====================================== -->
-<section id="idx-header" class="header-intro gioi-thieu">
+<section class="bg-black header-intro gioi-thieu">
   <div class="container">
     <div class="row align-items-center">
       <div id="page-intro" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-12 intro">
