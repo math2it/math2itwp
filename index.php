@@ -13,6 +13,7 @@
   set_query_var('typeTitle', 'small'); 
   set_query_var('customTitle', 'Tuyển chọn');
   set_query_var('cat_id', 1);
+  set_query_var('customURL', get_site_url().'/tuyen-chon');
   set_query_var('customIcon', 'icon-star-circled');
   set_query_var('customSecClass', 'sec-choice');
   // list of posts
