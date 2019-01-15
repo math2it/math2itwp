@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<section class="section">
+<section class="header-page bg-black">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div>
-					Header.
-				</div>
+				<h2 class="page-title">
+					<?php echo get_the_title(); ?>
+				</h2>
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
@@ -16,9 +16,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div>
-					This is a default page template.
-				</div>
+				<?php
+				// TO SHOW THE PAGE CONTENTS
+				while ( have_posts() ) : the_post(); // Because the_content() works only inside a WP Loop
+				?>
+					<?php the_content(); ?>
+				<?php
+				endwhile; //resetting the page loop
+				wp_reset_query(); //resetting the page query
+				?>
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->

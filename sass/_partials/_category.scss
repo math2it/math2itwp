@@ -30,9 +30,14 @@
   .intro{
     h2{
       color: #fff;
-      font-family: 'Pacifico', cursive;
-      font-size: 4rem;
+      font-size: 3.5rem;
       text-shadow: 2px 2px 4px #000;
+      font-weight: bold;
+      text-transform: lowercase;
+      letter-spacing: 5px;
+      @media (max-width: 575px){
+        font-size: 2.5rem;
+      }
     }
     .img-avatar{
       font-size: 5rem;

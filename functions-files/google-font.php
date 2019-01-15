@@ -8,7 +8,7 @@ function math2itwp_google_fonts() {
   wp_enqueue_style( 'Comfortaa'); // default font
   wp_register_style('Righteous', 'http://fonts.googleapis.com/css?family=Righteous'); // math2it's index title
   wp_enqueue_style( 'Righteous');
-  wp_register_style('Pacifico', 'https://fonts.googleapis.com/css?family=Pacifico'); // category's title
-  wp_enqueue_style( 'Pacifico');
+  // wp_register_style('Pacifico', 'https://fonts.googleapis.com/css?family=Pacifico'); // category's title
+  // wp_enqueue_style( 'Pacifico');
 }
 add_action('wp_print_styles', 'math2itwp_google_fonts');

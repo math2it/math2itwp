@@ -142,3 +142,18 @@
 }
 
 // general page 
+.page-title{
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  @media (max-width: 575px){
+    font-size: 2.5rem;
+  }
+}
+
+.header-page{
+  padding: 5rem 1rem;
+}

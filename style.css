@@ -454,23 +454,31 @@ a.page-numbers:hover {
 /* line 31, sass/_partials/_category.scss */
 .cat-intro .intro h2 {
   color: #fff;
-  font-family: 'Pacifico', cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-shadow: 2px 2px 4px #000;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 5px;
 }
-/* line 37, sass/_partials/_category.scss */
+@media (max-width: 575px) {
+  /* line 31, sass/_partials/_category.scss */
+  .cat-intro .intro h2 {
+    font-size: 2.5rem;
+  }
+}
+/* line 42, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar {
   font-size: 5rem;
 }
-/* line 39, sass/_partials/_category.scss */
+/* line 44, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar i {
   padding: 5px 0;
 }
-/* line 43, sass/_partials/_category.scss */
+/* line 48, sass/_partials/_category.scss */
 .cat-intro .intro p {
   color: #fff;
 }
-/* line 48, sass/_partials/_category.scss */
+/* line 53, sass/_partials/_category.scss */
 .cat-intro .intro .idx-social span {
   text-shadow: 2px 2px 4px #000;
 }
@@ -1258,6 +1266,27 @@ a.no-a-effect {
 /* line 140, sass/_partials/_page.scss */
 .contact {
   padding-bottom: 6rem;
+}
+
+/* line 145, sass/_partials/_page.scss */
+.page-title {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+@media (max-width: 575px) {
+  /* line 145, sass/_partials/_page.scss */
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 157, sass/_partials/_page.scss */
+.header-page {
+  padding: 5rem 1rem;
 }
 
 @media (max-width: 575px) {
