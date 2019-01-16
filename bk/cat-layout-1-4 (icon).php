@@ -15,55 +15,54 @@ if ( $list_posts ) {?>
   <section class="layout-1-4 sec-cat <?php if($customSecClass){echo $customSecClass;} ?>">
     <div class="container">
       <div class="row">
+
         <!-- title? -->
         <?php if ($typeTitle){get_template_part( 'parts/sec-title' );} ?>
-      </div>
 
-      <div class="row row-eq-height">
         <!-- the 1st big post -->
         <?php 
         foreach($list_posts as $post) : 
         ?>
 
           <div class="col-md-6 order-md-<?php echo $leftOrRight ?>">
-            <div class="style-1-2">
             <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
-              <div class="featured-image">
-                <?php
-                if ( has_post_thumbnail($post->ID) ) {
-                  $postThumbnail = get_the_post_thumbnail($post->ID,'large' );
-                  echo $postThumbnail;
-                }else{
-                  $first_cat = get_the_category($post->ID);
-                  $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
-                  echo wp_get_attachment_image( $postThumbnail['id'],'large');
-                }
-                ?>
-              </div>
-              <div class="post-title">
-                <?php echo $post->post_title; ?>
-              </div>
-              <div class="post-meta">
-                <span class="date">
-                  <i class="icon-clock"></i>
-                  <?php echo date('d-m-y', strtotime($post->post_date)); ?>
-                </span>
-                <span class="author">
-                  <i class="icon-user-outline"></i>
-                  <?php echo get_the_author($post->ID); ?>
-                </span>
-              </div>
-              <div class="post-intro">
-                <?php
-                  if (get_field('abstract',$post->ID)):
-                    echo get_field('abstract',$post->ID);
-                  else:
-                    the_excerpt();
-                  endif;
-                ?>
-              </div>
-            </a>
+            <div class="style-1-2">
+                <div class="featured-image">
+                  <?php
+                  if ( has_post_thumbnail($post->ID) ) {
+                    $postThumbnail = get_the_post_thumbnail($post->ID,'large' );
+                    echo $postThumbnail;
+                  }else{
+                    $first_cat = get_the_category($post->ID);
+                    $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
+                    echo wp_get_attachment_image( $postThumbnail['id'],'large');
+                  }
+                  ?>
+                </div>
+                <div class="post-title">
+                  <?php echo $post->post_title; ?>
+                </div>
+                <div class="post-meta">
+                  <span class="date">
+                    <i class="icon-clock"></i>
+                    <?php echo date('d-m-y', strtotime($post->post_date)); ?>
+                  </span>
+                  <span class="author">
+                    <i class="icon-user-outline"></i>
+                    <?php echo get_the_author($post->ID); ?>
+                  </span>
+                </div>
+                <div class="post-intro">
+                  <?php
+                    if (get_field('abstract',$post->ID)):
+                      echo get_field('abstract',$post->ID);
+                    else:
+                      the_excerpt();
+                    endif;
+                  ?>
+                </div>
             </div> <!-- /style-1-2 -->
+            </a>
           </div> 
 
         <?php 
@@ -74,7 +73,7 @@ if ( $list_posts ) {?>
         <!-- ========================================== -->
         <!-- 4 small posts -->
         <div class="col-md-6 order-md-<?php echo $leftOrRightOther ?>">
-          <div class="row row-eq-height">
+          <div class="row style-1-4">
             <?php 
             $post_count = 0; // for 4 small posts
             $not_first_post = false;
@@ -86,19 +85,16 @@ if ( $list_posts ) {?>
             ?>
 
             <div class="col-12 col-sm-6">
-              <div class="style-1-4">
               <a class="no-a-effect" href="<?php echo get_permalink($postID) ?>">
-                <div class="featured-image">
+              <div class="item">
+                <div class="post-icon">
                   <?php
-                  if ( has_post_thumbnail($post->ID) ) {
-                    $postThumbnail = get_the_post_thumbnail($post->ID,'large' );
-                    echo $postThumbnail;
-                  }else{
-                    $first_cat = get_the_category($post->ID);
-                    $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
-                    echo wp_get_attachment_image( $postThumbnail['id'],'thumbnail');
-                  }
+                    $featureIcon = get_field('feature_icon',$postID);
+                    if ( empty($featureIcon) ):
+                      $featureIcon = get_field('default_posts_icon','category_'.$cat_id);
+                    endif
                   ?>
+                  <img src="<?php echo $featureIcon['url'] ?>" />
                 </div>
                 <div class="post-title">
                   <?php echo $post->post_title; ?>
@@ -107,9 +103,10 @@ if ( $list_posts ) {?>
                   <span class="date">
                     <?php echo date('d-m-y', strtotime($post->post_date)); ?>
                   </span>
+                  <!-- <span class="author">Nguyen Van A</span> -->
                 </div>
+              </div>
               </a>
-              </div> <!-- /style-1-4 -->
             </div>
 
             <?php 

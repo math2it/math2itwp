@@ -487,41 +487,38 @@ a.page-numbers:hover {
 .style-1-2 {
   border-radius: 8px;
   background: #fff;
-  padding-bottom: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
   transition: box-shadow 150ms ease;
   -webkit-transition: box-shadow 150ms ease;
 }
-@media (min-width: 768px) {
-  /* line 1, sass/_partials/_layout_1_4.scss */
-  .style-1-2 {
-    height: 100%;
-  }
-}
-/* line 16, sass/_partials/_layout_1_4.scss */
+/* line 10, sass/_partials/_layout_1_4.scss */
 .style-1-2:hover {
   box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
 }
-/* line 18, sass/_partials/_layout_1_4.scss */
+/* line 12, sass/_partials/_layout_1_4.scss */
+.style-1-2:hover .featured-image {
+  border-radius: 8px 8px 0 0;
+}
+/* line 14, sass/_partials/_layout_1_4.scss */
 .style-1-2:hover .featured-image img {
   transform: scale(1.1);
+  border-radius: 8px 8px 0 0;
 }
-/* line 21, sass/_partials/_layout_1_4.scss */
+/* line 19, sass/_partials/_layout_1_4.scss */
 .style-1-2:hover .post-title {
   color: #1e558e;
 }
-/* line 24, sass/_partials/_layout_1_4.scss */
+/* line 22, sass/_partials/_layout_1_4.scss */
 .style-1-2:hover .post-intro {
   color: #111;
 }
-/* line 29, sass/_partials/_layout_1_4.scss */
+/* line 27, sass/_partials/_layout_1_4.scss */
 .style-1-2 .featured-image {
   height: 220px;
   overflow: hidden;
 }
-/* line 32, sass/_partials/_layout_1_4.scss */
+/* line 30, sass/_partials/_layout_1_4.scss */
 .style-1-2 .featured-image img {
   border-radius: 8px 8px 0 0;
   width: 100%;
@@ -529,30 +526,29 @@ a.page-numbers:hover {
   object-fit: cover;
   transition: transform .2s;
 }
-/* line 41, sass/_partials/_layout_1_4.scss */
+/* line 39, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-title {
   text-align: center;
   font-size: 1.6rem;
-  margin-top: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 0.5rem;
   color: #444;
+  padding: 1.5rem 1rem 0.5rem 1rem;
 }
-/* line 51, sass/_partials/_layout_1_4.scss */
+/* line 48, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta {
   text-align: center;
   font-size: 0.9rem;
 }
-/* line 54, sass/_partials/_layout_1_4.scss */
+/* line 51, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta .date {
   margin-right: 10px;
 }
-/* line 57, sass/_partials/_layout_1_4.scss */
+/* line 54, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-meta i {
   margin-right: -5px;
 }
-/* line 62, sass/_partials/_layout_1_4.scss */
+/* line 59, sass/_partials/_layout_1_4.scss */
 .style-1-2 .post-intro {
   font-size: 1rem;
   color: #444;
@@ -560,62 +556,66 @@ a.page-numbers:hover {
   padding: 1rem;
 }
 
-/* line 70, sass/_partials/_layout_1_4.scss */
+/* line 67, sass/_partials/_layout_1_4.scss */
 .style-1-4 {
-  height: 104%;
-}
-/* line 73, sass/_partials/_layout_1_4.scss */
-.style-1-4 .col-12, .style-1-4 .col-md-6 {
-  padding: 10px;
-}
-/* line 77, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item {
-  padding: 1rem;
-  height: 100%;
   border-radius: 8px;
   color: #333;
   display: grid;
   align-items: center;
   background: #fff;
+  margin-bottom: 1rem;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-  transition: transform .2s;
-  -webkit-transition: transform .2s;
 }
-/* line 89, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item:hover {
-  transform: scale(1.03);
+/* line 76, sass/_partials/_layout_1_4.scss */
+.style-1-4:hover {
   box-shadow: 0 0 6px 4px #e3e3e3;
 }
-/* line 93, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item:hover .post-title {
+/* line 78, sass/_partials/_layout_1_4.scss */
+.style-1-4:hover .featured-image {
+  border-radius: 8px 8px 0 0;
+}
+/* line 80, sass/_partials/_layout_1_4.scss */
+.style-1-4:hover .featured-image img {
+  transform: scale(1.1);
+  border-radius: 8px 8px 0 0;
+}
+/* line 85, sass/_partials/_layout_1_4.scss */
+.style-1-4:hover .post-title {
   color: #366494;
 }
-/* line 98, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item .post-icon {
-  width: 80px;
-  margin: 0 auto 0.5rem auto;
+/* line 90, sass/_partials/_layout_1_4.scss */
+.style-1-4 .featured-image {
+  height: 150px;
+  overflow: hidden;
 }
-/* line 101, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item .post-icon img {
+/* line 93, sass/_partials/_layout_1_4.scss */
+.style-1-4 .featured-image img {
+  border-radius: 8px 8px 0 0;
   width: 100%;
-  filter: invert(70%);
+  height: 100%;
+  object-fit: cover;
+  transition: transform .2s;
 }
-/* line 107, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item .post-title {
+/* line 102, sass/_partials/_layout_1_4.scss */
+.style-1-4 .post-title {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: #666;
+  line-height: 1.1;
 }
-/* line 113, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item .post-meta {
+/* line 111, sass/_partials/_layout_1_4.scss */
+.style-1-4 .post-meta {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9rem;
   text-align: center;
   color: #555;
+  padding: 0 1rem 1rem 1rem;
 }
-/* line 119, sass/_partials/_layout_1_4.scss */
-.style-1-4 .item .post-meta span {
+/* line 118, sass/_partials/_layout_1_4.scss */
+.style-1-4 .post-meta span {
   display: block;
 }
 
