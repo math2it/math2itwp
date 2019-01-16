@@ -1303,19 +1303,62 @@ a.no-a-effect {
   color: #ddd;
   text-align: center;
   border-top: 1px solid #e5e5e5;
+  position: relative;
 }
-/* line 7, sass/_partials/_footer.scss */
+/* line 8, sass/_partials/_footer.scss */
 .footer a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 10, sass/_partials/_footer.scss */
+/* line 11, sass/_partials/_footer.scss */
 .footer a:hover {
   color: #fff;
 }
-/* line 14, sass/_partials/_footer.scss */
+/* line 15, sass/_partials/_footer.scss */
 .footer p:last-child {
   margin-bottom: 0;
+}
+
+/* line 22, sass/_partials/_footer.scss */
+#up-arrow {
+  display: block;
+  z-index: 8;
+  cursor: pointer;
+  width: 53px;
+  height: 52px;
+  border-radius: 30px;
+  position: absolute;
+  right: 80px;
+  top: -25px;
+  margin-left: -26px;
+  overflow: hidden;
+  background: #272a34;
+  padding-top: 5px;
+  transition: all 200ms ease-out;
+}
+@media (max-width: 767px) {
+  /* line 22, sass/_partials/_footer.scss */
+  #up-arrow {
+    right: 50%;
+    margin-right: -26px;
+  }
+  /* line 40, sass/_partials/_footer.scss */
+  #up-arrow i {
+    color: #eee;
+  }
+}
+/* line 44, sass/_partials/_footer.scss */
+#up-arrow i {
+  color: #ddd;
+  font-size: 2.5rem;
+}
+/* line 48, sass/_partials/_footer.scss */
+#up-arrow:hover {
+  padding-top: 10px;
+}
+/* line 50, sass/_partials/_footer.scss */
+#up-arrow:hover i {
+  color: #fff;
 }
 
 /* line 55, sass/style.scss */

@@ -5,9 +5,11 @@
         <a href="<?php echo get_site_url() ?>/thanks">Cảm ơn</a> |
         <a href="<?php echo get_site_url() ?>/privacy">Quyền riêng tư</a>
       </p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+      <div id="up-arrow">
+        <a id="a-backtotop" href="#" title="Lên đầu trang">
+          <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+        </a>
+      </div>
     </footer>
 
     <?php wp_footer(); ?>

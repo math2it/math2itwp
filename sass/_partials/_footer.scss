@@ -4,6 +4,7 @@
   color: #ddd;
   text-align: center;
   border-top: 1px solid #e5e5e5;
+  position: relative;
   a{
     color: #ddd;
     text-decoration: none;
@@ -13,5 +14,41 @@
   }
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+
+// back to top
+#up-arrow{
+  display: block;
+  z-index: 8;
+  cursor: pointer;
+  width: 53px;
+  height: 52px;
+  border-radius: 30px;
+  position: absolute;
+  right: 80px;
+  top: -25px;
+  margin-left: -26px;
+  overflow: hidden;
+  background: #272a34;
+  padding-top: 5px;
+  transition: all 200ms ease-out;
+  @media (max-width: 767px){
+    right: 50%;
+    margin-right: -26px;
+    i{
+      color: #eee;
+    }
+  }
+  i{
+    color: #ddd;
+    font-size: 2.5rem;
+  }
+  &:hover{
+    padding-top: 10px;
+    i{
+      color: #fff;
+    }
   }
 }
