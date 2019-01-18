@@ -124,6 +124,11 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 1.5rem;
+
+      @media (max-width: 767px){
+        padding: 0 1rem;
+      }
+
       .cat-icon{
         width: 3.5rem;
         color: #ddd;

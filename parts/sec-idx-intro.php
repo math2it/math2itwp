@@ -1,4 +1,4 @@
-<section class="bg-black py-md-5 pb-5 header-intro">
+<header class="bg-black py-md-5 pb-5 header-intro">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7 intro">
@@ -45,4 +45,4 @@
       </div>
     </div>
   </div>
-</section>
+</header>

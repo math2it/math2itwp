@@ -1,0 +1,15 @@
+h4.page-subtitle{
+  span{
+    margin-right: 0.5rem;
+    i{
+      margin-right: -0.25rem;
+    }
+  }
+  a{
+    color: inherit;
+    &:hover{
+      text-decoration: none;
+      border-bottom: 4px solid;
+    }
+  }
+}

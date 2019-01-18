@@ -33,12 +33,18 @@ $c-latex: #92f1bf;
 $c-bai-dich: #d2b4ff;
 $c-gioi-thieu: #ff8094;
 
+@import "_partials/header";
+@import "_partials/footer";
+
 @import "_partials/font";
 @import "_partials/nav";
 @import "_partials/pagination";
-@import "_partials/header";
+
 
 @import "_partials/category";
+@import "_partials/post";
+@import "_partials/page";
+@import "_partials/author";
 
 @import "_partials/layout_1_4";
 @import "_partials/layout_book";
@@ -46,11 +52,8 @@ $c-gioi-thieu: #ff8094;
 @import "_partials/layout_photo_behind";
 @import "_partials/layout_photo_intro";
 
-@import "_partials/page";
-
+@import "_partials/contact"; // contact form
 @import "_partials/other";
-
-@import "_partials/footer";
 
 .row-eq-height>[class*=col-] {
   display: -webkit-box;

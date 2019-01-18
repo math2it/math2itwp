@@ -34,12 +34,12 @@
               <div class="post-image">
                 <?php
                   if ( has_post_thumbnail($post->ID) ) {
-                    $postThumbnail = get_the_post_thumbnail($post->ID,'medium' );
+                    $postThumbnail = get_the_post_thumbnail($post->ID,'thumbnail' );
                     echo $postThumbnail;
                   }else{
                     $first_cat = get_the_category($post->ID);
                     $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
-                    echo wp_get_attachment_image( $postThumbnail['id'],'medium');
+                    echo wp_get_attachment_image( $postThumbnail['id'],'thumbnail');
                   }
                 ?>
               </div>

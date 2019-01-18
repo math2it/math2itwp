@@ -137,23 +137,36 @@
   }
 }
 
-.contact{
-  padding-bottom: 6rem;
+
+// contact
+#contact{
+  padding-top: 0;
+  .title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4a7edc;
+  }
 }
 
 // general page 
+.header-page{
+  padding: 5rem 1rem;
+}
+
 .page-title{
   text-align: center;
   color: #fff;
   font-size: 3rem;
   text-shadow: 2px 2px 4px #000;
   font-weight: bold;
-  letter-spacing: 2px;
   @media (max-width: 575px){
     font-size: 2.5rem;
   }
 }
 
-.header-page{
-  padding: 5rem 1rem;
+.page-subtitle{
+  color: #c6efde;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
 }

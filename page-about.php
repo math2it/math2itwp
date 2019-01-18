@@ -5,10 +5,11 @@
 <!-- ====================================== -->
 <?php get_header(); ?>
 
+<main role="main">
 
 <!-- intro header -->
 <!-- ====================================== -->
-<section class="bg-black header-intro gioi-thieu">
+<header class="bg-black header-intro gioi-thieu">
   <div class="container">
     <div class="row align-items-center">
       <div id="page-intro" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-12 intro">
@@ -27,7 +28,7 @@
       </div>
     </div>
   </div>
-</section>
+</header>
 
 
 <!-- main topics -->
@@ -99,7 +100,7 @@ $cat_ids_lenght = count($cat_ids);
 <section class="section" style="padding-bottom: 6rem;">
 	<div class="container">
 		<div class="row align-items-center justify-content-md-center">
-			<div class="col-12 col-lg-10">
+			<div class="col-12">
 				<div class="newsletter">
 					<div class="photo">
 						<img src="<?php echo  get_template_directory_uri() ?>/img/send.png">
@@ -119,14 +120,31 @@ $cat_ids_lenght = count($cat_ids);
 	</div>
 </section>
 
-<!-- <section class="section contact">
+
+<section id="contact" class="section">
 	<div class="container">
 		<div class="row align-items-center justify-content-md-center">
-		<a href="mailto:math2it.blog@gmail.com">math2it.blog@gmail.com</a>.
+			<div class="col-sm-8 col-12">
+				<h3 class="title">Liên hệ với chúng tôi?</h3>
+				<form name="name-contact-form" method="POST" action="https://formspree.io/math2itblog@gmail.com">
+					<div class="form-group row contact-form">
+						<div class="col-sm-6 col-12 mb-3"><input onkeyup="enableButton()" type="text" name="name" placeholder="Tên của bạn"></div>
+						<div class="col-sm-6 col-12 mb-3"><input onkeyup="enableButton()" type="email" name="email" placeholder="Email của bạn"></div>
+						<div class="col-12 textarea-container mb-3">
+							<textarea onkeyup="enableButton()" id="abc" name="message" placeholder="Nội dung thư"></textarea>
+							<div class="textarea-size"></div>
+						</div>
+						<div id="contact-submit" class="col-12 text-center">
+							<button type="submit">Gởi thư</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
-</section> -->
+</section>
 
+</main>
 
 <!-- footer -->
 <!-- ====================================== -->

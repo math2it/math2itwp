@@ -6,13 +6,14 @@
 <!-- ====================================== -->
 <?php get_template_part( 'parts/sec-idx-intro' ); ?>
 
+<main role="main">
 
 <!-- editor's choice -->
 <!-- ====================================== -->
 <?php 
   set_query_var('typeTitle', 'small'); 
   set_query_var('customTitle', 'Tuyển chọn');
-  set_query_var('customURL', get_site_url().'/tuyen-chon');
+  set_query_var('customURL', get_site_url().'/choice');
   set_query_var('customIcon', 'icon-star-circled');
   set_query_var('customSecClass', 'sec-choice');
   // list of posts
@@ -145,6 +146,7 @@
 <?php get_template_part( 'parts/cat-layout-1-4' ); ?>
 <?php wp_reset_query(); // reset ?>
 
+</main>
 
 <!-- footer -->
 <?php get_footer(); ?>
