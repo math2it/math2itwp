@@ -229,10 +229,8 @@ Tags: bootstrap 4.1
   position: absolute;
   right: 80px;
   top: -25px;
-  margin-left: -26px;
   overflow: hidden;
   background: #272a34;
-  padding-top: 5px;
   transition: all 200ms ease-out;
 }
 @media (max-width: 767px) {
@@ -241,21 +239,21 @@ Tags: bootstrap 4.1
     right: 50%;
     margin-right: -26px;
   }
-  /* line 41, sass/_partials/_footer.scss */
+  /* line 39, sass/_partials/_footer.scss */
   #up-arrow i {
     color: #eee;
   }
 }
-/* line 45, sass/_partials/_footer.scss */
+/* line 43, sass/_partials/_footer.scss */
 #up-arrow i {
   color: #ddd;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+}
+/* line 47, sass/_partials/_footer.scss */
+#up-arrow:hover {
+  padding-top: 5px;
 }
 /* line 49, sass/_partials/_footer.scss */
-#up-arrow:hover {
-  padding-top: 10px;
-}
-/* line 51, sass/_partials/_footer.scss */
 #up-arrow:hover i {
   color: #fff;
 }
@@ -514,16 +512,21 @@ a.page-numbers:hover {
 }
 
 /* line 21, sass/_partials/_category.scss */
+.bg-cat-8 {
+  background: -webkit-linear-gradient(360deg, #d64759 10%, #da7352 360%);
+}
+
+/* line 25, sass/_partials/_category.scss */
 .sec-choice-cat {
   background: #fffef1;
   padding: 4rem 0;
 }
-/* line 24, sass/_partials/_category.scss */
+/* line 28, sass/_partials/_category.scss */
 .sec-choice-cat .new-title {
   color: #e4a200;
 }
 
-/* line 31, sass/_partials/_category.scss */
+/* line 35, sass/_partials/_category.scss */
 .cat-intro .intro h2 {
   color: #fff;
   font-size: 3.5rem;
@@ -533,24 +536,24 @@ a.page-numbers:hover {
   letter-spacing: 5px;
 }
 @media (max-width: 575px) {
-  /* line 31, sass/_partials/_category.scss */
+  /* line 35, sass/_partials/_category.scss */
   .cat-intro .intro h2 {
     font-size: 2.5rem;
   }
 }
-/* line 42, sass/_partials/_category.scss */
+/* line 46, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar {
   font-size: 5rem;
 }
-/* line 44, sass/_partials/_category.scss */
+/* line 48, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar i {
   padding: 5px 0;
 }
-/* line 48, sass/_partials/_category.scss */
+/* line 52, sass/_partials/_category.scss */
 .cat-intro .intro p {
   color: #fff;
 }
-/* line 53, sass/_partials/_category.scss */
+/* line 57, sass/_partials/_category.scss */
 .cat-intro .intro .idx-social span {
   text-shadow: 2px 2px 4px #000;
 }
@@ -726,8 +729,9 @@ h4.page-subtitle a:hover {
   font-size: 1.1rem;
   padding: 1rem;
   width: calc(100% - 70px);
+  outline: none;
 }
-/* line 126, sass/_partials/_page.scss */
+/* line 127, sass/_partials/_page.scss */
 .newsletter .form .newsletter-form .submit {
   padding: 1rem;
   border-radius: 5px 50% 50% 5px;
@@ -739,43 +743,49 @@ h4.page-subtitle a:hover {
   text-align: center;
 }
 
-/* line 142, sass/_partials/_page.scss */
+/* line 143, sass/_partials/_page.scss */
 #contact {
   padding-top: 0;
 }
-/* line 144, sass/_partials/_page.scss */
+/* line 145, sass/_partials/_page.scss */
 #contact .title {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #4a7edc;
 }
 
-/* line 152, sass/_partials/_page.scss */
+/* line 153, sass/_partials/_page.scss */
 .header-page {
   padding: 5rem 1rem;
 }
 
-/* line 156, sass/_partials/_page.scss */
+/* line 157, sass/_partials/_page.scss */
 .page-title {
   text-align: center;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 4px #000;
   font-weight: bold;
 }
 @media (max-width: 575px) {
-  /* line 156, sass/_partials/_page.scss */
+  /* line 157, sass/_partials/_page.scss */
   .page-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
-/* line 167, sass/_partials/_page.scss */
+/* line 168, sass/_partials/_page.scss */
 .page-subtitle {
   color: #c6efde;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 0.5rem;
+}
+@media (max-width: 575px) {
+  /* line 168, sass/_partials/_page.scss */
+  .page-subtitle {
+    font-size: 1rem;
+  }
 }
 
 /* line 1, sass/_partials/_author.scss */
@@ -1410,7 +1420,7 @@ a.no-a-effect {
   background: #2bacaf;
   font-weight: bold;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 /* line 10, sass/_partials/_contact.scss */

@@ -7,7 +7,7 @@
       </div>
       <div id="up-arrow">
         <a id="a-backtotop" href="#" title="Lên đầu trang">
-          <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+          <i class="icon-up-circled"></i>
         </a>
       </div>
     </footer>

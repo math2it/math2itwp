@@ -46,7 +46,20 @@
           </div>
           <div class="post-date">
             <i class="icon-clock"></i>
-            <?php echo date('d-m-y', strtotime($post->post_date)); ?>
+            <?php 
+							date_default_timezone_set('Asia/Ho_Chi_Minh
+							');
+							$from = strtotime($post->post_date);
+							$today = time();
+							$difference = floor(($today - $from)/86400); // day
+							if ($difference == 0):
+								echo 'Vừa mới đăng';
+							elseif ($difference < 7):
+								echo $difference.' ngày trước';
+							else:
+								echo date('d-m-y', strtotime($post->post_date));
+							endif;
+						?>
           </div>
           <div class="post-excerpt">
             <?php

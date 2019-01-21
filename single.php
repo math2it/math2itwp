@@ -13,7 +13,7 @@
 <header class="header-page bg-cat-<?php echo $first_cat[0]->term_id; ?>">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-md-10 col-lg-8">
+			<div class="col-12 col-md-10">
 				<h2 class="page-title">
 					<?php the_title(); ?>
 				</h2>
@@ -24,11 +24,24 @@
 					</span>
 					<span>
 						<i class="icon-clock"></i>
-						<?php the_date('d-m-Y'); ?> 
+						<?php 
+							date_default_timezone_set('Asia/Ho_Chi_Minh
+							');
+							$from = strtotime(get_the_date());
+							$today = time();
+							$difference = floor(($today - $from)/86400); // day
+							if ($difference == 0):
+								echo 'Vừa mới đăng';
+							elseif ($difference < 7):
+								echo $difference.' ngày trước';
+							else:
+								echo the_date('d-m-Y');
+							endif;
+						?> 
 					</span>
 					<span>
 						<i class="icon-user-outline"></i>
-						<?php the_author_posts_link(); ?>
+						<?php the_author_posts_link('first_name'); ?>
 					</span>
 				</h4>
 			</div> <!-- /.col -->
