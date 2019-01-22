@@ -581,6 +581,18 @@ h4.page-subtitle a:hover {
   width: 220px;
   margin-right: -220px;
 }
+/* line 20, sass/_partials/_post.scss */
+.toc-sidebar .sticky-top {
+  top: 1rem;
+  border-left: 1px solid #ddd;
+  padding: 10px 0;
+}
+/* line 24, sass/_partials/_post.scss */
+.toc-sidebar .sticky-top div {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0 10px;
+}
 @media (min-width: 1250px) {
   /* line 17, sass/_partials/_post.scss */
   .toc-sidebar {

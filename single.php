@@ -56,7 +56,9 @@
 				<?php the_content(); ?>
 			</div>
 			<div class="toc-sidebar">
-				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+				<nav id="toc" data-toggle="toc" class="sticky-top">
+					<div>Trong bài này</div>
+				</nav>
 			</div>
 		</div>
 	</div>
