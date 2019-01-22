@@ -1467,7 +1467,6 @@ textarea, .textarea-size {
   border-color: #999;
   overflow: hidden;
   width: 100%;
-  text-align: center;
   padding: 10px;
   min-height: 50px;
   background: transparent;
@@ -1485,9 +1484,10 @@ textarea {
 /* line 54, sass/_partials/_contact.scss */
 textarea::placeholder {
   color: #888;
+  text-align: center;
 }
 
-/* line 58, sass/_partials/_contact.scss */
+/* line 59, sass/_partials/_contact.scss */
 .textarea-size {
   visibility: hidden;
   white-space: pre-wrap;
@@ -1496,7 +1496,7 @@ textarea::placeholder {
 }
 
 /* submit button */
-/* line 66, sass/_partials/_contact.scss */
+/* line 67, sass/_partials/_contact.scss */
 #contact-submit {
   display: none;
 }

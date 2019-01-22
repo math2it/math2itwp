@@ -39,7 +39,7 @@ textarea, .textarea-size {
   border-color: #999;
   overflow: hidden;
   width: 100%;
-  text-align: center;
+  // text-align: center;
   padding: 10px;
   min-height: 50px;
   background: transparent;
@@ -53,6 +53,7 @@ textarea {
   margin-left: -15px!important;
   &::placeholder{
     color: #888;
+    text-align: center;
   }
 }
 .textarea-size {
