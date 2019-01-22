@@ -591,10 +591,11 @@ a.page-numbers:hover {
   padding: 3px 12px;
   font-size: 14px;
   font-weight: bold;
-  color: #666;
+  color: #ad6834;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
-/* line 29, sass/_partials/_post.scss */
+/* line 30, sass/_partials/_post.scss */
 .toc-sidebar .sticky-top div::after {
   content: '';
   display: block;
@@ -617,15 +618,15 @@ a.page-numbers:hover {
   }
 }
 
-/* line 49, sass/_partials/_post.scss */
+/* line 50, sass/_partials/_post.scss */
 nav[data-toggle="toc"] li {
   position: relative;
 }
-/* line 52, sass/_partials/_post.scss */
+/* line 53, sass/_partials/_post.scss */
 nav[data-toggle="toc"] li:hover > a {
   color: #1e88e5 !important;
 }
-/* line 55, sass/_partials/_post.scss */
+/* line 56, sass/_partials/_post.scss */
 nav[data-toggle="toc"] li:hover > a:before {
   content: '';
   border-radius: 50%;
@@ -636,12 +637,12 @@ nav[data-toggle="toc"] li:hover > a:before {
   width: 6px;
   height: 6px;
 }
-/* line 67, sass/_partials/_post.scss */
+/* line 68, sass/_partials/_post.scss */
 nav[data-toggle="toc"] .nav-link.active {
   color: #1976d2;
   font-weight: bold;
 }
-/* line 70, sass/_partials/_post.scss */
+/* line 71, sass/_partials/_post.scss */
 nav[data-toggle="toc"] .nav-link.active:before {
   content: '';
   border-radius: 50%;
