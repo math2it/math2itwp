@@ -51,12 +51,12 @@
 
 <article class="section">
 	<div class="container">
-		<div class="row">
-			<div class="col-3">
-				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-			</div>
-			<div class="col-9">
+		<div class="row justify-content-center">
+			<div class="col-xl-8">
 				<?php the_content(); ?>
+			</div>
+			<div class="toc-sidebar">
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
 			</div>
 		</div>
 	</div>

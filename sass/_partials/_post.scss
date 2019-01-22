@@ -13,3 +13,14 @@ h4.page-subtitle{
     }
   }
 }
+
+.toc-sidebar{
+  width: 220px;
+  margin-right: -220px;
+  @media (min-width: 1250px){
+    width: 250px;
+  }
+  @media (max-width: 1199px){
+    display: none;
+  }
+}

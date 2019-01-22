@@ -576,6 +576,24 @@ h4.page-subtitle a:hover {
   border-bottom: 4px solid;
 }
 
+/* line 17, sass/_partials/_post.scss */
+.toc-sidebar {
+  width: 220px;
+  margin-right: -220px;
+}
+@media (min-width: 1250px) {
+  /* line 17, sass/_partials/_post.scss */
+  .toc-sidebar {
+    width: 250px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 17, sass/_partials/_post.scss */
+  .toc-sidebar {
+    display: none;
+  }
+}
+
 /* line 3, sass/_partials/_page.scss */
 .gioi-thieu {
   padding: 3rem 0 7rem 0;
