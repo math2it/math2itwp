@@ -44,7 +44,7 @@
     <?php wp_head();?>
   </head>
 
-<body>
+<body data-spy="scroll" data-target="#toc">
 
   <header>
 

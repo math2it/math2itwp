@@ -1,4 +1,4 @@
-h4.page-subtitle{
+.page-subtitle{
   span{
     margin-right: 0.5rem;
     i{
@@ -20,11 +20,21 @@ h4.page-subtitle{
   .sticky-top{
     top: 1rem;
     border-left: 1px solid #ddd;
-    padding: 10px 0;
     div{
-      font-size: 0.95rem;
-      font-weight: 600;
-      padding: 0 10px;
+      padding: 3px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 5px;
+      &::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 40%;
+        margin: 7px 0 4px;
+        background: #dbdbdb;
+        clear: both;
+      }
     }
   }
   @media (min-width: 1250px){
@@ -32,5 +42,40 @@ h4.page-subtitle{
   }
   @media (max-width: 1199px){
     display: none;
+  }
+}
+
+nav[data-toggle="toc"]{
+  li{
+    position: relative;
+    &:hover{
+      &> a{
+        color: #1e88e5!important;
+      }
+      &> a:before{
+        content: '';
+        border-radius: 50%;
+        left: -3px;
+        top: 10px;
+        background: #dbdbdb;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+      }
+    } 
+  }
+  .nav-link.active{
+    color: #1976d2;
+    font-weight: bold;
+    &:before{
+      content: '';
+      border-radius: 50%;
+      left: -3px;
+      top: 10px;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #1976d2;
+    }
   }
 }

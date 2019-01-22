@@ -559,19 +559,19 @@ a.page-numbers:hover {
 }
 
 /* line 2, sass/_partials/_post.scss */
-h4.page-subtitle span {
+.page-subtitle span {
   margin-right: 0.5rem;
 }
 /* line 4, sass/_partials/_post.scss */
-h4.page-subtitle span i {
+.page-subtitle span i {
   margin-right: -0.25rem;
 }
 /* line 8, sass/_partials/_post.scss */
-h4.page-subtitle a {
+.page-subtitle a {
   color: inherit;
 }
 /* line 10, sass/_partials/_post.scss */
-h4.page-subtitle a:hover {
+.page-subtitle a:hover {
   text-decoration: none;
   border-bottom: 4px solid;
 }
@@ -585,13 +585,24 @@ h4.page-subtitle a:hover {
 .toc-sidebar .sticky-top {
   top: 1rem;
   border-left: 1px solid #ddd;
-  padding: 10px 0;
 }
-/* line 24, sass/_partials/_post.scss */
+/* line 23, sass/_partials/_post.scss */
 .toc-sidebar .sticky-top div {
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0 10px;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 5px;
+}
+/* line 29, sass/_partials/_post.scss */
+.toc-sidebar .sticky-top div::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: 7px 0 4px;
+  background: #dbdbdb;
+  clear: both;
 }
 @media (min-width: 1250px) {
   /* line 17, sass/_partials/_post.scss */
@@ -604,6 +615,42 @@ h4.page-subtitle a:hover {
   .toc-sidebar {
     display: none;
   }
+}
+
+/* line 49, sass/_partials/_post.scss */
+nav[data-toggle="toc"] li {
+  position: relative;
+}
+/* line 52, sass/_partials/_post.scss */
+nav[data-toggle="toc"] li:hover > a {
+  color: #1e88e5 !important;
+}
+/* line 55, sass/_partials/_post.scss */
+nav[data-toggle="toc"] li:hover > a:before {
+  content: '';
+  border-radius: 50%;
+  left: -3px;
+  top: 10px;
+  background: #dbdbdb;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
+/* line 67, sass/_partials/_post.scss */
+nav[data-toggle="toc"] .nav-link.active {
+  color: #1976d2;
+  font-weight: bold;
+}
+/* line 70, sass/_partials/_post.scss */
+nav[data-toggle="toc"] .nav-link.active:before {
+  content: '';
+  border-radius: 50%;
+  left: -3px;
+  top: 10px;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #1976d2;
 }
 
 /* line 3, sass/_partials/_page.scss */

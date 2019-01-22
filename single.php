@@ -14,10 +14,10 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10">
-				<h2 class="page-title">
+				<h1 class="page-title">
 					<?php the_title(); ?>
-				</h2>
-				<h4 class="page-subtitle">
+				</h1>
+				<div class="page-subtitle">
 					<span>
 						<i class="icon-folder-open-empty"></i>
 						<a href="<?php echo esc_url( get_category_link( $first_cat[0]->term_id ) ) ?>"><?php echo $first_cat[0]->name; ?></a>
@@ -43,7 +43,7 @@
 						<i class="icon-user-outline"></i>
 						<?php the_author_posts_link('first_name'); ?>
 					</span>
-				</h4>
+				</div>
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
@@ -55,11 +55,17 @@
 			<div class="col-xl-8">
 				<?php the_content(); ?>
 			</div>
-			<div class="toc-sidebar">
-				<nav id="toc" data-toggle="toc" class="sticky-top">
-					<div>Trong bài này</div>
-				</nav>
-			</div>
+			<?php
+				if (get_field('toc_on_sidebar',$post_id)==true):
+			?>
+					<div class="toc-sidebar">
+						<nav id="toc" data-toggle="toc" class="sticky-top">
+							<div>Trong bài này</div>
+						</nav>
+					</div>
+			<?php
+				endif;
+			?>
 		</div>
 	</div>
 </article>
