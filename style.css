@@ -576,84 +576,6 @@ a.page-numbers:hover {
   border-bottom: 4px solid;
 }
 
-/* line 17, sass/_partials/_post.scss */
-.toc-sidebar {
-  width: 220px;
-  margin-right: -220px;
-}
-/* line 20, sass/_partials/_post.scss */
-.toc-sidebar .sticky-top {
-  top: 1rem;
-  border-left: 1px solid #ddd;
-}
-/* line 23, sass/_partials/_post.scss */
-.toc-sidebar .sticky-top div {
-  padding: 3px 12px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #ad6834;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-/* line 30, sass/_partials/_post.scss */
-.toc-sidebar .sticky-top div::after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: 40%;
-  margin: 7px 0 4px;
-  background: #dbdbdb;
-  clear: both;
-}
-@media (min-width: 1250px) {
-  /* line 17, sass/_partials/_post.scss */
-  .toc-sidebar {
-    width: 250px;
-  }
-}
-@media (max-width: 1199px) {
-  /* line 17, sass/_partials/_post.scss */
-  .toc-sidebar {
-    display: none;
-  }
-}
-
-/* line 50, sass/_partials/_post.scss */
-nav[data-toggle="toc"] li {
-  position: relative;
-}
-/* line 53, sass/_partials/_post.scss */
-nav[data-toggle="toc"] li:hover > a {
-  color: #1e88e5 !important;
-}
-/* line 56, sass/_partials/_post.scss */
-nav[data-toggle="toc"] li:hover > a:before {
-  content: '';
-  border-radius: 50%;
-  left: -3px;
-  top: 10px;
-  background: #dbdbdb;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-}
-/* line 68, sass/_partials/_post.scss */
-nav[data-toggle="toc"] .nav-link.active {
-  color: #1976d2;
-  font-weight: bold;
-}
-/* line 71, sass/_partials/_post.scss */
-nav[data-toggle="toc"] .nav-link.active:before {
-  content: '';
-  border-radius: 50%;
-  left: -3px;
-  top: 10px;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #1976d2;
-}
-
 /* line 3, sass/_partials/_page.scss */
 .gioi-thieu {
   padding: 3rem 0 7rem 0;
@@ -1586,7 +1508,123 @@ textarea::placeholder {
   }
 }
 
-/* line 58, sass/style.scss */
+/* line 1, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav > li > a {
+  display: block;
+  padding: 3px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #767676;
+}
+
+/* Nav: second level (shown on .active) */
+/* line 10, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav-link + ul {
+  display: none;
+  /* Hide by default, but at >768px, show it */
+  padding-bottom: 10px;
+}
+
+/* line 16, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 24, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav .nav > li > .active,
+nav[data-toggle="toc"] .nav .nav > li > .active:hover,
+nav[data-toggle="toc"] .nav .nav > li > .active:focus {
+  font-weight: 500;
+}
+
+/* line 30, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav-link.active + ul {
+  display: block;
+}
+
+/* line 34, sass/_partials/_bootstrap_toc.scss */
+.toc-sidebar {
+  width: 220px;
+  margin-right: -220px;
+}
+/* line 37, sass/_partials/_bootstrap_toc.scss */
+.toc-sidebar .sticky-top {
+  top: 1rem;
+  border-left: 1px solid #ddd;
+}
+/* line 40, sass/_partials/_bootstrap_toc.scss */
+.toc-sidebar .sticky-top div {
+  padding: 3px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ad6834;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+/* line 47, sass/_partials/_bootstrap_toc.scss */
+.toc-sidebar .sticky-top div::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: 7px 0 4px;
+  background: #dbdbdb;
+  clear: both;
+}
+@media (min-width: 1250px) {
+  /* line 34, sass/_partials/_bootstrap_toc.scss */
+  .toc-sidebar {
+    width: 250px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 34, sass/_partials/_bootstrap_toc.scss */
+  .toc-sidebar {
+    display: none;
+  }
+}
+
+/* line 67, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] li {
+  position: relative;
+}
+/* line 70, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] li:hover > a {
+  color: #1e88e5 !important;
+}
+/* line 73, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] li:hover > a:before {
+  content: '';
+  border-radius: 50%;
+  left: -3px;
+  top: 10px;
+  background: #dbdbdb;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
+/* line 85, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav-link.active {
+  color: #1976d2;
+  font-weight: bold;
+}
+/* line 88, sass/_partials/_bootstrap_toc.scss */
+nav[data-toggle="toc"] .nav-link.active:before {
+  content: '';
+  border-radius: 50%;
+  left: -3px;
+  top: 10px;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #1976d2;
+}
+
+/* line 59, sass/style.scss */
 .row-eq-height > [class*=col-] {
   display: -webkit-box;
   display: -moz-box;

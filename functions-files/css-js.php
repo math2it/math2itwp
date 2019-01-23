@@ -25,7 +25,6 @@ function math2itwp_scripts() {
   // scrollspy headings
   // wp_enqueue_style( 'bootstrap-toc','https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css', array(), '1.0.1' );
   // wp_enqueue_script( 'bootstrap-toc','https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js', array(), '1.0.1', true );
-  wp_enqueue_style( 'bootstrap-toc',get_template_directory_uri() . '/css/bootstrap-toc.css', array(), '1.0.1' );
   wp_enqueue_script( 'bootstrap-toc',get_template_directory_uri() . '/js/bootstrap-toc.min.js', array(), '1.0.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'math2itwp_scripts' );

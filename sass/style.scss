@@ -54,6 +54,7 @@ $c-gioi-thieu: #ff8094;
 
 @import "_partials/contact"; // contact form
 @import "_partials/other";
+@import "_partials/bootstrap_toc"; // toc on sidebar
 
 .row-eq-height>[class*=col-] {
   display: -webkit-box;

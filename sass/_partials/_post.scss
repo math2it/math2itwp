@@ -1,3 +1,4 @@
+// header title
 .page-subtitle{
   span{
     margin-right: 0.5rem;
@@ -14,6 +15,8 @@
   }
 }
 
+
+// toc on sidebar
 .toc-sidebar{
   width: 220px;
   margin-right: -220px;
@@ -46,37 +49,3 @@
   }
 }
 
-nav[data-toggle="toc"]{
-  li{
-    position: relative;
-    &:hover{
-      &> a{
-        color: #1e88e5!important;
-      }
-      &> a:before{
-        content: '';
-        border-radius: 50%;
-        left: -3px;
-        top: 10px;
-        background: #dbdbdb;
-        position: absolute;
-        width: 6px;
-        height: 6px;
-      }
-    } 
-  }
-  .nav-link.active{
-    color: #1976d2;
-    font-weight: bold;
-    &:before{
-      content: '';
-      border-radius: 50%;
-      left: -3px;
-      top: 10px;
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background: #1976d2;
-    }
-  }
-}

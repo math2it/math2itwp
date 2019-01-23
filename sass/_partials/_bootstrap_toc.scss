@@ -1,13 +1,3 @@
-/*!
- * Bootstrap Table of Contents v1.0.1 (http://afeld.github.io/bootstrap-toc/)
- * Copyright 2015 Aidan Feldman
- * Licensed under MIT (https://github.com/afeld/bootstrap-toc/blob/gh-pages/LICENSE.md) */
-
-/* modified from https://github.com/twbs/bootstrap/blob/94b4076dd2efba9af71f0b18d4ee4b163aa9e0dd/docs/assets/css/src/docs.css#L548-L601 */
-
-/* 2nd modified by DINH Anh-Thi */
-
-/* All levels of nav */
 nav[data-toggle="toc"] .nav > li > a {
   display: block;
   padding: 3px 12px;
@@ -39,4 +29,39 @@ nav[data-toggle="toc"] .nav .nav > li > .active:focus {
 
 nav[data-toggle="toc"] .nav-link.active + ul {
   display: block;
+}
+
+nav[data-toggle="toc"]{
+  li{
+    position: relative;
+    &:hover{
+      &> a{
+        color: #1e88e5!important;
+      }
+      &> a:before{
+        content: '';
+        border-radius: 50%;
+        left: -3px;
+        top: 10px;
+        background: #dbdbdb;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+      }
+    } 
+  }
+  .nav-link.active{
+    color: #1976d2;
+    font-weight: bold;
+    &:before{
+      content: '';
+      border-radius: 50%;
+      left: -3px;
+      top: 10px;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #1976d2;
+    }
+  }
 }
