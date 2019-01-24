@@ -49,10 +49,10 @@
 	</div> <!-- /.container -->
 </header>
 
-<article class="section">
+<article class="py-5">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-xl-8">
+			<div class="col-12 col-lg-10 col-xl-8 blog-content">
 				<?php the_content(); ?>
 			</div>
 			<?php

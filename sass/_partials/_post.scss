@@ -41,11 +41,34 @@
       }
     }
   }
-  @media (min-width: 1250px){
-    width: 250px;
-  }
   @media (max-width: 1199px){
     display: none;
   }
+  @media (min-width: 1260px){
+    width: 250px;
+    margin-right: -250px;
+  }
+  @media (min-width: 1360px){
+    margin-right: -300px;
+  }
+  @media (min-width: 1400px){
+    margin-right: -320px;
+  }
+  @media (min-width: 1600px){
+    width: 300px;
+    margin-right: -370px;
+  }
 }
 
+article{
+  @media (min-width: 1360px){
+    .blog-content{
+      margin-right: 50px;
+    }
+  }
+  @media (min-width: 1400px){
+    .blog-content{
+      margin-right: 70px;
+    }
+  }
+}

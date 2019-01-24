@@ -52,6 +52,13 @@ function add_file_types_to_uploads($file_types){
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
 
+// support wide image
+function writy_setup() {
+    add_theme_support( 'align-wide' );
+  }
+  add_action( 'after_setup_theme', 'writy_setup' );
+
+
 
 
 
