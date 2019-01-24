@@ -61,6 +61,10 @@
     margin-right: 70px;
   }
 }
+
+
+/* image alignment */
+
 .wp-block-image img {
   max-width: unset !important;
   border-radius: 5px;
@@ -69,61 +73,61 @@
   font-size: 0.9rem;
   color: #789;
 }
-.wp-block-image.alignfull {
+.alignfull {
   max-width: unset;
   width: auto;
   margin-left: -15px;
   margin-right: -15px;
 }
 @media (min-width: 576px) {
-  .wp-block-image.alignfull {
+  .alignfull {
     margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
   }
 }
 @media (min-width: 768px) {
-  .wp-block-image.alignfull {
+  .alignfull {
     margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
   }
 }
 @media (min-width: 992px) {
-  .wp-block-image.alignfull {
+  .alignfull {
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
   }
 }
 @media (min-width: 1200px) {
-  .wp-block-image.alignfull {
+  .alignfull {
     margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 760px / 2 - 15px);
   }
 }
-figure.alignwide {
+.alignwide {
   width: 100%;
 }
-figure.alignwide img {
+.alignwide img {
   width: 100%;
 }
 @media (min-width: 1360px) {
-  figure.alignwide img {
+  .alignwide img {
     width: calc(100% + 100px) !important;
     left: -50px;
     position: relative;
   }
 }
-figure.aligncenter img {
+.aligncenter img {
   width: 100%;
 }
-figure.alignright, figure.alignleft {
+.alignright, .alignleft {
   width: 45%;
   margin-bottom: 0;
 }
-figure.alignright img, figure.alignleft img {
+.alignright img, .alignleft img {
   width: 100%;
 }
 @media (max-width: 767px) {
-  figure.alignright, figure.alignleft {
+  .alignright, .alignleft {
     float: unset;
     width: 100%;
     margin-right: 0;
@@ -131,12 +135,12 @@ figure.alignright img, figure.alignleft img {
   }
 }
 @media (min-width: 1360px) {
-  figure.alignright {
+  .alignright {
     margin-right: -50px !important;
   }
 }
 @media (min-width: 1360px) {
-  figure.alignleft {
+  .alignleft {
     margin-left: -50px !important;
   }
 }

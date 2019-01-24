@@ -79,7 +79,7 @@ article{
 }
 
 // full width of the screen
-.wp-block-image.alignfull{
+.alignfull{
   max-width: unset;
   width: auto;
   margin-left: -15px;
@@ -105,7 +105,7 @@ article{
 
 
 // wider than the content
-figure.alignwide{
+.alignwide{
   width: 100%;
   img{
     width: 100%;
@@ -118,14 +118,14 @@ figure.alignwide{
 }
 
 // full width of the content or the figure
-figure.aligncenter{
+.aligncenter{
   img{
     width: 100%;
   }
 }
 
 // left / right
-figure.alignright, figure.alignleft{
+.alignright, .alignleft{
   width: 45%;
   margin-bottom: 0;
   img{
@@ -139,13 +139,13 @@ figure.alignright, figure.alignleft{
   }
 }
 
-figure.alignright{
+.alignright{
   @media (min-width: 1360px) {
     margin-right: -50px!important;
   }
 }
 
-figure.alignleft{
+.alignleft{
   @media (min-width: 1360px) {
     margin-left: -50px!important;
   }
