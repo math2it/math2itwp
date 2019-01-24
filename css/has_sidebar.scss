@@ -1,0 +1,152 @@
+// ----------------------------------
+// Modify in this file and then copy to the corresponding .css file
+// ----------------------------------
+
+
+// ----------------------------------------
+// toc on sidebar
+// ----------------------------------------
+.toc-sidebar{
+  width: 220px;
+  margin-right: -220px;
+  .sticky-top{
+    top: 1rem;
+    border-left: 1px solid #ddd;
+    background: #fff;
+    div{
+      padding: 3px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ad6834;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      &::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 40%;
+        margin: 7px 0 4px;
+        background: #dbdbdb;
+        clear: both;
+      }
+    }
+  }
+  @media (max-width: 1199px){
+    display: none;
+  }
+  @media (min-width: 1260px){
+    width: 250px;
+    margin-right: -250px;
+  }
+  @media (min-width: 1360px){
+    margin-right: -300px;
+  }
+  @media (min-width: 1400px){
+    margin-right: -320px;
+  }
+  @media (min-width: 1600px){
+    width: 300px;
+    margin-right: -370px;
+  }
+}
+
+article{
+  @media (min-width: 1360px){
+    .blog-content{
+      margin-right: 50px;
+    }
+  }
+  @media (min-width: 1400px){
+    .blog-content{
+      margin-right: 70px;
+    }
+  }
+}
+
+
+// ----------------------------------------
+// image alignment
+// ----------------------------------------
+.wp-block-image{
+  img{
+    max-width: unset!important;
+    border-radius: 5px;
+  }
+  figcaption{
+    font-size: 0.9rem;
+    color: #778899;
+  }
+}
+
+// full width of the screen
+.wp-block-image.alignfull{
+  max-width: unset;
+  width: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+  // when change .section margin, need to change 1rem too
+  @media (min-width: 576px){
+    margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
+  }
+  @media (min-width: 768px){
+    margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
+  }
+  @media (min-width: 992px){
+    margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
+  }
+  @media (min-width: 1200px){
+    margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 760px / 2 - 15px);
+  }
+}
+
+
+// wider than the content
+figure.alignwide{
+  width: 100%;
+  img{
+    width: 100%;
+    @media (min-width: 1360px) {
+      width: calc(100% + 100px)!important;
+      left: -50px;
+      position: relative;
+    }
+  }
+}
+
+// full width of the content or the figure
+figure.aligncenter{
+  img{
+    width: 100%;
+  }
+}
+
+// left / right
+figure.alignright, figure.alignleft{
+  width: 45%;
+  margin-bottom: 0;
+  img{
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    float: unset;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+figure.alignright{
+  @media (min-width: 1360px) {
+    margin-right: -50px!important;
+  }
+}
+
+figure.alignleft{
+  @media (min-width: 1360px) {
+    margin-left: -50px!important;
+  }
+}

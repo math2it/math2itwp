@@ -28,3 +28,15 @@ function math2itwp_scripts() {
   wp_enqueue_script( 'bootstrap-toc',get_template_directory_uri() . '/js/bootstrap-toc.min.js', array(), '1.0.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'math2itwp_scripts' );
+
+
+// different css for toc sidebar on posts/page
+function math2itwp_tocsidebar() {
+  $post_id = get_the_ID();
+  if (get_field('toc_on_sidebar',$post_id)==true):
+    wp_enqueue_style( 'has_sidebar', get_template_directory_uri() . '/css/has_sidebar.css' );
+  else:
+    wp_enqueue_style( 'hasno_sidebar', get_template_directory_uri() . '/css/hasno_sidebar.css' );
+  endif;
+}
+add_action( 'wp_enqueue_scripts', 'math2itwp_tocsidebar' );

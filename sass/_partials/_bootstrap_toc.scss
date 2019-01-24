@@ -26,6 +26,9 @@ nav[data-toggle="toc"] .nav .nav > li > .active,
 nav[data-toggle="toc"] .nav .nav > li > .active:hover,
 nav[data-toggle="toc"] .nav .nav > li > .active:focus {
   font-weight: 500;
+  &:before{
+    top: 6px;
+  }
 }
 
 nav[data-toggle="toc"] .nav-link.active + ul {
@@ -44,7 +47,7 @@ nav[data-toggle="toc"]{
         content: '';
         border-radius: 50%;
         left: -3px;
-        top: 10px;
+        top: 8px;
         background: #dbdbdb;
         position: absolute;
         width: 6px;
@@ -59,7 +62,7 @@ nav[data-toggle="toc"]{
       content: '';
       border-radius: 50%;
       left: -3px;
-      top: 10px;
+      top: 8px;
       position: absolute;
       width: 6px;
       height: 6px;
