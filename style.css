@@ -641,6 +641,15 @@ a.page-numbers:hover {
   border-bottom: 4px solid;
 }
 
+/* line 20, sass/_partials/_post.scss */
+.blog-content p {
+  margin-bottom: 2rem;
+}
+/* line 23, sass/_partials/_post.scss */
+.blog-content h2, .blog-content h3 {
+  margin-bottom: 2rem;
+}
+
 /* line 3, sass/_partials/_page.scss */
 .gioi-thieu {
   padding: 3rem 0 7rem 0;
