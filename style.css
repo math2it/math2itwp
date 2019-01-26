@@ -486,68 +486,65 @@ a.page-numbers:hover {
   text-decoration: none;
 }
 
-/* line 2, sass/_partials/_image.scss */
+/* line 7, sass/_partials/_image.scss */
 .wp-block-image figure {
   margin-top: 0.3rem;
 }
 
 @media (min-width: 1360px) {
-  /* line 9, sass/_partials/_image.scss */
+  /* line 16, sass/_partials/_image.scss */
   .wp-block-gallery {
     margin-left: -50px;
     margin-right: -50px;
   }
 }
 
-/* line 18, sass/_partials/_image.scss */
-.wp-block-media-text.alignwide {
-  margin-bottom: 1.3rem;
-}
-@media (min-width: 1360px) {
-  /* line 19, sass/_partials/_image.scss */
-  .wp-block-media-text.alignwide img {
-    width: calc(100% + 50px) !important;
+@media (min-width: 768px) {
+  /* line 27, sass/_partials/_image.scss */
+  .wp-block-media-text {
+    margin-bottom: 2.5rem;
   }
 }
-
-@media (min-width: 1360px) {
-  /* line 28, sass/_partials/_image.scss */
-  .alignwide.has-media-on-the-right img {
-    left: 0;
-  }
-}
-
-/* line 35, sass/_partials/_image.scss */
-.wp-block-media-text__content {
-  padding: 15px 0 0 !important;
-  margin-right: 0;
-}
-/* line 38, sass/_partials/_image.scss */
-.wp-block-media-text__content .has-large-font-size {
-  font-size: inherit;
-}
-@media (min-width: 1360px) {
-  /* line 35, sass/_partials/_image.scss */
-  .wp-block-media-text__content {
-    padding: 0 0 0 15px !important;
-    margin-right: -50px;
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 1360px) {
-  /* line 48, sass/_partials/_image.scss */
-  .has-media-on-the-right .wp-block-media-text__content {
-    padding: 0 15px 0 0 !important;
-    margin-right: 0;
-    margin-left: -50px;
-  }
-}
-
 @media (max-width: 767px) {
-  /* line 56, sass/_partials/_image.scss */
+  /* line 27, sass/_partials/_image.scss */
   .wp-block-media-text {
     display: inherit !important;
+    margin-bottom: 2rem;
+  }
+}
+/* line 35, sass/_partials/_image.scss */
+.wp-block-media-text .wp-block-media-text__content {
+  padding: 15px 0 0 0;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  /* line 35, sass/_partials/_image.scss */
+  .wp-block-media-text .wp-block-media-text__content {
+    padding: 20px;
+  }
+}
+/* line 41, sass/_partials/_image.scss */
+.wp-block-media-text .wp-block-media-text__content .has-large-font-size {
+  font-size: 1rem;
+}
+/* line 44, sass/_partials/_image.scss */
+.wp-block-media-text .wp-block-media-text__content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 47, sass/_partials/_image.scss */
+.wp-block-media-text .wp-block-media-text__content p:first-of-type {
+  margin-top: 0;
+}
+/* line 50, sass/_partials/_image.scss */
+.wp-block-media-text .wp-block-media-text__content p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1360px) {
+  /* line 62, sass/_partials/_image.scss */
+  .alignwide.has-media-on-the-right img {
+    left: 0;
   }
 }
 
@@ -641,13 +638,65 @@ a.page-numbers:hover {
   border-bottom: 4px solid;
 }
 
-/* line 20, sass/_partials/_post.scss */
+@media (min-width: 1200px) {
+  /* line 19, sass/_partials/_post.scss */
+  .blog-content {
+    font-size: 1.1rem;
+  }
+}
+/* line 23, sass/_partials/_post.scss */
 .blog-content p {
   margin-bottom: 2rem;
 }
-/* line 23, sass/_partials/_post.scss */
+/* line 26, sass/_partials/_post.scss */
 .blog-content h2, .blog-content h3 {
   margin-bottom: 2rem;
+}
+/* line 29, sass/_partials/_post.scss */
+.blog-content h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444;
+}
+/* line 33, sass/_partials/_post.scss */
+.blog-content h2:before {
+  content: "# ";
+  color: #82a7d0;
+}
+@media (min-width: 850px) {
+  /* line 33, sass/_partials/_post.scss */
+  .blog-content h2:before {
+    margin-left: -1.8rem;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 29, sass/_partials/_post.scss */
+  .blog-content h2 {
+    font-size: 1.65rem;
+  }
+}
+/* line 44, sass/_partials/_post.scss */
+.blog-content h3 {
+  font-size: 1.5rem;
+  color: #444;
+  font-weight: bold;
+}
+/* line 48, sass/_partials/_post.scss */
+.blog-content h3:before {
+  content: "## ";
+  color: #d2a26e;
+}
+@media (min-width: 850px) {
+  /* line 48, sass/_partials/_post.scss */
+  .blog-content h3:before {
+    margin-left: -2.4rem;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 44, sass/_partials/_post.scss */
+  .blog-content h3 {
+    font-size: 1.4rem;
+  }
 }
 
 /* line 3, sass/_partials/_page.scss */

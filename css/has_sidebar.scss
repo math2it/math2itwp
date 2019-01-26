@@ -80,13 +80,43 @@ article{
   }
 }
 
+
+// gallery
 .wp-block-gallery{
   margin-top: 2.5rem;
   margin-bottom: calc(2.5rem - 16px);
 }
 
+
+// media-text
+// ----------------------------------------
 .wp-block-media-text{
-  margin-bottom: 2.5rem!important;
+  &.alignwide{
+    img{
+      @media (min-width: 1360px) {
+        width: calc(100% + 50px)!important;
+      }
+    }
+  }
+  .wp-block-media-text__content{
+    @media (min-width: 1360px) {
+      margin-right: -50px;
+      margin-left: 0;
+    }
+    @media (min-width: 768px){
+      padding: 15px 0 15px 15px;
+    }
+  }
+}
+
+.has-media-on-the-right .wp-block-media-text__content{
+  @media (min-width: 1360px) {
+    margin-right: 0;
+    margin-left: -50px;
+  }
+  @media (min-width: 768px){
+    padding: 15px 15px 15px 0!important;
+  }
 }
 
 // full width of the screen
@@ -100,6 +130,9 @@ article{
   img{
     object-fit: cover;
     height: 100%;
+  }
+  @media (max-width: 767px){
+    height: 300px;
   }
   // when change .section margin, need to change 1rem too
   @media (min-width: 576px){

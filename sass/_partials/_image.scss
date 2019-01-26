@@ -1,10 +1,17 @@
+// IMPORTANCE: This file contains only a general setting for images in posts/page template. For the one who has or has not toc on the sidebar, refer to has_sidebar.scss and hasno_sidebar.scss.
+
+
+// block-iamge
+// ----------------------------------------
 .wp-block-image{
   figure{
     margin-top: 0.3rem;
   }
 }
 
-//
+
+// gallery
+// ----------------------------------------
 
 .wp-block-gallery{
   @media (min-width: 1360px){
@@ -13,48 +20,48 @@
   }
 }
 
-//
 
-.wp-block-media-text.alignwide{
-  img{
-    @media (min-width: 1360px) {
-      width: calc(100% + 50px)!important;
+// media-text
+// ----------------------------------------
+
+.wp-block-media-text{
+  @media (min-width: 768px){
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 767px){
+    display: inherit!important;
+    margin-bottom: 2rem;
+  }
+  .wp-block-media-text__content{
+    padding: 15px 0 0 0;
+    margin-right: 0;
+    @media (max-width: 767px){
+      padding: 20px;
+    }
+    .has-large-font-size{
+      font-size: 1rem;
+    }
+    p{
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      &:first-of-type{
+        margin-top: 0;
+      }
+      &:last-of-type{
+        margin-bottom: 0;
+      }
     }
   }
-  margin-bottom: 1.3rem;
 }
+
+
+// alignwide
+// ----------------------------------------
 
 .alignwide.has-media-on-the-right{
   img{
     @media (min-width: 1360px) {
       left: 0;
     }
-  }
-}
-
-.wp-block-media-text__content{
-  padding: 15px 0 0 !important;
-  margin-right: 0;
-  .has-large-font-size{
-    font-size: inherit;
-  }
-  @media (min-width: 1360px) {
-    padding: 0 0 0 15px!important;
-    margin-right: -50px;
-    margin-left: 0;
-  }
-}
-
-.has-media-on-the-right .wp-block-media-text__content{
-  @media (min-width: 1360px) {
-    padding: 0 15px 0 0!important;
-    margin-right: 0;
-    margin-left: -50px;
-  }
-}
-
-.wp-block-media-text{
-  @media (max-width: 767px){
-    display: inherit!important;
   }
 }
