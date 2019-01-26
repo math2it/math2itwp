@@ -56,31 +56,25 @@
   .wp-block-media-text .wp-block-media-text__content {
     margin-right: -50px;
     margin-left: 0; } }
-@media (min-width: 768px) {
-  .wp-block-media-text .wp-block-media-text__content {
-    padding: 15px 0 15px 15px; } }
 
 @media (min-width: 1360px) {
   .has-media-on-the-right .wp-block-media-text__content {
     margin-right: 0;
     margin-left: -50px; } }
-@media (min-width: 768px) {
-  .has-media-on-the-right .wp-block-media-text__content {
-    padding: 15px 15px 15px 0 !important; } }
 
 @media (min-width: 1200px) {
   .alignfull {
     width: 100%; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .alignwide img {
-    width: calc(100% + 100px) !important;
-    left: -50px;
+  .alignwide {
+    margin-left: -50px;
+    margin-right: -50px;
     position: relative; } }
 @media (min-width: 1360px) {
-  .alignwide img {
-    width: calc(100% + 100px) !important;
-    left: -50px;
+  .alignwide {
+    margin-left: -50px;
+    margin-right: -50px;
     position: relative; } }
 
 .aligncenter img {

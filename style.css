@@ -526,81 +526,127 @@ a.page-numbers:hover {
     margin-bottom: 2rem;
   }
 }
-/* line 44, sass/_partials/_image.scss */
+@media (max-width: 767px) {
+  /* line 44, sass/_partials/_image.scss */
+  .wp-block-media-text.alignwide {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* line 50, sass/_partials/_image.scss */
+  .wp-block-media-text.alignwide img {
+    width: 100%;
+  }
+}
+/* line 55, sass/_partials/_image.scss */
+.wp-block-media-text .wp-block-media-text__media {
+  width: 100%;
+}
+/* line 58, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content {
   padding: 15px 0 0 0;
   margin-right: 0;
 }
 @media (max-width: 767px) {
-  /* line 44, sass/_partials/_image.scss */
+  /* line 58, sass/_partials/_image.scss */
   .wp-block-media-text .wp-block-media-text__content {
     padding: 20px;
   }
 }
-/* line 50, sass/_partials/_image.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 58, sass/_partials/_image.scss */
+  .wp-block-media-text .wp-block-media-text__content {
+    padding: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 58, sass/_partials/_image.scss */
+  .wp-block-media-text .wp-block-media-text__content {
+    padding: 15px 0 15px 15px;
+  }
+}
+/* line 70, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content .has-large-font-size {
   font-size: 1rem;
 }
-/* line 53, sass/_partials/_image.scss */
+/* line 73, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-/* line 56, sass/_partials/_image.scss */
+/* line 76, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:first-of-type {
   margin-top: 0;
 }
-/* line 59, sass/_partials/_image.scss */
+/* line 79, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (min-width: 1360px) {
-  /* line 66, sass/_partials/_image.scss */
+  /* line 86, sass/_partials/_image.scss */
   .alignwide.has-media-on-the-right img {
     left: 0;
   }
 }
+@media (min-width: 992px) {
+  /* line 91, sass/_partials/_image.scss */
+  .alignwide.has-media-on-the-right .wp-block-media-text__content {
+    padding: 15px 15px 15px 0;
+  }
+}
 
-@media (max-width: 991px) {
-  /* line 76, sass/_partials/_image.scss */
+/* line 101, sass/_partials/_image.scss */
+.alignwide, .alignfull {
+  max-width: unset;
+}
+@media (max-width: 575px) {
+  /* line 101, sass/_partials/_image.scss */
   .alignwide, .alignfull {
-    max-width: unset;
-    width: auto;
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 83, sass/_partials/_image.scss */
+}
+@media (max-width: 991px) {
+  /* line 101, sass/_partials/_image.scss */
+  .alignwide, .alignfull {
+    width: auto;
+  }
+  /* line 110, sass/_partials/_image.scss */
   .alignwide img, .alignfull img {
     width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 76, sass/_partials/_image.scss */
+  /* line 101, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 76, sass/_partials/_image.scss */
+  /* line 101, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
   }
 }
+/* line 122, sass/_partials/_image.scss */
+.alignwide img, .alignfull img {
+  width: 100%;
+}
 
-/* line 97, sass/_partials/_image.scss */
+/* line 127, sass/_partials/_image.scss */
 .alignfull {
-  max-width: unset;
   width: auto;
 }
-/* line 100, sass/_partials/_image.scss */
+/* line 129, sass/_partials/_image.scss */
 .alignfull img {
   width: 100%;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 97, sass/_partials/_image.scss */
+  /* line 127, sass/_partials/_image.scss */
   .alignfull {
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
