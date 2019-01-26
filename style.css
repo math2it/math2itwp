@@ -632,21 +632,17 @@ a.page-numbers:hover {
     margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
   }
 }
-/* line 122, sass/_partials/_image.scss */
-.alignwide img, .alignfull img {
-  width: 100%;
-}
 
-/* line 127, sass/_partials/_image.scss */
+/* line 124, sass/_partials/_image.scss */
 .alignfull {
   width: auto;
 }
-/* line 129, sass/_partials/_image.scss */
+/* line 126, sass/_partials/_image.scss */
 .alignfull img {
   width: 100%;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 127, sass/_partials/_image.scss */
+  /* line 124, sass/_partials/_image.scss */
   .alignfull {
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
