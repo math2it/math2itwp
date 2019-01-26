@@ -4,7 +4,6 @@ sass_dir = "sass" #targets our sass directory
 images_dir = "images" #targets our pre existing image directory
 javascripts_dir = "js" #targets our JavaScript directory
 
-
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 

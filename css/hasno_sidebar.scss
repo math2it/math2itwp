@@ -1,0 +1,33 @@
+// alignwide
+// ----------------------------------------
+.alignwide{
+  img{
+    width: 100%;
+    @media (min-width: 1200px){
+      width: calc(100% + 300px)!important;
+      left: -150px;
+      position: relative;
+    }
+  }
+  @media (min-width: 1200px){
+    margin-left: 0;
+    margin-right: 0;
+  }
+  // full width in smaller devices
+  @media (max-width: 1199px){
+    max-width: unset;
+    width: auto;
+  }
+  @media (max-width: 767px){
+    margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
+  }
+  @media (max-width: 991px){
+    margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
+  }
+  @media (max-width: 1199px){
+    margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
+  }
+}

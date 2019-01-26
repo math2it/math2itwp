@@ -486,13 +486,27 @@ a.page-numbers:hover {
   text-decoration: none;
 }
 
-/* line 7, sass/_partials/_image.scss */
+/* line 6, sass/_partials/_image.scss */
+.wp-block-image {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+/* line 9, sass/_partials/_image.scss */
+.wp-block-image img {
+  max-width: unset !important;
+}
+/* line 12, sass/_partials/_image.scss */
+.wp-block-image figcaption {
+  font-size: 0.9rem;
+  color: #778899;
+}
+/* line 16, sass/_partials/_image.scss */
 .wp-block-image figure {
   margin-top: 0.3rem;
 }
 
 @media (min-width: 1360px) {
-  /* line 16, sass/_partials/_image.scss */
+  /* line 25, sass/_partials/_image.scss */
   .wp-block-gallery {
     margin-left: -50px;
     margin-right: -50px;
@@ -500,51 +514,96 @@ a.page-numbers:hover {
 }
 
 @media (min-width: 768px) {
-  /* line 27, sass/_partials/_image.scss */
+  /* line 36, sass/_partials/_image.scss */
   .wp-block-media-text {
     margin-bottom: 2.5rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 27, sass/_partials/_image.scss */
+  /* line 36, sass/_partials/_image.scss */
   .wp-block-media-text {
     display: inherit !important;
     margin-bottom: 2rem;
   }
 }
-/* line 35, sass/_partials/_image.scss */
+/* line 44, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content {
   padding: 15px 0 0 0;
   margin-right: 0;
 }
 @media (max-width: 767px) {
-  /* line 35, sass/_partials/_image.scss */
+  /* line 44, sass/_partials/_image.scss */
   .wp-block-media-text .wp-block-media-text__content {
     padding: 20px;
   }
 }
-/* line 41, sass/_partials/_image.scss */
+/* line 50, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content .has-large-font-size {
   font-size: 1rem;
 }
-/* line 44, sass/_partials/_image.scss */
+/* line 53, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-/* line 47, sass/_partials/_image.scss */
+/* line 56, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:first-of-type {
   margin-top: 0;
 }
-/* line 50, sass/_partials/_image.scss */
+/* line 59, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (min-width: 1360px) {
-  /* line 62, sass/_partials/_image.scss */
+  /* line 66, sass/_partials/_image.scss */
   .alignwide.has-media-on-the-right img {
     left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 76, sass/_partials/_image.scss */
+  .alignwide, .alignfull {
+    max-width: unset;
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 83, sass/_partials/_image.scss */
+  .alignwide img, .alignfull img {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 76, sass/_partials/_image.scss */
+  .alignwide, .alignfull {
+    margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 76, sass/_partials/_image.scss */
+  .alignwide, .alignfull {
+    margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
+  }
+}
+
+/* line 97, sass/_partials/_image.scss */
+.alignfull {
+  max-width: unset;
+  width: auto;
+}
+/* line 100, sass/_partials/_image.scss */
+.alignfull img {
+  width: 100%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 97, sass/_partials/_image.scss */
+  .alignfull {
+    margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
   }
 }
 
@@ -663,7 +722,7 @@ a.page-numbers:hover {
   content: "# ";
   color: #82a7d0;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   /* line 33, sass/_partials/_post.scss */
   .blog-content h2:before {
     margin-left: -1.8rem;
@@ -686,7 +745,7 @@ a.page-numbers:hover {
   content: "## ";
   color: #d2a26e;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   /* line 48, sass/_partials/_post.scss */
   .blog-content h3:before {
     margin-left: -2.4rem;

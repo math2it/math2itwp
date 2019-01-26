@@ -45,16 +45,6 @@
   article .blog-content {
     margin-right: 70px; } }
 
-.wp-block-image {
-  margin-bottom: 2.5rem;
-  margin-top: 2.5rem; }
-  .wp-block-image img {
-    max-width: unset !important;
-    border-radius: 5px; }
-  .wp-block-image figcaption {
-    font-size: 0.9rem;
-    color: #778899; }
-
 .wp-block-gallery {
   margin-top: 2.5rem;
   margin-bottom: calc(2.5rem - 16px); }
@@ -78,45 +68,20 @@
   .has-media-on-the-right .wp-block-media-text__content {
     padding: 15px 15px 15px 0 !important; } }
 
-.alignfull {
-  max-width: unset;
-  width: auto;
-  margin-left: -15px;
-  margin-right: -15px;
-  height: 500px;
-  overflow: hidden; }
-  .alignfull img {
-    object-fit: cover;
-    height: 100%; }
-  @media (max-width: 767px) {
-    .alignfull {
-      height: 300px; } }
-  @media (min-width: 576px) {
-    .alignfull {
-      margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
-      margin-right: calc(-100vw / 2 + 540px / 2 - 15px); } }
-  @media (min-width: 768px) {
-    .alignfull {
-      margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
-      margin-right: calc(-100vw / 2 + 720px / 2 - 15px); } }
-  @media (min-width: 992px) {
-    .alignfull {
-      margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
-      margin-right: calc(-100vw / 2 + 800px / 2 - 15px); } }
-  @media (min-width: 1200px) {
-    .alignfull {
-      margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
-      margin-right: calc(-100vw / 2 + 760px / 2 - 15px); } }
+@media (min-width: 1200px) {
+  .alignfull {
+    width: 100%; } }
 
-.alignwide {
-  width: 100%; }
+@media (min-width: 992px) and (max-width: 1199px) {
   .alignwide img {
-    width: 100%; }
-    @media (min-width: 1360px) {
-      .alignwide img {
-        width: calc(100% + 100px) !important;
-        left: -50px;
-        position: relative; } }
+    width: calc(100% + 100px) !important;
+    left: -50px;
+    position: relative; } }
+@media (min-width: 1360px) {
+  .alignwide img {
+    width: calc(100% + 100px) !important;
+    left: -50px;
+    position: relative; } }
 
 .aligncenter img {
   width: 100%; }

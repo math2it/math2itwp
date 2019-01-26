@@ -4,6 +4,15 @@
 // block-iamge
 // ----------------------------------------
 .wp-block-image{
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  img{
+    max-width: unset!important;
+  }
+  figcaption{
+    font-size: 0.9rem;
+    color: #778899;
+  }
   figure{
     margin-top: 0.3rem;
   }
@@ -53,15 +62,46 @@
     }
   }
 }
-
-
-// alignwide
-// ----------------------------------------
-
 .alignwide.has-media-on-the-right{
   img{
     @media (min-width: 1360px) {
       left: 0;
     }
+  }
+}
+
+
+// alignwide
+// ----------------------------------------
+.alignwide, .alignfull{
+  // only full width on smaller devices
+  @media (max-width: 991px){
+    max-width: unset;
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+    img{
+      width: 100%;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px){
+    margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+    margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
+  }
+}
+
+.alignfull{
+  max-width: unset;
+  width: auto;
+  img{
+    width: 100%;
+  }
+  @media (min-width: 992px) and (max-width: 1199px){
+    margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
   }
 }
