@@ -78,26 +78,11 @@ article{
 // media-text
 // ----------------------------------------
 .wp-block-media-text{
-  &.alignwide{
-    img{
-      @media (min-width: 1360px) {
-        width: calc(100% + 50px)!important;
-      }
-    }
-  }
-  .wp-block-media-text__content{
-    @media (min-width: 1360px) {
-      margin-right: -50px;
-      margin-left: 0;
-    }
-  }
+
 }
 
 .has-media-on-the-right .wp-block-media-text__content{
-  @media (min-width: 1360px) {
-    margin-right: 0;
-    margin-left: -50px;
-  }
+  
 }
 
 // full width of the screen

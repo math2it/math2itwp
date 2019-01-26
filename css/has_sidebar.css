@@ -49,19 +49,6 @@
   margin-top: 2.5rem;
   margin-bottom: calc(2.5rem - 16px); }
 
-@media (min-width: 1360px) {
-  .wp-block-media-text.alignwide img {
-    width: calc(100% + 50px) !important; } }
-@media (min-width: 1360px) {
-  .wp-block-media-text .wp-block-media-text__content {
-    margin-right: -50px;
-    margin-left: 0; } }
-
-@media (min-width: 1360px) {
-  .has-media-on-the-right .wp-block-media-text__content {
-    margin-right: 0;
-    margin-left: -50px; } }
-
 @media (min-width: 1200px) {
   .alignfull {
     width: 100%; } }

@@ -34,6 +34,8 @@
 // ----------------------------------------
 
 .wp-block-media-text{
+  border: 1px solid #ddd;
+  padding: 15px;
   @media (min-width: 768px){
     margin-bottom: 2.5rem;
   }
@@ -46,10 +48,9 @@
       margin-left: 0;
       margin-right: 0;
     }
-    @media (min-width: 991px) and (max-width: 1199px){
-      img{
-        width: 100%;
-      }
+    @media (min-width: 768px) and (max-width: 991px){
+      margin-left: calc(-100vw / 2 + 720px / 2);
+      margin-right: calc(-100vw / 2 + 720px / 2);
     }
   }
   .wp-block-media-text__media{
