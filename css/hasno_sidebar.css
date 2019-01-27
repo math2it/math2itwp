@@ -1,29 +1,50 @@
-.alignwide img {
-  width: 100%; }
-  @media (min-width: 1200px) {
-    .alignwide img {
-      width: calc(100% + 300px) !important;
-      left: -150px;
-      position: relative; } }
 @media (min-width: 1200px) {
   .alignwide {
-    margin-left: 0;
-    margin-right: 0; } }
-@media (max-width: 1199px) {
-  .alignwide {
-    max-width: unset;
-    width: auto; } }
-@media (max-width: 767px) {
-  .alignwide {
-    margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
-    margin-right: calc(-100vw / 2 + 540px / 2 - 15px); } }
-@media (max-width: 991px) {
-  .alignwide {
-    margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
-    margin-right: calc(-100vw / 2 + 720px / 2 - 15px); } }
-@media (max-width: 1199px) {
+    margin-left: -150px;
+    margin-right: -150px;
+    position: relative; } }
+@media (min-width: 992px) and (max-width: 1199px) {
   .alignwide {
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px); } }
+
+.alignfull {
+  width: auto; }
+  .alignfull img {
+    width: 100%; }
+  @media (min-width: 1200px) {
+    .alignfull {
+      margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
+      margin-right: calc(-100vw / 2 + 760px / 2 - 15px); } }
+
+@media (min-width: 1200px) {
+  .alignright, .alignleft {
+    width: 55%; } }
+
+@media (min-width: 1200px) {
+  .alignright {
+    margin-right: -150px !important; } }
+
+@media (min-width: 1200px) {
+  .alignleft {
+    margin-left: -150px !important; } }
+
+@media (min-width: 1200px) {
+  .wp-block-gallery {
+    margin-left: -150px;
+    margin-right: -150px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-block-media-text.alignwide {
+    margin-left: calc(-100vw / 2 + 800px / 2);
+    margin-right: calc(-100vw / 2 + 800px / 2); } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-block-media-text.alignwide {
+    margin-left: calc(-100vw / 2 + 720px / 2);
+    margin-right: calc(-100vw / 2 + 720px / 2); } }
+@media (min-width: 576px) and (max-width: 767px) {
+  .wp-block-media-text.alignwide {
+    margin-left: calc(-100vw / 2 + 540px / 2);
+    margin-right: calc(-100vw / 2 + 540px / 2); } }
 
 /*# sourceMappingURL=hasno_sidebar.css.map */

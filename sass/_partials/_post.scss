@@ -32,7 +32,7 @@
     color: #444;
     &:before{
       content: "# ";
-      color: #82a7d0;
+      color: #6293ca;
       @media (min-width: 992px){
         margin-left: -1.8rem;
       }
@@ -47,7 +47,7 @@
     font-weight: bold;
     &:before{
       content: "## ";
-      color: #d2a26e;
+      color: #d87638;
       @media (min-width: 992px){
         margin-left: -2.4rem;
       }

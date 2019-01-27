@@ -49,6 +49,11 @@
   margin-top: 2.5rem;
   margin-bottom: calc(2.5rem - 16px); }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-block-media-text.alignwide {
+    margin-left: calc(-100vw / 2 + 720px / 2);
+    margin-right: calc(-100vw / 2 + 720px / 2); } }
+
 @media (min-width: 1200px) {
   .alignfull {
     width: 100%; } }
@@ -64,20 +69,8 @@
     margin-right: -50px;
     position: relative; } }
 
-.aligncenter img {
-  width: 100%; }
-
 .alignright, .alignleft {
-  width: 45%;
-  margin-bottom: 0; }
-  .alignright img, .alignleft img {
-    width: 100%; }
-  @media (max-width: 767px) {
-    .alignright, .alignleft {
-      float: unset;
-      width: 100%;
-      margin-right: 0;
-      margin-left: 0; } }
+  width: 45%; }
 
 @media (min-width: 1360px) {
   .alignright {

@@ -494,38 +494,38 @@ a.page-numbers:hover {
 /* line 9, sass/_partials/_image.scss */
 .wp-block-image img {
   max-width: unset !important;
+  width: 100%;
 }
-/* line 12, sass/_partials/_image.scss */
+/* line 13, sass/_partials/_image.scss */
 .wp-block-image figcaption {
   font-size: 0.9rem;
   color: #778899;
 }
-/* line 16, sass/_partials/_image.scss */
+/* line 17, sass/_partials/_image.scss */
 .wp-block-image figure {
   margin-top: 0.3rem;
 }
 
 @media (min-width: 1360px) {
-  /* line 25, sass/_partials/_image.scss */
+  /* line 26, sass/_partials/_image.scss */
   .wp-block-gallery {
     margin-left: -50px;
     margin-right: -50px;
   }
 }
 
-/* line 36, sass/_partials/_image.scss */
+/* line 37, sass/_partials/_image.scss */
 .wp-block-media-text {
   border: 1px solid #ddd;
-  padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 36, sass/_partials/_image.scss */
+  /* line 37, sass/_partials/_image.scss */
   .wp-block-media-text {
     margin-bottom: 2.5rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 36, sass/_partials/_image.scss */
+  /* line 37, sass/_partials/_image.scss */
   .wp-block-media-text {
     display: inherit !important;
     margin-bottom: 2rem;
@@ -538,121 +538,112 @@ a.page-numbers:hover {
     margin-right: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 46, sass/_partials/_image.scss */
-  .wp-block-media-text.alignwide {
-    margin-left: calc(-100vw / 2 + 720px / 2);
-    margin-right: calc(-100vw / 2 + 720px / 2);
-  }
-}
-/* line 56, sass/_partials/_image.scss */
+/* line 52, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__media {
   width: 100%;
+  padding: 15px;
+}
+@media (max-width: 767px) {
+  /* line 52, sass/_partials/_image.scss */
+  .wp-block-media-text .wp-block-media-text__media {
+    padding-bottom: 0;
+  }
 }
 /* line 59, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content {
-  padding: 15px 0 0 0;
+  padding: 15px;
   margin-right: 0;
 }
-@media (max-width: 767px) {
-  /* line 59, sass/_partials/_image.scss */
-  .wp-block-media-text .wp-block-media-text__content {
-    padding: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 59, sass/_partials/_image.scss */
-  .wp-block-media-text .wp-block-media-text__content {
-    padding: 15px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 59, sass/_partials/_image.scss */
-  .wp-block-media-text .wp-block-media-text__content {
-    padding: 15px 0 15px 15px;
-  }
-}
-/* line 71, sass/_partials/_image.scss */
+/* line 62, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content .has-large-font-size {
   font-size: 1rem;
 }
-/* line 74, sass/_partials/_image.scss */
+/* line 65, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-/* line 77, sass/_partials/_image.scss */
+/* line 68, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:first-of-type {
   margin-top: 0;
 }
-/* line 80, sass/_partials/_image.scss */
+/* line 71, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (min-width: 1360px) {
-  /* line 87, sass/_partials/_image.scss */
+  /* line 78, sass/_partials/_image.scss */
   .alignwide.has-media-on-the-right img {
     left: 0;
   }
 }
-@media (min-width: 992px) {
-  /* line 92, sass/_partials/_image.scss */
-  .alignwide.has-media-on-the-right .wp-block-media-text__content {
-    padding: 15px 15px 15px 0;
-  }
-}
 
-/* line 102, sass/_partials/_image.scss */
+/* line 88, sass/_partials/_image.scss */
 .alignwide, .alignfull {
   max-width: unset;
 }
 @media (max-width: 575px) {
-  /* line 102, sass/_partials/_image.scss */
+  /* line 88, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 @media (max-width: 991px) {
-  /* line 102, sass/_partials/_image.scss */
+  /* line 88, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     width: auto;
   }
-  /* line 111, sass/_partials/_image.scss */
-  .alignwide img, .alignfull img {
-    width: 100%;
-  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 102, sass/_partials/_image.scss */
+  /* line 88, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 102, sass/_partials/_image.scss */
+  /* line 88, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
   }
 }
 
-/* line 125, sass/_partials/_image.scss */
+/* line 108, sass/_partials/_image.scss */
 .alignfull {
   width: auto;
 }
-/* line 127, sass/_partials/_image.scss */
-.alignfull img {
-  width: 100%;
-}
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 125, sass/_partials/_image.scss */
+  /* line 108, sass/_partials/_image.scss */
   .alignfull {
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
   }
+}
+
+/* line 118, sass/_partials/_image.scss */
+.alignright, .alignleft {
+  margin-bottom: 0;
+  width: 45%;
+}
+@media (max-width: 767px) {
+  /* line 118, sass/_partials/_image.scss */
+  .alignright, .alignleft {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 124, sass/_partials/_image.scss */
+  .alignright figcaption, .alignleft figcaption {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* line 135, sass/_partials/_image.scss */
+.aligncenter figcaption {
+  margin-bottom: 0;
 }
 
 /* line 1, sass/_partials/_category.scss */
@@ -768,7 +759,7 @@ a.page-numbers:hover {
 /* line 33, sass/_partials/_post.scss */
 .blog-content h2:before {
   content: "# ";
-  color: #82a7d0;
+  color: #6293ca;
 }
 @media (min-width: 992px) {
   /* line 33, sass/_partials/_post.scss */
@@ -791,7 +782,7 @@ a.page-numbers:hover {
 /* line 48, sass/_partials/_post.scss */
 .blog-content h3:before {
   content: "## ";
-  color: #d2a26e;
+  color: #d87638;
 }
 @media (min-width: 992px) {
   /* line 48, sass/_partials/_post.scss */

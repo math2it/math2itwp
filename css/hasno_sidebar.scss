@@ -1,33 +1,75 @@
 // alignwide
 // ----------------------------------------
 .alignwide{
-  img{
-    width: 100%;
-    @media (min-width: 1200px){
-      width: calc(100% + 300px)!important;
-      left: -150px;
-      position: relative;
-    }
-  }
   @media (min-width: 1200px){
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: -150px;
+    margin-right: -150px;
+    position: relative;
   }
   // full width in smaller devices
-  @media (max-width: 1199px){
-    max-width: unset;
-    width: auto;
-  }
-  @media (max-width: 767px){
-    margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
-    margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
-  }
-  @media (max-width: 991px){
-    margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
-    margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
-  }
-  @media (max-width: 1199px){
+  @media (min-width: 992px) and (max-width: 1199px){
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
+  }
+}
+
+
+// alignfull
+// ----------------------------------------
+.alignfull{
+  width: auto;
+  img{
+    width: 100%;
+  }
+  @media (min-width: 1200px){
+    margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
+    margin-right: calc(-100vw / 2 + 760px / 2 - 15px);
+  }
+}
+
+
+// left / right 
+// ----------------------------------------
+.alignright, .alignleft{
+  @media (min-width: 1200px){
+    width: 55%;
+  }
+}
+.alignright{
+  @media (min-width: 1200px) {
+    margin-right: -150px!important;
+  }
+}
+
+.alignleft{
+  @media (min-width: 1200px) {
+    margin-left: -150px!important;
+  }
+}
+
+// gallery
+.wp-block-gallery{
+  @media (min-width: 1200px){
+    margin-left: -150px;
+    margin-right: -150px;
+  }
+}
+
+// media-text
+// ----------------------------------------
+.wp-block-media-text{
+  &.alignwide{
+    @media (min-width: 992px) and (max-width: 1199px){
+      margin-left: calc(-100vw / 2 + 800px / 2);
+      margin-right: calc(-100vw / 2 + 800px / 2);
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+      margin-left: calc(-100vw / 2 + 720px / 2);
+      margin-right: calc(-100vw / 2 + 720px / 2);
+    }
+    @media (min-width: 576px) and (max-width: 767px){
+      margin-left: calc(-100vw / 2 + 540px / 2);
+      margin-right: calc(-100vw / 2 + 540px / 2);
+    }
   }
 }
