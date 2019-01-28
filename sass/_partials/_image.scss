@@ -4,8 +4,8 @@
 // block-iamge
 // ----------------------------------------
 .wp-block-image{
-  margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+  margin-bottom: $margin-post-size_bottom;
+  margin-top: $margin-post-size_bottom;
   img{
     max-width: unset!important;
     width: 100%;
@@ -17,6 +17,7 @@
 figcaption{
   font-size: 0.9rem!important;
   color: #778899!important;
+  margin-top: 1rem!important;
 }
 
 
@@ -37,11 +38,11 @@ figcaption{
 .wp-block-media-text{
   border: 1px solid #ddd;
   @media (min-width: 768px){
-    margin-bottom: 2.5rem;
+    margin-bottom: $margin-post-size_bottom;
   }
   @media (max-width: 767px){
     display: inherit!important;
-    margin-bottom: 2rem;
+    margin-bottom: $margin-post-size_bottom;
   }
   &.alignwide{
     @media (max-width: 767px){
@@ -123,7 +124,7 @@ figcaption{
   }
   figcaption{
     @media (max-width: 767px){
-      margin-bottom: 2.5rem;
+      margin-bottom: $margin-post-size_bottom;
     }
   }
 }

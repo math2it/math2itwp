@@ -1,3 +1,6 @@
+.wp-block-embed{
+  margin-bottom: $margin-post-size_bottom;
+}
 .wp-block-embed__wrapper{
   position: relative;
   &::before{

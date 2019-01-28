@@ -261,7 +261,7 @@ Tags: bootstrap 4.1
 /* line 1, sass/_partials/_font.scss */
 body {
   font-family: 'Comfortaa', cursive;
-  color: #222;
+  color: #454545;
 }
 
 /* line 6, sass/_partials/_font.scss */
@@ -488,8 +488,8 @@ a.page-numbers:hover {
 
 /* line 6, sass/_partials/_image.scss */
 .wp-block-image {
-  margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 /* line 9, sass/_partials/_image.scss */
 .wp-block-image img {
@@ -505,159 +505,165 @@ a.page-numbers:hover {
 figcaption {
   font-size: 0.9rem !important;
   color: #778899 !important;
+  margin-top: 1rem !important;
 }
 
 @media (min-width: 1360px) {
-  /* line 26, sass/_partials/_image.scss */
+  /* line 27, sass/_partials/_image.scss */
   .wp-block-gallery {
     margin-left: -50px;
     margin-right: -50px;
   }
 }
 
-/* line 37, sass/_partials/_image.scss */
+/* line 38, sass/_partials/_image.scss */
 .wp-block-media-text {
   border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
-  /* line 37, sass/_partials/_image.scss */
+  /* line 38, sass/_partials/_image.scss */
   .wp-block-media-text {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 37, sass/_partials/_image.scss */
+  /* line 38, sass/_partials/_image.scss */
   .wp-block-media-text {
     display: inherit !important;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 767px) {
-  /* line 46, sass/_partials/_image.scss */
+  /* line 47, sass/_partials/_image.scss */
   .wp-block-media-text.alignwide {
     margin-left: 0;
     margin-right: 0;
   }
 }
-/* line 52, sass/_partials/_image.scss */
+/* line 53, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__media {
   width: 100%;
   padding: 15px;
 }
 @media (max-width: 767px) {
-  /* line 52, sass/_partials/_image.scss */
+  /* line 53, sass/_partials/_image.scss */
   .wp-block-media-text .wp-block-media-text__media {
     padding-bottom: 0;
   }
 }
-/* line 59, sass/_partials/_image.scss */
+/* line 60, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content {
   padding: 15px;
   margin-right: 0;
 }
-/* line 62, sass/_partials/_image.scss */
+/* line 63, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content .has-large-font-size {
   font-size: 1rem;
 }
-/* line 65, sass/_partials/_image.scss */
+/* line 66, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-/* line 68, sass/_partials/_image.scss */
+/* line 69, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:first-of-type {
   margin-top: 0;
 }
-/* line 71, sass/_partials/_image.scss */
+/* line 72, sass/_partials/_image.scss */
 .wp-block-media-text .wp-block-media-text__content p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (min-width: 1360px) {
-  /* line 78, sass/_partials/_image.scss */
+  /* line 79, sass/_partials/_image.scss */
   .alignwide.has-media-on-the-right img {
     left: 0;
   }
 }
 
-/* line 88, sass/_partials/_image.scss */
+/* line 89, sass/_partials/_image.scss */
 .alignwide, .alignfull {
   max-width: unset;
 }
 @media (max-width: 575px) {
-  /* line 88, sass/_partials/_image.scss */
+  /* line 89, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 @media (max-width: 991px) {
-  /* line 88, sass/_partials/_image.scss */
+  /* line 89, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     width: auto;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 88, sass/_partials/_image.scss */
+  /* line 89, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 540px / 2 - 15px);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 88, sass/_partials/_image.scss */
+  /* line 89, sass/_partials/_image.scss */
   .alignwide, .alignfull {
     margin-left: calc(-100vw / 2 + 720px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 720px / 2 - 15px);
   }
 }
 
-/* line 108, sass/_partials/_image.scss */
+/* line 109, sass/_partials/_image.scss */
 .alignfull {
   width: auto;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 108, sass/_partials/_image.scss */
+  /* line 109, sass/_partials/_image.scss */
   .alignfull {
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
   }
 }
 
-/* line 118, sass/_partials/_image.scss */
+/* line 119, sass/_partials/_image.scss */
 .alignright, .alignleft {
   margin-bottom: 0;
   width: 45%;
 }
 @media (max-width: 767px) {
-  /* line 118, sass/_partials/_image.scss */
+  /* line 119, sass/_partials/_image.scss */
   .alignright, .alignleft {
     width: 100% !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 124, sass/_partials/_image.scss */
+  /* line 125, sass/_partials/_image.scss */
   .alignright figcaption, .alignleft figcaption {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
-/* line 135, sass/_partials/_image.scss */
+/* line 136, sass/_partials/_image.scss */
 .aligncenter figcaption {
   margin-bottom: 0;
 }
 
 /* line 1, sass/_partials/_video.scss */
+.wp-block-embed {
+  margin-bottom: 2rem;
+}
+
+/* line 4, sass/_partials/_video.scss */
 .wp-block-embed__wrapper {
   position: relative;
 }
-/* line 3, sass/_partials/_video.scss */
+/* line 6, sass/_partials/_video.scss */
 .wp-block-embed__wrapper::before {
   content: "";
   display: block;
   padding-top: 50%;
 }
-/* line 8, sass/_partials/_video.scss */
+/* line 11, sass/_partials/_video.scss */
 .wp-block-embed__wrapper iframe {
   position: absolute;
   top: 0;
@@ -836,6 +842,89 @@ figcaption {
 /* line 72, sass/_partials/_post.scss */
 .blog-content b, .blog-content strong, .blog-content em {
   color: #000;
+}
+/* line 77, sass/_partials/_post.scss */
+.blog-content ul {
+  margin-bottom: 2rem;
+}
+/* line 79, sass/_partials/_post.scss */
+.blog-content ul li {
+  margin-bottom: 6px;
+}
+/* line 81, sass/_partials/_post.scss */
+.blog-content ul li ul {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+/* line 87, sass/_partials/_post.scss */
+.blog-content ol {
+  margin-bottom: 2rem;
+}
+/* line 89, sass/_partials/_post.scss */
+.blog-content ol li {
+  margin-bottom: 6px;
+}
+/* line 91, sass/_partials/_post.scss */
+.blog-content ol li ol {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+/* line 99, sass/_partials/_post.scss */
+.blog-content .wp-block-quote {
+  border-left: 4px solid #444;
+  padding-left: 1em;
+  margin-bottom: 2rem;
+}
+/* line 103, sass/_partials/_post.scss */
+.blog-content .wp-block-quote p {
+  margin-bottom: 0.5rem;
+}
+/* line 106, sass/_partials/_post.scss */
+.blog-content .wp-block-quote cite {
+  font-size: 0.9rem;
+  color: #666;
+}
+/* line 109, sass/_partials/_post.scss */
+.blog-content .wp-block-quote cite:before {
+  content: "- ";
+}
+/* line 116, sass/_partials/_post.scss */
+.blog-content .wp-block-pullquote {
+  margin-bottom: 2rem;
+  border-top: 4px solid #555d66;
+  border-bottom: 4px solid #555d66;
+  color: #555;
+  padding: 2rem 0;
+}
+/* line 122, sass/_partials/_post.scss */
+.blog-content .wp-block-pullquote blockquote {
+  margin-bottom: 0;
+}
+/* line 124, sass/_partials/_post.scss */
+.blog-content .wp-block-pullquote blockquote p {
+  margin-bottom: 1rem;
+  font-size: 140%;
+}
+/* line 128, sass/_partials/_post.scss */
+.blog-content .wp-block-pullquote blockquote cite {
+  font-size: 1rem;
+  color: #666;
+}
+/* line 131, sass/_partials/_post.scss */
+.blog-content .wp-block-pullquote blockquote cite:before {
+  content: "- ";
+}
+/* line 134, sass/_partials/_post.scss */
+.blog-content .wp-block-pullquote blockquote cite:after {
+  content: " -";
+}
+/* line 142, sass/_partials/_post.scss */
+.blog-content table {
+  margin-bottom: 2rem;
+}
+/* line 147, sass/_partials/_post.scss */
+.blog-content .wp-block-code {
+  margin-bottom: 2rem;
 }
 
 /* line 3, sass/_partials/_page.scss */
@@ -1852,7 +1941,7 @@ nav[data-toggle="toc"] .nav-link.active:before {
   background: #1976d2;
 }
 
-/* line 61, sass/style.scss */
+/* line 62, sass/style.scss */
 .row-eq-height > [class*=col-] {
   display: -webkit-box;
   display: -moz-box;
