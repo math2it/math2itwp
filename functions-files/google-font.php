@@ -1,8 +1,8 @@
 <?php
 
-// ---------------------------------------------------------------------
+// -------------------------------------------------
 // Add Google Fonts
-// ---------------------------------------------------------------------
+// -------------------------------------------------
 function math2itwp_google_fonts() {
   wp_register_style('Comfortaa', 'http://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=vietnamese');
   wp_enqueue_style( 'Comfortaa'); // default font
