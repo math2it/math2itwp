@@ -79,7 +79,7 @@ article{
 
 // media-text
 // ----------------------------------------
-.wp-block-media-text{
+.wp-block-media-text, .wp-block-columns{
   &.alignwide{
     @media (min-width: 768px) and (max-width: 991px){
       margin-left: calc(-100vw / 2 + 720px / 2);

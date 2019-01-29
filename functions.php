@@ -19,6 +19,9 @@ require_once( __DIR__ . '/functions-files/nav.php');
 // Quick edit post metta field
 require_once( __DIR__ . '/functions-files/quick-edit.php');
 
+// Gutenberg
+require_once( __DIR__ . '/functions-files/gutenberg.php');
+
 // wordpress title
 add_theme_support( 'title-tag' );
 add_filter( 'document_title_separator', 'cyb_document_title_separator' );

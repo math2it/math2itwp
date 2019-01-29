@@ -926,6 +926,91 @@ figcaption {
 .blog-content .wp-block-code {
   margin-bottom: 2rem;
 }
+/* line 152, sass/_partials/_post.scss */
+.blog-content .toolbar span, .blog-content .toolbar a {
+  padding: 2px 5px !important;
+  border-radius: 3px !important;
+  margin-right: 5px;
+  border-bottom: initial;
+}
+/* line 158, sass/_partials/_post.scss */
+.blog-content .toolbar span:hover {
+  color: #bbb !important;
+}
+/* line 161, sass/_partials/_post.scss */
+.blog-content .toolbar a:hover {
+  color: #ffff00 !important;
+  border-bottom: initial !important;
+}
+/* line 169, sass/_partials/_post.scss */
+.blog-content .wp-block-embed-facebook .wp-block-embed__wrapper:before {
+  padding-top: 0;
+}
+/* line 172, sass/_partials/_post.scss */
+.blog-content .wp-block-embed-facebook .fb_iframe_widget {
+  width: 100%;
+}
+/* line 174, sass/_partials/_post.scss */
+.blog-content .wp-block-embed-facebook .fb_iframe_widget span {
+  width: 100% !important;
+}
+/* line 177, sass/_partials/_post.scss */
+.blog-content .wp-block-embed-facebook .fb_iframe_widget iframe {
+  width: 100% !important;
+}
+/* line 184, sass/_partials/_post.scss */
+.blog-content .wp-block-columns {
+  align-items: center;
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  /* line 184, sass/_partials/_post.scss */
+  .blog-content .wp-block-columns {
+    flex-wrap: nowrap;
+  }
+}
+/* line 190, sass/_partials/_post.scss */
+.blog-content .wp-block-columns .wp-block-column {
+  padding: 15px 0 15px 15px;
+  margin-bottom: 0;
+}
+/* line 193, sass/_partials/_post.scss */
+.blog-content .wp-block-columns .wp-block-column:last-child {
+  padding-right: 15px;
+}
+/* line 196, sass/_partials/_post.scss */
+.blog-content .wp-block-columns .wp-block-column:not(:last-child) {
+  margin-right: 0;
+}
+/* line 199, sass/_partials/_post.scss */
+.blog-content .wp-block-columns .wp-block-column:not(:first-child) {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 190, sass/_partials/_post.scss */
+  .blog-content .wp-block-columns .wp-block-column {
+    flex-basis: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  /* line 206, sass/_partials/_post.scss */
+  .blog-content .wp-block-columns .wp-block-column:first-child {
+    padding-right: 15px;
+  }
+  /* line 209, sass/_partials/_post.scss */
+  .blog-content .wp-block-columns .wp-block-column:not(:first-child) {
+    padding-top: 0;
+  }
+}
+/* line 214, sass/_partials/_post.scss */
+.blog-content .wp-block-columns .wp-block-image {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* line 218, sass/_partials/_post.scss */
+.blog-content .wp-block-columns .wp-block-code {
+  margin-bottom: 0;
+}
 
 /* line 3, sass/_partials/_page.scss */
 .gioi-thieu {

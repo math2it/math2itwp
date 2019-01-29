@@ -57,7 +57,7 @@
 
 // media-text
 // ----------------------------------------
-.wp-block-media-text{
+.wp-block-media-text, .wp-block-columns{
   &.alignwide{
     @media (min-width: 992px) and (max-width: 1199px){
       margin-left: calc(-100vw / 2 + 800px / 2);

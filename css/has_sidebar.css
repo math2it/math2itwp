@@ -50,7 +50,7 @@
   margin-bottom: calc(2.5rem - 16px); }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .wp-block-media-text.alignwide {
+  .wp-block-media-text.alignwide, .wp-block-columns.alignwide {
     margin-left: calc(-100vw / 2 + 720px / 2);
     margin-right: calc(-100vw / 2 + 720px / 2); } }
 
