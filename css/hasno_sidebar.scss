@@ -13,17 +13,15 @@
   }
 }
 
-
-// alignfull
+// table
 // ----------------------------------------
-.alignfull{
-  width: auto;
-  img{
-    width: 100%;
-  }
+.wp-block-table.alignwide{
   @media (min-width: 1200px){
-    margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
-    margin-right: calc(-100vw / 2 + 760px / 2 - 15px);
+    width: calc(100% + 300px)
+  }
+  @media (min-width: 992px) and (max-width: 1199px){
+    margin-left: -50px;
+    margin-right: -50px;
   }
 }
 

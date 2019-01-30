@@ -20,10 +20,10 @@
 	</div> <!-- /.container -->
 </header>
 
-<section class="section">
+<article class="section">
 	<div class="container">
-		<div class="row">
-			<div class="col-12">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10 col-xl-8 blog-content">
 				<?php
 				// TO SHOW THE PAGE CONTENTS
 				while ( have_posts() ) : the_post(); // Because the_content() works only inside a WP Loop
@@ -36,7 +36,7 @@
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
-</section>
+</article>
 
 </main>
 

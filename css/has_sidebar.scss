@@ -89,14 +89,6 @@ article{
 }
 
 
-// full width of the screen
-.alignfull{
-  @media (min-width: 1200px){
-    width: 100%;
-  }
-}
-
-
 // wider than the content
 .alignwide{
   @media (min-width: 992px) and (max-width: 1199px){
@@ -108,6 +100,13 @@ article{
     margin-left: -50px;
     margin-right: -50px;
     position: relative;
+  }
+}
+
+// table 
+.wp-block-table.alignwide{
+  @media (min-width: 1360px){
+    width: calc(100% + 100px)
   }
 }
 

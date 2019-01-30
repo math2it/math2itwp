@@ -54,10 +54,6 @@
     margin-left: calc(-100vw / 2 + 720px / 2);
     margin-right: calc(-100vw / 2 + 720px / 2); } }
 
-@media (min-width: 1200px) {
-  .alignfull {
-    width: 100%; } }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   .alignwide {
     margin-left: -50px;
@@ -68,6 +64,10 @@
     margin-left: -50px;
     margin-right: -50px;
     position: relative; } }
+
+@media (min-width: 1360px) {
+  .wp-block-table.alignwide {
+    width: calc(100% + 100px); } }
 
 .alignright, .alignleft {
   width: 45%; }

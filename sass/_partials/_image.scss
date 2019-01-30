@@ -106,12 +106,10 @@ figcaption{
   }
 }
 
+// alignfull
 .alignfull{
-  width: auto;
-  @media (min-width: 992px) and (max-width: 1199px){
-    margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
-    margin-right: calc(-100vw / 2 + 800px / 2 - 15px);
-  }
+  margin-left: 0;
+  margin-right: 0;
 }
 
 // left / right 

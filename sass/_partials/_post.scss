@@ -26,10 +26,17 @@
   h2, h3{
     margin-bottom: $margin-post-size_bottom;
   }
+  p + h2{
+    margin-top: 4rem!important;
+  }
   h2{
     font-size: 1.8rem;
     font-weight: bold;
     color: #444;
+    margin-top: 4rem;
+    &:first-of-type{
+      margin-top: 0;
+    }
     &:before{
       content: "# ";
       color: #6293ca;
@@ -235,6 +242,30 @@
     }
     .wp-block-code{
       margin-bottom: 0;
+    }
+  }
+
+  // table 
+  .wp-block-table{
+    &.alignwide{
+      @media (max-width: 991px){
+        margin-left: 0;
+        margin-right: 0;
+      }
+      @media (min-width: 992px) and (max-width: 1199px){
+        width: calc(100% + 100px)
+      }
+    }
+    &.alignfull{
+      width: 100%;
+    }
+    // copied from .table 
+    width: 100%;
+    margin-bottom: 1rem;
+    td, th{
+      padding: .75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
     }
   }
 

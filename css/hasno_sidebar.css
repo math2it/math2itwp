@@ -8,14 +8,13 @@
     margin-left: calc(-100vw / 2 + 800px / 2 - 15px);
     margin-right: calc(-100vw / 2 + 800px / 2 - 15px); } }
 
-.alignfull {
-  width: auto; }
-  .alignfull img {
-    width: 100%; }
-  @media (min-width: 1200px) {
-    .alignfull {
-      margin-left: calc(-100vw / 2 + 760px / 2 - 15px);
-      margin-right: calc(-100vw / 2 + 760px / 2 - 15px); } }
+@media (min-width: 1200px) {
+  .wp-block-table.alignwide {
+    width: calc(100% + 300px); } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-block-table.alignwide {
+    margin-left: -50px;
+    margin-right: -50px; } }
 
 @media (min-width: 1200px) {
   .alignright, .alignleft {
