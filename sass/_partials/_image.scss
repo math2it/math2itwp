@@ -89,12 +89,12 @@ figcaption{
 .alignwide, .alignfull{
   max-width: unset;
   // only full width on smaller devices
+  @media (max-width: 991px){
+    width: auto;
+  }
   @media (max-width: 575px){
     margin-left: -15px;
     margin-right: -15px;
-  }
-  @media (max-width: 991px){
-    width: auto;
   }
   @media (min-width: 576px) and (max-width: 767px){
     margin-left: calc(-100vw / 2 + 540px / 2 - 15px);
