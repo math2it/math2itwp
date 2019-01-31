@@ -47,11 +47,15 @@
     @media (max-width: 1199px){
       font-size: 1.65rem;
     }
+    &+h3{
+      margin-top: 0;
+    }
   }
   h3{
     font-size: 1.5rem;
     color: #444;
     font-weight: bold;
+    margin-top: 2.5rem;
     &:before{
       content: "## ";
       color: #d87638;
@@ -247,6 +251,7 @@
 
   // table 
   .wp-block-table{
+    margin-bottom: $margin-post-size_bottom;
     &.alignwide{
       @media (max-width: 991px){
         margin-left: 0;
@@ -261,11 +266,80 @@
     }
     // copied from .table 
     width: 100%;
-    margin-bottom: 1rem;
     td, th{
       padding: .75rem;
       vertical-align: top;
       border-top: 1px solid #dee2e6;
+    }
+  }
+
+  // author-box
+  .author-box{
+    background-color: #fbf9ea;
+    border: 1px solid #e4deb5;
+    color: #444;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+    border-radius: 5px;
+    padding: 3%;
+    margin-top: $margin-post-size_bottom;
+    margin-bottom: $margin-post-size_bottom;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    align-items: center;
+    .author-avatar{
+      -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+      img{
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .author-info{
+      padding: 0 15px;
+      -ms-flex: 3 0 0px;
+      flex: 3 0 0;
+      .author-name{
+        font-weight: bold;
+        color: #3d73bb;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+      }
+      .author-role{
+        opacity: 0.8;
+        font-size: 0.95rem;
+        font-style: italic;
+      }
+      .author-description{
+        margin-top: 0.5rem;
+        border-top: 1px solid #ddd;
+        padding-top: 0.5rem;
+      }
+      .author-more{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        border-top: 1px solid #ddd;
+        padding-top: 0.5rem;
+        a{
+          border-bottom: 0;
+          box-shadow: none;
+          margin-right: 10px;
+          opacity: 0.8;
+          &:hover{
+            color: #2c926e;
+            opacity: 1;
+          }
+          &.author-post{
+            color: #bf3378;
+            &:hover{
+              color: #2c926e;
+            }
+          }
+        }
+      }
     }
   }
 

@@ -14,7 +14,7 @@ function math2itwp_scripts() {
   wp_enqueue_script( 'bootstrap','https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array(), '4.2.1', true );
   // others
   wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
-  // wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.6.0' );
+  wp_enqueue_style( 'font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
   wp_enqueue_style( 'fontello', get_template_directory_uri() . '/css/fontello/fontello.css' );
   wp_enqueue_script( 'jquery',
   get_template_directory_uri() . '/js/jquery-1.11.0.min.js', array( 'jquery' ), '1.11.0', true );

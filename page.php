@@ -31,9 +31,21 @@
 					<?php the_content(); ?>
 				<?php
 				endwhile; //resetting the page loop
-				wp_reset_query(); //resetting the page query
+				// wp_reset_query(); //resetting the page query
 				?>
 			</div> <!-- /.col -->
+			<?php
+				if (get_field('toc_on_sidebar',$page_id)==true):
+			?>
+					<div class="toc-sidebar">
+						<nav id="toc" data-toggle="toc" class="sticky-top">
+							<div>Trong bài này</div>
+						</nav>
+					</div>
+			<?php
+				endif;
+				wp_reset_query(); //resetting the page query
+			?>
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
 </article>
