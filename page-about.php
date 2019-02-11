@@ -126,7 +126,7 @@ $cat_ids_lenght = count($cat_ids);
 		<div class="row align-items-center justify-content-md-center">
 			<div class="col-sm-8 col-12">
 				<h3 class="title">Liên hệ với chúng tôi?</h3>
-				<form name="name-contact-form" method="POST" action="https://formspree.io/math2itblog@gmail.com">
+				<form class="contact-form" name="name-contact-form" method="POST" action="https://formspree.io/math2itblog@gmail.com">
 					<div class="form-group row contact-form">
 						<div class="col-sm-6 col-12 mb-3"><input onkeyup="enableButton()" type="text" name="name" placeholder="Tên của bạn"></div>
 						<div class="col-sm-6 col-12 mb-3"><input onkeyup="enableButton()" type="email" name="email" placeholder="Email của bạn"></div>

@@ -1,69 +1,71 @@
-.contact-form button{
-  border-radius: 20px;
-  border: transparent;
-  padding: 5px 20px;
-  background: #2bacaf;
-  font-weight: bold;
-  color: #fff;
-  font-size: 1.3rem;
-}
-.contact-form button:hover{
-  background: #2ea4a7;
-}
-.contact-form input{
-  display: block;
-  width: 100%;
-  border-width: 0 0 1.5px 0;
-  border-color: #999;
-  text-align: center;
-  padding: 10px;
-  background: transparent;
-  color: #444;
-  &::placeholder{
-    color: #888;
+.contact-form{
+  .contact-form button{
+    border-radius: 20px;
+    border: transparent;
+    padding: 5px 20px;
+    background: #2bacaf;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3rem;
   }
-}
-.contact-form button{
-  text-align: center;
-  cursor: pointer;
-}
-.contact-form input:focus, textarea:focus {
-  outline: none;
-}
-.textarea-container {
-  position: relative;
-}
-textarea, .textarea-size {
-  box-sizing: border-box;
-  border-width: 0 0 1.5px 0;
-  border-color: #999;
-  overflow: hidden;
-  width: 100%;
-  // text-align: center;
-  padding: 10px;
-  min-height: 50px;
-  background: transparent;
-  color: #5d5c5c;
-}
-textarea {
-  height: 100%;
-  position: absolute;
-  resize: none;
-  white-space: normal;
-  margin-left: -15px!important;
-  &::placeholder{
-    color: #888;
+  .contact-form button:hover{
+    background: #2ea4a7;
+  }
+  .contact-form input{
+    display: block;
+    width: 100%;
+    border-width: 0 0 1.5px 0;
+    border-color: #999;
     text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: #444;
+    &::placeholder{
+      color: #888;
+    }
   }
-}
-.textarea-size {
-  visibility: hidden;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-/* submit button */
-#contact-submit{
-  display: none;
+  .contact-form button{
+    text-align: center;
+    cursor: pointer;
+  }
+  .contact-form input:focus, textarea:focus {
+    outline: none;
+  }
+  .textarea-container {
+    position: relative;
+  }
+  textarea, .textarea-size {
+    box-sizing: border-box;
+    border-width: 0 0 1.5px 0;
+    border-color: #999;
+    overflow: hidden;
+    width: 100%;
+    // text-align: center;
+    padding: 10px;
+    min-height: 50px;
+    background: transparent;
+    color: #5d5c5c;
+  }
+  textarea {
+    height: 100%;
+    position: absolute;
+    resize: none;
+    white-space: normal;
+    margin-left: -15px!important;
+    &::placeholder{
+      color: #888;
+      text-align: center;
+    }
+  }
+  .textarea-size {
+    visibility: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* submit button */
+  #contact-submit{
+    display: none;
+  }
 }

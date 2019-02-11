@@ -50,6 +50,15 @@ function ch_essentials_options(){
     'site_setting' // sectom id 
   );
 
+  // disqus
+  add_settings_field(
+    'site_disqus', 
+    'Disqus\' shortname', 
+    'site_setting_site_disqus',  // function to call
+    'site_setting_option', 
+    'site_setting' // sectom id 
+  );
+
 
   /* Header Options Section */
   add_settings_section( 
@@ -71,7 +80,7 @@ function ch_essentials_options(){
   register_setting('site_setting_option', 'facebook');
   register_setting('site_setting_option', 'facebook-group');
   register_setting('site_setting_option', 'site_short_description');
-
+  register_setting('site_setting_option', 'site_disqus');
 
   // header
   register_setting('header_setting_option','header_number_latest_post_idx');
@@ -130,6 +139,12 @@ function site_setting_facebook_group() { ?>
 function site_setting_site_short_description() { ?>
   <input type="text" name="site_short_description" id="site_short_description" value="<?php echo get_option('site_short_description'); ?>" />
 <?php }
+
+// Disqus's shortname
+function site_setting_site_disqus() { ?>
+  <input type="text" name="site_disqus" id="site_disqus" value="<?php echo get_option('site_disqus'); ?>" />
+<?php }
+
 
 // Number of latest post in home page
 function header_number_latest_post_idx_call() { ?>

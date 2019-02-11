@@ -62,6 +62,33 @@ function writy_setup() {
   add_action( 'after_setup_theme', 'writy_setup' );
 
 
+// comments 
+// ------------------------------------------------
+
+// function wpbeginner_comment_text_before($arg) {
+//     $arg['comment_notes_before'] = "<p class='comment-policy'>We are glad you have chosen to leave a comment. Please keep in mind that comments are moderated according to our <a href='http://www.example.com/comment-policy-page/'>comment policy</a>.</p>";
+//     return $arg;
+// }
+  
+// add_filter('comment_form_defaults', 'wpbeginner_comment_text_before');
+
+// // move comment field to bottom
+// function wpb_move_comment_field_to_bottom( $fields ) {
+//     $comment_field = $fields['comment'];
+//     unset( $fields['comment'] );
+//     $fields['comment'] = $comment_field;
+//     return $fields;
+// }
+// add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom');
+
+// // remove website field 
+// function wpbeginner_remove_comment_url($arg) {
+//     $arg['url'] = '';
+//     return $arg;
+// }
+// add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
+
+
 
 
 

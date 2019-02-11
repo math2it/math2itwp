@@ -27,13 +27,13 @@
     margin-bottom: $margin-post-size_bottom;
   }
   p + h2{
-    margin-top: 4rem!important;
+    margin-top: 3rem!important;
   }
   h2{
     font-size: 1.8rem;
     font-weight: bold;
     color: #444;
-    margin-top: 4rem;
+    margin-top: 3rem;
     &:first-of-type{
       margin-top: 0;
     }
@@ -301,11 +301,11 @@
     .author-info{
       padding: 0 15px;
       -ms-flex: 3 0 0px;
-      flex: 3 0 0;
+      flex: 4 0 0;
       .author-name{
         font-weight: bold;
         color: #3d73bb;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-transform: capitalize;
       }
       .author-role{
@@ -317,9 +317,10 @@
         margin-top: 0.5rem;
         border-top: 1px solid #ddd;
         padding-top: 0.5rem;
+        font-size: 1rem;
       }
       .author-more{
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-top: 0.5rem;
         border-top: 1px solid #ddd;
         padding-top: 0.5rem;
@@ -340,6 +341,11 @@
           }
         }
       }
+      @media (max-width: 991px){
+        .author-name{font-size: 1.3rem;}
+        .author-role, .author-more{font-size: 0.9rem;}
+        .author-description{font-size: 0.95rem;}
+      }
     }
     &.alignwide{
       @media (max-width: 575px){
@@ -353,6 +359,11 @@
       @media (min-width: 768px) and (max-width: 991px){
         margin-left: calc(-100vw / 2 + 720px / 2);
         margin-right: calc(-100vw / 2 + 720px / 2);
+      }
+      // full width in smaller devices
+      @media (min-width: 992px) and (max-width: 1199px){
+        margin-left: calc(-100vw / 2 + 800px / 2);
+        margin-right: calc(-100vw / 2 + 800px / 2);
       }
     }
     @media (max-width: 575px){
@@ -370,4 +381,20 @@
 
 } // blog-content
 
-
+.related-post{
+  margin-bottom: $margin-post-size_bottom;
+  .sec-title-middle{
+    margin-bottom: 3.5rem!important;
+    margin-top: 2rem!important;
+  }
+  .new-title{
+    font-size: 2rem!important;
+    color: #666;
+    @media (max-width: 577px){
+      font-size: 1.8rem!important;
+    }
+  }
+  .view-all{
+    display: none!important;
+  }
+}
