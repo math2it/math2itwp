@@ -1,0 +1,96 @@
+// ghostkit plugin
+//-------------------------------------
+
+// alert
+.ghostkit-alert{
+  margin-bottom: $margin-post-size_bottom;
+}
+
+// carousel
+.ghostkit-carousel{
+  margin-bottom: $margin-post-size_bottom;
+  .swiper-wrapper{
+    align-items: center;
+  }
+}
+
+// accordion
+.ghostkit-accordion{
+  margin-bottom: $margin-post-size_bottom;
+  .ghostkit-accordion-item{
+    border-bottom: 1px solid #ddd;
+    a:hover{
+      border-bottom: none;
+      box-shadow: none;
+      .ghostkit-accordion-item-collapse{
+        color: #3168cc;
+      }
+    }
+    .ghostkit-accordion-item-content{
+      opacity: 0.85;
+      font-size: 1rem;
+      padding: 0.75em;
+    }
+    .ghostkit-accordion-item-collapse{
+      font-size: inherit;
+    }
+  }
+}
+
+// tab
+.ghostkit-tabs{
+  margin-bottom: $margin-post-size_bottom;
+  a{
+    box-shadow: none;
+    &:hover{
+      border-bottom: none;
+      box-shadow: none;
+    }
+  }
+  .ghostkit-tabs-buttons{
+    border-color: #477cb1;
+    .ghostkit-tabs-buttons-item:hover{
+      border-bottom-color: inherit;
+    }
+    .ghostkit-tabs-buttons-item-active{
+      border-color: #477cb1!important;
+      border-bottom: none;
+    }
+  }
+  .ghostkit-tabs-content{
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+}
+
+// progress
+.ghostkit-progress{
+  margin-bottom: $margin-post-size_bottom;
+  .ghostkit-progress-wrap{
+    height: 40px!important;
+    background-color: #e8e8e8!important;
+    .ghostkit-progress-bar{
+      height: 100%!important;
+    }
+  }
+}
+
+// counter-box
+.ghostkit-counter-box{
+  margin-bottom: $margin-post-size_bottom;
+  .ghostkit-counter-box-content{
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+
+// github-gist
+.ghostkit-gist{
+  margin-bottom: $margin-post-size_bottom;
+  .gist-data{
+    padding: 15px 0;
+  }
+}
