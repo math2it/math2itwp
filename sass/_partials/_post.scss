@@ -388,8 +388,8 @@
 
 // related post
 .related-post{
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   padding: 0 15px;
   .container{
     border: 1.5px solid #ddd;
@@ -407,7 +407,7 @@
     font-size: 1.9rem!important;
     color: #666;
     @media (max-width: 577px){
-      font-size: 1.75rem!important;
+      font-size: 1.5rem!important;
     }
   }
   .view-all{
@@ -417,11 +417,36 @@
 
 
 // comments
-
 .comment-section{
-  margin: 0 0 3rem 0;
+  margin: 0 0 2rem 0;
   #show-comments{
     font-size: 1.3rem;
     padding: 0.5rem;
   }
+}
+
+
+// sharing buttons
+.sharing-buttons{
+  margin-bottom: $margin-post-size_bottom;
+  margin-top: $margin-post-size_bottom;
+  .flex-fill{
+    padding: 0 5px;
+  }
+  .item{
+    background: #272c30;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    line-height: 1;
+    border-radius: 100px;
+    &:hover{
+      background: #444;
+    }
+  }
+}
+
+div.extra-info{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

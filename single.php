@@ -73,64 +73,107 @@
 
 </main>
 
-<?php // author-box ?>
-<!-- <div> -->
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-8 blog-content">
-		<?php if (get_field('show_author_box',$post_id)==true): ?>
-				<div class="alignwide author-box">
-					<div class="author-avatar">
-						<?php 
-							if(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE): 
-							$avatar = get_avatar_url(get_the_author_meta('ID'),100);
-							?>
-								<img src="<?php echo $avatar; ?>" alt="<?php the_author() ?>'s avatar'">
-						<?php else: ?>
-								<img src="<?php echo get_template_directory_uri() ?>/img/author.svg">
-						<?php endif; ?>
-					</div>
-					<div class="author-info">
-						<div class="author-name">
-							<?php 
-								$fname = get_the_author_meta('first_name');
-								$lname = get_the_author_meta('last_name');
-								$full_name = '';
-								if( empty($fname)){
-										$full_name = $lname;
-								} elseif( empty( $lname )){
-										$full_name = $fname;
-								} else {
-										//both first name and last name are present
-										$full_name = "{$lname} {$fname}";
-								}
-								echo $full_name;
-							?>
+<div class="extra-info">
+<!-- sharing buttons -->
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-10 col-xl-8 blog-content">
+			<div class="d-flex alignwide sharing-buttons">
+				<div class="flex-fill">
+					<?php 
+						$facebook_url = 'https://www.facebook.com/sharer/sharer.php?u=' . get_the_permalink() . '&title=' . get_the_title() . '';
+					?>
+					<a href="javascript:void(0)" onclick="atomicBlocksShare('<?php echo $facebook_url ?>','<?php echo get_the_title() ?>','600','600')" title="Share on facebook">
+						<div class="item">
+							<i class="fa fa-facebook" aria-hidden="true"></i> 
+							Chia sẻ trên facebook
 						</div>
-						<div class="author-role">
-							<?php echo get_field('user_role','user_'.get_the_author_meta('ID')) ?>
-						</div>
-						<div class="author-description">
-							<?php echo nl2br(get_the_author_meta('description')); ?>
-						</div>
-						<div class="author-more">
-							<a href="mailto:<?php echo get_the_author_meta('user_email') ?>"> 
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-								Email cho <?php the_author() ?>
-							</a> 
-							<a class="author-post" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
-								<i class="fa fa-files-o" aria-hidden="true"></i>
-								Xem bài <?php the_author() ?> viết
-							</a>
-						</div>
-					</div>
+					</a>
 				</div>
-				<?php endif; ?><!-- /author-box -->
+				<div class="flex-fill">
+					<?php 
+						$email_url = 'mailto:?subject=' . get_the_title() . '&body=Một bài viết hay trên Math2IT: ' . get_the_title() . ' &mdash; ' . get_the_permalink() . '';
+					?>
+					<a href="<?php echo $email_url ?>" title="Share via email">
+						<div class="item">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							Chia sẻ qua email
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-<!-- </div> -->
+</div>
 
+<script>
+	function atomicBlocksShare( url, title, w, h ){
+		var left = ( window.innerWidth / 2 )-( w / 2 );
+		var top  = ( window.innerHeight / 2 )-( h / 2 );
+		return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+	}
+	
+</script>
+
+
+<!-- author's box -->
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-10 col-xl-8 blog-content">
+	<?php if (get_field('show_author_box',$post_id)==true): ?>
+			<div class="alignwide author-box">
+				<div class="author-avatar">
+					<?php 
+						if(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE): 
+						$avatar = get_avatar_url(get_the_author_meta('ID'),100);
+						?>
+							<img src="<?php echo $avatar; ?>" alt="<?php the_author() ?>'s avatar'">
+					<?php else: ?>
+							<img src="<?php echo get_template_directory_uri() ?>/img/author.svg">
+					<?php endif; ?>
+				</div>
+				<div class="author-info">
+					<div class="author-name">
+						<?php 
+							$fname = get_the_author_meta('first_name');
+							$lname = get_the_author_meta('last_name');
+							$full_name = '';
+							if( empty($fname)){
+									$full_name = $lname;
+							} elseif( empty( $lname )){
+									$full_name = $fname;
+							} else {
+									//both first name and last name are present
+									$full_name = "{$lname} {$fname}";
+							}
+							echo $full_name;
+						?>
+					</div>
+					<div class="author-role">
+						<?php echo get_field('user_role','user_'.get_the_author_meta('ID')) ?>
+					</div>
+					<div class="author-description">
+						<?php echo nl2br(get_the_author_meta('description')); ?>
+					</div>
+					<div class="author-more">
+						<a href="mailto:<?php echo get_the_author_meta('user_email') ?>"> 
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							Email cho <?php the_author() ?>
+						</a> 
+						<a class="author-post" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
+							<i class="fa fa-files-o" aria-hidden="true"></i>
+							Xem bài <?php the_author() ?> viết
+						</a>
+					</div>
+				</div>
+			</div>
+			<?php endif; ?><!-- /author-box -->
+		</div>
+	</div>
+</div>
+
+
+<!-- related posts -->
 <div class="related-post">
 <?php
 	$tags = wp_get_post_tags($post_id);
@@ -152,6 +195,7 @@
 </div>
 
 
+<!-- comments -->
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-12 col-lg-10 col-xl-8">
@@ -161,5 +205,7 @@
 		</div>
 	</div>
 </div>
+
+</div> <!-- /div extra info -->
 
 <?php get_footer(); ?>

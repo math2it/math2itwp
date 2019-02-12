@@ -1283,8 +1283,8 @@ textarea:focus {
 
 /* line 390, sass/_partials/_post.scss */
 .related-post {
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   padding: 0 15px;
 }
 /* line 394, sass/_partials/_post.scss */
@@ -1310,7 +1310,7 @@ textarea:focus {
 @media (max-width: 577px) {
   /* line 406, sass/_partials/_post.scss */
   .related-post .new-title {
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
   }
 }
 /* line 413, sass/_partials/_post.scss */
@@ -1318,14 +1318,43 @@ textarea:focus {
   display: none !important;
 }
 
-/* line 421, sass/_partials/_post.scss */
+/* line 420, sass/_partials/_post.scss */
 .comment-section {
-  margin: 0 0 3rem 0;
+  margin: 0 0 2rem 0;
 }
-/* line 423, sass/_partials/_post.scss */
+/* line 422, sass/_partials/_post.scss */
 .comment-section #show-comments {
   font-size: 1.3rem;
   padding: 0.5rem;
+}
+
+/* line 430, sass/_partials/_post.scss */
+.sharing-buttons {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+/* line 433, sass/_partials/_post.scss */
+.sharing-buttons .flex-fill {
+  padding: 0 5px;
+}
+/* line 436, sass/_partials/_post.scss */
+.sharing-buttons .item {
+  background: #272c30;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  line-height: 1;
+  border-radius: 100px;
+}
+/* line 443, sass/_partials/_post.scss */
+.sharing-buttons .item:hover {
+  background: #444;
+}
+
+/* line 449, sass/_partials/_post.scss */
+div.extra-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* line 3, sass/_partials/_page.scss */
@@ -2203,6 +2232,7 @@ a.no-a-effect {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
+  color: #666;
 }
 
 /* line 1, sass/_partials/_contact.scss */
