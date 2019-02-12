@@ -136,7 +136,7 @@
 	$tags = wp_get_post_tags($post_id);
 	$tag_ids = array();
 	set_query_var('typeTitle', 'middle'); 
-	set_query_var('customTitle', 'Bài viết liên quan');
+	set_query_var('customTitle', 'Có thể bạn thích?');
   $list_post_args = array(
 		'tag__in' 					=> $tag_ids,
 		'post__not_in' 			=> array($post_id),
@@ -147,7 +147,7 @@
 	$list_posts = get_posts($list_post_args);
 	set_query_var('list_posts', $list_posts);
 ?>
-<?php get_template_part( 'parts/cat-layout-photo-intro' ); ?>
+<?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
 <?php wp_reset_query(); // reset ?>
 </div>
 

@@ -1,4 +1,4 @@
-<!-- Idea of layout: https://blog.ghost.org -->
+<?php // Idea of layout: https://blog.ghost.org ?>
 
 <?php if ( $list_posts ) {?>
 

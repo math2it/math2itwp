@@ -381,20 +381,43 @@
 
 } // blog-content
 
+
+// related post
 .related-post{
-  margin-bottom: $margin-post-size_bottom;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding: 0 15px;
+  .container{
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding-top: 3rem;
+  }
   .sec-title-middle{
-    margin-bottom: 3.5rem!important;
-    margin-top: 2rem!important;
+    margin-bottom: 0!important;
+    margin-top: -4rem!important;
+    div{
+      display: none;
+    }
   }
   .new-title{
-    font-size: 2rem!important;
+    font-size: 1.9rem!important;
     color: #666;
     @media (max-width: 577px){
-      font-size: 1.8rem!important;
+      font-size: 1.75rem!important;
     }
   }
   .view-all{
     display: none!important;
+  }
+}
+
+
+// comments
+
+.comment-section{
+  margin: 0 0 3rem 0;
+  #show-comments{
+    font-size: 1.3rem;
+    padding: 0.5rem;
   }
 }

@@ -1275,29 +1275,51 @@ textarea:focus {
   }
 }
 
-/* line 384, sass/_partials/_post.scss */
-.related-post {
-  margin-bottom: 2rem;
-}
 /* line 386, sass/_partials/_post.scss */
-.related-post .sec-title-middle {
-  margin-bottom: 3.5rem !important;
-  margin-top: 2rem !important;
+.related-post {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding: 0 15px;
 }
 /* line 390, sass/_partials/_post.scss */
+.related-post .container {
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  padding-top: 3rem;
+}
+/* line 395, sass/_partials/_post.scss */
+.related-post .sec-title-middle {
+  margin-bottom: 0 !important;
+  margin-top: -4rem !important;
+}
+/* line 398, sass/_partials/_post.scss */
+.related-post .sec-title-middle div {
+  display: none;
+}
+/* line 402, sass/_partials/_post.scss */
 .related-post .new-title {
-  font-size: 2rem !important;
+  font-size: 1.9rem !important;
   color: #666;
 }
 @media (max-width: 577px) {
-  /* line 390, sass/_partials/_post.scss */
+  /* line 402, sass/_partials/_post.scss */
   .related-post .new-title {
-    font-size: 1.8rem !important;
+    font-size: 1.75rem !important;
   }
 }
-/* line 397, sass/_partials/_post.scss */
+/* line 409, sass/_partials/_post.scss */
 .related-post .view-all {
   display: none !important;
+}
+
+/* line 417, sass/_partials/_post.scss */
+.comment-section {
+  margin: 0 0 3rem 0;
+}
+/* line 419, sass/_partials/_post.scss */
+.comment-section #show-comments {
+  font-size: 1.3rem;
+  padding: 0.5rem;
 }
 
 /* line 3, sass/_partials/_page.scss */
@@ -2137,6 +2159,46 @@ a.no-a-effect {
   display: none;
 }
 
+/* line 2, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .item {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  transition: all .5s ease;
+}
+/* line 7, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .item:hover .post-image {
+  border-radius: 7px;
+}
+/* line 9, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .item:hover .post-image img {
+  transform: scale(1.1);
+}
+/* line 13, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .item:hover .post-title {
+  color: #1e558e;
+}
+/* line 18, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .post-image {
+  height: 150px;
+  overflow: hidden;
+}
+/* line 21, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: transform .2s;
+}
+/* line 29, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .post-title {
+  line-height: 1.4;
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 /* line 1, sass/_partials/_contact.scss */
 .contact-form {
   /* submit button */
@@ -2309,7 +2371,7 @@ nav[data-toggle="toc"] .nav-link.active:before {
   background: #1976d2;
 }
 
-/* line 63, sass/style.scss */
+/* line 64, sass/style.scss */
 .row-eq-height > [class*=col-] {
   display: -webkit-box;
   display: -moz-box;

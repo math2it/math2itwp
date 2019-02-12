@@ -1,0 +1,36 @@
+.layout-photo-title{
+  .item{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    transition: all .5s ease;
+    &:hover{
+      .post-image{
+        border-radius: 7px;
+        img{
+          transform: scale(1.1);
+        }
+      }
+      .post-title{
+        color: $a-hover;
+      }
+    }
+  }
+  .post-image{
+    height: 150px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 7px;
+      transition: transform .2s;
+    }
+  }
+  .post-title{
+    line-height: 1.4;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
