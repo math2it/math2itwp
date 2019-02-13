@@ -392,9 +392,9 @@
   margin-top: 2rem;
   padding: 0 15px;
   .container{
-    border: 1.5px solid #ddd;
-    border-radius: 10px;
+    border-top: 4px dashed #ddd;
     padding-top: 3rem;
+    border-bottom: 4px dashed #ddd;
   }
   .sec-title-middle{
     margin-bottom: 0!important;

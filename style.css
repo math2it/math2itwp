@@ -1290,9 +1290,9 @@ textarea:focus {
 }
 /* line 394, sass/_partials/_post.scss */
 .related-post .container {
-  border: 1.5px solid #ddd;
-  border-radius: 10px;
+  border-top: 4px dashed #ddd;
   padding-top: 3rem;
+  border-bottom: 4px dashed #ddd;
 }
 /* line 399, sass/_partials/_post.scss */
 .related-post .sec-title-middle {
@@ -2201,7 +2201,7 @@ a.no-a-effect {
 
 /* line 2, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   width: 100%;
   transition: all .5s ease;
 }
@@ -2237,7 +2237,13 @@ a.no-a-effect {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #666;
+  color: #444;
+}
+/* line 37, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .post-date {
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.85rem;
 }
 
 /* line 1, sass/_partials/_contact.scss */

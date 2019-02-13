@@ -86,7 +86,7 @@
 </div>
 
 <!-- list of posts -->
-<?php get_template_part( 'parts/cat-layout-photo-intro' ); ?>
+<?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
 
 <!-- pagination -->
 <div class="container">

@@ -1,6 +1,6 @@
 .layout-photo-title{
   .item{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     width: 100%;
     transition: all .5s ease;
     &:hover{
@@ -32,6 +32,11 @@
     text-align: center;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #666;
+    color: #444;
+  }
+  .post-date{
+    text-align: center;
+    opacity: 0.8;
+    font-size: 0.85rem;
   }
 }
