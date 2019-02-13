@@ -1,4 +1,4 @@
-<!-- This page template is used only for gioi-thieu -->
+<!-- This page template is used only for editor's choice -->
 
 
 <!-- header -->
@@ -6,126 +6,155 @@
 <?php get_header(); ?>
 
 
-<!-- intro header -->
-<!-- ====================================== -->
-<section class="bg-black header-intro gioi-thieu">
-  <div class="container">
-    <div class="row align-items-center">
-      <div id="page-intro" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-12 intro">
-        <div class="img-avatar">
-          Math<i class="icon-math2it"></i>IT
+<main role="main">
+
+<header class="header-page bg-black">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-8">
+				<div class="img-avatar">
+          <i class="icon-star-circled" style="color: #f3bb34;"></i>
         </div>
-        <h4><?php echo get_bloginfo( 'description' ); ?></h4>
-        <p>
-					<?php echo get_option('site_short_description') ?>
-        </p>
-        <div class="idx-social">
-          <a class="mr-s" href="<?php echo get_bloginfo( 'wpurl' ) ?>"><i class="icon-home"></i><span class="hide-on-xs"> Trang chủ</span></a>
-          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i><span class="hide-on-xs"> Nhóm Math2IT</span></a>
-          <a class="mr-s" target="_blank" href="<?php echo get_option('facebook'); ?>"><i class="icon-facebook-squared"></i><span class="hide-on-xs"> FB Math2IT</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+				<h2 class="page-title">
+					Math2IT tuyển chọn
+				</h2>
+				<h4 class="page-subtitle">
+					Dựa trên tiêu chí bổ ích và hay được xem lại nhiều nhất
+				</h4>
+			</div> <!-- /.col -->
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
+</header>
 
 
-<!-- main topics -->
-<!-- ====================================== -->
-
-<?php 
-$cat_ids = array(
-	1, // toan hoc
-	2, // cong nghe
-	6, // bai dich
-	7, // latex
-	8 // giao-duc
-);
-$cat_ids_lenght = count($cat_ids);
+<?php
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  // list of posts
+  // $list_post_args = array(
+  //   'meta_key'         => 'top_choice',
+  //   'meta_value'       => 1,
+	// 	'paged'            => $paged,
+	// 	'post_status'      => 'publish',
+	// 	'posts_per_page'   => 4
+  // );
+  $list_post_args = array(
+    'category'          => 1,
+    'paged'             => $paged,
+    'post_status'       => 'publish',
+    'posts_per_page'    => 8
+  );
+  $list_posts = get_posts($list_post_args);
+	// set_query_var('list_posts', $list_posts);
+	
+	// pagination
+  global $wp_query;
+  $big = 999999999; // need an unlikely integer
+  $pag_arg = array(
+    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+    'format' => '?paged=%#%',
+    'prev_text' => __('«'),
+    'next_text' => __('»'),
+    'current' => max( 1, get_query_var('paged') ),
+    'total' => $wp_query->max_num_pages-1
+  );
 ?>
 
-<section class="style-2-3">
-	<div class="container">
-		<div class="row row-eq-height justify-content-md-center">
-		<?php 
-		for($x = 0; $x < $cat_ids_lenght; $x++):
-			$cat_id = $cat_ids[$x];
-			if (($cat_id == 1) or ($cat_id == 2)):
-				$col = 'col-12 col-md-6'; // 2 cards
-				$post_image = 'h-250';
-			else:
-				$col = 'col-12 col-md-4'; // 3 cards
-				$post_image = 'h-200';
-			endif;
-		?>
-			<div class="<?php echo $col ?>">
-				<div class="item">
-					<a class="no-a-effect" href="<?php echo esc_url( get_category_link($cat_id) ) ?>">
-						<div class="post-image">
-							<i style="color: <?php echo get_field('dark_color','category_'.$cat_id) ?>;" class="<?php echo get_field('cat-icon','category_'.$cat_id) ?>"></i>
-						</div>
-						<div class="post-cat">
-								<?php echo get_cat_name($cat_id) ?>
-						</div>
-						<div class="post-intro">
-							<?php echo category_description($cat_id); ?>
-						</div>
-					</a>
-				</div> <!-- /item -->
-			</div> <!-- /col-12 col-sm-6 -->
-		<?php endfor; ?>
-	
-		</div> <!-- /row -->
-	</div>
+<?php if ( $list_posts ) {?>
+<section class="layout-photo-intro sec-cat sec-cat-<?php echo $cat_id ?>">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <?php
+          echo '<div class="paginate-links mb-5">';
+            echo paginate_links( $pag_arg );
+          echo '</div>';
+        ?>
+      </div>
+    </div>
+
+    <div class="row row-eq-height justify-content-center">
+
+    <?php foreach($list_posts as $post) : ?>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="item">
+          <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+            <div class="post-image">
+              <?php
+                if ( has_post_thumbnail($post->ID) ) {
+                  $postThumbnail = get_the_post_thumbnail($post->ID,'medium' );
+                  echo $postThumbnail;
+                }else{
+                  $first_cat = get_the_category($post->ID);
+                  $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
+                  echo wp_get_attachment_image( $postThumbnail['id'],'medium');
+                }
+              ?>
+            </div>
+          </a>
+          <?php 
+            $first_cat = get_the_category($post->ID);
+            $rand_number = rand(0,count($first_cat)-1);
+          ?>
+          <a class="no-a-effect" href="<?php echo esc_url( get_category_link( $first_cat[0]->term_id ) ) ?>">
+            <div class="post-cat" style="background: <?php echo get_field('dark_color', $first_cat[$rand_number]); ?>;">
+                <?php echo esc_html( $first_cat[$rand_number]->name ); ?>
+            </div>
+          </a>
+          <div class="post-title">
+            <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+              <?php echo $post->post_title; ?>
+            </a>
+          </div>
+          <div class="post-date">
+            <i class="icon-clock"></i>
+            <?php 
+							date_default_timezone_set('Asia/Ho_Chi_Minh
+							');
+							$from = strtotime($post->post_date);
+							$today = time();
+							$difference = floor(($today - $from)/86400); // day
+							if ($difference == 0):
+								echo 'Vừa mới đăng';
+							elseif ($difference < 7):
+								echo $difference.' ngày trước';
+							else:
+								echo date('d-m-y', strtotime($post->post_date));
+							endif;
+						?>
+          </div>
+          <div class="post-excerpt">
+            <?php
+              if (get_field('abstract',$post->ID)):
+                echo get_field('abstract',$post->ID);
+              else:
+                the_excerpt();
+              endif;
+            ?>
+          </div>
+        </div>
+      </div>
+    <?php endforeach ?>
+
+    </div> <!-- /row -->
+    
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <?php
+          echo '<div class="paginate-links mt-5">';
+            echo paginate_links( $pag_arg );
+          echo '</div>';
+        ?>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
 </section>
+<?php } // end if $list_posts ?> 
 
 
-<section class="section community">
-	<div class="container">
-		<div class="row align-items-center justify-content-md-center">
-			<div class="col-12 col-sm-6 col-md-5 des">
-				<h2>Cộng đồng Math2IT</h2>
-				<p><a href="https://www.facebook.com/math2it" target="_blank">Fanpage Math2IT</a> luôn cập nhật và chia sẻ những thông tin hữu ích về học thuật. <a href="https://www.facebook.com/groups/math2it/" target="_blank">Nhóm Math2IT</a> tập hợp những thành viên nhiệt tình, sẵn sàng giúp đỡ và chia sẻ với bạn.</p>
-			</div>
-			<div class="col-12 col-sm-6 col-md-5">
-				<div class="photo">
-					<img src="<?php echo  get_template_directory_uri() ?>/img/community.png">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
-<section class="section" style="padding-bottom: 6rem;">
-	<div class="container">
-		<div class="row align-items-center justify-content-md-center">
-			<div class="col-12 col-lg-10">
-				<div class="newsletter">
-					<div class="photo">
-						<img src="<?php echo  get_template_directory_uri() ?>/img/send.png">
-					</div>
-					<div class="form">
-						<div class="newsletter-text">
-							Cập nhật bài đăng mới qua email?
-						</div>
-						<div class="newsletter-form">
-							<input type="email" name="email" placeholder="Email của bạn" class="email">
-							<input type="submit" name="submit" value="OK" class="submit"> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- <section class="section contact">
-	<div class="container">
-		<div class="row align-items-center justify-content-md-center">
-		<a href="mailto:math2it.blog@gmail.com">math2it.blog@gmail.com</a>.
-		</div>
-	</div>
-</section> -->
+</main>
 
 
 <!-- footer -->

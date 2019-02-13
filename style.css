@@ -59,8 +59,9 @@ Tags: bootstrap 4.1
   font-size: 4rem;
   font-weight: 800;
   color: #fff;
+  text-align: center;
 }
-/* line 47, sass/_partials/_header.scss */
+/* line 48, sass/_partials/_header.scss */
 .img-avatar .icon-math2it {
   font-size: 9rem;
   color: #f15f5f;
@@ -75,7 +76,7 @@ Tags: bootstrap 4.1
   .img-avatar {
     font-size: 3rem;
   }
-  /* line 58, sass/_partials/_header.scss */
+  /* line 59, sass/_partials/_header.scss */
   .img-avatar .icon-math2it {
     font-size: 5rem;
     margin-left: -0.5rem;
@@ -83,113 +84,113 @@ Tags: bootstrap 4.1
   }
 }
 
-/* line 67, sass/_partials/_header.scss */
+/* line 68, sass/_partials/_header.scss */
 .idx-social {
   font-size: 1.2rem;
 }
-/* line 69, sass/_partials/_header.scss */
+/* line 70, sass/_partials/_header.scss */
 .idx-social a {
   color: #fffaad;
 }
-/* line 71, sass/_partials/_header.scss */
+/* line 72, sass/_partials/_header.scss */
 .idx-social a span {
   text-shadow: 2px 2px 4px #000;
 }
-/* line 74, sass/_partials/_header.scss */
+/* line 75, sass/_partials/_header.scss */
 .idx-social a:hover {
   text-decoration: none;
   color: #ffe066;
 }
-/* line 77, sass/_partials/_header.scss */
+/* line 78, sass/_partials/_header.scss */
 .idx-social a:hover .icon-home {
   color: inherit;
 }
-/* line 83, sass/_partials/_header.scss */
+/* line 84, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 83, sass/_partials/_header.scss */
+  /* line 84, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
 }
 @media (max-width: 575px) {
-  /* line 67, sass/_partials/_header.scss */
+  /* line 68, sass/_partials/_header.scss */
   .idx-social {
     font-size: 2rem;
   }
-  /* line 91, sass/_partials/_header.scss */
+  /* line 92, sass/_partials/_header.scss */
   .idx-social .mr-s:last-of-type {
     margin-right: 0;
   }
 }
 
-/* line 100, sass/_partials/_header.scss */
+/* line 101, sass/_partials/_header.scss */
 .latest-top {
   border-bottom: 0.5px #969494 solid;
   padding-bottom: 5px;
 }
-/* line 103, sass/_partials/_header.scss */
+/* line 104, sass/_partials/_header.scss */
 .latest-top .new-title {
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff;
 }
-/* line 108, sass/_partials/_header.scss */
+/* line 109, sass/_partials/_header.scss */
 .latest-top a {
   font-size: 1.1rem;
   color: #a1a7b9;
   line-height: 2;
 }
-/* line 112, sass/_partials/_header.scss */
+/* line 113, sass/_partials/_header.scss */
 .latest-top a:hover {
   color: #fff;
 }
-/* line 116, sass/_partials/_header.scss */
+/* line 117, sass/_partials/_header.scss */
 .latest-top .view-all {
   color: #eee !important;
 }
 
-/* line 121, sass/_partials/_header.scss */
+/* line 122, sass/_partials/_header.scss */
 .newest-list a {
   text-decoration: none;
 }
-/* line 123, sass/_partials/_header.scss */
+/* line 124, sass/_partials/_header.scss */
 .newest-list a .new-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
 @media (max-width: 767px) {
-  /* line 123, sass/_partials/_header.scss */
+  /* line 124, sass/_partials/_header.scss */
   .newest-list a .new-item {
     padding: 0 1rem;
   }
 }
-/* line 132, sass/_partials/_header.scss */
+/* line 133, sass/_partials/_header.scss */
 .newest-list a .new-item .cat-icon {
   width: 3.5rem;
   color: #ddd;
   font-size: 2rem;
 }
-/* line 137, sass/_partials/_header.scss */
+/* line 138, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post {
   width: calc(100% - 3.5rem);
 }
-/* line 139, sass/_partials/_header.scss */
+/* line 140, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-date {
   font-size: 0.8rem;
   color: #ccc;
   margin-bottom: 0.3rem;
 }
-/* line 144, sass/_partials/_header.scss */
+/* line 145, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
 }
-/* line 152, sass/_partials/_header.scss */
+/* line 153, sass/_partials/_header.scss */
 .newest-list a:hover .post-title {
   color: #ffeead !important;
 }
@@ -197,7 +198,7 @@ Tags: bootstrap 4.1
 /* line 1, sass/_partials/_footer.scss */
 .footer {
   background: #272a34;
-  padding: 40px 20px;
+  padding: 30px 20px;
   color: #ddd;
   text-align: center;
   border-top: 1px solid #e5e5e5;
@@ -1350,8 +1351,12 @@ textarea:focus {
 .sharing-buttons .item:hover {
   background: #444;
 }
+/* line 446, sass/_partials/_post.scss */
+.sharing-buttons .item svg {
+  margin-right: 5px;
+}
 
-/* line 449, sass/_partials/_post.scss */
+/* line 452, sass/_partials/_post.scss */
 div.extra-info {
   margin-top: 2rem;
   margin-bottom: 2rem;
