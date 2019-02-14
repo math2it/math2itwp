@@ -4,3 +4,8 @@
     display: none;
   }
 }
+
+/* line 7, ../sass/_partials/other.scss */
+.section-border-bottom {
+  border-bottom: 1px solid #dedede;
+}
