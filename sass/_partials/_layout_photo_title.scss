@@ -1,6 +1,9 @@
 .layout-photo-title{
   .item{
     margin-bottom: 2rem;
+    @media (max-width: 991px){
+      margin-bottom: 1.5rem;
+    }
     width: 100%;
     transition: all .5s ease;
     &:hover{
@@ -15,6 +18,9 @@
       }
     }
   }
+  div.thumb-cat{
+    border-radius: 7px;
+  }
   .post-image{
     height: 150px;
     overflow: hidden;
@@ -24,6 +30,15 @@
       object-fit: cover;
       border-radius: 7px;
       transition: transform .2s;
+    }
+  }
+  .post-cat{
+    padding: 3px 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.95rem;
+    &:hover{
+      filter: brightness(110%);
     }
   }
   .post-title{
