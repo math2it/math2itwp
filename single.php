@@ -180,6 +180,7 @@
 	$tag_ids = array();
 	set_query_var('typeTitle', 'middle'); 
 	set_query_var('customTitle', 'Có thể bạn thích?');
+	set_query_var('display_category', true);
   $list_post_args = array(
 		'tag__in' 					=> $tag_ids,
 		'post__not_in' 			=> array($post_id),
