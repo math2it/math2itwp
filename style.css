@@ -669,74 +669,6 @@ figcaption {
   height: 100%;
 }
 
-/* line 1, sass/_partials/_comments.scss */
-#respond {
-  background: #fbfbfb;
-  padding: 0 10px 0 10px;
-}
-
-/* Highlight active form field */
-/* line 8, sass/_partials/_comments.scss */
-#respond input[type=text], textarea {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid #DDDDDD;
-}
-
-/* line 20, sass/_partials/_comments.scss */
-#respond input[type=text]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-textarea:focus {
-  box-shadow: 0 0 5px #51cbee;
-  margin: 5px 1px 3px 0px;
-  border: 2px solid #51cbee;
-}
-
-/* line 29, sass/_partials/_comments.scss */
-#submit {
-  background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-  background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-  background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-  background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
-  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-  background-color: #44c767;
-  -moz-border-radius: 28px;
-  -webkit-border-radius: 28px;
-  border-radius: 28px;
-  border: 1px solid #18ab29;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
-}
-
-/* line 50, sass/_partials/_comments.scss */
-#submit:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
-  background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-  background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-  background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-  background: -ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
-  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-  background-color: #5cbf2a;
-}
-
-/* line 59, sass/_partials/_comments.scss */
-#submit:active {
-  position: relative;
-  top: 1px;
-}
-
 /* line 1, sass/_partials/_category.scss */
 .bg-cat-1 {
   background-image: linear-gradient(to bottom, #0a2c58, #0f3669, #14417c, #194d8e, #1e58a1);
@@ -1686,7 +1618,7 @@ div.extra-info {
 }
 /* line 95, sass/_partials/_layout_1_4.scss */
 .style-1-4 .featured-image {
-  height: 150px;
+  height: 120px;
   overflow: hidden;
 }
 /* line 98, sass/_partials/_layout_1_4.scss */
@@ -1703,7 +1635,7 @@ div.extra-info {
   font-weight: bold;
   text-align: center;
   padding: 1rem 1rem 0.5rem 1rem;
-  color: #666;
+  color: #454545;
   line-height: 1.1;
 }
 /* line 116, sass/_partials/_layout_1_4.scss */
@@ -1761,7 +1693,7 @@ div.extra-info {
   font-size: 1.2rem;
   line-height: 1.3;
   margin-bottom: 5px;
-  color: #444;
+  color: #333;
 }
 /* line 49, sass/_partials/_layout_book.scss */
 .layout-book .item .book-author {
@@ -2205,24 +2137,34 @@ a.no-a-effect {
   width: 100%;
   transition: all .5s ease;
 }
-/* line 7, sass/_partials/_layout_photo_title.scss */
+@media (max-width: 991px) {
+  /* line 2, sass/_partials/_layout_photo_title.scss */
+  .layout-photo-title .item {
+    margin-bottom: 1.5rem;
+  }
+}
+/* line 10, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item:hover .post-image {
   border-radius: 7px;
 }
-/* line 9, sass/_partials/_layout_photo_title.scss */
+/* line 12, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item:hover .post-image img {
   transform: scale(1.1);
 }
-/* line 13, sass/_partials/_layout_photo_title.scss */
+/* line 16, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item:hover .post-title {
   color: #1e558e;
 }
-/* line 18, sass/_partials/_layout_photo_title.scss */
+/* line 21, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title div.thumb-cat {
+  border-radius: 7px;
+}
+/* line 24, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-image {
   height: 150px;
   overflow: hidden;
 }
-/* line 21, sass/_partials/_layout_photo_title.scss */
+/* line 27, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-image img {
   width: 100%;
   height: 100%;
@@ -2230,7 +2172,18 @@ a.no-a-effect {
   border-radius: 7px;
   transition: transform .2s;
 }
-/* line 29, sass/_partials/_layout_photo_title.scss */
+/* line 35, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .post-cat {
+  padding: 3px 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+}
+/* line 40, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .post-cat:hover {
+  filter: brightness(110%);
+}
+/* line 44, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-title {
   line-height: 1.4;
   padding: 10px 10px 5px 10px;
@@ -2239,7 +2192,7 @@ a.no-a-effect {
   font-weight: 600;
   color: #444;
 }
-/* line 37, sass/_partials/_layout_photo_title.scss */
+/* line 52, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-date {
   text-align: center;
   opacity: 0.8;
@@ -2334,6 +2287,11 @@ a.no-a-effect {
   .hide-on-xs {
     display: none;
   }
+}
+
+/* line 7, sass/_partials/other.scss */
+.section-border-bottom {
+  border-bottom: 1px solid #dedede;
 }
 
 /* line 1, sass/_partials/_bootstrap_toc.scss */
