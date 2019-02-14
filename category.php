@@ -22,8 +22,9 @@
 <?php 
   set_query_var('typeTitle', 'small'); 
   set_query_var('customTitle', 'Tuyển chọn');
+  set_query_var('customURL', get_site_url().'/choice');
   set_query_var('customIcon', 'icon-star-circled');
-  set_query_var('customSecClass', 'sec-choice-cat');
+  set_query_var('customSecClass', 'sec-choice-cat section-border-bottom');
   // list of posts
   $list_post_args = array(
     'meta_key'         => 'top_choice',
@@ -72,33 +73,47 @@
   );
 ?>
 
+<div style="padding: 5rem 0;">
+
 <!-- pagination -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12">
-      <?php
-        echo '<div class="paginate-links my-5">';
-          echo paginate_links( $pag_arg );
-        echo '</div>';
-      ?>
+<?php
+if ($number_of_pages > 1):?>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <?php
+          echo '<div class="paginate-links mb-5">';
+            echo paginate_links( $pag_arg );
+          echo '</div>';
+        ?>
+      </div>
     </div>
   </div>
-</div>
+<?php
+endif;
+?>
 
 <!-- list of posts -->
 <?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
 
 <!-- pagination -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12">
-      <?php
-        echo '<div class="paginate-links my-5">';
-          echo paginate_links( $pag_arg );
-        echo '</div>';
-      ?>
+<?php
+if ($number_of_pages > 1):?>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <?php
+          echo '<div class="paginate-links mt-5">';
+            echo paginate_links( $pag_arg );
+          echo '</div>';
+        ?>
+      </div>
     </div>
   </div>
+<?php
+endif;
+?>
+
 </div>
 
 <?php wp_reset_query() ?>
