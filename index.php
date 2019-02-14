@@ -16,6 +16,7 @@
   set_query_var('customURL', get_site_url().'/choice');
   set_query_var('customIcon', 'icon-star-circled');
   set_query_var('customSecClass', 'sec-choice');
+  set_query_var('display_category', true);
   // list of posts
   $list_post_args = array(
     'meta_key'         => 'top_choice',
@@ -27,7 +28,7 @@
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
 ?>
-<?php get_template_part( 'parts/cat-layout-photo-intro' ); ?>
+<?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
 <?php wp_reset_query(); // reset ?>
 
 
