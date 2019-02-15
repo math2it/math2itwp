@@ -1,0 +1,18 @@
+.hide-on-xs{
+  @media (max-width: 575px){
+    display: none;
+  }
+}
+
+.section-border-bottom{
+  border-bottom: 1px solid #dedede;
+}
+
+
+.row-eq-height>[class*=col-] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}

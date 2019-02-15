@@ -33,40 +33,44 @@ $c-latex: #92f1bf;
 $c-bai-dich: #d2b4ff;
 $c-gioi-thieu: #ff8094;
 
-@import "_partials/header";
-@import "_partials/footer";
-
 $margin-post-size_bottom: 2rem;
-@import "_partials/font";
-@import "_partials/nav";
-@import "_partials/pagination";
-@import "_partials/image";
-@import "_partials/video";
-// @import "_partials/comments";
 
+@import 
+  "_partials/header",
+  "_partials/footer"
+;
 
-@import "_partials/category";
-@import "_partials/post";
-@import "_partials/page";
-@import "_partials/author";
+@import 
+  "_partials/font",
+  "_partials/nav",
+  "_partials/pagination",
+  "_partials/image",
+  // "_partials/comments",
+  "_partials/video"
+;
 
-@import "_partials/layout_1_4";
-@import "_partials/layout_book";
-@import "_partials/layout_cat";
-@import "_partials/layout_photo_behind";
-@import "_partials/layout_photo_intro";
-@import "_partials/layout_photo_title";
+@import 
+  "_partials/category",
+  "_partials/post",
+  "_partials/page",
+  "_partials/author"
+;
 
-@import "_partials/contact"; // contact form
-@import "_partials/other";
-@import "_partials/bootstrap_toc"; // toc on sidebar
+@import 
+  "_partials/layout_1_4",
+  "_partials/layout_book",
+  "_partials/layout_cat",
+  "_partials/layout_photo_behind",
+  "_partials/layout_photo_intro",
+  "_partials/layout_photo_title",
+  "_partials/layout_photo_overlay"
+;
+
+@import 
+  "_partials/contact",   // contact form
+  "_partials/other",
+  "_partials/bootstrap_toc" // toc on sidebar
+;
 
 @import "_partials/ghostkit"; // ghostkit plugin
 
-.row-eq-height>[class*=col-] {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
