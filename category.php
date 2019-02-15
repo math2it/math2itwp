@@ -37,7 +37,7 @@
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
 ?>
-<?php get_template_part( 'parts/cat-layout-photo-intro' ); ?>
+<?php get_template_part( 'parts/cat-layout-photo-behind' ); ?>
 <?php wp_reset_query(); // reset ?>
 
 
