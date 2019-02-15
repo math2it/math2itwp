@@ -163,6 +163,13 @@
     margin-bottom: $margin-post-size_bottom;
   }
 
+  p > code{
+    background: #ececec;
+    border-radius: 4px;
+    padding: 4px;
+    color: #067b26;
+  }
+
   .toolbar{
     span, a{
       padding: 2px 5px!important;
@@ -285,7 +292,7 @@
     box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
     border-radius: 5px;
     padding: 3%;
-    margin-top: $margin-post-size_bottom;
+    // margin-top: $margin-post-size_bottom;
     margin-bottom: $margin-post-size_bottom;
     display: -ms-flexbox;
     display: flex;
@@ -418,7 +425,7 @@
 
 // comments
 .comment-section{
-  margin: 0 0 2rem 0;
+  margin: 2rem 0;
   #show-comments{
     font-size: 1.3rem;
     padding: 0.5rem;
