@@ -173,6 +173,7 @@
     padding: 4px;
     border-radius: .2rem;
     color: #444;
+    font-size: 95%;
   }
 
   .toolbar{
@@ -435,6 +436,9 @@
     font-size: 1.3rem;
     padding: 0.5rem;
   }
+  .btn{
+    border-radius: 100px;
+  }
 }
 
 
@@ -453,7 +457,7 @@
     line-height: 1;
     border-radius: 100px;
     &:hover{
-      background: #444;
+      background: #0d519a;
     }
     svg{
       margin-right: 5px;
