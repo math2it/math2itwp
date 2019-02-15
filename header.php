@@ -41,6 +41,22 @@
       ?>
     </style>
 
+    <?php 
+      $page_id = get_the_ID();
+      if (get_field('display_math',$post_id)==true):
+      ?>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            jax: ["input/TeX", "output/SVG"],
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+            SVG: { scale: 90, linebreaks: { automatic: true } }
+          });
+        </script>
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    <?php endif; ?>
+
     <?php wp_head();?>
   </head>
 
