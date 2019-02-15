@@ -1331,6 +1331,32 @@ div.extra-info {
   margin-bottom: 2rem;
 }
 
+/* line 474, sass/_partials/_post.scss */
+.tags {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* line 477, sass/_partials/_post.scss */
+.tags a {
+  border: 1px solid #c8dcff;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f0f8ff;
+  color: #2f74bd;
+}
+/* line 484, sass/_partials/_post.scss */
+.tags a:before {
+  content: "\f02b";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+/* line 489, sass/_partials/_post.scss */
+.tags a:hover {
+  text-decoration: none;
+  background: #d7ecff;
+}
+
 /* line 3, sass/_partials/_page.scss */
 .gioi-thieu {
   padding: 3rem 0 7rem 0;

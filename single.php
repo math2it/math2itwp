@@ -74,6 +74,18 @@
 </main>
 
 <div class="extra-info">
+
+<!-- tags -->
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-10 col-xl-8">
+			<div class="tags">
+				<?php the_tags('',' ',''); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- sharing buttons -->
 <div class="container">
 	<div class="row justify-content-center">
