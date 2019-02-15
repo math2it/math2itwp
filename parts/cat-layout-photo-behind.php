@@ -1,6 +1,6 @@
 <?php if ( $list_posts ) {?>
 
-<section class="layout-photo-behind sec-choice">
+<section class="layout-photo-behind <?php if($customSecClass){echo $customSecClass;} ?>">
 
   <div class="container">
 
