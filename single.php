@@ -117,10 +117,10 @@
 
 
 <!-- author's box -->
+<?php if (get_field('show_author_box',$post_id)==true): ?>
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-12 col-lg-10 col-xl-8 blog-content">
-	<?php if (get_field('show_author_box',$post_id)==true): ?>
 			<div class="alignwide author-box">
 				<div class="author-avatar">
 					<?php 
@@ -167,10 +167,10 @@
 					</div>
 				</div>
 			</div>
-			<?php endif; ?><!-- /author-box -->
 		</div>
 	</div>
 </div>
+<?php endif; ?><!-- /author-box -->
 
 
 <!-- related posts -->
