@@ -1593,35 +1593,36 @@ div.extra-info {
   align-items: center;
   background: #fff;
   margin-bottom: 1rem;
+  width: 100%;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
 }
-/* line 77, sass/_partials/_layout_1_4.scss */
+/* line 78, sass/_partials/_layout_1_4.scss */
 .style-1-4:hover {
   box-shadow: 0 0 6px 4px #e3e3e3;
 }
-/* line 79, sass/_partials/_layout_1_4.scss */
+/* line 80, sass/_partials/_layout_1_4.scss */
 .style-1-4:hover .featured-image {
   border-radius: 8px 8px 0 0;
 }
-/* line 81, sass/_partials/_layout_1_4.scss */
+/* line 82, sass/_partials/_layout_1_4.scss */
 .style-1-4:hover .featured-image img {
   transform: scale(1.1);
   border-radius: 8px 8px 0 0;
 }
-/* line 86, sass/_partials/_layout_1_4.scss */
+/* line 87, sass/_partials/_layout_1_4.scss */
 .style-1-4:hover .post-title {
   color: #366494;
 }
-/* line 91, sass/_partials/_layout_1_4.scss */
+/* line 92, sass/_partials/_layout_1_4.scss */
 .style-1-4 a {
   height: 100%;
 }
-/* line 95, sass/_partials/_layout_1_4.scss */
+/* line 96, sass/_partials/_layout_1_4.scss */
 .style-1-4 .featured-image {
   height: 120px;
   overflow: hidden;
 }
-/* line 98, sass/_partials/_layout_1_4.scss */
+/* line 99, sass/_partials/_layout_1_4.scss */
 .style-1-4 .featured-image img {
   border-radius: 8px 8px 0 0;
   width: 100%;
@@ -1629,7 +1630,7 @@ div.extra-info {
   object-fit: cover;
   transition: transform .2s;
 }
-/* line 107, sass/_partials/_layout_1_4.scss */
+/* line 108, sass/_partials/_layout_1_4.scss */
 .style-1-4 .post-title {
   font-size: 1.1rem;
   font-weight: bold;
@@ -1638,7 +1639,7 @@ div.extra-info {
   color: #454545;
   line-height: 1.1;
 }
-/* line 116, sass/_partials/_layout_1_4.scss */
+/* line 117, sass/_partials/_layout_1_4.scss */
 .style-1-4 .post-meta {
   margin-left: auto;
   margin-right: auto;
@@ -1647,7 +1648,7 @@ div.extra-info {
   color: #555;
   padding: 0 1rem 1rem 1rem;
 }
-/* line 123, sass/_partials/_layout_1_4.scss */
+/* line 124, sass/_partials/_layout_1_4.scss */
 .style-1-4 .post-meta span {
   display: block;
 }
@@ -2012,17 +2013,18 @@ a.no-a-effect {
   right: 15px;
   bottom: 0;
   left: 15px;
-  background: #0000005e;
   border-radius: 10px;
   margin-bottom: 15px;
+  background-image: linear-gradient(to top, #020914, rgba(23, 23, 23, 0.8), rgba(70, 70, 70, 0.31), rgba(186, 186, 189, 0.08), rgba(255, 255, 255, 0));
+  opacity: 0.8;
 }
-/* line 22, sass/_partials/_layout_photo_behind.scss */
+/* line 24, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item:hover::before {
-  background: #000000b8;
+  opacity: 1;
 }
-/* line 27, sass/_partials/_layout_photo_behind.scss */
+/* line 30, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item .item-content {
-  padding: 20px 10px 10px 10px;
+  padding: 15px 10px;
   -ms-flex-positive: 1;
   flex-grow: 1;
   display: -ms-flexbox;
@@ -2032,18 +2034,19 @@ a.no-a-effect {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 38, sass/_partials/_layout_photo_behind.scss */
+/* line 41, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item .item-content .book-title {
   color: #fff;
   text-align: center;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   text-shadow: 2px 2px 4px #000;
+  line-height: 1.2;
   flex-grow: 1;
   position: relative;
   display: block;
 }
-/* line 49, sass/_partials/_layout_photo_behind.scss */
+/* line 53, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item .item-content .item-footer {
   display: -ms-flexbox;
   display: flex;
@@ -2188,7 +2191,7 @@ a.no-a-effect {
   line-height: 1.4;
   padding: 10px 10px 5px 10px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #444;
 }
