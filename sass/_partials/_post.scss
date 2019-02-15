@@ -164,10 +164,15 @@
   }
 
   p > code{
-    background: #ececec;
-    border-radius: 4px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: -webkit-gradient(linear,left top,right top,from(#fce4ed),to(#ffe8cc));
+    background: linear-gradient(to right,#fce4ed,#ffe8cc);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     padding: 4px;
-    color: #067b26;
+    border-radius: .2rem;
+    color: #444;
   }
 
   .toolbar{
