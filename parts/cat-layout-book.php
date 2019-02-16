@@ -1,6 +1,6 @@
 <?php if ( $list_posts ) {?>
 
-<section class="layout-book sec-cat-<?php echo $cat_id ?> sec-cat">
+<section class="layout-book <?php if($customSecClass){echo $customSecClass;} ?>">
   <div class="container">
 
     <div class="row justify-content-center">
