@@ -2,17 +2,32 @@
   $cat_id = get_query_var('cat_id'); // get category
 ?>
 
-<header class="py-5 header-intro cat-intro bg-cat-<?php echo $cat_id ?>">
+<header class="py-5 header-intro cat-intro bg-cat-<?php if (is_category()){echo $cat_id;}else{echo '2703';} ?>">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 offset-md-2 col-12 intro">
         <div class="img-avatar">
-          <i class="<?php echo get_field('cat-icon', 'category_'.$cat_id) ?>"></i>
+          <?php if (is_category()){ ?>
+            <i class="<?php echo get_field('cat-icon', 'category_'.$cat_id) ?>"></i>
+          <?php }else{?>
+            <i class="fa fa-tag" aria-hidden="true"></i>
+          <?php }?>
         </div>
-        <h2><?php echo get_cat_name($cat_id);?></h2>
-        <p>
-          <?php echo category_description(); ?>
-        </p>
+
+        <h2 class="title">
+          <?php if (is_category()){
+            echo get_cat_name($cat_id);
+          }else{
+            $tag = get_tag( $cat_id );
+            echo $tag->name;
+          }?>
+        </h2>
+        <?php if (is_category() and category_description()){ ?>
+          <div class="description"><?php echo category_description(); ?></div>
+        <?php }elseif(tag_description()){?>
+          <div class="description"><?php echo tag_description(); ?></div>
+        <?php }?>
+        
         <div class="idx-social">
           <a class="mr-s" href="<?php echo get_bloginfo( 'wpurl' ) ?>/gioi-thieu"><i class="icon-heart"></i><span class="hide-on-xs"> Giới thiệu</span></a>
           <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i><span class="hide-on-xs"> Nhóm Math2IT</span></a>
