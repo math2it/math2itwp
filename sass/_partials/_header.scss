@@ -2,6 +2,13 @@
   background: linear-gradient(to bottom right,#111217,#484d60);
 }
 
+.bg-cat-2703{
+  // only for tag template
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .header-intro{
   .intro{
     color: hsla(0,0%,100%,.8);
@@ -31,6 +38,15 @@
     @media (max-width: 767px){
       padding: 2rem;
     }
+
+    .title{
+      margin-bottom: 1rem;
+    }
+    .description{
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
   }
   &:hover{
     .icon-math2it{
@@ -67,6 +83,7 @@
 
 .idx-social{
   font-size: 1.2rem;
+  margin-top: 2rem;
   a{
     color: #fffaad;
     span{
