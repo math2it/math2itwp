@@ -87,7 +87,7 @@
   set_query_var('customTitle', '');
   set_query_var('customIcon', '');
   set_query_var('typeTitle', 'middle');
-  set_query_var('customSecClass', 'sec-cat-'.$cat_id);
+  set_query_var('customSecClass', 'sec-cat-'.$cat_id.' sec-cat');
   set_query_var('left_or_right', 'right');
   // list of posts
   $list_post_args = array(
