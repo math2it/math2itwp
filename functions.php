@@ -20,7 +20,7 @@ require_once( __DIR__ . '/functions-files/nav.php');
 require_once( __DIR__ . '/functions-files/quick-edit.php');
 
 // Gutenberg
-require_once( __DIR__ . '/functions-files/gutenberg.php');
+// require_once( __DIR__ . '/functions-files/gutenberg.php');
 
 // wordpress title
 add_theme_support( 'title-tag' );
@@ -59,7 +59,7 @@ add_action('upload_mimes', 'add_file_types_to_uploads');
 function writy_setup() {
     add_theme_support( 'align-wide' );
   }
-  add_action( 'after_setup_theme', 'writy_setup' );
+add_action( 'after_setup_theme', 'writy_setup' );
 
 
 // comments 
@@ -89,6 +89,9 @@ function writy_setup() {
 // add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
 
 
-
+// ------------------------------------------------
+// PLUGINS
+// ------------------------------------------------
+require_once( __DIR__ . '/plugins/custom-gutenberg-button/my-custom-format.php');
 
 

@@ -4,6 +4,7 @@
 <!-- ====================================== -->
 <?php get_header(); ?>
 
+<main role="main">
 
 <!-- intro header -->
 <!-- ====================================== -->
@@ -44,62 +45,62 @@
 <!-- ====================================== -->
 <?php
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $posts_per_page = 16;
   $list_post_args = array(
     'category'          => $cat_id,
+    'posts_per_page'    => $posts_per_page,
     'paged'             => $paged,
-    'post_status'       => 'publish',
-    'posts_per_page'    => 16
+    'post_status'      => 'publish'
   );
-  $list_posts1 = get_posts($list_post_args);
+  $list_posts = get_posts($list_post_args);
+  set_query_var('typeTitle', ''); 
+  set_query_var('list_posts', $list_posts);
+  set_query_var('customSecClass', '');
 
   // pagination
+  $cat_count = get_category($cat_id);
+  $found_posts = $cat_count->count;
+  $number_of_pages = ceil($found_posts / $posts_per_page);
+
+  $big = 999999999; // need an unlikely integer
   $pag_arg = array(
     'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
     'format' => '?paged=%#%',
     'prev_text' => __('«'),
     'next_text' => __('»'),
     'current' => max( 1, get_query_var('paged') ),
-    'total' => $wp_query->max_num_pages-1
+    'total' => $number_of_pages
   );
-  global $wp_query;
-  $big = 999999999; // need an unlikely integer
 ?>
 
-<?php if ( $list_posts1 ) {?>
-<section class="layout-book sec-cat sec-cat-<?php echo $cat_id ?>">
+<div style="padding: 5rem 0;">
+
+<!-- pagination -->
+<?php
+if ($number_of_pages > 1):?>
   <div class="container">
-    <div class="row row-eq-height justify-content-center">
-
-    <div class="col-12">
-      <?php
-        echo '<div class="paginate-links mb-5">';
-          echo paginate_links( $pag_arg );
-        echo '</div>';
-      ?>
-    </div>
-
-    <?php foreach($list_posts1 as $post) : ?>
-      <div class="col-6 col-md-3">
-        <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
-          <div class="item mb-4">
-            <div class="book-cover px-3 px-md-4 px-lg-5 px-md-3">
-              <?php 
-              $bookCover = get_field('post_book_cover',$post->ID); 
-              echo wp_get_attachment_image( $bookCover['id'],'medium');
-              ?>
-            </div>
-            <div class="book-shelf"></div>
-            <div class="book-title">
-              <?php echo $post->post_title; ?>
-            </div>
-            <div class="book-author">
-              <?php echo get_field('post_book_author',$post->ID); ?>
-            </div>
-          </div>
-        </a>
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <?php
+          echo '<div class="paginate-links mb-5">';
+            echo paginate_links( $pag_arg );
+          echo '</div>';
+        ?>
       </div>
-    <?php endforeach ?>
+    </div>
+  </div>
+<?php
+endif;
+?>
 
+<!-- list of posts -->
+<?php get_template_part( 'parts/cat-layout-book' ); ?>
+
+<!-- pagination -->
+<?php
+if ($number_of_pages > 1):?>
+  <div class="container">
+    <div class="row justify-content-center">
       <div class="col-12">
         <?php
           echo '<div class="paginate-links mt-5">';
@@ -107,11 +108,17 @@
           echo '</div>';
         ?>
       </div>
+    </div>
+  </div>
+<?php
+endif;
+?>
 
-    </div> <!-- /row -->
-  </div> <!-- /container -->
-</section>
-<?php } // end if $list_posts ?> 
+</div>
+
+<?php wp_reset_query() ?>
+
+</main>
 
 <!-- footer -->
 <!-- ====================================== -->
