@@ -89,6 +89,18 @@ add_action( 'after_setup_theme', 'writy_setup' );
 // add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
 
 
+// category and tag have the same template
+// ------------------------------------------------
+add_filter( 'category_template', 'category_and_cat_template' );
+add_filter( 'tag_template', 'category_and_cat_template' );
+function category_and_cat_template( $template ) {
+    if ((is_category() and (!is_category(16))) or (is_tag())) {
+        $template = locate_template( 'cat-tag-layout.php' ); 
+    }
+    return $template;
+}
+
+
 // ------------------------------------------------
 // PLUGINS
 // ------------------------------------------------

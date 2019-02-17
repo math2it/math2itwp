@@ -27,7 +27,7 @@
     'meta_key'         => 'top_choice',
     'meta_value'       => 1,
     'numberposts' 		 => 4,
-    'tag_id'              => $tag_id,
+    'tag_id'           => $tag_id,
     'orderby'          => 'rand',
     'post_status'      => 'publish'
   );
