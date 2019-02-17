@@ -68,6 +68,12 @@
 // progress
 .ghostkit-progress{
   margin-bottom: $margin-post-size_bottom;
+  .ghostkit-progress-caption{
+    font-size: inherit;
+  }
+  .ghostkit-progress-bar-count div{
+    font-size: 1rem!important;
+  }
   .ghostkit-progress-wrap{
     height: 40px!important;
     background-color: #e8e8e8!important;

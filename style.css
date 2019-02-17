@@ -2545,29 +2545,37 @@ nav[data-toggle="toc"] .nav-link.active:before {
   margin-bottom: 2rem;
 }
 /* line 71, sass/_partials/_ghostkit.scss */
+.ghostkit-progress .ghostkit-progress-caption {
+  font-size: inherit;
+}
+/* line 74, sass/_partials/_ghostkit.scss */
+.ghostkit-progress .ghostkit-progress-bar-count div {
+  font-size: 1rem !important;
+}
+/* line 77, sass/_partials/_ghostkit.scss */
 .ghostkit-progress .ghostkit-progress-wrap {
   height: 40px !important;
   background-color: #e8e8e8 !important;
 }
-/* line 74, sass/_partials/_ghostkit.scss */
+/* line 80, sass/_partials/_ghostkit.scss */
 .ghostkit-progress .ghostkit-progress-wrap .ghostkit-progress-bar {
   height: 100% !important;
 }
 
-/* line 81, sass/_partials/_ghostkit.scss */
+/* line 87, sass/_partials/_ghostkit.scss */
 .ghostkit-counter-box {
   margin-bottom: 2rem;
 }
-/* line 84, sass/_partials/_ghostkit.scss */
+/* line 90, sass/_partials/_ghostkit.scss */
 .ghostkit-counter-box .ghostkit-counter-box-content p {
   margin-bottom: 0;
 }
 
-/* line 91, sass/_partials/_ghostkit.scss */
+/* line 97, sass/_partials/_ghostkit.scss */
 .ghostkit-gist {
   margin-bottom: 2rem;
 }
-/* line 93, sass/_partials/_ghostkit.scss */
+/* line 99, sass/_partials/_ghostkit.scss */
 .ghostkit-gist .gist-data {
   padding: 15px 0;
 }
