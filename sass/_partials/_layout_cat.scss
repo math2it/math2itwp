@@ -144,12 +144,12 @@ a.no-a-effect{
   }
   .view-all{
     display: block;
-    opacity: 0.8;
     letter-spacing: 2px;
-    color: #111;
+    color: #999;
     font-weight: bold;
+    font-style: italic;
     &:hover{
-      opacity: 1;
+      color: #222;
     }
     @media (max-width: 500px){
       font-size: 0.95rem;
