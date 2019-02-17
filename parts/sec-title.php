@@ -14,7 +14,7 @@
   <div class="<?php echo $secTitleClass ?>">
     <h2 class="new-title">
       <i class="<?php if($customIcon){echo $customIcon;}else{echo get_field('cat-icon', 'category_'.$cat_id);} ?>"></i>
-      <a href="<?php echo get_category_link($cat_id) ?>">
+      <a href="<?php if($customURL){echo $customURL;}else{echo get_category_link($cat_id);} ?>" >
         <?php 
           if (!empty($customTitle)):
             echo $customTitle;
