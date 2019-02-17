@@ -1269,65 +1269,58 @@ figcaption {
 
 /* line 403, sass/_partials/_post.scss */
 .related-post {
-  margin-bottom: 2rem;
   margin-top: 2rem;
   padding: 0 15px;
 }
-/* line 407, sass/_partials/_post.scss */
+/* line 406, sass/_partials/_post.scss */
 .related-post .container {
   border-top: 4px dashed #ddd;
   padding-top: 3rem;
-  border-bottom: 4px dashed #ddd;
 }
-/* line 412, sass/_partials/_post.scss */
+/* line 410, sass/_partials/_post.scss */
 .related-post .sec-title-middle {
-  margin-bottom: 0 !important;
   margin-top: -4rem !important;
 }
-/* line 415, sass/_partials/_post.scss */
+/* line 412, sass/_partials/_post.scss */
 .related-post .sec-title-middle div {
   display: none;
 }
-/* line 419, sass/_partials/_post.scss */
+/* line 416, sass/_partials/_post.scss */
 .related-post .new-title {
   font-size: 1.9rem !important;
   color: #666;
 }
 @media (max-width: 577px) {
-  /* line 419, sass/_partials/_post.scss */
+  /* line 416, sass/_partials/_post.scss */
   .related-post .new-title {
     font-size: 1.5rem !important;
   }
 }
-/* line 426, sass/_partials/_post.scss */
-.related-post .view-all {
-  display: none !important;
-}
 
-/* line 433, sass/_partials/_post.scss */
+/* line 427, sass/_partials/_post.scss */
 .comment-section {
   margin: 2rem 0;
 }
-/* line 435, sass/_partials/_post.scss */
+/* line 429, sass/_partials/_post.scss */
 .comment-section #show-comments {
   font-size: 1.3rem;
   padding: 0.5rem;
 }
-/* line 439, sass/_partials/_post.scss */
+/* line 433, sass/_partials/_post.scss */
 .comment-section .btn {
   border-radius: 100px;
 }
 
-/* line 446, sass/_partials/_post.scss */
+/* line 440, sass/_partials/_post.scss */
 .sharing-buttons {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-/* line 449, sass/_partials/_post.scss */
+/* line 443, sass/_partials/_post.scss */
 .sharing-buttons .flex-fill {
   padding: 0 5px;
 }
-/* line 452, sass/_partials/_post.scss */
+/* line 446, sass/_partials/_post.scss */
 .sharing-buttons .item {
   background: #272c30;
   color: #fff;
@@ -1336,27 +1329,27 @@ figcaption {
   line-height: 1;
   border-radius: 100px;
 }
-/* line 459, sass/_partials/_post.scss */
+/* line 453, sass/_partials/_post.scss */
 .sharing-buttons .item:hover {
   background: #0d519a;
 }
-/* line 462, sass/_partials/_post.scss */
+/* line 456, sass/_partials/_post.scss */
 .sharing-buttons .item svg {
   margin-right: 5px;
 }
 
-/* line 468, sass/_partials/_post.scss */
+/* line 462, sass/_partials/_post.scss */
 div.extra-info {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* line 474, sass/_partials/_post.scss */
+/* line 468, sass/_partials/_post.scss */
 .tags {
   text-align: center;
   margin-bottom: 1rem;
 }
-/* line 477, sass/_partials/_post.scss */
+/* line 471, sass/_partials/_post.scss */
 .tags a {
   border: 1px solid #c8dcff;
   padding: 7px 10px;
@@ -1365,13 +1358,13 @@ div.extra-info {
   background: #f0f8ff;
   color: #2f74bd;
 }
-/* line 484, sass/_partials/_post.scss */
+/* line 478, sass/_partials/_post.scss */
 .tags a:before {
   content: "\f02b";
   font-family: FontAwesome;
   margin-right: 5px;
 }
-/* line 489, sass/_partials/_post.scss */
+/* line 483, sass/_partials/_post.scss */
 .tags a:hover {
   text-decoration: none;
   background: #d7ecff;
@@ -1983,14 +1976,14 @@ a.no-a-effect {
 /* line 145, sass/_partials/_layout_cat.scss */
 .sec-title-middle .view-all {
   display: block;
-  opacity: 0.8;
   letter-spacing: 2px;
-  color: #111;
+  color: #999;
   font-weight: bold;
+  font-style: italic;
 }
 /* line 151, sass/_partials/_layout_cat.scss */
 .sec-title-middle .view-all:hover {
-  opacity: 1;
+  color: #222;
 }
 @media (max-width: 500px) {
   /* line 145, sass/_partials/_layout_cat.scss */
