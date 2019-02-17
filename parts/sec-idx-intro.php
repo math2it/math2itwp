@@ -18,7 +18,7 @@
       <div class="newest-list col-md-5">
         <div class="latest-top sec-title">
           <h3 class="new-title">Mới nhất</h3>
-          <a href="" class="view-all">xem thêm</a>
+          <a href="/all" class="view-all">xem thêm</a>
         </div>
 
         <?php
