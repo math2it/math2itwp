@@ -84,6 +84,7 @@
 .idx-social{
   font-size: 1.2rem;
   margin-top: 2rem;
+  text-align: center;
   a{
     color: #fffaad;
     span{
@@ -103,12 +104,12 @@
     @media screen and (max-width: 400px){
       margin-right: 0.5rem;
     }
+    &:last-of-type{
+      margin-right: 0;
+    }
   }
 
   @media (max-width: 575px){
-    .mr-s:last-of-type{
-      margin-right: 0;
-    }
     font-size: 2rem;
   }
 }
