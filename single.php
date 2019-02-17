@@ -193,6 +193,7 @@
 	set_query_var('typeTitle', 'middle'); 
 	set_query_var('customTitle', 'Có thể bạn thích?');
 	set_query_var('display_category', true);
+	set_query_var('customURL', '/all' );
   $list_post_args = array(
 		'tag__in' 					=> $tag_ids,
 		'post__not_in' 			=> array($post_id),
