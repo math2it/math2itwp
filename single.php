@@ -165,16 +165,22 @@
 						<?php echo get_field('user_role','user_'.get_the_author_meta('ID')) ?>
 					</div>
 					<div class="author-description">
-						<?php echo nl2br(get_the_author_meta('description')); ?>
+						<?php
+						if (get_the_author_meta('description')){
+							echo nl2br(get_the_author_meta('description')); 
+						}else{
+							echo "Một tác giả của Math2IT.";
+						}
+						?>
 					</div>
 					<div class="author-more">
 						<a href="mailto:<?php echo get_the_author_meta('user_email') ?>"> 
 							<i class="fa fa-envelope" aria-hidden="true"></i>
-							Email cho <?php the_author() ?>
+							Email cho <?php if ($fname){echo $fname;}else{ the_author();} ?>
 						</a> 
 						<a class="author-post" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
 							<i class="fa fa-files-o" aria-hidden="true"></i>
-							Xem bài <?php the_author() ?> viết
+							Xem bài <?php if ($fname){echo $fname;}else{ the_author();} ?> viết
 						</a>
 					</div>
 				</div>
