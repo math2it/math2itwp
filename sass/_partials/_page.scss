@@ -174,3 +174,15 @@
     font-size: 1rem;
   }
 }
+
+
+// author.php
+.author-avatar{
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  width: 200px;
+  img{
+    width: 100%;
+    border-radius: 50%;
+  }
+}

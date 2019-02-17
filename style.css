@@ -107,110 +107,111 @@ Tags: bootstrap 4.1
 .idx-social {
   font-size: 1.2rem;
   margin-top: 2rem;
+  text-align: center;
 }
-/* line 87, sass/_partials/_header.scss */
+/* line 88, sass/_partials/_header.scss */
 .idx-social a {
   color: #fffaad;
 }
-/* line 89, sass/_partials/_header.scss */
+/* line 90, sass/_partials/_header.scss */
 .idx-social a span {
   text-shadow: 2px 2px 4px #000;
 }
-/* line 92, sass/_partials/_header.scss */
+/* line 93, sass/_partials/_header.scss */
 .idx-social a:hover {
   text-decoration: none;
   color: #ffe066;
 }
-/* line 95, sass/_partials/_header.scss */
+/* line 96, sass/_partials/_header.scss */
 .idx-social a:hover .icon-home {
   color: inherit;
 }
-/* line 101, sass/_partials/_header.scss */
+/* line 102, sass/_partials/_header.scss */
 .idx-social .mr-s {
   margin-right: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  /* line 101, sass/_partials/_header.scss */
+  /* line 102, sass/_partials/_header.scss */
   .idx-social .mr-s {
     margin-right: 0.5rem;
   }
+}
+/* line 107, sass/_partials/_header.scss */
+.idx-social .mr-s:last-of-type {
+  margin-right: 0;
 }
 @media (max-width: 575px) {
   /* line 84, sass/_partials/_header.scss */
   .idx-social {
     font-size: 2rem;
   }
-  /* line 109, sass/_partials/_header.scss */
-  .idx-social .mr-s:last-of-type {
-    margin-right: 0;
-  }
 }
 
-/* line 118, sass/_partials/_header.scss */
+/* line 119, sass/_partials/_header.scss */
 .latest-top {
   border-bottom: 0.5px #969494 solid;
   padding-bottom: 5px;
 }
-/* line 121, sass/_partials/_header.scss */
+/* line 122, sass/_partials/_header.scss */
 .latest-top .new-title {
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff;
 }
-/* line 126, sass/_partials/_header.scss */
+/* line 127, sass/_partials/_header.scss */
 .latest-top a {
   font-size: 1.1rem;
   color: #a1a7b9;
   line-height: 2;
 }
-/* line 130, sass/_partials/_header.scss */
+/* line 131, sass/_partials/_header.scss */
 .latest-top a:hover {
   color: #fff;
 }
-/* line 134, sass/_partials/_header.scss */
+/* line 135, sass/_partials/_header.scss */
 .latest-top .view-all {
   color: #eee !important;
 }
 
-/* line 139, sass/_partials/_header.scss */
+/* line 140, sass/_partials/_header.scss */
 .newest-list a {
   text-decoration: none;
 }
-/* line 141, sass/_partials/_header.scss */
+/* line 142, sass/_partials/_header.scss */
 .newest-list a .new-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
 @media (max-width: 767px) {
-  /* line 141, sass/_partials/_header.scss */
+  /* line 142, sass/_partials/_header.scss */
   .newest-list a .new-item {
     padding: 0 1rem;
   }
 }
-/* line 150, sass/_partials/_header.scss */
+/* line 151, sass/_partials/_header.scss */
 .newest-list a .new-item .cat-icon {
   width: 3.5rem;
   color: #ddd;
   font-size: 2rem;
 }
-/* line 155, sass/_partials/_header.scss */
+/* line 156, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post {
   width: calc(100% - 3.5rem);
 }
-/* line 157, sass/_partials/_header.scss */
+/* line 158, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-date {
   font-size: 0.8rem;
   color: #ccc;
   margin-bottom: 0.3rem;
 }
-/* line 162, sass/_partials/_header.scss */
+/* line 163, sass/_partials/_header.scss */
 .newest-list a .new-item .new-post .post-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
 }
-/* line 170, sass/_partials/_header.scss */
+/* line 171, sass/_partials/_header.scss */
 .newest-list a:hover .post-title {
   color: #ffeead !important;
 }
@@ -1580,6 +1581,18 @@ div.extra-info {
   .page-subtitle {
     font-size: 1rem;
   }
+}
+
+/* line 180, sass/_partials/_page.scss */
+.author-avatar {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  width: 200px;
+}
+/* line 184, sass/_partials/_page.scss */
+.author-avatar img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 /* line 1, sass/_partials/_author.scss */
