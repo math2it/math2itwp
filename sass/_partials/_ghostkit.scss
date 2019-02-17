@@ -4,6 +4,11 @@
 // alert
 .ghostkit-alert{
   margin-bottom: $margin-post-size_bottom;
+  align-items: center;
+  .ghostkit-alert-icon{
+    font-size: 1.5rem!important;
+    padding-right: 1em;
+  }
 }
 
 // carousel
