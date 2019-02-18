@@ -162,9 +162,6 @@ a.no-a-effect{
 
 .sec-cat-1{ // math
   background: #f4f8fb;
-  .new-title{
-    color: #3d78b5;
-  }
   .sec-title-big{
     i{
       background-image: linear-gradient(to bottom, #313542, #424a65, #4b6189, #476c9f, #3d78b5);
@@ -174,9 +171,6 @@ a.no-a-effect{
 
 .sec-cat-2{ // tech
   background: #f9f1e5;
-  .new-title{
-    color: #de8a0f;
-  }
   .sec-title-big{
     i{
       background-image: linear-gradient(to bottom, #de8a0f, #e29018, #e79520, #eb9b27, #efa12e);
@@ -186,9 +180,6 @@ a.no-a-effect{
 
 .sec-cat-6{ // translate
   background: #f9f6ff;
-  .new-title{
-    color: #865dc1;
-  }
   .sec-title-big{
     i{
       background-image: linear-gradient(to bottom, #341164, #48247a, #5c3691, #7149a9, #865dc1);
@@ -198,9 +189,6 @@ a.no-a-effect{
 
 .sec-cat-7{ // latex
   background: #54b57d24;
-  .new-title{
-    color: #0f8044;
-  }
   .sec-title-big{
     i{
       background-image: linear-gradient(to bottom, #1b814c, #208f55, #269d5f, #2bab68, #31ba72);
@@ -210,9 +198,6 @@ a.no-a-effect{
 
 .sec-cat-16{ // book
   background: #fff;
-  .new-title{
-    color: #0a7b83;
-  }
   .sec-title-big i{
     background-image: linear-gradient(to bottom, #0a7b83, #0d8088, #0f858d, #128b93, #149098);
   }
@@ -224,4 +209,21 @@ a.no-a-effect{
   .new-title{
     color: #e4a200;
   }
+}
+
+// title of category
+.cat-title-1{ // toan
+  color: #3d78b5;
+}
+.cat-title-2{ // tech 
+  color: #de8a0f;
+}
+.cat-title-6{ // translate
+  color: #865dc1;
+}
+.cat-title-7{ // latex
+  color: #0f8044;
+}
+.cat-title-16{ //book
+  color: #0a7b83;
 }

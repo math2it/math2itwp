@@ -12,7 +12,7 @@
 ?>
 <div class="col-12">
   <div class="<?php echo $secTitleClass ?>">
-    <h2 class="new-title">
+    <h2 class="new-title <?php if(!$customIcon){echo 'cat-title-'.$cat_id;} ?>">
       <i class="<?php if($customIcon){echo $customIcon;}else{echo get_field('cat-icon', 'category_'.$cat_id);} ?>"></i>
       <a href="<?php if($customURL){echo $customURL;}else{echo get_category_link($cat_id);} ?>" >
         <?php 
