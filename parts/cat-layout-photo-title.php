@@ -30,12 +30,12 @@
               <?php
                 if ( has_post_thumbnail($post->ID) ) {
                   $postThumbnail = get_the_post_thumbnail($post->ID,'medium' );
-                  echo $postThumbnail;
                 }else{
                   $first_cat = get_the_category($post->ID);
-                  $postThumbnail = get_field('default_posts_feature_image',$first_cat[0]);
+                  $postThumbnail = get_field('default_posts_feature_image',$first_cat[$rand_number]);
                   echo wp_get_attachment_image( $postThumbnail['id'],'small');
                 }
+                echo $postThumbnail;
               ?>
             </div>
           </a>

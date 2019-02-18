@@ -28,7 +28,8 @@
         ));
         foreach($recent_posts as $post) : 
           $first_cat = get_the_category($post['ID']);
-          $post_cat_icon = get_field('cat-icon', $first_cat[0]);?>
+          $rand_number = rand(0,count($first_cat)-1);
+          $post_cat_icon = get_field('cat-icon', $first_cat[$rand_number]);?>
           <a href="<?php echo get_permalink($post['ID']) ?>">
             <div class="new-item">
               <div class="cat-icon"><i class="<?php echo $post_cat_icon ?>"></i></div>
