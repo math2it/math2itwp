@@ -8,9 +8,10 @@
 	the_post();
 	$post_id = get_the_ID();
 	$first_cat = get_the_category($post_id);
+	$rand_number = rand(0,count($first_cat)-1);
 ?>
 
-<header class="header-page bg-cat-<?php echo $first_cat[0]->term_id; ?>">
+<header class="header-page bg-cat-<?php echo $first_cat[$rand_number]->term_id; ?>">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10">
@@ -20,7 +21,7 @@
 				<div class="page-subtitle">
 					<span>
 						<i class="icon-folder-open-empty"></i>
-						<a href="<?php echo esc_url( get_category_link( $first_cat[0]->term_id ) ) ?>"><?php echo $first_cat[0]->name; ?></a>
+						<a href="<?php echo esc_url( get_category_link( $first_cat[$rand_number]->term_id ) ) ?>"><?php echo $first_cat[$rand_number]->name; ?></a>
 					</span>
 					<span>
 						<i class="icon-clock"></i>
@@ -39,9 +40,24 @@
 							endif;
 						?> 
 					</span>
+					<?php 
+						$fname = get_the_author_meta('first_name');
+						$lname = get_the_author_meta('last_name');
+						$full_name = '';
+						if( empty($fname)){
+								$full_name = $lname;
+						} elseif( empty( $lname )){
+								$full_name = $fname;
+						} else {
+								//both first name and last name are present
+								$full_name = "{$lname} {$fname}";
+						}
+					?>
 					<span>
 						<i class="icon-user-outline"></i>
-						<?php the_author_posts_link('first_name'); ?>
+						<a class="author-post" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
+							<?php echo $full_name; ?>
+						</a>
 					</span>
 				</div>
 			</div> <!-- /.col -->
@@ -137,7 +153,7 @@
 				<div class="author-avatar">
 					<?php 
 						if(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE): 
-						$avatar = get_avatar_url(get_the_author_meta('ID'),100);
+						$avatar = get_avatar_url(get_the_author_meta('ID'),array("size"=>200));
 						?>
 							<img src="<?php echo $avatar; ?>" alt="<?php the_author() ?>'s avatar'">
 					<?php else: ?>
@@ -146,20 +162,7 @@
 				</div>
 				<div class="author-info">
 					<div class="author-name">
-						<?php 
-							$fname = get_the_author_meta('first_name');
-							$lname = get_the_author_meta('last_name');
-							$full_name = '';
-							if( empty($fname)){
-									$full_name = $lname;
-							} elseif( empty( $lname )){
-									$full_name = $fname;
-							} else {
-									//both first name and last name are present
-									$full_name = "{$lname} {$fname}";
-							}
-							echo $full_name;
-						?>
+						<?php echo $full_name; ?>
 					</div>
 					<div class="author-role">
 						<?php echo get_field('user_role','user_'.get_the_author_meta('ID')) ?>

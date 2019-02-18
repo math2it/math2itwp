@@ -50,7 +50,21 @@ if ( $list_posts ) {?>
                 </span>
                 <span class="author">
                   <i class="icon-user-outline"></i>
-                  <?php echo get_the_author($post->ID); ?>
+                  <?php
+                    $author_id = $post->post_author; 
+                    $fname = get_the_author_meta('first_name', $author_id);
+                    $lname = get_the_author_meta('last_name', $author_id);
+                    $full_name = '';
+                    if( empty($fname)){
+                        $full_name = $lname;
+                    } elseif( empty( $lname )){
+                        $full_name = $fname;
+                    } else {
+                        //both first name and last name are present
+                        $full_name = "{$lname} {$fname}";
+                    }
+                    echo $full_name;
+                  ?>
                 </span>
               </div>
               <div class="post-intro">
