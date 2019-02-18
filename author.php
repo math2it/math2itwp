@@ -16,19 +16,19 @@
 				</div>
 				<h2 class="page-title">
           <?php 
-							$fname = get_the_author_meta('first_name');
-							$lname = get_the_author_meta('last_name');
-							$full_name = '';
-							if( empty($fname)){
-									$full_name = $lname;
-							} elseif( empty( $lname )){
-									$full_name = $fname;
-							} else {
-									//both first name and last name are present
-									$full_name = "{$lname} {$fname}";
-							}
-							echo $full_name;
-						?>
+            $fname = get_the_author_meta('first_name');
+            $lname = get_the_author_meta('last_name');
+            $full_name = '';
+            if( empty($fname)){
+                $full_name = $lname;
+            } elseif( empty( $lname )){
+                $full_name = $fname;
+            } else {
+                //both first name and last name are present
+                $full_name = "{$lname} {$fname}";
+            }
+            echo $full_name;
+          ?>
 				</h2>
 				<h4 class="page-subtitle">
           <?php
