@@ -49,13 +49,16 @@ $margin-post-size_bottom: 2rem;
   "_partials/video"
 ;
 
+// pages
 @import 
   "_partials/category",
   "_partials/post",
   "_partials/page",
-  "_partials/author"
+  "_partials/author",
+  "_partials/search"
 ;
 
+// layouts of posts
 @import 
   "_partials/layout_1_4",
   "_partials/layout_book",
