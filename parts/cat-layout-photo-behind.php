@@ -21,7 +21,7 @@
 
         <?php 
           if ( has_post_thumbnail($post->ID) ) {
-            $postThumbnail = get_the_post_thumbnail_url($post->ID,'large' );
+            $postThumbnail = get_the_post_thumbnail_url($post->ID,'medium' );
           }else{
             $first_cat = get_the_category($post->ID);
             $postThumbnail = get_field('default_posts_feature_image',$first_cat[$rand_number]);
