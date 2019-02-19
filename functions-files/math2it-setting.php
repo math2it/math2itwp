@@ -59,6 +59,15 @@ function ch_essentials_options(){
     'site_setting' // sectom id 
   );
 
+  // google analytics
+  add_settings_field(
+    'google_analytics', 
+    'Google Analytics', 
+    'site_setting_google_analytics',  // function to call
+    'site_setting_option', 
+    'site_setting' // sectom id 
+  );
+
 
   /* Header Options Section */
   add_settings_section( 
@@ -81,6 +90,7 @@ function ch_essentials_options(){
   register_setting('site_setting_option', 'facebook-group');
   register_setting('site_setting_option', 'site_short_description');
   register_setting('site_setting_option', 'site_disqus');
+  register_setting('site_setting_option', 'google_analytics');
 
   // header
   register_setting('header_setting_option','header_number_latest_post_idx');
@@ -143,6 +153,11 @@ function site_setting_site_short_description() { ?>
 // Disqus's shortname
 function site_setting_site_disqus() { ?>
   <input type="text" name="site_disqus" id="site_disqus" value="<?php echo get_option('site_disqus'); ?>" />
+<?php }
+
+// Google Analytics
+function site_setting_google_analytics() { ?>
+  <input type="text" name="google_analytics" id="google_analytics" value="<?php echo get_option('google_analytics'); ?>" />
 <?php }
 
 
