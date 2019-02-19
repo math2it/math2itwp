@@ -1706,7 +1706,6 @@ h2.search-title .keyword_quey {
 /* line 1, sass/_partials/_404.scss */
 .div-404 {
   padding: 2rem 0;
-  background-image: linear-gradient(to bottom, #313542, #424a65, #4b6189, #476c9f, #3d78b5);
   color: #fff;
 }
 /* line 5, sass/_partials/_404.scss */
@@ -1743,7 +1742,7 @@ h2.search-title .keyword_quey {
 }
 /* line 32, sass/_partials/_404.scss */
 .div-404 .title-404 {
-  color: inherit;
+  color: #fdfb82;
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
