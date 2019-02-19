@@ -1,33 +1,5 @@
 <?php get_header(); ?>
 
-<?php 
-  $search_query = get_search_query();
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $posts_per_page = 16;
-  $list_post_args = array(
-    's'                => $search_query,
-		'paged'            => $paged,
-    'post_status'      => 'publish',
-    'suppress_filters' => false,
-		'posts_per_page'   => $posts_per_page
-  );
-  $list_posts = get_posts($list_post_args);
-  // pagination
-  $custom_query = new WP_Query( $list_post_args );
-  $found_posts = $custom_query->found_posts;
-  $number_of_pages = ceil($found_posts / $posts_per_page);
-	
-  $big = 999999999; // need an unlikely integer
-  $pag_arg = array(
-    'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-    'format'    => '?paged=%#%',
-    'prev_text' => __('«'),
-    'next_text' => __('»'),
-    'current'   => max( 1, get_query_var('paged') ),
-    'total'     => $number_of_pages
-  );
-?>
-
 <section class="section">
   <div class="container">
     <div class="row justify-content-center">
@@ -41,9 +13,10 @@
       <div class="col-12 col-lg-11">
         <div class="result-list">
         <?php /* Start the Loop */ ?>
-        <?php if ( $list_posts ) : ?>
-        <?php foreach($list_posts as $post) : 
-          $post_id = $post_id;
+        <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : 
+          the_post(); 
+          $post_id = get_the_ID();
         ?>
           <div class="item">
             <div class="content">
@@ -98,7 +71,7 @@
               </div>
             </a>
           </div> <!-- /div item -->
-        <?php endforeach; ?>
+        <?php endwhile; ?>
         <?php else: ?>
           <p>Rất tiếc, không tìm thấy kết quả bạn cần tìm.</p>
         <?php endif; ?>
@@ -108,23 +81,5 @@
     </div> <!-- /div row -->
   </div> <!-- /div container -->
 </section>
-
-<!-- pagination -->
-<?php
-if ($number_of_pages > 1):?>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12">
-      <?php
-        echo '<div class="paginate-links mb-5">';
-          echo paginate_links( $pag_arg );
-        echo '</div>';
-      ?>
-    </div>
-  </div>
-</div>
-<?php
-endif;
-?>
 
 <?php get_footer(); ?>
