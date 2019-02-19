@@ -5,7 +5,7 @@ h2.search-title{
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   .default_query{
-    color: #444;
+    color: #FA5B0F;
   }
   .keyword_quey{
     color: #0094CC;
@@ -14,6 +14,9 @@ h2.search-title{
 
 .result-list{
   .item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
     &:last-child{
@@ -54,17 +57,31 @@ h2.search-title{
         .title{
           color: #FA5B0F;
         }
+        .excerpt{
+          color: #111;
+        }
       }
     }
+    .content{
+      width: calc(100% - 200px);
+      padding-right: 15px;
+    }
     .photo{
-      height: 150px;
+      width: 200px;
       overflow: hidden;
+      border-radius: 5px;
       img{
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      @media (max-width: 799px){
+    }
+    @media (max-width: 799px){
+      .content{
+        padding-right: 0;
+        width: 100%;
+      }
+      .photo{
         display: none;
       }
     }

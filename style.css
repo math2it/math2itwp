@@ -219,25 +219,24 @@ Tags: bootstrap 4.1
   padding: 30px 20px;
   color: #ddd;
   text-align: center;
-  border-top: 1px solid #e5e5e5;
   position: relative;
   font-size: 1.1rem;
 }
-/* line 9, sass/_partials/_footer.scss */
+/* line 8, sass/_partials/_footer.scss */
 .footer a {
   color: #ddd;
   text-decoration: none;
 }
-/* line 12, sass/_partials/_footer.scss */
+/* line 11, sass/_partials/_footer.scss */
 .footer a:hover {
   color: #fff;
 }
-/* line 16, sass/_partials/_footer.scss */
+/* line 15, sass/_partials/_footer.scss */
 .footer p:last-child {
   margin-bottom: 0;
 }
 
-/* line 23, sass/_partials/_footer.scss */
+/* line 22, sass/_partials/_footer.scss */
 #up-arrow {
   display: block;
   z-index: 8;
@@ -253,26 +252,26 @@ Tags: bootstrap 4.1
   transition: all 200ms ease-out;
 }
 @media (max-width: 767px) {
-  /* line 23, sass/_partials/_footer.scss */
+  /* line 22, sass/_partials/_footer.scss */
   #up-arrow {
     right: 50%;
     margin-right: -26px;
   }
-  /* line 39, sass/_partials/_footer.scss */
+  /* line 38, sass/_partials/_footer.scss */
   #up-arrow i {
     color: #eee;
   }
 }
-/* line 43, sass/_partials/_footer.scss */
+/* line 42, sass/_partials/_footer.scss */
 #up-arrow i {
   color: #ddd;
   font-size: 2.3rem;
 }
-/* line 47, sass/_partials/_footer.scss */
+/* line 46, sass/_partials/_footer.scss */
 #up-arrow:hover {
   padding-top: 5px;
 }
-/* line 49, sass/_partials/_footer.scss */
+/* line 48, sass/_partials/_footer.scss */
 #up-arrow:hover i {
   color: #fff;
 }
@@ -1607,7 +1606,7 @@ h2.search-title {
 }
 /* line 7, sass/_partials/_search.scss */
 h2.search-title .default_query {
-  color: #444;
+  color: #FA5B0F;
 }
 /* line 10, sass/_partials/_search.scss */
 h2.search-title .keyword_quey {
@@ -1616,74 +1615,148 @@ h2.search-title .keyword_quey {
 
 /* line 16, sass/_partials/_search.scss */
 .result-list .item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   border-bottom: 1px solid #ddd;
   padding: 1rem 0;
 }
-/* line 19, sass/_partials/_search.scss */
+/* line 22, sass/_partials/_search.scss */
 .result-list .item:last-child {
   border-bottom: none;
 }
-/* line 22, sass/_partials/_search.scss */
+/* line 25, sass/_partials/_search.scss */
 .result-list .item:first-child {
   padding-top: 0;
 }
-/* line 25, sass/_partials/_search.scss */
+/* line 28, sass/_partials/_search.scss */
 .result-list .item .meta {
   font-size: 0.8rem;
 }
-/* line 27, sass/_partials/_search.scss */
+/* line 30, sass/_partials/_search.scss */
 .result-list .item .meta a {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 30, sass/_partials/_search.scss */
+/* line 33, sass/_partials/_search.scss */
 .result-list .item .meta a:hover {
   text-decoration: none;
   color: #FA5B0F;
 }
-/* line 35, sass/_partials/_search.scss */
+/* line 38, sass/_partials/_search.scss */
 .result-list .item .meta .dot {
   font-size: 1.4rem;
   color: #bbb;
 }
-/* line 40, sass/_partials/_search.scss */
+/* line 43, sass/_partials/_search.scss */
 .result-list .item .title {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 5px 0 10px 0;
 }
-/* line 45, sass/_partials/_search.scss */
+/* line 48, sass/_partials/_search.scss */
 .result-list .item .excerpt {
   color: #525252;
 }
-/* line 48, sass/_partials/_search.scss */
+/* line 51, sass/_partials/_search.scss */
 .result-list .item a.title-excerpt {
   text-decoration: none;
 }
-/* line 50, sass/_partials/_search.scss */
+/* line 53, sass/_partials/_search.scss */
 .result-list .item a.title-excerpt .title {
   color: #444;
 }
-/* line 54, sass/_partials/_search.scss */
+/* line 57, sass/_partials/_search.scss */
 .result-list .item a.title-excerpt:hover .title {
   color: #FA5B0F;
 }
-/* line 59, sass/_partials/_search.scss */
-.result-list .item .photo {
-  height: 150px;
-  overflow: hidden;
+/* line 60, sass/_partials/_search.scss */
+.result-list .item a.title-excerpt:hover .excerpt {
+  color: #111;
 }
-/* line 62, sass/_partials/_search.scss */
+/* line 65, sass/_partials/_search.scss */
+.result-list .item .content {
+  width: calc(100% - 200px);
+  padding-right: 15px;
+}
+/* line 69, sass/_partials/_search.scss */
+.result-list .item .photo {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+/* line 73, sass/_partials/_search.scss */
 .result-list .item .photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 @media (max-width: 799px) {
-  /* line 59, sass/_partials/_search.scss */
+  /* line 80, sass/_partials/_search.scss */
+  .result-list .item .content {
+    padding-right: 0;
+    width: 100%;
+  }
+  /* line 84, sass/_partials/_search.scss */
   .result-list .item .photo {
     display: none;
   }
+}
+
+/* line 1, sass/_partials/_404.scss */
+.div-404 {
+  padding: 2rem 0;
+  background-image: linear-gradient(to bottom, #313542, #424a65, #4b6189, #476c9f, #3d78b5);
+  color: #fff;
+}
+/* line 5, sass/_partials/_404.scss */
+.div-404 .icon-404 {
+  font-family: 'Righteous', cursive;
+  margin: 0 auto;
+  font-size: 7rem;
+  font-weight: 800;
+  text-align: center;
+}
+/* line 11, sass/_partials/_404.scss */
+.div-404 .icon-404 .icon-math2it {
+  font-size: 9rem;
+  color: #f15f5f;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform .4s;
+}
+/* line 21, sass/_partials/_404.scss */
+.div-404 .icon-404:hover .icon-math2it {
+  transform: rotate(-14deg);
+}
+@media (max-width: 350px) {
+  /* line 5, sass/_partials/_404.scss */
+  .div-404 .icon-404 {
+    font-size: 5rem;
+  }
+  /* line 27, sass/_partials/_404.scss */
+  .div-404 .icon-404 .icon-math2it {
+    font-size: 7rem;
+  }
+}
+/* line 32, sass/_partials/_404.scss */
+.div-404 .title-404 {
+  color: inherit;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+/* line 38, sass/_partials/_404.scss */
+.div-404 p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+/* line 42, sass/_partials/_404.scss */
+.div-404 p strong {
+  color: #77ff4e;
 }
 
 /* line 1, sass/_partials/_layout_1_4.scss */
