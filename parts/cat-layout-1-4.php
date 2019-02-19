@@ -23,18 +23,19 @@ if ( $list_posts ) {?>
         <!-- the 1st big post -->
         <?php 
         foreach($list_posts as $post) : 
+          $post_id = $post->ID;
         ?>
 
           <div class="col-md-6 order-md-<?php echo $leftOrRight ?>">
             <div class="style-1-2">
-            <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+            <a class="no-a-effect" href="<?php echo get_permalink($post_id) ?>">
               <div class="featured-image">
                 <?php
-                if ( has_post_thumbnail($post->ID) ) {
-                  $postThumbnail = get_the_post_thumbnail($post->ID,'large' );
+                if ( has_post_thumbnail($post_id) ) {
+                  $postThumbnail = get_the_post_thumbnail($post_id,'large' );
                   echo $postThumbnail;
                 }else{
-                  $first_cat = get_the_category($post->ID);
+                  $first_cat = get_the_category($post_id);
                   $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
                   echo wp_get_attachment_image( $postThumbnail['id'],'large');
                 }
@@ -69,10 +70,11 @@ if ( $list_posts ) {?>
               </div>
               <div class="post-intro">
                 <?php
-                  if (get_field('abstract',$post->ID)):
-                    echo get_field('abstract',$post->ID);
+                  if (get_field('abstract',$post_id)):
+                    echo $post_id;
+                    echo get_field('abstract',$post_id);
                   else:
-                    the_excerpt();
+                    echo get_the_excerpt($post_id);
                   endif;
                 ?>
               </div>
@@ -104,11 +106,11 @@ if ( $list_posts ) {?>
               <a class="no-a-effect" href="<?php echo get_permalink($postID) ?>">
                 <div class="featured-image">
                   <?php
-                  if ( has_post_thumbnail($post->ID) ) {
-                    $postThumbnail = get_the_post_thumbnail($post->ID,'large' );
+                  if ( has_post_thumbnail($post_id) ) {
+                    $postThumbnail = get_the_post_thumbnail($post_id,'large' );
                     echo $postThumbnail;
                   }else{
-                    $first_cat = get_the_category($post->ID);
+                    $first_cat = get_the_category($post_id);
                     $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
                     echo wp_get_attachment_image( $postThumbnail['id'],'thumbnail');
                   }
