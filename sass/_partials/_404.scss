@@ -1,0 +1,46 @@
+.div-404{
+  padding: 2rem 0;
+  background-image: linear-gradient(to bottom, #313542, #424a65, #4b6189, #476c9f, #3d78b5);
+  color: #fff;
+  .icon-404{
+    font-family: 'Righteous', cursive;
+    margin: 0 auto;
+    font-size: 7rem;
+    font-weight: 800;
+    text-align: center;
+    .icon-math2it{
+      font-size: 9rem;
+      color: #f15f5f;
+      margin-left: -2.5rem;
+      margin-right: -2.5rem;
+      vertical-align: middle;
+      display: inline-block;
+      transition: transform .4s;
+    }
+    &:hover{
+      .icon-math2it{
+        transform: rotate(-14deg);
+      }
+    }
+    @media (max-width: 350px){
+      font-size: 5rem;
+      .icon-math2it{
+        font-size: 7rem;
+      }
+    }
+  }
+  .title-404{
+    color: inherit;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+    strong{
+      color: #77ff4e;
+    }
+  }
+}
