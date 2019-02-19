@@ -100,7 +100,6 @@ function category_and_cat_template( $template ) {
     return $template;
 }
 
-
 // ------------------------------------------------
 // PLUGINS
 // ------------------------------------------------
