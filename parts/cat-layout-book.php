@@ -11,13 +11,14 @@
     <div class="row row-eq-height justify-content-center">
 
       <?php foreach($list_posts as $post) : ?>
+      <?php $post_id = $post->ID; ?>
 
       <div class="col-6 col-md-3">
-        <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+        <a class="no-a-effect" href="<?php echo get_permalink($post_id) ?>">
         <div class="item">
           <div class="book-cover px-3 px-md-4 px-lg-5 px-md-3">
             <?php 
-            $bookCover = get_field('post_book_cover',$post->ID); 
+            $bookCover = get_field('post_book_cover',$post_id); 
             echo wp_get_attachment_image( $bookCover['id'],'medium');
             ?>
           </div>
@@ -26,7 +27,7 @@
             <?php echo $post->post_title; ?>
           </div>
           <div class="book-author">
-            <?php echo get_field('post_book_author',$post->ID); ?>
+            <?php echo get_field('post_book_author',$post_id); ?>
           </div>
         </div>
         </a>
