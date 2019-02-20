@@ -69,14 +69,12 @@ if ( $list_posts ) {?>
                 </span>
               </div>
               <div class="post-intro">
-                <?php
-                  if (get_field('abstract',$post_id)):
-                    echo $post_id;
-                    echo get_field('abstract',$post_id);
-                  else:
-                    echo get_the_excerpt($post_id);
-                  endif;
-                ?>
+                <?php if (has_excerpt($post_id)){
+                  echo esc_attr(get_the_excerpt($post_id));
+                }else{
+                  setup_postdata( $post );
+                  echo get_the_excerpt();
+                } ?>
               </div>
             </a>
             </div> <!-- /style-1-2 -->

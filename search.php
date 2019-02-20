@@ -43,7 +43,7 @@
         <?php /* Start the Loop */ ?>
         <?php if ( $list_posts ) : ?>
         <?php foreach($list_posts as $post) : 
-          $post_id = $post_id;
+          $post_id = $post->ID;
         ?>
           <div class="item">
             <div class="content">
@@ -76,10 +76,15 @@
               </div>
               <a class="title-excerpt" href="<?php the_permalink(); ?>" >
                 <h2 class="title">
-                  <?php the_title(); ?>
+                  <?php echo get_the_title($post_id); ?>
                 </h2>
                 <div class="excerpt">
-                  <?php the_excerpt(); ?>
+                  <?php if (has_excerpt($post_id)){
+                    echo esc_attr(get_the_excerpt($post_id));
+                  }else{
+                    setup_postdata( $post );
+                    echo get_the_excerpt();
+                  } ?>
                 </div>
               </a>
             </div>
