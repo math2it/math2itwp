@@ -1367,6 +1367,45 @@ div.extra-info {
   background: #d7ecff;
 }
 
+/* line 491, sass/_partials/_post.scss */
+.subscribe-bar {
+  background: #e8e8e8;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+/* line 496, sass/_partials/_post.scss */
+.subscribe-bar .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 500, sass/_partials/_post.scss */
+.subscribe-bar .form .newsletter-text {
+  margin-right: 10px;
+}
+/* line 504, sass/_partials/_post.scss */
+.subscribe-bar .form .newsletter-form input.email {
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+/* line 510, sass/_partials/_post.scss */
+.subscribe-bar .form .newsletter-form input.submit {
+  border-radius: 5px;
+  padding: 4px 5px;
+  font-size: 0.9rem;
+  border: 0;
+  font-weight: bold;
+  color: #fff;
+  background: #999;
+}
+/* line 518, sass/_partials/_post.scss */
+.subscribe-bar .form .newsletter-form input.submit:hover {
+  cursor: pointer;
+  background: #777;
+}
+
 /* line 3, sass/_partials/_page.scss */
 .gioi-thieu {
   padding: 3rem 0 7rem 0;
