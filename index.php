@@ -6,6 +6,8 @@
 <!-- ====================================== -->
 <?php get_template_part( 'parts/sec-idx-intro' ); ?>
 
+<?php get_template_part( 'parts/subscribe-bar' ); ?>
+
 <main role="main">
 
 <!-- editor's choice -->

@@ -65,6 +65,9 @@
 	</div> <!-- /.container -->
 </header>
 
+<?php get_template_part( 'parts/subscribe-bar' ); ?>
+
+
 <!-- main content -->
 <article class="pt-5">
 	<div class="container">

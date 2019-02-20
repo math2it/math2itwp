@@ -15,6 +15,8 @@
 <?php get_template_part( 'parts/sec-cat-header' ); ?>
 <?php wp_reset_query(); ?> <!-- reset -->
 
+<?php get_template_part( 'parts/subscribe-bar' ); ?>
+
 
 <!-- editor's choice -->
 <!-- ====================================== -->

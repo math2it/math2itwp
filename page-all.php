@@ -28,6 +28,8 @@
 	</div> <!-- /.container -->
 </header>
 
+<?php get_template_part( 'parts/subscribe-bar' ); ?>
+
 
 <!-- editor's choice -->
 <!-- ====================================== -->

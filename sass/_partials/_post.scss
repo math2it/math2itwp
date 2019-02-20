@@ -486,3 +486,40 @@ div.extra-info{
     }
   }
 }
+
+// subscribe-bar
+.subscribe-bar{
+  background: #e8e8e8;
+  padding: 0.5rem;
+  // box-shadow: 0px 1px 9px #999;
+  border-bottom: 1px solid #ddd;
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .newsletter-text{
+      margin-right: 10px;
+    }
+    .newsletter-form{
+      input.email{
+        border-radius: 5px;
+        border: 1px solid #bbb;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+      }
+      input.submit{
+        border-radius: 5px;
+        padding: 4px 5px;
+        font-size: 0.9rem;
+        border: 0;
+        font-weight: bold;
+        color: #fff;
+        background: #999;
+        &:hover{
+          cursor: pointer;
+          background: #777;
+        }
+      }
+    }
+  }
+}
