@@ -79,6 +79,9 @@
   set_query_var('typeTitle', ''); 
   set_query_var('list_posts', $list_posts);
   set_query_var('customSecClass', '');
+  if (!is_category()){
+    set_query_var('display_category', true);
+  }
 
   // pagination
   if (is_category()){
