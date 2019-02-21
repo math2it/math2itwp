@@ -1370,27 +1370,47 @@ div.extra-info {
 /* line 491, sass/_partials/_post.scss */
 .subscribe-bar {
   background: #e8e8e8;
-  padding: 0.5rem;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-/* line 496, sass/_partials/_post.scss */
-.subscribe-bar .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 501px) {
+  /* line 495, sass/_partials/_post.scss */
+  .subscribe-bar .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 500, sass/_partials/_post.scss */
+  .subscribe-bar .form .newsletter-text {
+    margin-right: 10px;
+  }
 }
-/* line 500, sass/_partials/_post.scss */
-.subscribe-bar .form .newsletter-text {
-  margin-right: 10px;
+@media (max-width: 500px) {
+  /* line 495, sass/_partials/_post.scss */
+  .subscribe-bar .form {
+    text-align: center;
+  }
+  /* line 506, sass/_partials/_post.scss */
+  .subscribe-bar .form .newsletter-text {
+    margin-bottom: 5px;
+  }
+  /* line 510, sass/_partials/_post.scss */
+  .subscribe-bar .form .newsletter-form input.email {
+    width: calc(100% - 38px);
+  }
+  /* line 513, sass/_partials/_post.scss */
+  .subscribe-bar .form .newsletter-form input.submit {
+    width: 33px;
+  }
 }
-/* line 504, sass/_partials/_post.scss */
+/* line 519, sass/_partials/_post.scss */
 .subscribe-bar .form .newsletter-form input.email {
   border-radius: 5px;
-  border: 1px solid #bbb;
+  border: 1px solid #e0dfdf;
   padding: 5px 10px;
   font-size: 0.9rem;
 }
-/* line 510, sass/_partials/_post.scss */
+/* line 525, sass/_partials/_post.scss */
 .subscribe-bar .form .newsletter-form input.submit {
   border-radius: 5px;
   padding: 4px 5px;
@@ -1400,7 +1420,7 @@ div.extra-info {
   color: #fff;
   background: #999;
 }
-/* line 518, sass/_partials/_post.scss */
+/* line 533, sass/_partials/_post.scss */
 .subscribe-bar .form .newsletter-form input.submit:hover {
   cursor: pointer;
   background: #777;

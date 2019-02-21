@@ -490,20 +490,35 @@ div.extra-info{
 // subscribe-bar
 .subscribe-bar{
   background: #e8e8e8;
-  padding: 0.5rem;
-  // box-shadow: 0px 1px 9px #999;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
   .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .newsletter-text{
-      margin-right: 10px;
+    @media(min-width: 501px){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .newsletter-text{
+        margin-right: 10px;
+      }
+    }
+    @media (max-width: 500px){
+      text-align: center;
+      .newsletter-text{
+        margin-bottom: 5px;
+      }
+      .newsletter-form{
+        input.email{
+          width: calc(100% - 38px);
+        }
+        input.submit{
+          width: 33px;
+        }
+      }
     }
     .newsletter-form{
       input.email{
         border-radius: 5px;
-        border: 1px solid #bbb;
+        border: 1px solid #e0dfdf;
         padding: 5px 10px;
         font-size: 0.9rem;
       }
