@@ -12,6 +12,25 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.gif" />
 
+    <title>
+      <?php
+      if (is_category()) {
+        single_tag_title('Chủ đề &quot;'); echo '&quot; - ';
+      } elseif (function_exists('is_tag') && is_tag()) {
+        single_tag_title('Thẻ &quot;'); echo '&quot; - ';
+      } elseif (is_page()) {
+        echo single_post_title(''); echo ' - ';
+      } elseif (is_search()) {
+        echo 'Kết quả tìm kiếm cho &quot;'.wp_specialchars($s).'&quot; - ';
+
+      } elseif (!(is_404()) && (is_single()) || (is_page())) {
+        echo single_post_title(''); echo ' - ';
+      } elseif (is_404()) {
+        echo 'Không tìm thấy trang - ';
+      } bloginfo('name');
+      ?>
+    </title>
+
     <!-- css with php -->
     <style id="math2it-inline-css" type="text/css">
       <?php
