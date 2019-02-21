@@ -116,5 +116,3 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 // PLUGINS
 // ------------------------------------------------
 require_once( __DIR__ . '/plugins/custom-gutenberg-button/my-custom-format.php');
-
-
