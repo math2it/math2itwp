@@ -738,16 +738,21 @@ figcaption {
 }
 
 /* line 25, sass/_partials/_category.scss */
+.bg-cat-23 {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fc8484 0%, #b73e57 90%);
+}
+
+/* line 29, sass/_partials/_category.scss */
 .sec-choice-cat {
   background: #fffef1;
   padding: 4rem 0;
 }
-/* line 28, sass/_partials/_category.scss */
+/* line 32, sass/_partials/_category.scss */
 .sec-choice-cat .new-title {
   color: #e4a200;
 }
 
-/* line 35, sass/_partials/_category.scss */
+/* line 39, sass/_partials/_category.scss */
 .cat-intro .intro h2 {
   color: #fff;
   font-size: 3.5rem;
@@ -757,24 +762,24 @@ figcaption {
   letter-spacing: 5px;
 }
 @media (max-width: 575px) {
-  /* line 35, sass/_partials/_category.scss */
+  /* line 39, sass/_partials/_category.scss */
   .cat-intro .intro h2 {
     font-size: 2.5rem;
   }
 }
-/* line 46, sass/_partials/_category.scss */
+/* line 50, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar {
   font-size: 4rem;
 }
-/* line 48, sass/_partials/_category.scss */
+/* line 52, sass/_partials/_category.scss */
 .cat-intro .intro .img-avatar i {
   padding: 5px 0;
 }
-/* line 52, sass/_partials/_category.scss */
+/* line 56, sass/_partials/_category.scss */
 .cat-intro .intro p {
   color: #fff;
 }
-/* line 57, sass/_partials/_category.scss */
+/* line 61, sass/_partials/_category.scss */
 .cat-intro .intro .idx-social span {
   text-shadow: 2px 2px 4px #000;
 }

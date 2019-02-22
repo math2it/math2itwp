@@ -73,6 +73,13 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10 col-xl-8 blog-content">
+				<?php
+					$this_cat = $first_cat[$rand_number]->term_id;
+					if ($this_cat == '23'){
+						// only display for cat cong-cu
+						echo the_excerpt();
+					}
+				?>
 				<?php the_content(); ?>
 			</div>
 			<?php
