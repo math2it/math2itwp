@@ -12,18 +12,28 @@
 
       <?php foreach($list_posts as $post) : ?>
       <div class="col-12 col-sm-6 col-md-3">
-        <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+        <?php
+          $post_id = $post->ID;
+          // only for tool posts
+          if ($toolPosts){
+            $cat_slug = get_category($cat_id)->slug;
+            $post_url = '/category/'.$cat_slug.'/#tool-'.$post_id;
+          }else{
+            $post_url = get_permalink($post_id);
+          }
+        ?>
+        <a class="no-a-effect" href="<?php echo $post_url; ?>">
 
         <?php 
-          $first_cat = get_the_category($post->ID);
+          $first_cat = get_the_category($post_id);
           $rand_number = rand(0,count($first_cat)-1);
         ?>
 
         <?php 
-          if ( has_post_thumbnail($post->ID) ) {
-            $postThumbnail = get_the_post_thumbnail_url($post->ID,'medium' );
+          if ( has_post_thumbnail($post_id) ) {
+            $postThumbnail = get_the_post_thumbnail_url($post_id,'medium' );
           }else{
-            $first_cat = get_the_category($post->ID);
+            $first_cat = get_the_category($post_id);
             $postThumbnail = get_field('default_posts_feature_image',$first_cat[$rand_number]);
             $postThumbnail =  wp_get_attachment_url( $postThumbnail['id'],'medium');
           }
