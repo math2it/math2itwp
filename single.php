@@ -75,11 +75,13 @@
 			<div class="col-12 col-lg-10 col-xl-8 blog-content">
 				<?php
 					$this_cat = $first_cat[$rand_number]->term_id;
-					if ($this_cat == '23'){
+					$cat_slug = get_category($this_cat)->slug;
+					if ($cat_slug == 'tool'){
 						// only display for cat cong-cu
-						echo the_excerpt();
-					}
-				?>
+						echo the_excerpt(); 
+					?>
+	
+				<?php	} ?>
 				<?php the_content(); ?>
 			</div>
 			<?php
