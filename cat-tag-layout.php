@@ -1,14 +1,10 @@
-<!-- Default category template (matching with layout-1-4) -->
-
-<!-- header -->
-<!-- ====================================== -->
 <?php get_header(); ?>
 
 <main role="main">
 
-<!-- intro header -->
-<!-- ====================================== -->
 <?php
+  // intro header 
+  // ======================================
   $taxonomy_id = get_queried_object()->term_id;
   set_query_var('cat_id', $taxonomy_id);
 ?>
@@ -18,9 +14,9 @@
 <?php get_template_part( 'parts/subscribe-bar' ); ?>
 
 
-<!-- editor's choice -->
-<!-- ====================================== -->
 <?php 
+  // editor's choice
+  // ======================================
   set_query_var('typeTitle', 'small'); 
   set_query_var('customTitle', 'Tuyển chọn');
   set_query_var('customURL', get_site_url().'/choice');
@@ -53,11 +49,11 @@
 <?php wp_reset_query(); // reset ?>
 
 
-<!-- List of posts -->
-<!-- ====================================== -->
 <?php
+  // List of posts
+  // ======================================
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $posts_per_page = 16;
+  $posts_per_page = get_option('posts_per_page');
   // list of posts
   if (is_category()){
     $list_post_args = array(
@@ -105,8 +101,9 @@
 
 <div style="padding: 5rem 0;">
 
-<!-- pagination -->
+
 <?php
+// pagination
 if ($number_of_pages > 1):?>
   <div class="container">
     <div class="row justify-content-center">
