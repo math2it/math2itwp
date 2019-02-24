@@ -21,7 +21,7 @@
       } elseif (is_page()) {
         echo single_post_title(''); echo ' - ';
       } elseif (is_search()) {
-        echo 'Kết quả tìm kiếm cho &quot;'.wp_specialchars($s).'&quot; - ';
+        echo 'Kết quả tìm kiếm cho từ khóa &quot;'.wp_specialchars($s).'&quot; - ';
 
       } elseif (!(is_404()) && (is_single()) || (is_page())) {
         echo single_post_title(''); echo ' - ';
@@ -31,9 +31,10 @@
       ?>
     </title>
 
-    <!-- css with php -->
-    <style id="math2it-inline-css" type="text/css">
+    <style type="text/css">
       <?php
+        // css with php
+        // --------------------------------------
         // nav element color depends on color defined in wp admin
         // cf. http://bit.ly/2KAagM9
         
@@ -53,16 +54,30 @@
             'order'   => 'ASC'
         ) );
         foreach ($list_categories as $cat_item){
+          $cat_id = $cat_item->term_id;
           $cat_icon = get_field('cat-icon', $cat_item);
-          $cat_color = get_field('cat-color', $cat_item);
+          $cat_color = get_field('cat-color', $cat_item); // text color in nav
+          $header_bg = get_field('header_background', $cat_item);
+          $sec_title_bg = get_field('section_title_background', $cat_item);
+          $sec_bg = get_field('cat_sec_background', $cat_item);
+          $sec_title_color = get_field('dark_color', $cat_item);
+          // nav hover
           echo '.navbar a:hover .'.$cat_icon.'{color:'.$cat_color.';}';
+          // header background in cat template
+          echo '.bg-cat-'.$cat_id.'{background-image:'.$header_bg.';}';
+          // section background in index.php
+          echo '.sec-cat-'.$cat_id.'{background:'.$sec_bg.';}';
+          // background for icon 
+          echo '.sec-cat-'.$cat_id.' .sec-title-big i{background-image:'.$sec_title_bg.';}';
+          // title of category in section (index.php)
+          echo '.cat-title-'.$cat_id.'{color:'.$sec_title_color.';}';
         }
       ?>
     </style>
 
     <?php 
       $page_id = get_the_ID();
-      if (get_field('display_math',$post_id)==true):
+      if (get_field('display_math',$page_id)==true):
       ?>
         <script type="text/x-mathjax-config">
           MathJax.Hub.Config({
