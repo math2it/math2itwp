@@ -94,7 +94,7 @@ add_action( 'after_setup_theme', 'writy_setup' );
 add_filter( 'category_template', 'category_and_cat_template' );
 add_filter( 'tag_template', 'category_and_cat_template' );
 function category_and_cat_template( $template ) {
-    if ((is_category() and (!is_category(16)) and (!is_category(23))) or (is_tag())) {
+    if ((is_category() and (!is_category('book')) and (!is_category('tool'))) or (is_tag())) {
         $template = locate_template( 'cat-tag-layout.php' ); 
     }
     return $template;
