@@ -97,7 +97,7 @@
   );
 ?>
 
-<div style="padding: 5rem 0;">
+<div style="padding: 4rem 0;">
 
 <?php
 // pagination

@@ -1,10 +1,10 @@
 <?php
 
-// ---------------------------------------------------------------------
+// -----------------------------------------------------
 // Custom item modification in nav
 // Using Avanced Custom Field plugin
 // cf. http://bit.ly/2DLeD62
-// ---------------------------------------------------------------------
+// -----------------------------------------------------
 add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
 function my_wp_nav_menu_objects( $items, $args ) {
 	// loop
