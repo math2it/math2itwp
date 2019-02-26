@@ -8,10 +8,11 @@
 
     <!-- <div class> -->
 
+    <?php if ($typeTitle){ ?>
     <div class="row justify-content-center">
-      <!-- title? -->
-      <?php if ($typeTitle){get_template_part( 'parts/sec-title' );} ?>
+      <?php get_template_part( 'parts/sec-title' ); ?>
     </div>
+    <?php } ?>
 
     <div class="row row-eq-height justify-content-center">
 

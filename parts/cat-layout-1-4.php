@@ -14,10 +14,12 @@ if ( $list_posts ) {?>
 
   <section class="layout-1-4 sec-cat <?php if($customSecClass){echo $customSecClass;} ?>">
     <div class="container">
-      <div class="row">
-        <!-- title? -->
-        <?php if ($typeTitle){get_template_part( 'parts/sec-title' );} ?>
+      
+      <?php if ($typeTitle){ ?>
+      <div class="row justify-content-center">
+        <?php get_template_part( 'parts/sec-title' ); ?>
       </div>
+      <?php } ?>
 
       <div class="row row-eq-height">
         <!-- the 1st big post -->
