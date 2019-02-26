@@ -39,7 +39,7 @@
                 }
               }
             ?>
-              <span class="label platfom">
+              <span class="label platform">
                 <i class="icon-<?php echo $value2; ?>"></i>
                 <?php echo $label; ?>
             </span>
