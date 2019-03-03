@@ -79,15 +79,15 @@
       $page_id = get_the_ID();
       if (get_field('display_math',$page_id)==true):
       ?>
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
+        <script type="text/javascript">
+          window.MathJax = {
             jax: ["input/TeX", "output/SVG"],
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-            SVG: { scale: 90, linebreaks: { automatic: true } }
-          });
+            SVG: { linebreaks: { automatic: true } }
+          };
         </script>
         <script type="text/javascript" async
-          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_SVG">
         </script>
     <?php endif; ?>
 
