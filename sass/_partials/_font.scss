@@ -1,6 +1,6 @@
 body {
   font-family: 'Comfortaa', cursive;
-  color: #454545;
+  color: #333;
 }
 
 h1, .h1,
@@ -35,4 +35,12 @@ kbd{
 
 .mark, mark{
   background-color: #fff6b3;
+}
+
+.post-font{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.15rem;
+  .has-small-font-size{
+    font-size: 1rem;
+  }
 }
