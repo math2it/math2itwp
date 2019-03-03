@@ -16,3 +16,40 @@
   display: -webkit-flex;
   display: flex;
 }
+
+
+// plugin Easy Footnotes
+span.easy-footnote{
+  a{
+    font-weight: bold;
+    color: #f54c14;
+    border-bottom: none;
+    box-shadow: none;
+    &:hover{
+      border-bottom: none;
+      box-shadow: none;
+    }
+  }
+}
+.easy-footnote-title{
+  h4{
+    margin-bottom: $margin-post-size_bottom/2;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 3rem;
+    &:before{
+      content: "# ";
+      color: #6293ca;
+      @media (min-width: 992px){
+        margin-left: -1.8rem;
+      }
+    }
+    @media (max-width: 1199px){
+      font-size: 1.65rem;
+    }
+    &+h3{
+      margin-top: 0;
+    }
+  }
+}
