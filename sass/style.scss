@@ -34,6 +34,7 @@ $c-bai-dich: #d2b4ff;
 $c-gioi-thieu: #ff8094;
 
 $margin-post-size_bottom: 2rem;
+$margin_extra_post: 3rem;
 
 @import 
   "_partials/header",
@@ -76,5 +77,9 @@ $margin-post-size_bottom: 2rem;
   "_partials/bootstrap_toc" // toc on sidebar
 ;
 
-@import "_partials/ghostkit"; // ghostkit plugin
+@import 
+  "_partials/ghostkit", // ghostkit plugin
+  "_partials/atomicblocks" // atomic blocks
+; 
+
 

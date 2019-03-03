@@ -72,7 +72,7 @@
 <article class="pt-5">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-8 blog-content">
+			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
 				<?php
 					$this_cat = $first_cat[$rand_number]->term_id;
 					$cat_slug = get_category($this_cat)->slug;
@@ -211,7 +211,7 @@
 <?php
 	$tags = wp_get_post_tags($post_id);
 	$tag_ids = array();
-	set_query_var('typeTitle', 'middle'); 
+	set_query_var('typeTitle', ''); 
 	set_query_var('customTitle', 'Có thể bạn thích?');
 	set_query_var('display_category', true);
 	set_query_var('customURL', '/all' );

@@ -115,7 +115,7 @@
 <article class="pt-5">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-8 blog-content">
+			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
 				
 				<?php
 					$this_cat = $first_cat[$rand_number]->term_id;
@@ -144,6 +144,8 @@
 </article>
 
 </main>
+
+<div class="extra-info">
 
 <!-- sharing buttons -->
 <div class="container">
@@ -193,8 +195,6 @@
 	set_query_var('cat_id', $cat_id);
 	set_query_var('typeTitle', ''); 
 	set_query_var('customTitle', 'Có thể bạn thích?');
-	set_query_var('display_category', true);
-	// set_query_var('customURL', '/all' );
 	set_query_var('toolPosts', true);
   $list_post_args = array(
 		'category'         => $cat_id,
@@ -220,5 +220,7 @@
 		</div>
 	</div>
 </div>
+
+</div> <!-- /div extra info -->
 
 <?php get_footer(); ?>
