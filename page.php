@@ -9,12 +9,15 @@
 				<h2 class="page-title">
 					<?php echo get_the_title(); ?>
 				</h2>
-				<h4 class="page-subtitle">
-					<?php 
-						$page_id = get_the_ID();
-						echo get_field('subtitle',$page_id);
-					?>
-				</h4>
+				<?php 
+				if (get_field('subtitle',$page_id)){?>
+					<h4 class="page-subtitle">
+						<?php 
+							$page_id = get_the_ID();
+							echo get_field('subtitle',$page_id);
+						?>
+					</h4>
+				<?php } ?>
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
@@ -25,7 +28,7 @@
 <article class="section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-8 blog-content">
+			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
 				<?php
 				// TO SHOW THE PAGE CONTENTS
 				while ( have_posts() ) : the_post(); // Because the_content() works only inside a WP Loop
