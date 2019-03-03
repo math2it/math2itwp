@@ -8,6 +8,8 @@ function math2itwp_google_fonts() {
   wp_enqueue_style( 'Comfortaa'); // default font
   wp_register_style('Righteous', 'http://fonts.googleapis.com/css?family=Righteous'); // math2it's index title
   wp_enqueue_style( 'Righteous');
+  wp_register_style('Nunito', 'https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&amp;subset=vietnamese'); // math2it's index title
+  wp_enqueue_style( 'Nunito');
   // wp_register_style('Pacifico', 'https://fonts.googleapis.com/css?family=Pacifico'); // category's title
   // wp_enqueue_style( 'Pacifico');
 }
