@@ -147,6 +147,17 @@
     margin-bottom: 1.5rem;
     color: #4a7edc;
   }
+  .email{
+    text-align: center;
+    a{
+      font-size: 1.2rem;
+      color: #555;
+      &:hover{
+        color: #111;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 // general page 
@@ -170,6 +181,7 @@
   text-align: center;
   font-size: 1.1rem;
   padding-top: 0.5rem;
+  line-height: 1.4;
   @media (max-width: 575px){
     font-size: 1rem;
   }
