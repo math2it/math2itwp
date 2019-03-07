@@ -78,3 +78,30 @@
 		}
 	);
 } )( window.wp );
+
+// big number button
+( function( wp ) {
+	var bbtButton = function( props ) {
+		return wp.element.createElement(
+			wp.editor.RichTextToolbarButton, {
+				icon: 'awards',
+				title: 'Big number button',
+				onClick: function() {
+					props.onChange( wp.richText.toggleFormat(
+						props.value,
+						{ type: 'my-custom-format/bbt-button' }
+					) );
+				},
+				isActive: props.isActive,
+			}
+		);
+	}
+	wp.richText.registerFormatType(
+		'my-custom-format/bbt-button', {
+			title: 'Big number button',
+			tagName: 'bbt',
+			className: null,
+			edit: bbtButton,
+		}
+	);
+} )( window.wp );

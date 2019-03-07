@@ -1,6 +1,6 @@
 <?php
 /**
- * 3 buttons: <code></code>, <kbd></kbd>, <mark></mark>
+ * buttons: <code></code>, <kbd></kbd>, <mark></mark>, <bbt></bbt>
 */
 
 function my_custom_format_script_register() {
