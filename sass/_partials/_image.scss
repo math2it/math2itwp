@@ -9,6 +9,7 @@
   img{
     max-width: unset!important;
     width: 100%;
+    height: 100%;
   }
   figure{
     margin-top: 0.3rem;
@@ -37,9 +38,9 @@ figcaption{
 // ----------------------------------------
 
 .wp-block-media-text{
-  border: 1px solid #ddd;
+  margin: 0;
   @media (min-width: 768px){
-    margin-bottom: $margin-post-size_bottom;
+    margin: 3rem 0;
   }
   @media (max-width: 767px){
     display: inherit!important;
@@ -53,27 +54,34 @@ figcaption{
   }
   .wp-block-media-text__media{
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
     @media (max-width: 767px){
       padding-bottom: 0;
+      margin-bottom: $margin-post-size_bottom;
     }
   }
   .wp-block-media-text__content{
-    padding: 15px;
+    padding: 0 1.5rem;
     margin-right: 0;
     .has-large-font-size{
       font-size: 1rem;
     }
     p{
-      font-size: 1rem;
-      margin-bottom: 1rem;
       &:first-of-type{
         margin-top: 0;
       }
       &:last-of-type{
         margin-bottom: 0;
       }
+      &+ul{
+        margin-top: 2rem;
+      }
     }
+  }
+
+  grid-template-columns: 40% auto;
+  &.has-media-on-the-right{
+    grid-template-columns: auto 40%;
   }
 }
 .alignwide.has-media-on-the-right{
@@ -132,7 +140,37 @@ figcaption{
 
 // center 
 .aligncenter{
+  max-width: 100%;
   figcaption{
     margin-bottom: 0;
   }
+}
+
+@media (min-width: 768px){
+  .max-200 figure{
+    max-width: 200px;
+  }
+  .max-250 figure{
+    max-width: 250px;
+  }
+  .max-300 figure{
+    max-width: 300px;
+  }
+  .full-50 figure{
+    width: 50%;
+  }
+  .full-75 figure{
+    width: 75%;
+  }
+}
+
+// img inside li 
+li img{
+  max-width: 100%;
+  padding: 1rem 0;
+}
+
+// box-shadow
+.img-shadow{
+  box-shadow: 0 0 20px 2px #e3e3e3;
 }
