@@ -54,9 +54,11 @@
           } ?>
         </div>
         <div class="more-info">
-          <a class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
-            <i class="fa fa-link" aria-hidden="true"></i> Trang web
-          </a>
+          <?php if(get_field('tool_url',$post_id)){ ?>
+            <a class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
+              <i class="fa fa-link" aria-hidden="true"></i> Trang web
+            </a>
+          <?php } ?>
           <?php 
             $facebook_url = 'https://www.facebook.com/sharer/sharer.php?u=' . get_permalink($post_id) . '&title=' . get_the_title($post_id) . '';
           ?>
