@@ -126,9 +126,19 @@ $cat_slugs_lenght = count($cat_slugs);
 		<div class="row align-items-center justify-content-md-center">
 			<div class="col-sm-8 col-12">
 				<h3 class="title">Liên hệ với chúng tôi?</h3>
-				<div class="email">
-					<a href="mailto:math2it.blog@gmail.com?subject=Trò chuyện với Math2IT&cc=dinhanhthimail@gmail.com">math2it.blog@gmail.com</a>
-				</div>
+				<form class="contact-form" name="name-contact-form" method="POST" action="https://formspree.io/math2itblog@gmail.com">
+					<div class="form-group row contact-form">
+						<div class="col-sm-6 col-12 mb-3"><input onkeyup="enableButton()" type="text" name="name" placeholder="Tên của bạn"></div>
+						<div class="col-sm-6 col-12 mb-3"><input onkeyup="enableButton()" type="email" name="email" placeholder="Email của bạn"></div>
+						<div class="col-12 textarea-container mb-3">
+							<textarea onkeyup="enableButton()" id="abc" name="message" placeholder="Nội dung thư"></textarea>
+							<div class="textarea-size"></div>
+						</div>
+						<div id="contact-submit" class="col-12 text-center">
+							<button type="submit">Gởi thư</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
