@@ -31,6 +31,9 @@
   h2, h3{
     margin-bottom: $margin-post-size_bottom;
   }
+  h2{
+    margin-top: $margin-post-size_bottom + 1rem;
+  }
   p + h2{
     margin-top: 3rem!important;
   }
@@ -78,7 +81,7 @@
     font-weight: inherit;
     &:hover{
       text-decoration: none;
-      color: #c716ad;
+      color: #c7164c;
     }
   }
 
@@ -126,7 +129,7 @@
     margin-bottom: $margin-post-size_bottom;
     border-top: 4px solid #555d66;
     border-bottom: 4px solid #555d66;
-    color: #555;
+    color: #333;
     padding: 2rem 15px;
     @media (min-width: 992px){
       padding: 2rem 0;
@@ -162,17 +165,17 @@
     margin-bottom: $margin-post-size_bottom;
   }
 
-  p > code{
+  p > code, li > code{
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     background: -webkit-gradient(linear,left top,right top,from(#fce4ed),to(#ffe8cc));
     background: linear-gradient(to right,#fce4ed,#ffe8cc);
     overflow-wrap: break-word;
     word-wrap: break-word;
-    padding: 4px;
+    padding: 2px 4px;
     border-radius: .2rem;
     color: #608860;
-    font-size: 95%;
+    font-size: 90%;
   }
 
   .toolbar{
@@ -463,23 +466,19 @@ div.extra-info{
   text-align: center;
   margin-bottom: calc(3rem - 10px);
   a{
-    border: 1px solid #c8dcff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    background: #f0f8ff;
-    color: #2f74bd;
+    border: 1px solid #ddd;
+    padding: 3px 7px;
+    font-size: 0.85rem;
+    background: #eee;
+    color: #777;
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 10px;
-    &:before{
-      content: "\f02b"; 
-      font-family: FontAwesome;
-      margin-right: 5px;
-    }
+    border-radius: 1px;
     &:hover{
       text-decoration: none;
-      background: #d7ecff;
+      // background: #e4e4e4;
+      color: #444;
     }
   }
 }
