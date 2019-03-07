@@ -2797,6 +2797,11 @@ span.easy-footnote a:hover {
   margin-top: 0;
 }
 
+/* line 58, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes {
+  margin-bottom: 2rem;
+}
+
 /* line 1, sass/_partials/_bootstrap_toc.scss */
 nav[data-toggle="toc"] .nav > li > a {
   display: block;
