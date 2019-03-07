@@ -28,7 +28,7 @@
 						<?php 
 							date_default_timezone_set('Asia/Ho_Chi_Minh
 							');
-							$from = strtotime(get_the_date());
+							$from = strtotime($post->post_date);
 							$today = time();
 							$difference = floor(($today - $from)/86400); // day
 							if ($difference == 0):

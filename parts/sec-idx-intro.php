@@ -34,7 +34,22 @@
             <div class="new-item">
               <div class="cat-icon"><i class="<?php echo $post_cat_icon ?>"></i></div>
               <div class="new-post">
-                <div class="post-date"><?php echo date('d-m-y', strtotime($post['post_date'])); ?></div>
+                <div class="post-date">
+                  <?php 
+                    date_default_timezone_set('Asia/Ho_Chi_Minh
+                    ');
+                    $from = strtotime($post['post_date']);
+                    $today = time();
+                    $difference = floor(($today - $from)/86400); // day
+                    if ($difference == 0):
+                      echo 'Vừa mới đăng';
+                    elseif ($difference < 7):
+                      echo $difference.' ngày trước';
+                    else:
+                      echo date('d-m-y', strtotime($post['post_date']));
+                    endif;
+                  ?>
+                </div>
                 <h4 class="post-title">
                   <?php echo $post['post_title'] ?>
                 </h4>
