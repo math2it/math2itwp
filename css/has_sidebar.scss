@@ -30,6 +30,11 @@
         clear: both;
       }
     }
+    ul.navbar-nav{
+      max-height: 500px;
+      overflow-y: auto;
+      display: block;
+    }
   }
   @media (max-width: 1199px){
     display: none;

@@ -27,7 +27,7 @@ nav[data-toggle="toc"] .nav .nav > li > .active:hover,
 nav[data-toggle="toc"] .nav .nav > li > .active:focus {
   font-weight: 500;
   &:before{
-    top: 2px;
+    top: 6px;
   }
 }
 
@@ -45,12 +45,13 @@ nav[data-toggle="toc"]{
       }
       &> a:before{
         content: '';
+        border-radius: 50%;
         left: -3px;
-        top: 4px;
+        top: 8px;
         background: #dbdbdb;
         position: absolute;
-        width: 5px;
-        height: 12px;
+        width: 6px;
+        height: 6px;
       }
     } 
   }
@@ -59,11 +60,12 @@ nav[data-toggle="toc"]{
     font-weight: bold;
     &:before{
       content: '';
+      border-radius: 50%;
       left: -3px;
-      top: 4px;
+      top: 8px;
       position: absolute;
-      width: 5px;
-      height: 12px;
+      width: 6px;
+      height: 6px;
       background: #1976d2;
     }
   }

@@ -20,6 +20,10 @@
         margin: 7px 0 4px;
         background: #dbdbdb;
         clear: both; }
+    .toc-sidebar .sticky-top ul.navbar-nav {
+      max-height: 500px;
+      overflow-y: auto;
+      display: block; }
   @media (max-width: 1199px) {
     .toc-sidebar {
       display: none; } }
