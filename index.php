@@ -70,7 +70,7 @@
   set_query_var('customIcon', '');
   set_query_var('typeTitle', 'big');
   set_query_var('customSecClass', 'sec-cat-'.$cat_id);
-  set_query_var('left_or_right', 'right');
+  set_query_var('left_or_right', 'left');
   // list of posts
   $list_post_args = array(
     'category'         => $cat_id,
@@ -106,6 +106,30 @@
   set_query_var('list_posts', $list_posts);
 ?>
 <?php get_template_part( 'parts/cat-layout-photo-behind' ); ?>
+<?php wp_reset_query(); // reset ?>
+
+
+<?php 
+  // edu
+  // ======================================
+  $consider_cat = get_category_by_slug( 'education' );
+  $cat_id = $consider_cat->term_id;
+  set_query_var('cat_id', $cat_id);
+  set_query_var('customTitle', '');
+  set_query_var('customIcon', '');
+  set_query_var('typeTitle', 'big');
+  set_query_var('customSecClass', 'sec-cat-'.$cat_id);
+  set_query_var('left_or_right', 'left');
+  // list of posts
+  $list_post_args = array(
+    'category'         => $cat_id,
+    'numberposts' 		 => 5,
+    'post_status'      => 'publish'
+  );
+  $list_posts = get_posts($list_post_args);
+  set_query_var('list_posts', $list_posts);
+?>
+<?php get_template_part( 'parts/cat-layout-1-4' ); ?>
 <?php wp_reset_query(); // reset ?>
 
 
