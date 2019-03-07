@@ -81,6 +81,11 @@
 					</span>
 				</div> <!-- /page-subtitle -->
 				<p class="meta text-center mt-4">
+					<?php if(get_field('tool_url',$post_id)){ ?>
+            <a class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
+              <i class="fa fa-link" aria-hidden="true"></i> Trang web
+            </a>
+          <?php } ?>
 					<?php
             $field = get_field_object('pricing',$post_id);
             $value = $field['value'];
@@ -116,16 +121,6 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
-				
-				<?php
-					$this_cat = $first_cat[$rand_number]->term_id;
-					$cat_slug = get_category($this_cat)->slug;
-					if ($cat_slug == 'tool'){
-						// only display for cat cong-cu
-						echo the_excerpt(); 
-					?>
-	
-				<?php	} ?>
 				<?php the_content(); ?>
 			</div>
 			<?php
