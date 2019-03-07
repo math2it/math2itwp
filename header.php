@@ -9,6 +9,8 @@
     <meta name="description" content="Math2IT's Wordpress Theme">
     <meta name="author" content="Anh-Thi Dinh">
 
+    <meta name="robots" content="noindex">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.gif" />
 
@@ -83,7 +85,10 @@
           window.MathJax = {
             jax: ["input/TeX", "output/SVG"],
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-            SVG: { linebreaks: { automatic: true } }
+            SVG: {
+              linebreaks: { automatic: true },
+              styles: {".MathJax_SVG_Display": {margin: "2rem 0", overflow: "auto"}}
+            }
           };
         </script>
         <script type="text/javascript" async
