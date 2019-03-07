@@ -16,7 +16,7 @@ require_once( __DIR__ . '/functions-files/menu.php');
 // Navigation
 require_once( __DIR__ . '/functions-files/nav.php');
 
-// Quick edit post metta field
+// Quick edit post meta field
 require_once( __DIR__ . '/functions-files/quick-edit.php');
 
 // Gutenberg
