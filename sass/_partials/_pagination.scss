@@ -1,6 +1,6 @@
 .paginate-links{
-  text-align: center;
   font-size: 1.5rem;
+  display: inline-block;
 }
 
 .page-numbers {
@@ -18,13 +18,9 @@
   }
 }
 
-.page-numbers.current{
-  zoom: 1.2;
-}
-
 .page-numbers.current,
 a.page-numbers:hover {
-  background: #3d78b5;
+  background: #3d78b5!important;
   border: 1px solid #3d78b5;
   color: #fff;
   text-decoration: none;

@@ -13,6 +13,10 @@
 
 <?php get_template_part( 'parts/subscribe-bar' ); ?>
 
+<?php 
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
+if ($paged == 1){
+?>
 
 <?php 
   // editor's choice
@@ -47,12 +51,11 @@
 ?>
 <?php get_template_part( 'parts/cat-layout-photo-behind' ); ?>
 <?php wp_reset_query(); // reset ?>
-
+<?php } // endif paged==1 ?>
 
 <?php
   // List of posts
   // ======================================
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $posts_per_page = get_option('posts_per_page');
   // list of posts
   if (is_category()){
@@ -97,50 +100,15 @@
     'current'   => max( 1, get_query_var('paged') ),
     'total'     => $number_of_pages
   );
+
+  // for pagination
+  set_query_var('pag_arg', $pag_arg);
+  set_query_var('number_of_pages', $number_of_pages);
 ?>
 
-<div style="padding: 5rem 0;">
-
-
-<?php
-// pagination
-if ($number_of_pages > 1):?>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <?php
-          echo '<div class="paginate-links mb-5">';
-            echo paginate_links( $pag_arg );
-          echo '</div>';
-        ?>
-      </div>
-    </div>
-  </div>
-<?php
-endif;
-?>
-
-<!-- list of posts -->
-<?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
-
-<!-- pagination -->
-<?php
-if ($number_of_pages > 1):?>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <?php
-          echo '<div class="paginate-links mt-5">';
-            echo paginate_links( $pag_arg );
-          echo '</div>';
-        ?>
-      </div>
-    </div>
-  </div>
-<?php
-endif;
-?>
-
+<div class="all-posts">
+  <?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
+  <?php get_template_part( 'parts/pagination' ); ?>
 </div>
 
 <?php wp_reset_query() ?>
