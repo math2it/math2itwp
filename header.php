@@ -25,6 +25,19 @@
       } elseif (is_search()) {
         echo 'Kết quả tìm kiếm cho từ khóa &quot;'.wp_specialchars($s).'&quot; - ';
 
+      } elseif ( is_author() ) {
+        $fname = get_the_author_meta('first_name');
+        $lname = get_the_author_meta('last_name');
+        $full_name = '';
+        if( empty($fname)){
+            $full_name = $lname;
+        } elseif( empty( $lname )){
+            $full_name = $fname;
+        } else {
+            //both first name and last name are present
+            $full_name = "{$lname} {$fname}";
+        }
+        echo 'Tác giả '.$full_name.' - ';
       } elseif (!(is_404()) && (is_single()) || (is_page())) {
         echo single_post_title(''); echo ' - ';
       } elseif (is_404()) {
