@@ -220,7 +220,7 @@ Tags: bootstrap 4.1
   color: #ddd;
   text-align: center;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 /* line 8, sass/_partials/_footer.scss */
 .footer a {
@@ -339,6 +339,16 @@ bbt {
 /* line 52, sass/_partials/_font.scss */
 bbt:after {
   content: ".";
+}
+
+/* line 57, sass/_partials/_font.scss */
+tpink {
+  color: #d83173;
+}
+
+/* line 61, sass/_partials/_font.scss */
+tgreen {
+  color: #228237;
 }
 
 /* line 2, sass/_partials/_nav.scss */
@@ -2795,6 +2805,36 @@ span.easy-footnote a:hover {
 /* line 51, sass/_partials/_other.scss */
 .easy-footnote-title h4 + h3 {
   margin-top: 0;
+}
+
+/* line 58, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+/* line 61, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes p, .wp-block-simple-alerts-for-gutenberg-alert-boxes ul, .wp-block-simple-alerts-for-gutenberg-alert-boxes ol {
+  margin-bottom: 1.5rem;
+}
+/* line 64, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes p:last-of-type {
+  margin-bottom: 0;
+}
+/* line 66, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes p:last-of-type + ul, .wp-block-simple-alerts-for-gutenberg-alert-boxes p:last-of-type + ol {
+  margin-top: 1rem !important;
+}
+/* line 70, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes ol:last-of-type, .wp-block-simple-alerts-for-gutenberg-alert-boxes ul:last-of-type {
+  margin-bottom: 0;
+}
+/* line 72, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes ol:last-of-type + p, .wp-block-simple-alerts-for-gutenberg-alert-boxes ul:last-of-type + p {
+  margin-top: 1.5rem;
+}
+/* line 76, sass/_partials/_other.scss */
+.wp-block-simple-alerts-for-gutenberg-alert-boxes p + ul, .wp-block-simple-alerts-for-gutenberg-alert-boxes p + ol {
+  margin-top: -1rem;
 }
 
 /* line 1, sass/_partials/_bootstrap_toc.scss */

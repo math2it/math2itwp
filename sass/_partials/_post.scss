@@ -19,14 +19,6 @@
 .blog-content{
   p{
     margin-bottom: $margin-post-size_bottom;
-    // a{
-    //   border-bottom: 2px solid #2dbbebc4;
-    //   box-shadow: inset 0 -3px 0 #a6dcf3;
-    //   &:hover{
-    //     border-bottom: 2px solid #eb2dcfc4;
-    //     box-shadow: inset 0 -3px 0 #eea6f3;
-    //   }
-    // }
   }
   h2, h3{
     margin-bottom: $margin-post-size_bottom;
@@ -174,7 +166,7 @@
     word-wrap: break-word;
     padding: 2px 4px;
     border-radius: .2rem;
-    color: #608860;
+    color: #395839;
     font-size: 90%;
   }
 

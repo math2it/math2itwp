@@ -53,3 +53,27 @@ span.easy-footnote{
     }
   }
 }
+
+// plugin simple alert block 
+.wp-block-simple-alerts-for-gutenberg-alert-boxes{
+  margin-bottom: $margin-post-size_bottom;
+  padding: 1.5rem;
+  p, ul, ol{
+    margin-bottom: $margin-post-size_bottom - 0.5rem;
+  }
+  p:last-of-type{
+    margin-bottom: 0;
+    &+ul, &+ol{
+      margin-top: 1rem!important;
+    }
+  }
+  ol:last-of-type, ul:last-of-type{
+    margin-bottom: 0;
+    &+p{
+      margin-top: $margin-post-size_bottom - 0.5rem;
+    }
+  }
+  p + ul, p + ol{
+    margin-top: -1rem;
+  }
+}
