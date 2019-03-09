@@ -97,51 +97,12 @@
   );
 ?>
 
-<div style="padding: 4rem 0;">
-
-<?php
-// pagination
-if ($number_of_pages > 1):?>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <?php
-          echo '<div class="paginate-links mb-5">';
-            echo paginate_links( $pag_arg );
-          echo '</div>';
-        ?>
-      </div>
-    </div>
-  </div>
-<?php
-endif;
-?>
-
-<!-- list of posts -->
-<?php get_template_part( 'parts/cat-layout-tool' ); ?>
-
-<?php
-// pagination
-if ($number_of_pages > 1):?>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <?php
-          echo '<div class="paginate-links mt-5">';
-            echo paginate_links( $pag_arg );
-          echo '</div>';
-        ?>
-      </div>
-    </div>
-  </div>
-<?php
-endif;
-?>
-
+<div class="all-posts">
+  <?php get_template_part( 'parts/cat-layout-tool' ); ?>
+  <?php get_template_part( 'parts/pagination' ); ?>
 </div>
 
 <?php wp_reset_query() ?>
-
 
 </main>
 
