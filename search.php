@@ -26,9 +26,14 @@
     'current'   => max( 1, get_query_var('paged') ),
     'total'     => $number_of_pages
   );
+
+  // for pagination
+  set_query_var('pag_arg', $pag_arg);
+  set_query_var('number_of_pages', $number_of_pages);
 ?>
 
-<section class="section">
+<div class="all-posts">
+<section>
   <div class="container">
     <div class="row justify-content-center">
       
@@ -114,22 +119,7 @@
   </div> <!-- /div container -->
 </section>
 
-<!-- pagination -->
-<?php
-if ($number_of_pages > 1):?>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12">
-      <?php
-        echo '<div class="paginate-links mb-5">';
-          echo paginate_links( $pag_arg );
-        echo '</div>';
-      ?>
-    </div>
-  </div>
+<?php get_template_part( 'parts/pagination' ); ?>
 </div>
-<?php
-endif;
-?>
 
 <?php get_footer(); ?>
