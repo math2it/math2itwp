@@ -41,7 +41,7 @@ function my_css_attributes_filter($var) {
 // cf. http://bit.ly/2DJ7wuH
 class Description_Walker extends Walker_Nav_Menu
 {
-    function start_el(&$output, $item, $depth, $args)
+    function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
     {
         $classes = empty($item->classes) ? array () : (array) $item->classes;
         $class_names = join(' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
