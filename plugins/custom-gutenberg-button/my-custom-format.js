@@ -105,3 +105,59 @@
 		}
 	);
 } )( window.wp );
+
+
+// pink text
+( function( wp ) {
+	var pinkButton = function( props ) {
+		return wp.element.createElement(
+			wp.editor.RichTextToolbarButton, {
+				icon: 'admin-customizer',
+				title: 'Pink text',
+				onClick: function() {
+					props.onChange( wp.richText.toggleFormat(
+						props.value,
+						{ type: 'my-custom-format/pink-button' }
+					) );
+				},
+				isActive: props.isActive,
+			}
+		);
+	}
+	wp.richText.registerFormatType(
+		'my-custom-format/pink-button', {
+			title: 'Pink text',
+			tagName: 'tpink',
+			className: null,
+			edit: pinkButton,
+		}
+	);
+} )( window.wp );
+
+
+// green text
+( function( wp ) {
+	var greenButton = function( props ) {
+		return wp.element.createElement(
+			wp.editor.RichTextToolbarButton, {
+				icon: 'admin-appearance',
+				title: 'Green text',
+				onClick: function() {
+					props.onChange( wp.richText.toggleFormat(
+						props.value,
+						{ type: 'my-custom-format/green-button' }
+					) );
+				},
+				isActive: props.isActive,
+			}
+		);
+	}
+	wp.richText.registerFormatType(
+		'my-custom-format/green-button', {
+			title: 'Green text',
+			tagName: 'tgreen',
+			className: null,
+			edit: greenButton,
+		}
+	);
+} )( window.wp );
