@@ -141,7 +141,7 @@
     .new-item{
       display: flex;
       flex-wrap: wrap;
-      margin-top: 1.5rem;
+      margin-top: 0.8rem;
 
       @media (max-width: 767px){
         padding: 0 1rem;
@@ -170,6 +170,27 @@
       .post-title{
         color: #ffeead!important;
       }
+    }
+  }
+}
+
+
+// only for books
+.header-book{
+  .book-cover{
+    max-width: 150px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px){
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 450px){
+      max-width: 120px;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      border: 1px solid #aaa;
+      box-shadow: 0 12px 8px -8px black;
     }
   }
 }

@@ -8,34 +8,20 @@
 	the_post();
 	$post_id = get_the_ID();
 	$first_cat = get_the_category($post_id);
-  $rand_number = rand(0,count($first_cat)-1);
-  $this_cat = $first_cat[$rand_number]->term_id;
-  $cat_slug = get_category($this_cat)->slug;
+	$rand_number = rand(0,count($first_cat)-1);
 ?>
 
-<header class="header-page bg-cat-<?php echo $this_cat; ?> header-<?php echo $cat_slug; ?>">
+<header class="header-page bg-cat-<?php echo $first_cat[$rand_number]->term_id; ?>">
 	<div class="container">
-		<div class="row justify-content-center align-items-center">
-      <?php if ($cat_slug != 'book'){ ?>
-      <div class="col-12 col-md-10">
-      <?php }else{ ?>
-      <div class="col-md-auto col-12">
-        <div class="book-cover">
-          <?php 
-            $bookCover = get_field('post_book_cover',$post_id); 
-            echo wp_get_attachment_image( $bookCover['id'],'medium');
-          ?>
-        </div>
-      </div>
-			<div class="col-md-8 col-12 text-center mt-md-4">
-      <?php } ?>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10">
 				<h1 class="page-title">
 					<?php the_title(); ?>
 				</h1>
 				<div class="page-subtitle">
 					<span>
 						<i class="icon-folder-open-empty"></i>
-						<a href="<?php echo esc_url( get_category_link( $this_cat ) ) ?>"><?php echo $first_cat[$rand_number]->name; ?></a>
+						<a href="<?php echo esc_url( get_category_link( $first_cat[$rand_number]->term_id ) ) ?>"><?php echo $first_cat[$rand_number]->name; ?></a>
 					</span>
 					<span>
 						<i class="icon-clock"></i>
@@ -88,6 +74,8 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
 				<?php
+					$this_cat = $first_cat[$rand_number]->term_id;
+					$cat_slug = get_category($this_cat)->slug;
 					if ($cat_slug == 'tool'){
 						// only display for cat cong-cu
 						echo the_excerpt(); 
