@@ -35,11 +35,11 @@ if ( $list_posts ) {?>
               <div class="featured-image">
                 <?php
                 if ( has_post_thumbnail( get_the_ID() ) ) {
-                  $postThumbnail = get_the_post_thumbnail( get_the_ID(),'large' );
+                  $postThumbnail = get_the_post_thumbnail( get_the_ID(),'medium_large' );
                   echo $postThumbnail;
                 }else{
                   $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
-                  echo wp_get_attachment_image( $postThumbnail['id'],'large');
+                  echo wp_get_attachment_image( $postThumbnail['id'],'medium_large');
                 }
                 ?>
               </div>
@@ -120,11 +120,11 @@ if ( $list_posts ) {?>
                 <div class="featured-image">
                   <?php
                   if ( has_post_thumbnail( get_the_ID() ) ) {
-                    $postThumbnail = get_the_post_thumbnail( get_the_ID(),'large' );
+                    $postThumbnail = get_the_post_thumbnail( get_the_ID(),'medium' );
                     echo $postThumbnail;
                   }else{
                     $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
-                    echo wp_get_attachment_image( $postThumbnail['id'],'thumbnail');
+                    echo wp_get_attachment_image( $postThumbnail['id'],'medium');
                   }
                   ?>
                 </div>
