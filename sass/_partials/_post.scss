@@ -160,13 +160,12 @@
   p > code, li > code{
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    background: -webkit-gradient(linear,left top,right top,from(#fce4ed),to(#ffe8cc));
-    background: linear-gradient(to right,#fce4ed,#ffe8cc);
+    background: #eaeaea;
     overflow-wrap: break-word;
     word-wrap: break-word;
     padding: 2px 4px;
     border-radius: .2rem;
-    color: #395839;
+    color: #da4596;
     font-size: 90%;
   }
 
