@@ -24,7 +24,13 @@
           </div>
           <div class="book-shelf"></div>
           <div class="book-title">
-            <?php echo $post->post_title; ?>
+            <?php 
+              if(get_field('post_book_title',$post_id)){
+                echo get_field('post_book_title',$post_id);
+              }else{
+                echo $post->post_title;
+              }
+            ?>
           </div>
           <div class="book-author">
             <?php echo get_field('post_book_author',$post_id); ?>

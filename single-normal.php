@@ -5,18 +5,29 @@
 <?php 
 // if ( have_posts() ) : 
 // 	while ( have_posts() ) : 
-	the_post();
-	$post_id = get_the_ID();
-	$first_cat = get_the_category($post_id);
+the_post();
+  $post_id = get_the_ID();
+  $first_cat = get_the_category($post_id);
   $rand_number = rand(0,count($first_cat)-1);
   $this_cat = $first_cat[$rand_number]->term_id;
   $cat_slug = get_category($this_cat)->slug;
+  
+	// check if cat=book?
+	$cat_book = false;
+  for ($x = 0; $x <= count($first_cat)-1; $x++) {
+		$catItemId = $first_cat[$x]->term_id;
+		$catItemSlug = get_category($catItemId)->slug;
+    if ($catItemSlug == 'book'){
+			$cat_book = true;
+			break;
+		}
+	} 
 ?>
 
-<header class="header-page bg-cat-<?php echo $this_cat; ?> header-<?php echo $cat_slug; ?>">
+<header class="header-page bg-cat-<?php echo $this_cat; ?> <?php if($cat_book){echo 'header-book';} ?>">
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
-      <?php if ($cat_slug != 'book'){ ?>
+      <?php if (!$cat_book){ ?>
       <div class="col-12 col-md-10">
       <?php }else{ ?>
       <div class="col-md-auto col-12">
