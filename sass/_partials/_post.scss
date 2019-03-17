@@ -304,6 +304,7 @@
       flex: 1 0 0;
       img{
         width: 100%;
+        height: 100%;
         border-radius: 50%;
       }
     }
@@ -526,5 +527,13 @@ div.extra-info{
         }
       }
     }
+  }
+}
+
+
+// mathjax
+@media (min-width: 768px){
+  .MathJax_SVG_Display{
+    overflow: hidden!important;
   }
 }
