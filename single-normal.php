@@ -187,8 +187,11 @@ the_post();
 			<div class="alignwide author-box">
 				<div class="author-avatar">
 					<?php 
-						if(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE): 
-						$avatar = get_avatar_url(get_the_author_meta('ID'),array("size"=>200));
+						if (get_field('user_avatar','user_'.get_the_author_meta('ID'))):
+							$avatar = get_field('user_avatar','user_'.get_the_author_meta('ID'));
+							echo wp_get_attachment_image( $avatar['id'],'thumbnail');
+						elseif(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE): 
+							$avatar = get_avatar_url(get_the_author_meta('ID'),array("size"=>200));
 						?>
 							<img src="<?php echo $avatar; ?>" alt="<?php the_author() ?>'s avatar'">
 					<?php else: ?>

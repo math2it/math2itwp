@@ -33,6 +33,18 @@ function cyb_document_title_separator( $sep ) {
 
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
+update_option( 'thumbnail_size_w', 150 );
+update_option( 'thumbnail_size_h', 150 );
+
+update_option( 'medium_size_w', 400 );
+update_option( 'medium_size_h', 400 );
+
+update_option( 'medium_large_size_w', 800 );
+update_option( 'medium_large_size_h', 800 );
+
+update_option( 'large_size_w', 1366 );
+update_option( 'large_size_h', 1366 );
+
 
 // remove p tag from category description
 remove_filter('term_description','wpautop');

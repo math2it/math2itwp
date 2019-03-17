@@ -8,42 +8,45 @@
       $post_id = $post->ID;
     ?>
     <div id="tool-<?php echo $post_id; ?>" class="row item align-items-center justify-content-center">
-      <div class="col-12 col-md-6 col-lg-5 photo">
+      <div class="col-12 col-md-4 col-lg-3 photo">
         <?php
           if ( has_post_thumbnail($post->ID) ) {
             $postThumbnail = get_the_post_thumbnail($post->ID,'medium' );
           }else{
             $first_cat = get_the_category($post->ID);
-            $postThumbnail = get_field('default_posts_feature_image',$first_cat[$rand_number]);
-            echo wp_get_attachment_image( $postThumbnail['id'],'small');
+            $postThumbnail = get_field('default_posts_feature_image','category_'.$cat_id);
+            $postThumbnail =  wp_get_attachment_image( $postThumbnail['id'],'medium');
           }
           echo $postThumbnail;
         ?>
       </div>
-      <div class="col-12 col-md-6 col-lg-7 description">
+      <div class="col-12 col-md-8 col-lg-9 description">
         <h2><?php echo $post->post_title; ?></h2>
         <div class="meta">
           <?php
             $field = get_field_object('pricing',$post_id);
             $value = $field['value'];
-            $label = $field['choices'][ $value ]; ?>
-            <span class="label pricing-<?php echo $value; ?>"><?php echo $label; ?></span>
+            if ($value){
+              $label = $field['choices'][ $value ]; ?>
+              <span class="label pricing-<?php echo $value; ?>"><?php echo $label; ?></span>
+          <?php } ?>
           <?php
             $field = get_field_object('platform',$post_id);
             $values = $field['value'];
-            foreach ($values as $item){
-              foreach ($field['choices'] as $value => $label) {
-                if($label == $item){
-                  $value2 = $value;
-                  break;
+            if ($values){
+              foreach ($values as $item){
+                foreach ($field['choices'] as $value => $label) {
+                  if($label == $item){
+                    $value2 = $value;
+                    break;
+                  }
                 }
-              }
             ?>
               <span class="label platform">
                 <i class="icon-<?php echo $value2; ?>"></i>
                 <?php echo $label; ?>
             </span>
-          <?php } ?>
+          <?php }} ?>
         </div>
         <div class="intro">
           <?php if (has_excerpt($post_id)){

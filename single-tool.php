@@ -92,21 +92,22 @@
             $label = $field['choices'][ $value ]; ?>
             <span class="label pricing-<?php echo $value; ?>"><?php echo $label; ?></span>
           <?php
-            $field = get_field_object('platform',$post_id);
-            $values = $field['value'];
-            foreach ($values as $item){
-              foreach ($field['choices'] as $value => $label) {
-                if($label == $item){
-                  $value2 = $value;
-                  break;
-                }
-              }
+						$field = get_field_object('platform',$post_id);
+						$values = $field['value'];
+						if ($values){
+							foreach ($values as $item){
+								foreach ($field['choices'] as $value => $label) {
+									if($label == $item){
+										$value2 = $value;
+										break;
+									}
+								}
             ?>
               <span class="label platform">
                 <i class="icon-<?php echo $value2; ?>"></i>
                 <?php echo $label; ?>
             </span>
-          <?php } ?>
+          <?php }} ?>
 				</p>
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->
