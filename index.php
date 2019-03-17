@@ -94,7 +94,7 @@
   set_query_var('customIcon', '');
   set_query_var('typeTitle', 'big');
   set_query_var('customSecClass', 'sec-cat sec-cat-'.$cat_id);
-  set_query_var('toolPosts', true);
+  // set_query_var('toolPosts', true);
   // list of posts
   $list_post_args = array(
     'category'         => $cat_id,
