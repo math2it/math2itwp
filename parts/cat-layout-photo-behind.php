@@ -17,12 +17,12 @@
         <?php
           $post_id = $post->ID;
           // only for tool posts
-          if ($toolPosts){
-            $cat_slug = get_category($cat_id)->slug;
-            $post_url = '/category/'.$cat_slug.'/#tool-'.$post_id;
-          }else{
-            $post_url = get_permalink($post_id);
-          }
+          // if ($toolPosts){
+          //   $cat_slug = get_category($cat_id)->slug;
+          //   $post_url = get_site_url().'/category/'.$cat_slug.'/#tool-'.$post_id;
+          // }else{
+          $post_url = get_permalink($post_id);
+          // }
         ?>
         <a class="no-a-effect" href="<?php echo $post_url; ?>">
 
