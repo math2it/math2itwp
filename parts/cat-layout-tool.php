@@ -7,8 +7,8 @@
     <?php foreach($list_posts as $post) : 
       $post_id = $post->ID;
     ?>
-    <div id="tool-<?php echo $post_id; ?>" class="row item align-items-center justify-content-center">
-      <div class="col-12 col-md-4 col-lg-3 photo">
+    <div id="tool-<?php echo $post_id; ?>" class="row item justify-content-center">
+      <div class="col-12 col-md-5 col-lg-3 photo">
         <?php
           if ( has_post_thumbnail($post->ID) ) {
             $postThumbnail = get_the_post_thumbnail($post->ID,'medium' );
@@ -20,7 +20,7 @@
           echo $postThumbnail;
         ?>
       </div>
-      <div class="col-12 col-md-8 col-lg-9 description">
+      <div class="col-12 col-md-7 col-lg-9 description">
         <h2><?php echo $post->post_title; ?></h2>
         <div class="meta">
           <?php

@@ -5,24 +5,18 @@
   .item{
     border-bottom: 1px solid #ddd;
     padding: 2.5rem 0;
+    &:hover{
+      h2{
+        color: #FA5B0F;
+      }
+      .photo img{
+        transform: scale(1.1);
+      }
+    }
     &:last-child{
       margin-bottom: 0;
       border-bottom: none;
     }
-    &:nth-child(2n){
-      .photo{
-        order: 1;
-        @media (max-width: 767px){
-          order: 0;
-        }
-      }
-    }
-    // &:hover{
-    //   box-shadow: 0 0 6px 2px #e3e3e3;
-    // }
-    // &:target{
-    //   box-shadow: 0 0 20px 1px #b1e9ff;
-    // }
   }
   .description{
     h2{
@@ -37,6 +31,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform .2s;
     }
     @media (max-width: 767px){
       margin-bottom: 1rem;
