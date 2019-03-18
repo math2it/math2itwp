@@ -66,7 +66,7 @@
                   <?php 
                     date_default_timezone_set('Asia/Ho_Chi_Minh
                     ');
-                    $from = strtotime(get_the_date());
+                    $from = strtotime($post->post_date);
                     $today = time();
                     $difference = floor(($today - $from)/86400); // day
                     if ($difference == 0):
@@ -74,7 +74,7 @@
                     elseif ($difference < 7):
                       echo $difference.' ngày trước';
                     else:
-                      echo get_the_date('d-m-Y');
+                      echo date('d-m-y', strtotime($post->post_date));
                     endif;
                   ?> 
                 </span>
