@@ -75,6 +75,12 @@ h2.search-title{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform .2s;
+      }
+    }
+    &:hover{
+      .photo img{
+        transform: scale(1.1);
       }
     }
     @media (max-width: 799px){
