@@ -8,8 +8,7 @@
 
     <meta name="description" content="Math2IT's Wordpress Theme">
     <meta name="author" content="Anh-Thi Dinh">
-
-    <meta name="robots" content="noindex">
+    <meta name="google-site-verification" content="181CmgqR5igp35LIcLcdHY9IedJEluRir0meZpAp0rg" />
 
     <!-- favicon -->
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.gif" />
@@ -119,6 +118,7 @@
         ga('send', 'pageview');
       </script>
     <?php } ?>
+    
 
     <?php wp_head();?>
   </head>

@@ -1720,7 +1720,7 @@ div.extra-info {
   text-align: center;
   font-size: 1.1rem;
   padding-top: 0.5rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 @media (max-width: 575px) {
   /* line 180, sass/_partials/_page.scss */
