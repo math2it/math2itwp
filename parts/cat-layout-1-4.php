@@ -55,7 +55,9 @@ if ( $list_posts ) {?>
                     $from = strtotime($post->post_date);
                     $today = time();
                     $difference = floor(($today - $from)/86400); // day
-                    if ($difference == 0):
+                    if ((get_field('update',$post_id)==true) & $difference < 7):
+                      echo 'Mới cập nhật';
+                    elseif ($difference == 0):
                       echo 'Vừa mới đăng';
                     elseif ($difference < 7):
                       echo $difference.' ngày trước';
@@ -139,7 +141,9 @@ if ( $list_posts ) {?>
                       $from = strtotime($post->post_date);
                       $today = time();
                       $difference = floor(($today - $from)/86400); // day
-                      if ($difference == 0):
+                      if ((get_field('update',$postID)==true) & $difference < 7):
+                        echo 'Mới cập nhật';
+                      elseif ($difference == 0):
                         echo 'Vừa mới đăng';
                       elseif ($difference < 7):
                         echo $difference.' ngày trước';

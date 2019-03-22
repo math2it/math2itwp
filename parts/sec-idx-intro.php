@@ -27,10 +27,11 @@
             'post_status' => 'publish' // Show only the published posts
         ));
         foreach($recent_posts as $post) : 
-          $first_cat = get_the_category($post['ID']);
+          $post_id = $post['ID'];
+          $first_cat = get_the_category($post_id);
           $rand_number = rand(0,count($first_cat)-1);
           $post_cat_icon = get_field('cat-icon', $first_cat[$rand_number]);?>
-          <a href="<?php echo get_permalink($post['ID']) ?>">
+          <a href="<?php echo get_permalink($post_id) ?>">
             <div class="new-item">
               <div class="cat-icon"><i class="<?php echo $post_cat_icon ?>"></i></div>
               <div class="new-post">
@@ -41,7 +42,9 @@
                     $from = strtotime($post['post_date']);
                     $today = time();
                     $difference = floor(($today - $from)/86400); // day
-                    if ($difference == 0):
+                    if ((get_field('update',$post_id)==true) & $difference < 7):
+                      echo 'Mới cập nhật';
+                    elseif ($difference == 0):
                       echo 'Vừa mới đăng';
                     elseif ($difference < 7):
                       echo $difference.' ngày trước';

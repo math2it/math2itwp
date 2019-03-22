@@ -20,19 +20,20 @@
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="item">
         <?php
-          $first_cat = get_the_category($post->ID);
+          $post_id = $post->ID;
+          $first_cat = get_the_category($post_id);
           $rand_number = rand(0,count($first_cat)-1);
         ?>
         <?php if ($display_category): ?>
         <div class="thumb-cat" style="background: <?php echo get_field('dark_color', $first_cat[$rand_number]); ?>;">
         <?php endif; ?>
-          <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+          <a class="no-a-effect" href="<?php echo get_permalink($post_id) ?>">
             <div class="post-image">
               <?php
-                if ( has_post_thumbnail($post->ID) ) {
-                  $postThumbnail = get_the_post_thumbnail($post->ID,'medium' );
+                if ( has_post_thumbnail($post_id) ) {
+                  $postThumbnail = get_the_post_thumbnail($post_id,'medium' );
                 }else{
-                  $first_cat = get_the_category($post->ID);
+                  $first_cat = get_the_category($post_id);
                   $postThumbnail = get_field('default_posts_feature_image',$first_cat[$rand_number]);
                   echo wp_get_attachment_image( $postThumbnail['id'],'medium');
                 }
@@ -49,7 +50,7 @@
           </div> <!-- /div thumbnail + cat -->
           <?php endif; ?>
           <div class="post-title">
-            <a class="no-a-effect" href="<?php echo get_permalink($post->ID) ?>">
+            <a class="no-a-effect" href="<?php echo get_permalink($post_id) ?>">
               <?php echo $post->post_title; ?>
             </a>
           </div>
@@ -61,7 +62,9 @@
 							$from = strtotime($post->post_date);
 							$today = time();
 							$difference = floor(($today - $from)/86400); // day
-							if ($difference == 0):
+							if ((get_field('update',$post_id)==true) & $difference < 7):
+                echo 'Mới cập nhật';
+              elseif ($difference == 0):
 								echo 'Vừa mới đăng';
 							elseif ($difference < 7):
 								echo $difference.' ngày trước';
