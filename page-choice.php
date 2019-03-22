@@ -28,7 +28,7 @@
 	</div> <!-- /.container -->
 </header>
 
-<?php get_template_part( 'parts/subscribe-bar' ); ?>
+<?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 
 <?php

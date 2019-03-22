@@ -50,7 +50,7 @@
 	</div> <!-- /.container -->
 </header>
 
-<?php get_template_part( 'parts/subscribe-bar' ); ?>
+<?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 <?php
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

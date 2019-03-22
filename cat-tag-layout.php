@@ -11,7 +11,7 @@
 <?php get_template_part( 'parts/sec-cat-header' ); ?>
 <?php wp_reset_query(); ?> <!-- reset -->
 
-<?php get_template_part( 'parts/subscribe-bar' ); ?>
+<?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 <?php 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
