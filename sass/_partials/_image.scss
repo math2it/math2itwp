@@ -14,10 +14,12 @@
   figure{
     margin-top: 0.3rem;
   }
+  figcaption{
+    color: #778899!important;
+  }
 }
 figcaption{
   font-size: 0.9rem!important;
-  color: #778899!important;
   margin-top: 1rem!important;
   padding: 0 15px;
 }
@@ -30,6 +32,9 @@ figcaption{
   @media (min-width: 1360px){
     margin-left: -50px;
     margin-right: -50px;
+  }
+  figcaption{
+    color: #fff!important;
   }
 }
 
