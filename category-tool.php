@@ -9,7 +9,7 @@
 <?php get_template_part( 'parts/sec-cat-header' ); ?>
 <?php wp_reset_query(); ?> <!-- reset -->
 
-<?php get_template_part( 'parts/subscribe-bar' ); ?>
+<?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 
 <?php 
@@ -95,6 +95,10 @@
     'current'   => max( 1, get_query_var('paged') ),
     'total'     => $number_of_pages
   );
+
+  // for pagination
+  set_query_var('pag_arg', $pag_arg);
+  set_query_var('number_of_pages', $number_of_pages);
 ?>
 
 <div class="all-posts">
