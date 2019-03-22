@@ -51,7 +51,9 @@
 							$from = strtotime($post->post_date);
 							$today = time();
 							$difference = floor(($today - $from)/86400); // day
-							if ($difference == 0):
+							if ((get_field('update',$post_id)==true) & $difference < 7):
+								echo 'Mới cập nhật';
+							elseif ($difference == 0):
 								echo 'Vừa mới đăng';
 							elseif ($difference < 7):
 								echo $difference.' ngày trước';
@@ -82,7 +84,7 @@
 				</div> <!-- /page-subtitle -->
 				<p class="meta text-center mt-4">
 					<?php if(get_field('tool_url',$post_id)){ ?>
-            <a class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
+            <a target="_blank" class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
               <i class="fa fa-link" aria-hidden="true"></i> Trang web
             </a>
           <?php } ?>
@@ -114,7 +116,7 @@
 	</div> <!-- /.container -->
 </header>
 
-<?php get_template_part( 'parts/subscribe-bar' ); ?>
+<?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 
 <!-- main content -->
@@ -142,6 +144,17 @@
 </main>
 
 <div class="extra-info">
+
+<!-- tags -->
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-10 col-xl-8">
+			<div class="tags">
+				<?php the_tags('',' ',''); ?>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- sharing buttons -->
 <div class="container">
