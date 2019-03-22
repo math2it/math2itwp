@@ -58,7 +58,7 @@
         </div>
         <div class="more-info">
           <?php if(get_field('tool_url',$post_id)){ ?>
-            <a class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
+            <a target="_blank" class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
               <i class="fa fa-link" aria-hidden="true"></i> Trang web
             </a>
           <?php } ?>
