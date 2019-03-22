@@ -28,7 +28,7 @@
 	</div> <!-- /.container -->
 </header>
 
-<?php get_template_part( 'parts/subscribe-bar' ); ?>
+<?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 <?php 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
@@ -43,25 +43,13 @@ if ($paged == 1){
   set_query_var('customIcon', 'icon-star-circled');
   set_query_var('customSecClass', 'sec-choice-cat section-border-bottom');
   // list of posts
-  if (is_category()){
-    $list_post_args = array(
-      'meta_key'         => 'top_choice',
-      'meta_value'       => 1,
-      'numberposts' 		 => 4,
-      'category'         => $taxonomy_id,
-      'orderby'          => 'rand',
-      'post_status'      => 'publish'
-    );
-  }elseif (is_tag()){
-    $list_post_args = array(
-      'meta_key'         => 'top_choice',
-      'meta_value'       => 1,
-      'numberposts' 		 => 4,
-      'tag_id'           => $taxonomy_id,
-      'orderby'          => 'rand',
-      'post_status'      => 'publish'
-    );
-  }
+  $list_post_args = array(
+    'meta_key'         => 'top_choice',
+    'meta_value'       => 1,
+    'numberposts' 		 => 4,
+    'orderby'          => 'rand',
+    'post_status'      => 'publish'
+  );
   $list_posts = get_posts($list_post_args);
   set_query_var('list_posts', $list_posts);
 ?>
