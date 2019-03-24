@@ -1,7 +1,4 @@
-<!-- header -->
-<!-- ====================================== -->
 <?php get_header(); ?>
-
 
 <main role="main">
 
@@ -12,12 +9,12 @@
 				<div class="img-avatar">
           <i class="fa fa-files-o" aria-hidden="true" style="color: #f3bb34;"></i>
         </div>
-				<h2 class="page-title">
+				<h1 class="page-title">
           Tất cả bài đăng
-				</h2>
-				<h4 class="page-subtitle">
+				</h1>
+				<h2 data-toc-skip class="page-subtitle">
           Những bài viết trau chuốt và có đầu tư của chúng tôi
-        </h4>
+        </h2>
         <div class="idx-social">
           <a class="mr-s" href="<?php echo get_bloginfo( 'wpurl' ) ?>/gioi-thieu"><i class="icon-heart"></i><span class="hide-on-xs"> Giới thiệu</span></a>
           <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i><span class="hide-on-xs"> Nhóm Math2IT</span></a>

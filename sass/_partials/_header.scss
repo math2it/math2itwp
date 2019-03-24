@@ -19,12 +19,12 @@
       color: #fff;
       font-weight: 600;
     }
-    h4{
+    .subtitle{
       color: #5eeda3;
       font-size: 1.4rem;
       font-weight: 700;
     }
-    p{
+    p.description{
       margin-top: 2rem;
       font-size: 1.1rem;
       color: #fff;
@@ -45,7 +45,6 @@
       margin: 0;
       font-size: 1.2rem;
     }
-
   }
   &:hover{
     .icon-math2it{
@@ -76,6 +75,9 @@
       margin-left: -0.5rem;
       margin-right: -0.5rem;
     }
+  }
+  h1{
+    display: none;
   }
 }
 

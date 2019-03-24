@@ -4,9 +4,10 @@
       <div class="col-md-7 intro">
         <div class="img-avatar">
           Math<i class="icon-math2it"></i>IT
+          <h1>Math2IT</h1>
         </div>
-        <h4><?php echo get_bloginfo( 'description' ); ?></h4>
-        <p>
+        <h2 data-toc-skip class="subtitle"><?php echo get_bloginfo( 'description' ); ?></h2>
+        <p class="description">
           <?php echo get_option('site_short_description') ?>
         </p>
         <div class="idx-social">
@@ -17,7 +18,7 @@
       </div>
       <div class="newest-list col-md-5">
         <div class="latest-top sec-title">
-          <h3 class="new-title">Mới nhất</h3>
+          <h2 data-toc-skip class="new-title">Mới nhất</h2>
           <a href="<?php echo get_site_url();?>/all" class="view-all">xem thêm</a>
         </div>
 

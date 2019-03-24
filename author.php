@@ -17,7 +17,7 @@
 							<img src="<?php echo get_template_directory_uri() ?>/img/author.svg">
 					<?php endif; ?>
 				</div>
-				<h2 class="page-title">
+				<h1 class="page-title">
           <?php 
             $fname = get_the_author_meta('first_name');
             $lname = get_the_author_meta('last_name');
@@ -32,8 +32,8 @@
             }
             echo $full_name;
           ?>
-				</h2>
-				<h4 class="page-subtitle">
+				</h1>
+				<h2 data-toc-skip class="page-subtitle">
           <?php
 						if (get_the_author_meta('description')){
 							echo nl2br(get_the_author_meta('description')); 
@@ -41,7 +41,7 @@
 							echo "Một tác giả của Math2IT.";
 						}
           ?>
-        </h4>
+        </h2>
         <div class="idx-social">
           <a class="mr-s" href="mailto:<?php echo get_the_author_meta('user_email') ?>"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hide-on-xs"> Email cho <?php if ($fname){echo $fname;}else{ the_author();} ?></span></a>
         </div>

@@ -6,17 +6,17 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10 col-lg-8">
-				<h2 class="page-title">
+				<h1 class="page-title">
 					<?php echo get_the_title(); ?>
-				</h2>
+				</h1>
 				<?php 
 				if (get_field('subtitle',$page_id)){?>
-					<h4 class="page-subtitle">
+					<h2 data-toc-skip class="page-subtitle">
 						<?php 
 							$page_id = get_the_ID();
 							echo get_field('subtitle',$page_id);
 						?>
-					</h4>
+					</h2>
 				<?php } ?>
 			</div> <!-- /.col -->
 		</div> <!-- /.row -->

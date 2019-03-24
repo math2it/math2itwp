@@ -1,23 +1,17 @@
-<!-- This page template is used only for gioi-thieu -->
-
-
-<!-- header -->
-<!-- ====================================== -->
 <?php get_header(); ?>
 
 <main role="main">
 
-<!-- intro header -->
-<!-- ====================================== -->
 <header class="bg-black header-intro gioi-thieu">
   <div class="container">
     <div class="row align-items-center">
       <div id="page-intro" class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-12 intro">
         <div class="img-avatar">
-          Math<i class="icon-math2it"></i>IT
+					Math<i class="icon-math2it"></i>IT
+					<h1>Math2IT</h1>
         </div>
-        <h4><?php echo get_bloginfo( 'description' ); ?></h4>
-        <p>
+        <h2 data-toc-skip class="subtitle"><?php echo get_bloginfo( 'description' ); ?></h2>
+        <p class="description">
 					<?php echo get_option('site_short_description') ?>
         </p>
         <div class="idx-social">

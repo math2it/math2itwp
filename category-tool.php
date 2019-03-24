@@ -90,8 +90,8 @@
   $pag_arg = array(
     'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
     'format'    => '?paged=%#%',
-    'prev_text' => __('«'),
-    'next_text' => __('»'),
+    'prev_text' => __('⟨'),
+    'next_text' => __('⟩'),
     'current'   => max( 1, get_query_var('paged') ),
     'total'     => $number_of_pages
   );

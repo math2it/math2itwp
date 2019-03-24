@@ -14,14 +14,14 @@
           <?php }?>
         </div>
 
-        <h2 class="title">
+        <h1 class="title">
           <?php if (is_category()){
             echo get_cat_name($cat_id);
           }else{
             $tag = get_tag( $cat_id );
             echo $tag->name;
           }?>
-        </h2>
+        </h1>
         <?php if (is_category() and category_description()){ ?>
           <div class="description"><?php echo category_description(); ?></div>
         <?php }elseif(tag_description()){?>

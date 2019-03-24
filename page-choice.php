@@ -12,12 +12,12 @@
 				<div class="img-avatar">
           <i class="icon-star-circled" style="color: #f3bb34;"></i>
         </div>
-				<h2 class="page-title">
+				<h1 class="page-title">
 					Math2IT tuyển chọn
-				</h2>
-				<h4 class="page-subtitle">
+				</h1>
+				<h2 data-toc-skip class="page-subtitle">
 					Dựa trên tiêu chí bổ ích và hay được xem lại nhiều nhất
-        </h4>
+        </h2>
         <div class="idx-social">
           <a class="mr-s" href="<?php echo get_bloginfo( 'wpurl' ) ?>/gioi-thieu"><i class="icon-heart"></i><span class="hide-on-xs"> Giới thiệu</span></a>
           <a class="mr-s" target="_blank" href="<?php echo get_option('facebook-group'); ?>"><i class="icon-group"></i><span class="hide-on-xs"> Nhóm Math2IT</span></a>
