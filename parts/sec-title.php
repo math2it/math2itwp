@@ -25,7 +25,7 @@
       </a>
     </h2>
     <?php if ($typeTitle=='middle'){echo '<div></div>';} ?>
-    <a href="<?php if($customURL){echo get_site_url().$customURL;}else{echo get_category_link($cat_id);} ?>" class="view-all">xem thêm</a>
+    <a href="<?php if($customURL){echo $customURL;}else{echo get_category_link($cat_id);} ?>" class="view-all">xem thêm</a>
   </div>
 </div>
 <?php wp_reset_query(); // reset ?>
