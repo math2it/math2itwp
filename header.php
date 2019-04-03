@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Toán học - Giáo dục - Công nghệ">
+    <?php 
+    if (is_front_page()){ ?>
+      <meta name="description" content="Toán học - Giáo dục - Công nghệ" />
+    <?php }?>
     <meta name="author" content="Math2IT">
     <meta name="google-site-verification" content="181CmgqR5igp35LIcLcdHY9IedJEluRir0meZpAp0rg" />
 
