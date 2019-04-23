@@ -2,16 +2,16 @@
 
 <main>
 
-<?php 
-// if ( have_posts() ) : 
-// 	while ( have_posts() ) : 
+<?php
+// if ( have_posts() ) :
+// 	while ( have_posts() ) :
 the_post();
   $post_id = get_the_ID();
   $first_cat = get_the_category($post_id);
   $rand_number = rand(0,count($first_cat)-1);
   $this_cat = $first_cat[$rand_number]->term_id;
   $cat_slug = get_category($this_cat)->slug;
-  
+
 	// check if cat=book?
 	$cat_book = false;
   for ($x = 0; $x <= count($first_cat)-1; $x++) {
@@ -21,7 +21,7 @@ the_post();
 			$cat_book = true;
 			break;
 		}
-	} 
+	}
 ?>
 
 <header class="header-page bg-cat-<?php echo $this_cat; ?> <?php if($cat_book){echo 'header-book';} ?>">
@@ -32,8 +32,8 @@ the_post();
       <?php }else{ ?>
       <div class="col-md-auto col-12">
         <div class="book-cover">
-          <?php 
-            $bookCover = get_field('post_book_cover',$post_id); 
+          <?php
+            $bookCover = get_field('post_book_cover',$post_id);
             echo wp_get_attachment_image( $bookCover['id'],'medium');
           ?>
         </div>
@@ -50,7 +50,7 @@ the_post();
 					</span>
 					<span>
 						<i class="icon-clock"></i>
-						<?php 
+						<?php
 							date_default_timezone_set('Asia/Ho_Chi_Minh
 							');
 							$from = strtotime($post->post_date);
@@ -65,9 +65,9 @@ the_post();
 							else:
 								echo the_date('d-m-Y');
 							endif;
-						?> 
+						?>
 					</span>
-					<?php 
+					<?php
 						$fname = get_the_author_meta('first_name');
 						$lname = get_the_author_meta('last_name');
 						$full_name = '';
@@ -103,9 +103,9 @@ the_post();
 				<?php
 					if ($cat_slug == 'tool'){
 						// only display for cat cong-cu
-						echo the_excerpt(); 
+						echo the_excerpt();
 					?>
-	
+
 				<?php	} ?>
 				<?php the_content(); ?>
 			</div>
@@ -145,18 +145,18 @@ the_post();
 		<div class="col-12 col-lg-10 col-xl-8 blog-content">
 			<div class="d-flex alignwide sharing-buttons">
 				<div class="flex-fill">
-					<?php 
+					<?php
 						$facebook_url = 'https://www.facebook.com/sharer/sharer.php?u=' . get_the_permalink() . '&title=' . get_the_title() . '';
 					?>
 					<a href="javascript:void(0)" onclick="atomicBlocksShare('<?php echo $facebook_url ?>','<?php echo get_the_title() ?>','600','600')" title="Share on facebook">
 						<div class="item">
-							<i class="fa fa-facebook" aria-hidden="true"></i> 
+							<i class="fa fa-facebook" aria-hidden="true"></i>
 							Chia sẻ trên facebook
 						</div>
 					</a>
 				</div>
 				<div class="flex-fill">
-					<?php 
+					<?php
 						$email_url = 'mailto:?subject=' . get_the_title() . '&body=Một bài viết hay trên Math2IT: ' . get_the_title() . ' &mdash; ' . get_the_permalink() . '';
 					?>
 					<a href="<?php echo $email_url ?>" title="Share via email">
@@ -177,7 +177,7 @@ the_post();
 		var top  = ( window.innerHeight / 2 )-( h / 2 );
 		return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
 	}
-	
+
 </script>
 
 
@@ -188,11 +188,11 @@ the_post();
 		<div class="col-12 col-lg-10 col-xl-8 blog-content">
 			<div class="alignwide author-box">
 				<div class="author-avatar">
-					<?php 
+					<?php
 						if (get_field('user_avatar','user_'.get_the_author_meta('ID'))):
 							$avatar = get_field('user_avatar','user_'.get_the_author_meta('ID'));
 							echo wp_get_attachment_image( $avatar['id'],'thumbnail');
-						elseif(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE): 
+						elseif(get_avatar_url(get_the_author_meta('ID'),50) !== FALSE):
 							$avatar = get_avatar_url(get_the_author_meta('ID'),array("size"=>200));
 						?>
 							<img src="<?php echo $avatar; ?>" alt="<?php the_author() ?>'s avatar'">
@@ -210,17 +210,17 @@ the_post();
 					<div class="author-description">
 						<?php
 						if (get_the_author_meta('description')){
-							echo nl2br(get_the_author_meta('description')); 
+							echo nl2br(get_the_author_meta('description'));
 						}else{
 							echo "Một tác giả của Math2IT.";
 						}
 						?>
 					</div>
 					<div class="author-more">
-						<a href="mailto:<?php echo get_the_author_meta('user_email') ?>"> 
+						<a href="mailto:<?php echo get_the_author_meta('user_email') ?>">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 							Email cho <?php if ($fname){echo $fname;}else{ the_author();} ?>
-						</a> 
+						</a>
 						<a class="author-post" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
 							<i class="fa fa-files-o" aria-hidden="true"></i>
 							Xem bài <?php if ($fname){echo $fname;}else{ the_author();} ?> viết
@@ -239,7 +239,7 @@ the_post();
 <?php
 	$tags = wp_get_post_tags($post_id);
 	$tag_ids = array();
-	set_query_var('typeTitle', ''); 
+	set_query_var('typeTitle', '');
 	set_query_var('customTitle', 'Có thể bạn thích?');
 	set_query_var('display_category', true);
 	set_query_var('customURL', '/all' );
