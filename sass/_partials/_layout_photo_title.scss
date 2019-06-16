@@ -1,4 +1,12 @@
 .layout-photo-title{
+
+  .list-of-post{
+    .col-xl-10{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .item{
     margin-bottom: 2rem;
     @media (max-width: 991px){
@@ -23,7 +31,7 @@
     overflow: hidden;
   }
   .post-image{
-    height: 150px;
+    height: 100px;
     overflow: hidden;
     img{
       width: 100%;
@@ -37,7 +45,7 @@
     padding: 3px 5px;
     color: #fff;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     &:hover{
       filter: brightness(110%);
     }
@@ -46,13 +54,13 @@
     line-height: 1.4;
     padding: 10px 10px 5px 10px;
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #444;
   }
   .post-date{
     text-align: center;
     opacity: 0.8;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }

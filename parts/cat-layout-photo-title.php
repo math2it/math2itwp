@@ -12,7 +12,7 @@
     </div>
     <?php } ?>
 
-    <div class="row justify-content-center">
+    <div class="row list-of-post justify-content-center">
       <div class="col-12 col-xl-10">
         <div class="container">
           <div class="row row-eq-height justify-content-center">
