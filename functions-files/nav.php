@@ -20,8 +20,8 @@ function my_wp_nav_menu_objects( $items, $args ) {
       }else{
         $current_style = '';
       }
-			$item->title = ' <i class="'.$nav_icon.'"'.$current_style.'></i><span>'.$item->title.'</span>';	
-		}	
+			$item->title = ' <i class="'.$nav_icon.'"'.$current_style.'></i><span>'.$item->title.'</span>';
+		}
 	}
 	// return
 	return $items;
@@ -80,7 +80,7 @@ function header_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-    'items_wrap'      => '%3$s',		
+    'items_wrap'      => '%3$s',
     'depth'           => 0,
 		'walker'          => new Description_Walker
 		)

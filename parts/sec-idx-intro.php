@@ -1,4 +1,4 @@
-<header class="bg-black py-md-5 pb-5 header-intro">
+<header class="bg-black py-4 pb-5 pb-md-4 header-intro">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7 intro">
@@ -27,7 +27,7 @@
             'numberposts' => get_option('header_number_latest_post_idx'), // Number of recent posts to display
             'post_status' => 'publish' // Show only the published posts
         ));
-        foreach($recent_posts as $post) : 
+        foreach($recent_posts as $post) :
           $post_id = $post['ID'];
           $first_cat = get_the_category($post_id);
           $rand_number = rand(0,count($first_cat)-1);
@@ -37,7 +37,7 @@
               <div class="cat-icon"><i class="<?php echo $post_cat_icon ?>"></i></div>
               <div class="new-post">
                 <div class="post-date">
-                  <?php 
+                  <?php
                     date_default_timezone_set('Asia/Ho_Chi_Minh
                     ');
                     $from = strtotime($post['post_date']);

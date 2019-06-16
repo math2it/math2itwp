@@ -55,8 +55,8 @@
             </a>
           </div>
           <div class="post-date">
-            <i class="icon-clock"></i> 
-            <?php 
+            <i class="icon-clock"></i>
+            <?php
 							date_default_timezone_set('Asia/Ho_Chi_Minh
 							');
 							$from = strtotime($post->post_date);

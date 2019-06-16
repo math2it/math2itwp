@@ -12,7 +12,7 @@
   .intro{
     color: hsla(0,0%,100%,.8);
     border-radius: 0 0 1rem 1rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 1rem 1rem 1rem;
     text-align: center;
     h1{
       margin-top: 1.5rem;
@@ -21,12 +21,11 @@
     }
     .subtitle{
       color: #5eeda3;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       font-weight: 700;
     }
     p.description{
-      margin-top: 2rem;
-      font-size: 1.1rem;
+      margin-top: 1rem;
       color: #fff;
     }
     @media (max-width: 450px){
@@ -34,16 +33,13 @@
         font-size: 1.2rem;
       }
     }
-    @media (max-width: 767px){
-      padding: 2rem;
-    }
 
     .title{
       margin-bottom: 1rem;
     }
     .description{
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   &:hover{
@@ -55,15 +51,15 @@
 .img-avatar{
   font-family: 'Righteous', cursive;
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   color: #fff;
   text-align: center;
   .icon-math2it{
-    font-size: 9rem;
+    font-size: 5rem;
     color: #f15f5f;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
     vertical-align: middle;
     display: inline-block;
     transition: transform .4s;
@@ -83,8 +79,8 @@
 
 
 .idx-social{
-  font-size: 1.2rem;
-  margin-top: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
   text-align: center;
   a{
     color: #fffaad;
@@ -99,7 +95,7 @@
       }
     }
   }
-  
+
   .mr-s{
     margin-right: 1.5rem;
     @media screen and (max-width: 400px){
@@ -122,11 +118,11 @@
   padding-bottom: 5px;
   .new-title{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
   }
   a{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #a1a7b9;
     line-height: 2;
     &:hover{
@@ -135,6 +131,7 @@
   }
   .view-all{
     color: #eee!important;
+    font-sty
   }
 }
 .newest-list{
@@ -143,26 +140,26 @@
     .new-item{
       display: flex;
       flex-wrap: wrap;
-      margin-top: 0.8rem;
+      margin-top: 0.5rem;
 
       @media (max-width: 767px){
         padding: 0 1rem;
       }
 
       .cat-icon{
-        width: 3.5rem;
+        width: 3rem;
         color: #ddd;
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
       .new-post{
-        width: calc(100% - 3.5rem);
+        width: calc(100% - 3rem);
         .post-date{
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           color:#ccc;
-          margin-bottom: 0.3rem;
+          margin-bottom: 0.2rem;
         }
         .post-title{
-          font-size: 1.1rem;
+          font-size: 0.95rem;
           font-weight: 600;
           color: #fff;
         }

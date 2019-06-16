@@ -1,7 +1,7 @@
-<?php 
+<?php
   $cat_id = get_query_var('cat_id'); // get category
   $typeTitle = get_query_var('typeTitle'); // small or big title
-  $customTitle = get_query_var('customTitle'); 
+  $customTitle = get_query_var('customTitle');
   $customURL = get_query_var('customURL');
   $customIcon = get_query_var('customIcon');
   if ($typeTitle == 'middle'){
@@ -15,7 +15,7 @@
     <h2 class="new-title <?php if(!$customIcon){echo 'cat-title-'.$cat_id;} ?>">
       <i class="<?php if($customIcon){echo $customIcon;}else{echo get_field('cat-icon', 'category_'.$cat_id);} ?>"></i>
       <a href="<?php if($customURL){echo $customURL;}else{echo get_category_link($cat_id);} ?>" >
-        <?php 
+        <?php
           if (!empty($customTitle)):
             echo $customTitle;
           else:
