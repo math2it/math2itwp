@@ -25,7 +25,7 @@
       font-weight: 700;
     }
     p.description{
-      margin-top: 1rem;
+      margin-top: 0.9rem;
       color: #fff;
     }
     @media (max-width: 450px){
@@ -116,6 +116,7 @@
 .latest-top{
   border-bottom: 0.5px #969494 solid;
   padding-bottom: 5px;
+  margin-bottom: 2rem!important;
   .new-title{
     font-weight: bold;
     font-size: 1.2rem;
@@ -131,7 +132,6 @@
   }
   .view-all{
     color: #eee!important;
-    font-sty
   }
 }
 .newest-list{

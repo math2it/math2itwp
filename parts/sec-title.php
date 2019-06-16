@@ -10,7 +10,7 @@
     $secTitleClass = 'sec-title sec-title-'.$typeTitle;
   }
 ?>
-<div class="col-12">
+<div class="col-12 col-xl-10">
   <div class="<?php echo $secTitleClass ?>">
     <h2 class="new-title <?php if(!$customIcon){echo 'cat-title-'.$cat_id;} ?>">
       <i class="<?php if($customIcon){echo $customIcon;}else{echo get_field('cat-icon', 'category_'.$cat_id);} ?>"></i>
