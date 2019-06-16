@@ -10,10 +10,10 @@
 
 <main role="main">
 
-<?php 
+<?php
   // List of posts
   // ======================================
-  set_query_var('typeTitle', 'small'); 
+  set_query_var('typeTitle', 'small');
   set_query_var('customTitle', 'Tuyển chọn');
   set_query_var('customURL', get_site_url().'/choice');
   set_query_var('customIcon', 'icon-star-circled');
@@ -35,7 +35,7 @@
 
 
 
-<?php 
+<?php
   // math
   // ======================================
   $consider_cat = get_category_by_slug( 'math' );
@@ -60,7 +60,7 @@
 <?php wp_reset_query(); // reset ?>
 
 
-<?php 
+<?php
   // tech
   // ======================================
   $consider_cat = get_category_by_slug( 'technology' );
@@ -84,7 +84,7 @@
 <?php wp_reset_query(); // reset ?>
 
 
-<?php 
+<?php
   // tool
   // ======================================
   $consider_cat = get_category_by_slug( 'tool' );
@@ -109,7 +109,7 @@
 <?php wp_reset_query(); // reset ?>
 
 
-<?php 
+<?php
   // edu
   // ======================================
   $consider_cat = get_category_by_slug( 'education' );
@@ -133,7 +133,7 @@
 <?php wp_reset_query(); // reset ?>
 
 
-<?php 
+<?php
   // book
   // ======================================
   $consider_cat = get_category_by_slug( 'book' );
@@ -156,7 +156,7 @@
 <?php wp_reset_query(); // reset ?>
 
 
-<?php 
+<?php
   // translate
   // ======================================
   $consider_cat = get_category_by_slug( 'translated-articles' );

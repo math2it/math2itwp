@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?php 
+    <?php
     if (is_front_page()){ ?>
       <meta name="description" content="Toán học - Giáo dục - Công nghệ" />
     <?php }?>
@@ -52,7 +52,7 @@
         // --------------------------------------
         // nav element color depends on color defined in wp admin
         // cf. http://bit.ly/2KAagM9
-        
+
         // hover color nav item
         $menuLocations = get_nav_menu_locations();
         $menuID = $menuLocations['math2it-custom-menu'];
@@ -82,7 +82,7 @@
           echo '.bg-cat-'.$cat_id.'{background-image:'.$header_bg.';}';
           // section background in index.php
           echo '.sec-cat-'.$cat_id.'{background:'.$sec_bg.';}';
-          // background for icon 
+          // background for icon
           echo '.sec-cat-'.$cat_id.' .sec-title-big i{background-image:'.$sec_title_bg.';}';
           // title of category in section (index.php)
           echo '.cat-title-'.$cat_id.'{color:'.$sec_title_color.';}';
@@ -90,7 +90,7 @@
       ?>
     </style>
 
-    <?php 
+    <?php
       $page_id = get_the_ID();
       if (get_field('display_math',$page_id)==true):
       ?>
@@ -119,7 +119,7 @@
         ga('send', 'pageview');
       </script>
     <?php } ?>
-    
+
 
     <?php wp_head();?>
   </head>
