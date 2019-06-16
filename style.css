@@ -38,7 +38,7 @@ Tags: bootstrap 4.1
 }
 /* line 27, sass/_partials/_header.scss */
 .header-intro .intro p.description {
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   color: #fff;
 }
 @media (max-width: 450px) {
@@ -54,7 +54,7 @@ Tags: bootstrap 4.1
 /* line 40, sass/_partials/_header.scss */
 .header-intro .intro .description {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 /* line 46, sass/_partials/_header.scss */
 .header-intro:hover .icon-math2it {
@@ -2498,41 +2498,46 @@ a.no-a-effect {
   display: none;
 }
 
-/* line 2, sass/_partials/_layout_photo_title.scss */
+/* line 4, sass/_partials/_layout_photo_title.scss */
+.layout-photo-title .list-of-post .col-xl-10 {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 10, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item {
   margin-bottom: 2rem;
   width: 100%;
   transition: all .5s ease;
 }
 @media (max-width: 991px) {
-  /* line 2, sass/_partials/_layout_photo_title.scss */
+  /* line 10, sass/_partials/_layout_photo_title.scss */
   .layout-photo-title .item {
     margin-bottom: 1.5rem;
   }
 }
-/* line 10, sass/_partials/_layout_photo_title.scss */
+/* line 18, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item:hover .post-image {
   border-radius: 7px;
 }
-/* line 12, sass/_partials/_layout_photo_title.scss */
+/* line 20, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item:hover .post-image img {
   transform: scale(1.1);
 }
-/* line 16, sass/_partials/_layout_photo_title.scss */
+/* line 24, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .item:hover .post-title {
   color: #1e558e;
 }
-/* line 21, sass/_partials/_layout_photo_title.scss */
+/* line 29, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title div.thumb-cat {
   border-radius: 7px;
   overflow: hidden;
 }
-/* line 25, sass/_partials/_layout_photo_title.scss */
+/* line 33, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-image {
-  height: 150px;
+  height: 100px;
   overflow: hidden;
 }
-/* line 28, sass/_partials/_layout_photo_title.scss */
+/* line 36, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-image img {
   width: 100%;
   height: 100%;
@@ -2540,31 +2545,31 @@ a.no-a-effect {
   border-radius: 7px;
   transition: transform .2s;
 }
-/* line 36, sass/_partials/_layout_photo_title.scss */
+/* line 44, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-cat {
   padding: 3px 5px;
   color: #fff;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
-/* line 41, sass/_partials/_layout_photo_title.scss */
+/* line 49, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-cat:hover {
   filter: brightness(110%);
 }
-/* line 45, sass/_partials/_layout_photo_title.scss */
+/* line 53, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-title {
   line-height: 1.4;
   padding: 10px 10px 5px 10px;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #444;
 }
-/* line 53, sass/_partials/_layout_photo_title.scss */
+/* line 61, sass/_partials/_layout_photo_title.scss */
 .layout-photo-title .post-date {
   text-align: center;
   opacity: 0.8;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 767px) {

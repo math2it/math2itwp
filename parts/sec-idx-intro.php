@@ -1,7 +1,7 @@
 <header class="bg-black py-4 pb-5 pb-md-4 header-intro">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-7 intro">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-7 col-xl-6 intro">
         <div class="img-avatar">
           Math<i class="icon-math2it"></i>IT
           <h1>Math2IT</h1>
@@ -16,7 +16,7 @@
           <a class="mr-s" target="_blank" href="<?php echo get_option('facebook'); ?>"><i class="icon-facebook-squared"></i><span class="hide-on-xs"> FB Math2IT</span></a>
         </div>
       </div>
-      <div class="newest-list col-md-5">
+      <div class="col-12 col-md-5 col-xl-4 newest-list ">
         <div class="latest-top sec-title">
           <h2 data-toc-skip class="new-title">Mới nhất</h2>
           <a href="<?php echo get_site_url();?>/all" class="view-all">xem thêm</a>
