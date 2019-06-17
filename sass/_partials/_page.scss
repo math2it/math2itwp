@@ -191,8 +191,8 @@
 .page-subtitle{
   color: #c6efde;
   text-align: center;
-  font-size: 1rem;
-  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  padding-top: 0.25rem;
   line-height: 1.5;
   @media (max-width: 575px){
     font-size: 1rem;
@@ -204,8 +204,8 @@
 .author-avatar{
   margin: 0 auto 1rem auto;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  // height: 120px;
   overflow: hidden;
   img{
     width: 100%;

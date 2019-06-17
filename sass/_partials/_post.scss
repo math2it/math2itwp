@@ -30,7 +30,7 @@
     margin-top: $margin-post-size_bottom + 1rem!important;
   }
   h2{
-    font-size: 150%;
+    font-size: 140%;
     font-weight: bold;
     color: #444;
     &:first-of-type{
@@ -48,7 +48,7 @@
     }
   }
   h3{
-    font-size: 130%;
+    font-size: 125%;
     color: #444;
     font-weight: bold;
     margin-top: $margin-post-size_bottom + 0.5rem;
@@ -309,22 +309,22 @@
       .author-name{
         font-weight: bold;
         color: #3d73bb;
-        font-size: 1.4rem;
+        font-size: 110%;
         text-transform: capitalize;
       }
       .author-role{
         opacity: 0.8;
-        font-size: 0.95rem;
+        font-size: 90%;
         font-style: italic;
       }
       .author-description{
         margin-top: 0.5rem;
         border-top: 1px solid #ddd;
         padding-top: 0.5rem;
-        font-size: 1rem;
+        font-size: 90%;
       }
       .author-more{
-        font-size: 0.95rem;
+        font-size: 90%;
         margin-top: 0.5rem;
         border-top: 1px solid #ddd;
         padding-top: 0.5rem;

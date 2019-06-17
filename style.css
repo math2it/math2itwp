@@ -935,7 +935,7 @@ li img {
 }
 /* line 32, sass/_partials/_post.scss */
 .blog-content h2 {
-  font-size: 150%;
+  font-size: 140%;
   font-weight: bold;
   color: #444;
 }
@@ -960,7 +960,7 @@ li img {
 }
 /* line 50, sass/_partials/_post.scss */
 .blog-content h3 {
-  font-size: 130%;
+  font-size: 125%;
   color: #444;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -1266,13 +1266,13 @@ li img {
 .blog-content .author-box .author-info .author-name {
   font-weight: bold;
   color: #3d73bb;
-  font-size: 1.4rem;
+  font-size: 110%;
   text-transform: capitalize;
 }
 /* line 315, sass/_partials/_post.scss */
 .blog-content .author-box .author-info .author-role {
   opacity: 0.8;
-  font-size: 0.95rem;
+  font-size: 90%;
   font-style: italic;
 }
 /* line 320, sass/_partials/_post.scss */
@@ -1280,11 +1280,11 @@ li img {
   margin-top: 0.5rem;
   border-top: 1px solid #ddd;
   padding-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 90%;
 }
 /* line 326, sass/_partials/_post.scss */
 .blog-content .author-box .author-info .author-more {
-  font-size: 0.95rem;
+  font-size: 90%;
   margin-top: 0.5rem;
   border-top: 1px solid #ddd;
   padding-top: 0.5rem;
@@ -1764,8 +1764,8 @@ div.extra-info {
 .page-subtitle {
   color: #c6efde;
   text-align: center;
-  font-size: 1rem;
-  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  padding-top: 0.25rem;
   line-height: 1.5;
 }
 @media (max-width: 575px) {
@@ -1779,8 +1779,7 @@ div.extra-info {
 .author-avatar {
   margin: 0 auto 1rem auto;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 120px;
   overflow: hidden;
 }
 /* line 210, sass/_partials/_page.scss */
@@ -1798,7 +1797,7 @@ div.extra-info {
 /* line 1, sass/_partials/_search.scss */
 h2.search-title {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   border-bottom: 2px solid #bbb;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
@@ -1845,12 +1844,12 @@ h2.search-title .keyword_quey {
 }
 /* line 39, sass/_partials/_search.scss */
 .result-list .item .meta .dot {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #bbb;
 }
 /* line 44, sass/_partials/_search.scss */
 .result-list .item .title {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 5px 0;
 }
