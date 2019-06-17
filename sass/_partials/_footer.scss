@@ -1,10 +1,13 @@
 .footer{
   background: #272a34;
-  padding: 20px 15px;
+  padding: 25px 15px;
   color: #ddd;
   text-align: center;
   position: relative;
   font-size: 0.93rem;
+  @media (max-width: 767px){
+    padding: 30px 15px;
+  }
   a{
     color: #ddd;
     text-decoration: none;
@@ -23,12 +26,12 @@
   display: block;
   z-index: 8;
   cursor: pointer;
-  width: 53px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   border-radius: 30px;
   position: absolute;
   right: 80px;
-  top: -21px;
+  top: -16px;
   overflow: hidden;
   background: #272a34;
   transition: all 200ms ease-out;
@@ -41,7 +44,7 @@
   }
   i{
     color: #ddd;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
   &:hover{
     padding-top: 5px;
