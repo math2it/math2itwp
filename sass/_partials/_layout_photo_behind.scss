@@ -1,7 +1,7 @@
 .layout-photo-behind{
   .item{
     background-size: cover;
-    min-height: 200px;
+    min-height: 150px;
     border-radius: 10px;
     margin-bottom: 15px;
 
@@ -22,7 +22,6 @@
 
     &:hover{
       &::before{
-        // background: #000000b8;
         opacity: 1;
       }
     }

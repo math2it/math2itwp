@@ -2345,7 +2345,7 @@ a.no-a-effect {
 /* line 2, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item {
   background-size: cover;
-  min-height: 200px;
+  min-height: 150px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -2367,7 +2367,7 @@ a.no-a-effect {
 .layout-photo-behind .item:hover::before {
   opacity: 1;
 }
-/* line 29, sass/_partials/_layout_photo_behind.scss */
+/* line 28, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item .item-content {
   padding: 15px 10px;
   flex-grow: 1;
@@ -2378,7 +2378,7 @@ a.no-a-effect {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 39, sass/_partials/_layout_photo_behind.scss */
+/* line 38, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item .item-content .book-title {
   color: #fff;
   text-align: center;
@@ -2389,7 +2389,7 @@ a.no-a-effect {
   position: relative;
   display: block;
 }
-/* line 50, sass/_partials/_layout_photo_behind.scss */
+/* line 49, sass/_partials/_layout_photo_behind.scss */
 .layout-photo-behind .item .item-content .item-footer {
   display: -ms-flexbox;
   display: flex;
