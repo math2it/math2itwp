@@ -1,6 +1,13 @@
 .sec-cat{
-  padding: 3rem 0 7rem 0;
+  padding: 1rem 0 3rem 0;
   border-top: 1px solid #eee;
+}
+
+.list-of-post{
+  .col-xl-10{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 a.no-a-effect{
@@ -55,27 +62,15 @@ a.no-a-effect{
 }
 
 .sec-title-big .new-title{
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   i{
-    font-size: 4rem;
-    padding-top: calc(3rem + 3px);
+    font-size: 2.7rem;
+    padding-top: calc(1rem + 3px);
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
     border-radius: 0 0 7px 7px;
     color: #fff;
-  }
-  @media (max-width: 500px){
-    font-size: 2rem;
-    i{
-      font-size: 2.5rem;
-    }
-  }
-  @media (max-width: 400px){
-    font-size: 1.7rem;
-    i{
-      font-size: 2rem;
-    }
   }
 }
 
@@ -151,7 +146,7 @@ a.no-a-effect{
 
 .sec-choice{ // editor's choice
   background: #fffef1;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
   .new-title{
     color: #e4a200;
   }
