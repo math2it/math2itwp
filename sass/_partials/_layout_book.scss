@@ -22,8 +22,6 @@
         width: 100%;
         box-shadow: 0 12px 8px -8px #828282;
         border: 2px solid #eee;
-        
-
         transition: transform .2s;
         -webkit-transition: transform .2s;
       }
@@ -31,9 +29,9 @@
 
     .book-shelf{
       background: #ddd;
-      height: 40px;
-      margin-bottom: 1rem;
-      margin-top: -20px;
+      height: 30px;
+      margin-bottom: 0.5rem;
+      margin-top: -18px;
       transform: skewX(-30deg);
       z-index: 1;
     }
@@ -41,14 +39,14 @@
     .book-title{
       text-align: center;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 0.95rem;
       line-height: 1.4;
       margin-bottom: 5px;
       color: #333;
     }
     .book-author{
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: #666;
     }
     &:hover{

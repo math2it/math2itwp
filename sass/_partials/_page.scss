@@ -1,7 +1,7 @@
 // gioi-thieu
 
 .gioi-thieu{
-  padding: 3rem 0 7rem 0;
+  padding: 1rem 0 7rem 0;
   @media (max-width: 767px){
     padding: 0;
   }
@@ -19,7 +19,7 @@
     border: #ddd solid 1px;
     border-radius: 7px;
     transition: transform .2s;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     margin: 1rem 0;
     &:hover{
@@ -31,40 +31,48 @@
     }
   }
   .post-image{
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .post-cat{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
   }
   .post-intro{
     text-align: center;
+    font-size: 0.9rem;
   }
 
   .container{
-    padding: 3rem;
+    padding: 1rem 0;
     @media (min-width: 768px){
       position: relative;
-      top: -5rem;
+      top: -3rem;
       padding: 0;
+      height: 600px;
+    }
+    @media (min-width: 992px){
+      height: 500px;
     }
   }
 }
 
 .community{
-  padding-top: 6rem;
+  padding: 2rem 1rem 0 1rem;
   .des{
     @media (max-width: 575px){
       text-align: center;
       margin-bottom: 1rem;
     }
+    p{
+      font-size: 0.95rem;
+    }
   }
   h2{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: #e4556e;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
   a{
     font-weight: bold;
@@ -93,12 +101,13 @@
   padding: 1.5rem;
   border-radius: 10px;
   align-items: center;
+  margin: 2rem 0;
   .photo{
-    max-width: 200px;
+    max-width: 180px;
     margin-left: auto;
     margin-right: auto;
     @media (min-width: 768px){
-      max-width: 300px;
+      max-width: 250px;
     }
     img{
       width: 100%;
@@ -110,8 +119,8 @@
     text-align: center;
     padding: 1rem;
     .newsletter-text{
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
     }
     .newsletter-form{
       .email{
@@ -119,16 +128,16 @@
         border-radius: 6px;
         background: #fff;
         color: #000;
-        font-size: 1.1rem;
-        padding: 1rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
         width: calc(100% - 70px);
         outline: none;
       }
       .submit{
-        padding: 1rem;
+        padding: 0.45rem 0.55rem 0.45rem 0.45rem;
         border-radius: 5px 50% 50% 5px;
         border: 0;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         background: #2bacaf;
         color: #fff;
         font-weight: bold;
@@ -141,19 +150,21 @@
 
 // contact
 #contact{
-  padding-top: 0;
+  padding-top: 1rem;
   .title{
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     color: #4a7edc;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
   .email{
     text-align: center;
     a{
-      font-size: 1.2rem;
-      color: #555;
+      font-size: 1rem;
+      color: #333;
       &:hover{
-        color: #111;
+        color: #000;
         text-decoration: none;
       }
     }

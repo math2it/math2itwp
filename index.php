@@ -1,4 +1,4 @@
-<?php // wp:admin thi - pass: ctlae ?>
+<?php // wp:admin math2it - pass: 9chuso ?>
 
 <?php get_header(); ?>
 

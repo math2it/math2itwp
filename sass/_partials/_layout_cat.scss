@@ -64,7 +64,7 @@ a.no-a-effect{
 .sec-title-big .new-title{
   font-size: 1.6rem;
   i{
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     padding-top: calc(1rem + 3px);
     padding-left: 5px;
     padding-right: 5px;
@@ -88,7 +88,7 @@ a.no-a-effect{
 // sec-title-middle
 .sec-title-middle{
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
 
   a{
@@ -104,20 +104,14 @@ a.no-a-effect{
     background: #fff;
     display: inline-block;
     font-weight: bold;
-    font-size: 2.2rem;
-    padding: 0 2rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
     i{
       display: none;
     }
-    @media (max-width: 500px){
-      font-size: 2rem;
-    }
-    @media (max-width: 400px){
-      font-size: 1.7rem;
-    }
     &+div{
-      border-top: 5px solid #ccc;
-      margin-top: -2rem;
+      border-top: 4px solid #ccc;
+      margin-top: -1.8rem;
       margin-bottom: 1.2rem;
       margin-left: auto;
       margin-right: auto;
@@ -132,6 +126,7 @@ a.no-a-effect{
     color: #999;
     font-weight: bold;
     font-style: italic;
+    font-size: 0.9rem;
     &:hover{
       color: #222;
     }

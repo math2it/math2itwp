@@ -1,6 +1,6 @@
 .sec-choice-cat{
   background: #fffef1;
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 0 1.5rem 0;
   .new-title{
     color: #e4a200;
   }
@@ -10,17 +10,16 @@
   .intro{
     h1.title{
       color: #fff;
-      font-size: 3.5rem;
+      font-size: 2.2rem;
       text-shadow: 2px 2px 4px #000;
       font-weight: bold;
       text-transform: lowercase;
       letter-spacing: 5px;
       @media (max-width: 575px){
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
     .img-avatar{
-      font-size: 4rem;
       i{
         padding: 5px 0;
       }
@@ -34,11 +33,14 @@
         text-shadow: 2px 2px 4px #000;
       }
     }
+    .description{
+      color: #fff;
+    }
   } // intro
 }
 
 .all-posts{
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   .paginate-links{
     margin-top: 2rem;
   }
