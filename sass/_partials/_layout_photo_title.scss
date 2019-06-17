@@ -1,16 +1,9 @@
 .layout-photo-title{
 
-  .list-of-post{
-    .col-xl-10{
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
   .item{
     margin-bottom: 2rem;
     @media (max-width: 991px){
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     width: 100%;
     transition: all .5s ease;
@@ -54,9 +47,9 @@
     line-height: 1.4;
     padding: 10px 10px 5px 10px;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 0.93rem;
     font-weight: 600;
-    color: #444;
+    color: #333;
   }
   .post-date{
     text-align: center;
