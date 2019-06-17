@@ -15,7 +15,7 @@
     background: #fff;
     div{
       padding: 3px 12px;
-      font-size: 14px;
+      font-size: 90%;
       font-weight: bold;
       color: #ad6834;
       margin-bottom: 5px;
@@ -108,7 +108,7 @@ article{
   }
 }
 
-// table 
+// table
 .wp-block-table.alignwide{
   @media (min-width: 1360px){
     width: calc(100% + 100px)

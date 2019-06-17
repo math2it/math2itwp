@@ -33,15 +33,17 @@ $c-latex: #92f1bf;
 $c-bai-dich: #d2b4ff;
 $c-gioi-thieu: #ff8094;
 
-$margin-post-size_bottom: 2rem;
-$margin_extra_post: 3rem;
+$margin-post-size_bottom: 1rem;
+$margin_extra_post: 2rem;
 
-@import 
+$font-post: 1.03rem;
+
+@import
   "_partials/header",
   "_partials/footer"
 ;
 
-@import 
+@import
   "_partials/font",
   "_partials/nav",
   "_partials/pagination",
@@ -51,7 +53,7 @@ $margin_extra_post: 3rem;
 ;
 
 // pages
-@import 
+@import
   "_partials/category",
   "_partials/post",
   "_partials/page",
@@ -61,7 +63,7 @@ $margin_extra_post: 3rem;
 ;
 
 // layouts of posts
-@import 
+@import
   "_partials/layout_1_4",
   "_partials/layout_book",
   "_partials/layout_cat",
@@ -71,16 +73,16 @@ $margin_extra_post: 3rem;
   "_partials/layout_tool"
 ;
 
-@import 
+@import
   "_partials/contact",   // contact form
   "_partials/other",
   "_partials/bootstrap_toc" // toc on sidebar
 ;
 
-@import 
+@import
   "_partials/ghostkit", // ghostkit plugin
   "_partials/atomicblocks", // atomic blocks
   "_partials/series" // Organize Series plugin
-; 
+;
 
 

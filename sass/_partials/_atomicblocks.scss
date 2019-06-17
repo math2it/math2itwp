@@ -2,10 +2,10 @@
   margin-bottom: $margin-post-size_bottom;
   border: 1px solid #ddd;
   .ab-accordion-title{
-    padding: 15px;
+    padding: 10px;
   }
   .ab-accordion-text{
-    padding: 1.5rem 2rem 0 2rem;
+    padding: 1rem 1rem 0 1rem;
     a{
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -15,6 +15,9 @@
         box-shadow: none;
         color: #c7164c;
       }
+    }
+    p{
+      font-size: $font-post!important;
     }
   }
 }

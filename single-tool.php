@@ -4,16 +4,16 @@
  * Template Post Type: post
  */
 
-	get_header(); 
+	get_header();
 
 	// post layout for tool posts
 ?>
 
 <main>
 
-<?php 
-// if ( have_posts() ) : 
-// 	while ( have_posts() ) : 
+<?php
+// if ( have_posts() ) :
+// 	while ( have_posts() ) :
 	the_post();
 	$post_id = get_the_ID();
 	$first_cat = get_the_category($post_id);
@@ -22,7 +22,7 @@
   $cat_id = $consider_cat->term_id;
 ?>
 
-<?php 
+<?php
 	if ( has_post_thumbnail($post_id) ) {
 		$postThumbnail = get_the_post_thumbnail_url($post_id,'large' );
 	}else{
@@ -45,7 +45,7 @@
 					</span>
 					<span>
 						<i class="icon-clock"></i>
-						<?php 
+						<?php
 							date_default_timezone_set('Asia/Ho_Chi_Minh
 							');
 							$from = strtotime($post->post_date);
@@ -60,9 +60,9 @@
 							else:
 								echo the_date('d-m-Y');
 							endif;
-						?> 
+						?>
 					</span>
-					<?php 
+					<?php
 						$fname = get_the_author_meta('first_name');
 						$lname = get_the_author_meta('last_name');
 						$full_name = '';
@@ -82,7 +82,7 @@
 						</a>
 					</span>
 				</div> <!-- /page-subtitle -->
-				<p class="meta text-center mt-4">
+				<p class="meta text-center mt-2">
 					<?php if(get_field('tool_url',$post_id)){ ?>
             <a target="_blank" class="label home-page" href="<?php echo get_field('tool_url',$post_id); ?>">
               <i class="fa fa-link" aria-hidden="true"></i> Trang web
@@ -145,90 +145,89 @@
 
 <div class="extra-info">
 
-<!-- tags -->
-<div class="container">
-	<div class="row justify-content-center">
-		<div class="col-12 col-lg-10 col-xl-8">
-			<div class="tags">
-				<?php the_tags('',' ',''); ?>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- sharing buttons -->
-<div class="container">
-	<div class="row justify-content-center">
-		<div class="col-12 col-lg-10 col-xl-8 blog-content">
-			<div class="d-flex alignwide sharing-buttons">
-				<div class="flex-fill">
-					<?php 
-						$facebook_url = 'https://www.facebook.com/sharer/sharer.php?u=' . get_the_permalink() . '&title=' . get_the_title() . '';
-					?>
-					<a href="javascript:void(0)" onclick="atomicBlocksShare('<?php echo $facebook_url ?>','<?php echo get_the_title() ?>','600','600')" title="Share on facebook">
-						<div class="item">
-							<i class="fa fa-facebook" aria-hidden="true"></i> 
-							Chia sẻ trên facebook
-						</div>
-					</a>
-				</div>
-				<div class="flex-fill">
-					<?php 
-						$email_url = 'mailto:?subject=' . get_the_title() . '&body=Một bài viết hay trên Math2IT: ' . get_the_title() . ' &mdash; ' . get_the_permalink() . '';
-					?>
-					<a href="<?php echo $email_url ?>" title="Share via email">
-						<div class="item">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-							Chia sẻ qua email
-						</div>
-					</a>
+	<!-- tags -->
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10 col-xl-8">
+				<div class="tags">
+					<?php the_tags('',' ',''); ?>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<script>
-	function atomicBlocksShare( url, title, w, h ){
-		var left = ( window.innerWidth / 2 )-( w / 2 );
-		var top  = ( window.innerHeight / 2 )-( h / 2 );
-		return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
-	}
-	
-</script>
-
-
-<!-- related posts -->
-<div class="related-post-tool">
-<?php
-	set_query_var('cat_id', $cat_id);
-	set_query_var('typeTitle', ''); 
-	set_query_var('customTitle', 'Có thể bạn thích?');
-	set_query_var('toolPosts', true);
-  $list_post_args = array(
-		'category'         => $cat_id,
-		'posts_per_page'		=> 4,
-		'orderby'          	=> 'rand',
-		'post_status'      	=> 'publish'
-  );
-	$list_posts = get_posts($list_post_args);
-	set_query_var('list_posts', $list_posts);
-?>
-<?php get_template_part( 'parts/cat-layout-photo-behind' ); ?>
-<?php wp_reset_query(); // reset ?>
-</div>
-
-
-<!-- comments -->
-<div class="container">
-	<div class="row justify-content-center">
-		<div class="col-12 col-lg-10 col-xl-8">
-			<div class="comment-section">
-				<?php comments_template(); ?>
-			</div> <!-- /comment-section -->
+	<!-- sharing buttons -->
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10 col-xl-8 blog-content">
+				<div class="d-flex alignwide sharing-buttons">
+					<div class="flex-fill">
+						<?php
+							$facebook_url = 'https://www.facebook.com/sharer/sharer.php?u=' . get_the_permalink() . '&title=' . get_the_title() . '';
+						?>
+						<a href="javascript:void(0)" onclick="atomicBlocksShare('<?php echo $facebook_url ?>','<?php echo get_the_title() ?>','600','600')" title="Share on facebook">
+							<div class="item">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								Chia sẻ trên facebook
+							</div>
+						</a>
+					</div>
+					<div class="flex-fill">
+						<?php
+							$email_url = 'mailto:?subject=' . get_the_title() . '&body=Một bài viết hay trên Math2IT: ' . get_the_title() . ' &mdash; ' . get_the_permalink() . '';
+						?>
+						<a href="<?php echo $email_url ?>" title="Share via email">
+							<div class="item">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								Chia sẻ qua email
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+
+	<script>
+		function atomicBlocksShare( url, title, w, h ){
+			var left = ( window.innerWidth / 2 )-( w / 2 );
+			var top  = ( window.innerHeight / 2 )-( h / 2 );
+			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+		}
+	</script>
+
+
+	<!-- related posts -->
+	<div class="related-post-tool">
+	<?php
+		set_query_var('cat_id', $cat_id);
+		set_query_var('typeTitle', '');
+		set_query_var('customTitle', 'Có thể bạn thích?');
+		set_query_var('toolPosts', true);
+	  $list_post_args = array(
+			'category'         => $cat_id,
+			'posts_per_page'		=> 4,
+			'orderby'          	=> 'rand',
+			'post_status'      	=> 'publish'
+	  );
+		$list_posts = get_posts($list_post_args);
+		set_query_var('list_posts', $list_posts);
+	?>
+	<?php get_template_part( 'parts/cat-layout-photo-behind' ); ?>
+	<?php wp_reset_query(); // reset ?>
+	</div>
+
+
+	<!-- comments -->
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10 col-xl-8">
+				<div class="comment-section">
+					<?php comments_template(); ?>
+				</div> <!-- /comment-section -->
+			</div>
+		</div>
+	</div>
 
 </div> <!-- /div extra info -->
 

@@ -27,13 +27,12 @@
     margin-top: $margin-post-size_bottom + 1rem;
   }
   p + h2{
-    margin-top: 3rem!important;
+    margin-top: $margin-post-size_bottom + 1rem!important;
   }
   h2{
-    font-size: 1.8rem;
+    font-size: 150%;
     font-weight: bold;
     color: #444;
-    margin-top: 3rem;
     &:first-of-type{
       margin-top: 0;
     }
@@ -44,27 +43,21 @@
         margin-left: -1.8rem;
       }
     }
-    @media (max-width: 1199px){
-      font-size: 1.65rem;
-    }
     &+h3{
       margin-top: 0;
     }
   }
   h3{
-    font-size: 1.5rem;
+    font-size: 130%;
     color: #444;
     font-weight: bold;
-    margin-top: 2.5rem;
+    margin-top: $margin-post-size_bottom + 0.5rem;
     &:before{
       content: "## ";
       color: #d87638;
       @media (min-width: 992px){
         margin-left: -2.4rem;
       }
-    }
-    @media (max-width: 1199px){
-      font-size: 1.4rem;
     }
   }
   a{
@@ -124,12 +117,13 @@
     color: #333;
     padding: 2rem 15px;
     @media (min-width: 992px){
-      padding: 2rem 0;
+      padding: $margin-post-size_bottom 0;
     }
     blockquote{
       margin-bottom: 0;
       p{
-        font-size: 120%;
+        font-size: 110%;
+        line-height: 1.4;
         &:last-of-type{
           margin-bottom: 0;
         }
@@ -259,7 +253,7 @@
     }
   }
 
-  // table 
+  // table
   .wp-block-table{
     margin-bottom: $margin-post-size_bottom;
     &.alignwide{
@@ -274,7 +268,7 @@
     &.alignfull{
       width: 100%;
     }
-    // copied from .table 
+    // copied from .table
     width: 100%;
     td, th{
       padding: .75rem;
@@ -418,8 +412,8 @@
 .comment-section{
   margin-bottom: $margin_extra_post;
   #show-comments{
-    font-size: 1.3rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0.3rem;
   }
   .btn{
     border-radius: 100px;
@@ -440,6 +434,7 @@
     padding: 10px 15px;
     line-height: 1;
     border-radius: 100px;
+    font-size: 0.9rem;
     &:hover{
       background: #0d519a;
     }
@@ -456,20 +451,19 @@ div.extra-info{
 // tags
 .tags{
   text-align: center;
-  margin-bottom: calc(3rem - 10px);
+  margin-bottom: calc(1.5rem - 10px);
   a{
     border: 1px solid #ddd;
-    padding: 3px 7px;
-    font-size: 0.85rem;
+    padding: 2px 5px;
+    font-size: 0.8rem;
     background: #eee;
     color: #777;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 3px;
     margin-bottom: 10px;
-    border-radius: 1px;
+    border-radius: 2px;
     &:hover{
       text-decoration: none;
-      // background: #e4e4e4;
       color: #444;
     }
   }
