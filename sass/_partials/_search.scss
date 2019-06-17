@@ -1,9 +1,9 @@
 h2.search-title{
   font-weight: 700;
-  font-size: 1.8rem;
-  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #bbb;
   padding-bottom: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: $margin-post-size_bottom;
   .default_query{
     color: #FA5B0F;
   }
@@ -26,11 +26,11 @@ h2.search-title{
       padding-top: 0;
     }
     .meta{
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       a{
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         &:hover{
           text-decoration: none;
           color: #FA5B0F;
@@ -42,17 +42,18 @@ h2.search-title{
       }
     }
     .title{
-      font-size: 1.5rem;
+      font-size: 1.05rem;
       font-weight: 600;
-      margin: 5px 0 10px 0;
+      margin: 5px 0;
     }
     .excerpt{
       color: #525252;
+      font-size: 0.85rem;
     }
     a.title-excerpt{
       text-decoration: none;
       .title{
-        color: #444;
+        color: #222;
       }
       &:hover{
         .title{
