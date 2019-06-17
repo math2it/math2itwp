@@ -2566,7 +2566,7 @@ a.no-a-effect {
 /* line 5, sass/_partials/_layout_tool.scss */
 .layout-tool .item {
   border-bottom: 1px solid #ddd;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
 }
 /* line 9, sass/_partials/_layout_tool.scss */
 .layout-tool .item:hover h2 {
@@ -2584,7 +2584,7 @@ a.no-a-effect {
 /* line 22, sass/_partials/_layout_tool.scss */
 .layout-tool .description h2 {
   color: #444;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 /* line 28, sass/_partials/_layout_tool.scss */
@@ -2606,18 +2606,20 @@ a.no-a-effect {
 }
 /* line 40, sass/_partials/_layout_tool.scss */
 .layout-tool .intro {
-  padding: 10px 0;
-  color: #444;
+  padding: 6px 0;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
 }
 
-/* line 46, sass/_partials/_layout_tool.scss */
+/* line 48, sass/_partials/_layout_tool.scss */
 .label {
   margin-bottom: 5px;
   display: inline-block;
   border-color: #fafafa;
   background-color: #fafafa;
-  font-size: 13px;
-  padding: 6px 7px 5px 7px;
+  font-size: 10px;
+  padding: 4px 6px 3px 6px;
   position: relative;
   line-height: 16px;
   font-weight: 400;
@@ -2625,60 +2627,60 @@ a.no-a-effect {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
   border-radius: 3px;
 }
-/* line 60, sass/_partials/_layout_tool.scss */
+/* line 62, sass/_partials/_layout_tool.scss */
 .label.home-page {
   color: #1a67ad;
 }
-/* line 62, sass/_partials/_layout_tool.scss */
+/* line 64, sass/_partials/_layout_tool.scss */
 .label.home-page:hover {
   text-decoration: none;
   background-color: #edf6ff;
   box-shadow: inset 0 0 0 1px #4279ab26;
   border-color: #4279ab;
 }
-/* line 70, sass/_partials/_layout_tool.scss */
+/* line 72, sass/_partials/_layout_tool.scss */
 .label:hover {
   text-decoration: none;
 }
-/* line 74, sass/_partials/_layout_tool.scss */
+/* line 76, sass/_partials/_layout_tool.scss */
 .label.share {
   color: #fff;
   background: #4785da;
 }
-/* line 77, sass/_partials/_layout_tool.scss */
+/* line 79, sass/_partials/_layout_tool.scss */
 .label.share:hover {
   background: #3c71b9;
 }
-/* line 82, sass/_partials/_layout_tool.scss */
+/* line 84, sass/_partials/_layout_tool.scss */
 .label.more {
   color: #fff;
   font-weight: 600;
   background: #f17f7f;
 }
-/* line 86, sass/_partials/_layout_tool.scss */
+/* line 88, sass/_partials/_layout_tool.scss */
 .label.more:hover {
   background: #e04c4c;
 }
 
-/* line 92, sass/_partials/_layout_tool.scss */
+/* line 94, sass/_partials/_layout_tool.scss */
 .pricing-free {
   color: #248a6b;
   font-weight: bold;
 }
 
-/* line 97, sass/_partials/_layout_tool.scss */
+/* line 99, sass/_partials/_layout_tool.scss */
 .pricing-paid {
   color: #c3532e;
   font-weight: bold;
 }
 
-/* line 102, sass/_partials/_layout_tool.scss */
+/* line 104, sass/_partials/_layout_tool.scss */
 .pricing-trial {
   color: #b99919;
   font-weight: bold;
 }
 
-/* line 109, sass/_partials/_layout_tool.scss */
+/* line 111, sass/_partials/_layout_tool.scss */
 .post-tool {
   padding: 10rem 0;
   position: relative;
@@ -2688,7 +2690,7 @@ a.no-a-effect {
   background-size: cover;
   -o-background-size: cover;
 }
-/* line 117, sass/_partials/_layout_tool.scss */
+/* line 119, sass/_partials/_layout_tool.scss */
 .post-tool:before {
   display: block;
   content: "";
@@ -2700,13 +2702,13 @@ a.no-a-effect {
   bottom: 0;
   opacity: 0.5;
 }
-/* line 129, sass/_partials/_layout_tool.scss */
+/* line 131, sass/_partials/_layout_tool.scss */
 .post-tool .label.platform {
   color: #404040;
   font-weight: 600;
 }
 
-/* line 135, sass/_partials/_layout_tool.scss */
+/* line 137, sass/_partials/_layout_tool.scss */
 .related-post-tool {
   margin-bottom: 3rem;
 }

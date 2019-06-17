@@ -12,10 +12,10 @@
 <?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
 
-<?php 
+<?php
   // editor's choice
   // ======================================
-  set_query_var('typeTitle', 'small'); 
+  set_query_var('typeTitle', 'small');
   set_query_var('customTitle', 'Tuyển chọn');
   set_query_var('customURL', get_site_url().'/choice');
   set_query_var('customIcon', 'icon-star-circled');
@@ -68,9 +68,9 @@
       'post_status'       => 'publish'
     );
   }
-  
+
   $list_posts = get_posts($list_post_args);
-  set_query_var('typeTitle', ''); 
+  set_query_var('typeTitle', '');
   set_query_var('list_posts', $list_posts);
   set_query_var('customSecClass', '');
   if (!is_category()){
