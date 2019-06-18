@@ -33,9 +33,6 @@
     font-size: 140%;
     font-weight: bold;
     color: #444;
-    &:first-of-type{
-      margin-top: 0;
-    }
     &:before{
       content: "# ";
       color: #6293ca;
@@ -202,7 +199,7 @@
   // columns
   .wp-block-columns{
     align-items: center;
-    margin-bottom: $margin-post-size_bottom;
+    margin-bottom: $margin-post-size_bottom + 0.5rem;
     @media (min-width: 768px){
       flex-wrap: nowrap;
     }
@@ -250,6 +247,9 @@
     }
     .wp-block-code{
       margin-bottom: 0;
+      &+p{
+        margin-top: $margin-post-size_bottom;
+      }
     }
   }
 

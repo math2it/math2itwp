@@ -4,7 +4,7 @@
 // block-iamge
 // ----------------------------------------
 .wp-block-image{
-  margin-bottom: $margin-post-size_bottom;
+  margin-bottom: $margin-post-size_bottom + 0.5rem;
   margin-top: $margin-post-size_bottom;
   img{
     max-width: unset!important;
@@ -20,7 +20,6 @@
 }
 figcaption{
   font-size: 0.9rem!important;
-  margin-top: 1rem!important;
   padding: 0 15px;
 }
 
@@ -126,7 +125,7 @@ figcaption{
   margin-right: 0;
 }
 
-// left / right 
+// left / right
 // ----------------------------------------
 .alignright, .alignleft{
   margin-bottom: 0;
@@ -143,7 +142,7 @@ figcaption{
 
 
 
-// center 
+// center
 .aligncenter{
   max-width: 100%;
   figcaption{
@@ -169,7 +168,7 @@ figcaption{
   }
 }
 
-// img inside li 
+// img inside li
 li img{
   max-width: 100%;
   padding: 1rem 0;

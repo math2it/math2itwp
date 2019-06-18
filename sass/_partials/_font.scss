@@ -47,8 +47,10 @@ kbd{
 }
 
 bbt{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #2382ab;
+  margin-right: 5px;
+  font-weight: bold;
   &:after{
     content: ".";
   }
