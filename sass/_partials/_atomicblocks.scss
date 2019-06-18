@@ -24,4 +24,14 @@
 
 .ab-notice-text p, .ab-notice-title p{
   font-size: $font-post!important;
+  a{
+    color: $a-color!important;
+    text-decoration: none!important;
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    &:hover{
+      color: $a-hover!important;
+      text-decoration: none!important;
+    }
+  }
 }

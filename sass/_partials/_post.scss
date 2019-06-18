@@ -59,30 +59,20 @@
   }
   a{
     text-decoration: none;
-    color: #236eb1;
+    color: $a-color;
     font-weight: inherit;
     &:hover{
       text-decoration: none;
-      color: #c7164c;
+      color: $a-hover;
     }
   }
 
   // list
-  ul{
+  ul, ol{
     margin-bottom: $margin-post-size_bottom;
     li{
       margin-bottom: 6px;
-      ul{
-        margin-top: 6px;
-        margin-bottom: 0;
-      }
-    }
-  }
-  ol{
-    margin-bottom: $margin-post-size_bottom;
-    li{
-      margin-bottom: 6px;
-      ol{
+      ul, ol{
         margin-top: 6px;
         margin-bottom: 0;
       }

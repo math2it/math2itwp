@@ -106,7 +106,7 @@
   }
 }
 
-// button 
+// button
 .ghostkit-button-wrapper{
   margin-bottom: $margin-post-size_bottom;
 }
@@ -119,8 +119,11 @@ span.ghostkit-button-text{
 
 // icon-box
 .ghostkit-icon-box{
-  background: #eefff1;
+  background: #f9f9f9;
   border-radius: 5px;
   margin-bottom: $margin-post-size_bottom;
-  border: 1px solid #c4d8bb;
+  padding: 0.75rem 1rem;
+  .ghostkit-icon-box-icon{
+    font-size: 22px!important;
+  }
 }
