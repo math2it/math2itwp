@@ -100,7 +100,7 @@
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
             SVG: {
               linebreaks: { automatic: true },
-              styles: {".MathJax_SVG_Display": {margin: "1rem 0", overflow: "auto"}}
+              styles: {".MathJax_SVG_Display": {margin: "1.5rem 0", overflow: "auto"}}
             }
           };
         </script>
