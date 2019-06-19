@@ -67,6 +67,10 @@
     }
   }
 
+  b, strong{
+    font-weight: bold;
+  }
+
   // list
   ul, ol{
     margin-bottom: $margin-post-size_bottom;

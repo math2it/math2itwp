@@ -8,7 +8,8 @@
 }
 
 .section{
-  padding: 3rem 1rem;
+  // padding: 0 1rem 3rem 1rem;
+  margin-bottom: 2rem;
 }
 
 .style-2-3{
@@ -92,10 +93,11 @@
 
 
 .newsletter{
-  @media (min-width: 576px){
-    display: flex;
-    display: -ms-flexbox;
-  }
+  display: none!important;
+  // @media (min-width: 576px){
+  //   display: flex;
+  //   display: -ms-flexbox;
+  // }
   border: 1px solid #ddd;
   background: #eee;
   padding: 1.5rem;
@@ -150,7 +152,7 @@
 
 // contact
 #contact{
-  padding-top: 1rem;
+  // padding-top: 1rem;
   .title{
     text-align: center;
     margin-bottom: 0.5rem;
@@ -183,9 +185,6 @@
   text-shadow: 2px 2px 4px #000;
   font-weight: bold;
   line-height: 1.4;
-  @media (max-width: 575px){
-    font-size: 2rem;
-  }
 }
 
 .page-subtitle{

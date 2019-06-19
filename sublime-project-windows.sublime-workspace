@@ -91,6 +91,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 4965,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "single-normal.php",
+			"settings":
+			{
+				"buffer_size": 8074,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -197,6 +215,21 @@
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/single.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/gutenberg.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/header.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/style.scss",
+		"/C/Dropbox/PhD/thi_note/style/thi.sty",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_post.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_font.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/style.css",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/search.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_ghostkit.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_atomicblocks.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_404.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_image.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_other.scss",
 		"/C/Users/dinha/Downloads/tho2.txt",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/single-normal.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sidebar.php",
@@ -209,19 +242,12 @@
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_footer.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/cat-layout-photo-behind.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_page.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_post.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_author.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/cat-tag-layout.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_search.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/search.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/style.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_bootstrap_toc.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_other.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/single-tool.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/header.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_atomicblocks.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_font.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_layout_tool.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/category-tool.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/cat-layout-tool.php",
@@ -241,7 +267,6 @@
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/bk/category.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_video.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/google-font.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/style.css",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_nav.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/nav.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/nav.php",
@@ -317,14 +342,7 @@
 		"/C/Github/Coursera_Capstone/myref.bib",
 		"/C/Users/dinha/Documents/simple/_data/drawing.yml",
 		"/C/Users/dinha/AppData/Roaming/jupyter/runtime/nbserver-3920-open.html",
-		"/C/Users/dinha/Documents/simple/my-learning-log.md",
-		"/C/Users/dinha/Downloads/ask.txt",
-		"/C/Users/dinha/Documents/simple/blog.md",
-		"/C/Github/vn/_includes/post-layout.html",
-		"/C/Github/vn/_layouts/thought.html",
-		"/C/Github/vn/_layouts/tag.html",
-		"/C/Github/vn/_layouts/post.html",
-		"/C/Users/dinha/Downloads/sss"
+		"/C/Users/dinha/Documents/simple/my-learning-log.md"
 	],
 	"find":
 	{
@@ -342,6 +360,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"get_post",
+			"$post",
+			"block",
+			"guten",
+			"para",
+			"math",
+			"1.03",
+			"ab-notice-text",
+			"ab",
 			"ser",
 			"200",
 			"author-ava",
@@ -377,19 +404,303 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3593,
+								3593
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2119.11111111,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "single-normal.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -441,7 +752,7 @@
 	"project": "sublime-project-windows.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 60.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -451,16 +762,76 @@
 		"selected_items":
 		[
 			[
+				"single-nor",
+				"single-normal.php"
+			],
+			[
+				"single",
+				"single.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"guten",
+				"functions-files\\gutenberg.php"
+			],
+			[
+				"function",
+				"functions.php"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"style",
+				"sass\\style.scss"
+			],
+			[
+				"stye",
+				"style.css"
+			],
+			[
+				"font",
+				"sass\\_partials\\_font.scss"
+			],
+			[
+				"post",
+				"sass\\_partials\\_post.scss"
+			],
+			[
+				"search",
+				"search.php"
+			],
+			[
+				"ghost",
+				"sass\\_partials\\_ghostkit.scss"
+			],
+			[
+				"404",
+				"sass\\_partials\\_404.scss"
+			],
+			[
+				"block",
+				"sass\\_partials\\_atomicblocks.scss"
+			],
+			[
+				"image",
+				"sass\\_partials\\_image.scss"
+			],
+			[
+				"imag",
+				"sass\\_partials\\_image.scss"
+			],
+			[
 				"side",
 				"sidebar.php"
 			],
 			[
 				"series",
 				"taxonomy-series.php"
-			],
-			[
-				"single",
-				"single-normal.php"
 			],
 			[
 				"categor",
@@ -495,24 +866,12 @@
 				"sass\\_partials\\_page.scss"
 			],
 			[
-				"post",
-				"sass\\_partials\\_post.scss"
-			],
-			[
 				"author",
 				"sass\\_partials\\_author.scss"
 			],
 			[
-				"search",
-				"sass\\_partials\\_search.scss"
-			],
-			[
 				"cat-ta",
 				"cat-tag-layout.php"
-			],
-			[
-				"style",
-				"sass\\style.scss"
 			],
 			[
 				"bootstra",
@@ -521,10 +880,6 @@
 			[
 				"has",
 				"css\\has_sidebar.scss"
-			],
-			[
-				"head",
-				"header.php"
 			],
 			[
 				"other",
@@ -561,10 +916,6 @@
 			[
 				"index",
 				"index.php"
-			],
-			[
-				"header",
-				"parts\\sec-cat-header.php"
 			],
 			[
 				"tag",
@@ -665,10 +1016,6 @@
 			[
 				"list_pos",
 				"_includes\\list_post.html"
-			],
-			[
-				"font",
-				"_sass\\_font.scss"
 			],
 			[
 				"main",
@@ -925,42 +1272,6 @@
 			[
 				"lang",
 				"_data\\lang.yml"
-			],
-			[
-				"social",
-				"_sass\\_me-social.scss"
-			],
-			[
-				"hading",
-				"_sass\\_heading.scss"
-			],
-			[
-				"section",
-				"_sass\\_tsection.scss"
-			],
-			[
-				"me-soci",
-				"_sass\\_me-social.scss"
-			],
-			[
-				"heading-t",
-				"_includes\\heading-title.html"
-			],
-			[
-				"me-so",
-				"_includes\\me-social.html"
-			],
-			[
-				"headre",
-				"_includes\\header.html"
-			],
-			[
-				"rouce",
-				"css\\rouge-monokai.css"
-			],
-			[
-				"foot",
-				"_includes\\footer-scripts.html"
 			]
 		],
 		"width": 0.0

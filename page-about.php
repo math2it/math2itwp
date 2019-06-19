@@ -39,7 +39,7 @@ $cat_slugs = array(
 $cat_slugs_lenght = count($cat_slugs);
 ?>
 
-<section class="style-2-3">
+<section class="style-2-3 section">
 	<div class="container">
 
 		<div class="row list-of-post justify-content-center">
@@ -82,7 +82,7 @@ $cat_slugs_lenght = count($cat_slugs);
 </section>
 
 
-<section class="community">
+<section class="community section">
 	<div class="container">
 		<div class="row align-items-center justify-content-md-center">
 			<div class="col-12 col-sm-6 col-md-6 des">
@@ -98,7 +98,7 @@ $cat_slugs_lenght = count($cat_slugs);
 	</div>
 </section>
 
-<section>
+<section class="section">
 	<div class="container">
 
 		<div class="row list-of-post justify-content-center">
@@ -130,9 +130,9 @@ $cat_slugs_lenght = count($cat_slugs);
 </section>
 
 
-<section id="contact" class="section">
+<section class="section" id="contact">
 	<div class="container">
-		<div class="row align-items-center justify-content-md-center">
+		<div class="row align-items-center justify-content-center">
 			<div class="col-sm-8 col-12">
 				<h3 class="title">Liên hệ với chúng tôi?</h3>
 				<div class="email">
