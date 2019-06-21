@@ -136,7 +136,7 @@ $cat_slugs_lenght = count($cat_slugs);
 			<div class="col-sm-8 col-12">
 				<h3 class="title">Liên hệ với chúng tôi?</h3>
 				<div class="email">
-					<a href="mailto:math2it.blog@gmail.com?subject=Trò chuyện với Math2IT&cc=dinhanhthimail@gmail.com">math2it.blog@gmail.com</a>
+					<a href="mailto:contact@math2it.com?subject=Trò chuyện với Math2IT&cc=dinhanhthi@gmail.com;math2itblog@gmail.com">contact@math2it.com</a>
 				</div>
 			</div>
 		</div>
