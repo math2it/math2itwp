@@ -9,10 +9,10 @@
 				<h1 class="page-title">
 					<?php echo get_the_title(); ?>
 				</h1>
-				<?php 
+				<?php
 				if (get_field('subtitle',$page_id)){?>
 					<h2 data-toc-skip class="page-subtitle">
-						<?php 
+						<?php
 							$page_id = get_the_ID();
 							echo get_field('subtitle',$page_id);
 						?>
@@ -25,7 +25,7 @@
 
 <?php // get_template_part( 'parts/subscribe-bar' ); ?>
 
-<article class="section">
+<article class="pt-5 section">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
