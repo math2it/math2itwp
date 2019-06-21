@@ -98,7 +98,7 @@
   // list of posts
   $list_post_args = array(
     'category'         => $cat_id,
-    'numberposts' 		 => 4,
+    'numberposts' 		 => 8,
     'orderby'          => 'date',
     'post_status'      => 'publish'
   );
