@@ -57,7 +57,7 @@ function admin_panel_css() {
 add_action( 'admin_head', 'admin_panel_css' );
 
 
-// Support svg image 
+// Support svg image
 function add_file_types_to_uploads($file_types){
     $new_filetypes = array();
     $new_filetypes['svg'] = 'image/svg+xml';
@@ -74,14 +74,14 @@ function writy_setup() {
 add_action( 'after_setup_theme', 'writy_setup' );
 
 
-// comments 
+// comments
 // ------------------------------------------------
 
 // function wpbeginner_comment_text_before($arg) {
 //     $arg['comment_notes_before'] = "<p class='comment-policy'>We are glad you have chosen to leave a comment. Please keep in mind that comments are moderated according to our <a href='http://www.example.com/comment-policy-page/'>comment policy</a>.</p>";
 //     return $arg;
 // }
-  
+
 // add_filter('comment_form_defaults', 'wpbeginner_comment_text_before');
 
 // // move comment field to bottom
@@ -93,7 +93,7 @@ add_action( 'after_setup_theme', 'writy_setup' );
 // }
 // add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom');
 
-// // remove website field 
+// // remove website field
 // function wpbeginner_remove_comment_url($arg) {
 //     $arg['url'] = '';
 //     return $arg;
@@ -107,7 +107,7 @@ add_filter( 'category_template', 'category_and_cat_template' );
 add_filter( 'tag_template', 'category_and_cat_template' );
 function category_and_cat_template( $template ) {
     if ((is_category() and (!is_category('book')) and (!is_category('tool'))) or (is_tag())) {
-        $template = locate_template( 'cat-tag-layout.php' ); 
+        $template = locate_template( 'cat-tag-layout.php' );
     }
     return $template;
 }
