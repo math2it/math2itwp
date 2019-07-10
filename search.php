@@ -9,7 +9,8 @@
 		'paged'            => $paged,
     'post_status'      => 'publish',
     'suppress_filters' => false,
-		'posts_per_page'   => $posts_per_page
+		'posts_per_page'   => $posts_per_page,
+    'sentence'         => true
   );
   $list_posts = get_posts($list_post_args);
   // pagination
