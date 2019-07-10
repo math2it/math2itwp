@@ -108,11 +108,11 @@ the_post();
 				<?php	} ?>
 
 				<?php // series
-					if (get_field('display_series',$post_id)==true):
-						$series = get_the_series($post_id);
-						$series_id = $series[0]->term_id;
-						$series_link = get_series_link($series_id);
-						$series_name = get_series_name($series_id);
+					$series = get_the_series($post_id);
+					$series_id = $series[0]->term_id;
+					$series_link = get_series_link($series_id);
+					$series_name = get_series_name($series_id);
+					if (get_field('display_series',$post_id)==true and $series_id):
 				?>
 					<div class="seriesbox sticky-top">
 						<div class="series-title">
