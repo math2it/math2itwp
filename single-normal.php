@@ -28,16 +28,16 @@ the_post();
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
       <?php if (!$cat_book){ ?>
-      <div class="col-12 col-md-10">
+      <div class="col-12 col-md-8">
       <?php }else{ ?>
-      <div class="col-md-auto col-12">
-        <div class="book-cover">
-          <?php
-            $bookCover = get_field('post_book_cover',$post_id);
-            echo wp_get_attachment_image( $bookCover['id'],'medium');
-          ?>
-        </div>
-      </div>
+	      <div class="col-md-auto col-12">
+	        <div class="book-cover">
+	          <?php
+	            $bookCover = get_field('post_book_cover',$post_id);
+	            echo wp_get_attachment_image( $bookCover['id'],'medium');
+	          ?>
+	        </div>
+	      </div>
 			<div class="col-md-8 col-12 text-center mt-md-4">
       <?php } ?>
 				<h1 class="page-title">
@@ -92,7 +92,7 @@ the_post();
 	</div> <!-- /.container -->
 </header>
 
-<?php // get_template_part( 'parts/subscribe-bar' ); ?>
+<?php get_template_part( 'parts/subscribe-bar' ); ?>
 
 
 <!-- main content -->
@@ -104,11 +104,32 @@ the_post();
 					if ($cat_slug == 'tool'){
 						// only display for cat cong-cu
 						echo the_excerpt();
-					?>
-
+				?>
 				<?php	} ?>
-				<?php the_content(); ?>
+
+				<?php // series
+					if (get_field('display_series',$post_id)==true):
+						$series = get_the_series($post_id);
+						$series_id = $series[0]->term_id;
+						$series_link = get_series_link($series_id);
+						$series_name = get_series_name($series_id);
+				?>
+					<div class="seriesbox sticky-top">
+						<div class="series-title">
+							Chủ đề <?php echo '<a target="_blank" href="'.$series_link.'">'.$series_name.'</a>'; ?>
+						</div>
+						<ul class="serieslist-ul">
+							<?php echo get_series_posts(); ?>
+						</ul>
+					</div>
+				<?php
+					endif;
+				?>
+
+				<?php	the_content(); ?>
+
 			</div>
+
 			<?php
 				if (get_field('toc_on_sidebar',$post_id)==true):
 			?>

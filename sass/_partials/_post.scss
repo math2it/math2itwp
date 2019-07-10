@@ -36,6 +36,7 @@
     &:before{
       content: "# ";
       color: #6293ca;
+      font-size: 110%;
       @media (min-width: 992px){
         margin-left: -1.8rem;
       }
@@ -52,6 +53,7 @@
     &:before{
       content: "## ";
       color: #d87638;
+      font-size: 90%;
       @media (min-width: 992px){
         margin-left: -2.4rem;
       }
@@ -81,6 +83,10 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  li > ul{
+    padding-left: 20px;
   }
 
   // blockquote
@@ -140,6 +146,8 @@
   //code
   .wp-block-code{
     margin-bottom: $margin-post-size_bottom;
+    max-height: 400px;
+    overflow: auto;
   }
 
   p > code, li > code{
@@ -459,61 +467,6 @@ div.extra-info{
     &:hover{
       text-decoration: none;
       color: #444;
-    }
-  }
-}
-
-// subscribe-bar
-.subscribe-bar{
-  background: #e8e8e8;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  @media (max-width: 500px){
-    padding-bottom: 15px;
-  }
-  .form{
-    @media(min-width: 501px){
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .newsletter-text{
-        margin-right: 10px;
-      }
-    }
-    @media (max-width: 500px){
-      text-align: center;
-      .newsletter-text{
-        margin-bottom: 5px;
-      }
-      .newsletter-form{
-        input.email{
-          width: calc(100% - 38px);
-        }
-        input.submit{
-          width: 33px;
-        }
-      }
-    }
-    .newsletter-form{
-      input.email{
-        border-radius: 5px;
-        border: 1px solid #e0dfdf;
-        padding: 5px 10px;
-        font-size: 0.9rem;
-      }
-      input.submit{
-        border-radius: 5px;
-        padding: 4px 5px;
-        font-size: 0.9rem;
-        border: 0;
-        font-weight: bold;
-        color: #fff;
-        background: #999;
-        &:hover{
-          cursor: pointer;
-          background: #777;
-        }
-      }
     }
   }
 }

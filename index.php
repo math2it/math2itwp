@@ -6,7 +6,7 @@
 <!-- ====================================== -->
 <?php get_template_part( 'parts/sec-idx-intro' ); ?>
 
-<?php // get_template_part( 'parts/subscribe-bar' ); ?>
+<?php  get_template_part( 'parts/subscribe-bar' ); ?>
 
 <main role="main">
 
@@ -32,7 +32,6 @@
 ?>
 <?php get_template_part( 'parts/cat-layout-photo-title' ); ?>
 <?php wp_reset_query(); // reset ?>
-
 
 
 <?php

@@ -37,3 +37,5 @@
     </div>
   </div>
 </header>
+
+<?php  get_template_part( 'parts/subscribe-bar' ); ?>

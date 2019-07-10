@@ -55,6 +55,12 @@
     @media (min-width: 992px){
       height: 500px;
     }
+    @media (max-width: 768px){
+      &>.row{
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -90,65 +96,6 @@
     }
   }
 }
-
-
-.newsletter{
-  display: none!important;
-  // @media (min-width: 576px){
-  //   display: flex;
-  //   display: -ms-flexbox;
-  // }
-  border: 1px solid #ddd;
-  background: #eee;
-  padding: 1.5rem;
-  border-radius: 10px;
-  align-items: center;
-  margin: 2rem 0;
-  .photo{
-    max-width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    @media (min-width: 768px){
-      max-width: 250px;
-    }
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .form{
-    flex: 1;
-    text-align: center;
-    padding: 1rem;
-    .newsletter-text{
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .newsletter-form{
-      .email{
-        border: 0;
-        border-radius: 6px;
-        background: #fff;
-        color: #000;
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        width: calc(100% - 70px);
-        outline: none;
-      }
-      .submit{
-        padding: 0.45rem 0.55rem 0.45rem 0.45rem;
-        border-radius: 5px 50% 50% 5px;
-        border: 0;
-        font-size: 0.9rem;
-        background: #2bacaf;
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-      }
-    }
-  }
-}
-
 
 // contact
 #contact{
