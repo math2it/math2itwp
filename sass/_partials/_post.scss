@@ -258,6 +258,7 @@
   // table
   .wp-block-table{
     margin-bottom: $margin-post-size_bottom;
+    margin-top: $margin-post-size_bottom + 0.5rem;
     &.alignwide{
       @media (max-width: 991px){
         margin-left: 0;
