@@ -150,7 +150,7 @@
     overflow: auto;
   }
 
-  p > code, li > code{
+  p > code, li > code, .alert code{
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     background: #eaeaea;
