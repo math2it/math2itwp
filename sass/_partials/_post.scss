@@ -201,6 +201,14 @@
   // columns
   .wp-block-columns{
     align-items: center;
+
+    &.align-top{
+      align-items: flex-start;
+    }
+    &.align-bottom{
+      align-items: flex-end;
+    }
+
     margin-bottom: $margin-post-size_bottom + 0.5rem;
     @media (min-width: 768px){
       flex-wrap: nowrap;
