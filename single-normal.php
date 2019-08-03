@@ -99,21 +99,15 @@ the_post();
 <article class="pt-5">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
-				<?php
-					if ($cat_slug == 'tool'){
-						// only display for cat cong-cu
-						echo the_excerpt();
-				?>
-				<?php	} ?>
 
-				<?php // series
-					$series = get_the_series($post_id);
-					$series_id = $series[0]->term_id;
-					$series_link = get_series_link($series_id);
-					$series_name = get_series_name($series_id);
-					if (get_field('display_series',$post_id)==true and $series_id):
-				?>
+			<?php // series
+				$series = get_the_series($post_id);
+				$series_id = $series[0]->term_id;
+				$series_link = get_series_link($series_id);
+				$series_name = get_series_name($series_id);
+				if (get_field('display_series',$post_id)==true and $series_id):
+			?>
+				<div class="series-sidebar">
 					<div class="seriesbox sticky-top">
 						<div class="series-title">
 							Chủ đề <?php echo '<a target="_blank" href="'.$series_link.'">'.$series_name.'</a>'; ?>
@@ -122,12 +116,20 @@ the_post();
 							<?php echo get_series_posts(); ?>
 						</ul>
 					</div>
+				</div>
+			<?php
+				endif;
+			?>
+
+			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
 				<?php
-					endif;
+					if ($cat_slug == 'tool'){
+						// only display for cat cong-cu
+						echo the_excerpt();
 				?>
+				<?php	} ?>
 
 				<?php	the_content(); ?>
-
 			</div>
 
 			<?php

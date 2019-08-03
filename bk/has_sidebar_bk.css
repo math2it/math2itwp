@@ -1,0 +1,87 @@
+.toc-sidebar {
+  width: 220px;
+  margin-right: -220px; }
+  .toc-sidebar .sticky-top {
+    top: 1rem;
+    border-left: 1px solid #ddd;
+    background: #fff; }
+    .toc-sidebar .sticky-top div {
+      padding: 3px 12px;
+      font-size: 90%;
+      font-weight: bold;
+      color: #ad6834;
+      margin-bottom: 5px;
+      text-transform: uppercase; }
+      .toc-sidebar .sticky-top div::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 40%;
+        margin: 7px 0 4px;
+        background: #dbdbdb;
+        clear: both; }
+    .toc-sidebar .sticky-top ul.navbar-nav {
+      max-height: 500px;
+      overflow-y: auto;
+      display: block; }
+  @media (max-width: 1199px) {
+    .toc-sidebar {
+      display: none; } }
+  @media (min-width: 1260px) {
+    .toc-sidebar {
+      width: 250px;
+      margin-right: -250px; } }
+  @media (min-width: 1360px) {
+    .toc-sidebar {
+      margin-right: -300px; } }
+  @media (min-width: 1400px) {
+    .toc-sidebar {
+      margin-right: -320px; } }
+  @media (min-width: 1600px) {
+    .toc-sidebar {
+      width: 300px;
+      margin-right: -370px; } }
+
+@media (min-width: 1360px) {
+  article .blog-content {
+    margin-right: 50px; } }
+@media (min-width: 1400px) {
+  article .blog-content {
+    margin-right: 70px; } }
+
+.wp-block-gallery {
+  margin-top: 2.5rem;
+  margin-bottom: calc(2.5rem - 16px); }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-block-media-text.alignwide, .wp-block-columns.alignwide {
+    margin-left: calc(-100vw / 2 + 720px / 2);
+    margin-right: calc(-100vw / 2 + 720px / 2); } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .alignwide {
+    margin-left: -50px;
+    margin-right: -50px;
+    position: relative; } }
+@media (min-width: 1360px) {
+  .alignwide {
+    margin-left: -50px;
+    margin-right: -50px;
+    position: relative; } }
+
+@media (min-width: 1360px) {
+  .wp-block-table.alignwide {
+    width: calc(100% + 100px); } }
+
+.alignright, .alignleft {
+  width: 45%; }
+
+@media (min-width: 1360px) {
+  .alignright {
+    margin-right: -50px !important; } }
+
+@media (min-width: 1360px) {
+  .alignleft {
+    margin-left: -50px !important; } }
+
+/*# sourceMappingURL=has_sidebar_bk.css.map */

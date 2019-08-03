@@ -7,6 +7,8 @@
 // toc on sidebar
 // ----------------------------------------
 .toc-sidebar{
+  width: 220px;
+  margin-right: -220px;
   .sticky-top{
     top: 1rem;
     border-left: 1px solid #ddd;
@@ -37,106 +39,31 @@
   @media (max-width: 1199px){
     display: none;
   }
-  @media (min-width: 1200px){
-    width: 200px;
-    margin-right: -220px;
-    margin-left: 20px;
+  @media (min-width: 1260px){
+    width: 250px;
+    margin-right: -250px;
   }
   @media (min-width: 1360px){
-    width: 230px;
     margin-right: -300px;
-    margin-left: 70px;
   }
   @media (min-width: 1400px){
-    width: 250px;
     margin-right: -320px;
   }
-  @media (min-width: 1500px){
+  @media (min-width: 1600px){
     width: 300px;
     margin-right: -370px;
   }
 }
 
-
-
-// ----------------------------------------
-// Series
-// ----------------------------------------
-.series-sidebar{
-  @media (max-width: 1199px){
-    display: none;
-  }
-  @media (min-width: 1200px){
-    margin-left: -220px;
-    width: 200px;
-    margin-right: 20px;
-  }
+article{
   @media (min-width: 1360px){
-    width: 230px;
-    margin-left: -300px;
-    margin-right: 70px;
+    .blog-content{
+      margin-right: 50px;
+    }
   }
   @media (min-width: 1400px){
-    width: 250px;
-    margin-left: -320px;
-  }
-  @media (min-width: 1500px){
-    width: 300px;
-    margin-left: -370px;
-  }
-}
-
-.seriesbox{
-  float: left;
-  font: inherit;
-  border: none;
-  padding: 15px;
-  text-align: right;
-  font-family: 'Comfortaa', cursive;
-  background: #f3f3f3;
-  border-radius: 5px;
-  .series-title{
-    padding-bottom: 3px;
-    font-size: 13px;
-    font-weight: bold;
-    color: #ad6834;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #ddd;
-  }
-  .serieslist-ul{
-    font-size: 13px;
-    margin-bottom: 0!important;
-    padding: 5px 0;
-    .serieslist-li-current{
-      font-weight: bold;
-      color: #333;
-    }
-    .serieslist-li a{
-      color: #666;
-      &:hover{
-        color: #c7164c;
-      }
-    }
-  }
-  &.sticky-top{
-    top: 1rem;
-  }
-}
-
-.blog-content{
-  h2{
-    &:before{
-      @media (min-width: 1200px) and (max-width: 1359px){
-        margin-left: 0!important;
-      }
-    }
-  }
-  h3{
-    &:before{
-      @media (min-width: 1200px) and (max-width: 1359px){
-        margin-left: 0!important;
-      }
+    .blog-content{
+      margin-right: 70px;
     }
   }
 }
