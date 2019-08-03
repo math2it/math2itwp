@@ -89,10 +89,15 @@
     .seriesbox .serieslist-ul .serieslist-li-current {
       font-weight: bold;
       color: #333; }
+    .seriesbox .serieslist-ul li {
+      margin-bottom: 5px; }
+      .seriesbox .serieslist-ul li:last-of-type {
+        margin-bottom: 0; }
     .seriesbox .serieslist-ul .serieslist-li a {
       color: #666; }
       .seriesbox .serieslist-ul .serieslist-li a:hover {
-        color: #c7164c; }
+        color: #c7164c;
+        text-decoration: none; }
   .seriesbox.sticky-top {
     top: 1rem; }
 

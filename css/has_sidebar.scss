@@ -112,10 +112,19 @@
       font-weight: bold;
       color: #333;
     }
-    .serieslist-li a{
-      color: #666;
-      &:hover{
-        color: #c7164c;
+    li{
+      margin-bottom: 5px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+    .serieslist-li{
+      a{
+        color: #666;
+        &:hover{
+          color: #c7164c;
+          text-decoration: none;
+        }
       }
     }
   }

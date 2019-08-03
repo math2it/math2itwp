@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"has",
+				"has_toc"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"flex",
+				"flex-start\talign-items"
+			],
+			[
 				"series",
 				"series_id"
 			],
@@ -152,6 +172,14 @@
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -161,14 +189,6 @@
 			],
 			[
 				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -210,6 +230,23 @@
 	"file_history":
 	[
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/single-normal.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_post.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_image.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/index.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_series.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_toc.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/css-js.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/hasno_series.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/hasno_series.css",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/style.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_series.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/hasno_sidebar.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar.css",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar_bk.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/style.css",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/bk/img/math_default_icon.svg",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-utility.php",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/bootstrap.php",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries.php",
@@ -229,17 +266,11 @@
 		"/C/Users/dinha/Documents/simple/_sass/_font.scss",
 		"/C/Users/dinha/Documents/simple/_sass/_page.scss",
 		"/C/Users/dinha/Downloads/test/test.py",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_post.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_font.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/style.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/style.css",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_header.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/header.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/css-js.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_newsletter.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/page-about.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/index.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/sec-cat-header.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/subscribe-bar.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/newsletter.php",
@@ -261,7 +292,6 @@
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_simple_alert.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/page.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_other.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_image.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/gutenberg.php",
 		"/C/Dropbox/PhD/thi_note/style/thi.sty",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_ghostkit.scss",
@@ -269,7 +299,6 @@
 		"/C/Users/dinha/Downloads/tho2.txt",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sidebar.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/taxonomy-series.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_series.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_category.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_layout_photo_behind.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/bk/_page (photo-intro).scss",
@@ -278,7 +307,6 @@
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/cat-layout-photo-behind.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_author.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_search.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_bootstrap_toc.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_layout_tool.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/category-tool.php",
@@ -328,19 +356,11 @@
 		"/C/Users/dinha/Downloads/nlp_class/nlp_class/spam.csv",
 		"/C/Users/dinha/Downloads/nlp_class/nlp_class/sentiment.py",
 		"/C/Users/dinha/Downloads/nlp_class/nlp_class/stopwords.txt",
-		"/C/Github/Data_Science_Learning/onogone_interview/yelp_labelled.txt",
-		"/C/Users/dinha/Downloads/sentiment labelled sentences/sentiment labelled sentences/imdb_labelled.txt",
-		"/C/Users/dinha/Downloads/sentiment labelled sentences/sentiment labelled sentences/yelp_labelled.txt",
-		"/C/Users/dinha/Documents/simple/_includes/header.html",
-		"/C/Users/dinha/Documents/simple/_layouts/page.html",
-		"/C/Users/dinha/Downloads/imdb_labelled.txt",
-		"/C/Users/dinha/Downloads/sonar.all-data",
-		"/C/Users/dinha/Downloads/exerciceDS.csv",
-		"/C/Users/dinha/Documents/simple/_layouts/post.html"
+		"/C/Github/Data_Science_Learning/onogone_interview/yelp_labelled.txt"
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -354,6 +374,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"last-",
+			".wp-block-gallery",
+			"has",
 			"and",
 			"get_the_series",
 			"posts_per_page",
@@ -469,7 +492,7 @@
 		"cols":
 		[
 			0.0,
-			0.566,
+			0.448333333333,
 			1.0
 		],
 		"rows":
@@ -505,12 +528,8 @@
 		"selected_items":
 		[
 			[
-				"cat",
-				"cat-tag-layout.php"
-			],
-			[
-				"cat book",
-				"category-book.php"
+				"has",
+				"css\\has_sidebar.scss"
 			],
 			[
 				"single",
@@ -521,32 +540,68 @@
 				"sass\\_partials\\_post.scss"
 			],
 			[
-				"font",
-				"sass\\_partials\\_font.scss"
+				"image",
+				"sass\\_partials\\_image.scss"
 			],
 			[
 				"style",
 				"sass\\style.scss"
 			],
 			[
-				"header",
-				"sass\\_partials\\_header.scss"
+				"series",
+				"sass\\_partials\\_series.scss"
 			],
 			[
-				"function",
-				"functions.php"
+				"hasno",
+				"css\\hasno_sidebar.scss"
+			],
+			[
+				"has side",
+				"css\\has_sidebar.css"
 			],
 			[
 				"css",
 				"functions-files\\css-js.php"
 			],
 			[
-				"head",
-				"header.php"
+				"side",
+				"css\\has_sidebar.scss"
+			],
+			[
+				"sin",
+				"single-normal.php"
+			],
+			[
+				"function",
+				"functions.php"
+			],
+			[
+				"blog",
+				"bk\\img\\math_default_icon.svg"
 			],
 			[
 				"index",
 				"index.php"
+			],
+			[
+				"cat",
+				"cat-tag-layout.php"
+			],
+			[
+				"cat book",
+				"category-book.php"
+			],
+			[
+				"font",
+				"sass\\_partials\\_font.scss"
+			],
+			[
+				"header",
+				"sass\\_partials\\_header.scss"
+			],
+			[
+				"head",
+				"header.php"
 			],
 			[
 				"sec hea",
@@ -621,10 +676,6 @@
 				"sass\\_partials\\_other.scss"
 			],
 			[
-				"image",
-				"sass\\_partials\\_image.scss"
-			],
-			[
 				"single-nor",
 				"single-normal.php"
 			],
@@ -647,14 +698,6 @@
 			[
 				"imag",
 				"sass\\_partials\\_image.scss"
-			],
-			[
-				"side",
-				"sidebar.php"
-			],
-			[
-				"series",
-				"taxonomy-series.php"
 			],
 			[
 				"categor",
@@ -691,10 +734,6 @@
 			[
 				"bootstra",
 				"sass\\_partials\\_bootstrap_toc.scss"
-			],
-			[
-				"has",
-				"css\\has_sidebar.scss"
 			],
 			[
 				"atomi",
@@ -881,10 +920,6 @@
 				"my-learning-log.md"
 			],
 			[
-				"blog",
-				"blog.md"
-			],
-			[
 				"log",
 				"my-learning-log.md"
 			],
@@ -1003,18 +1038,6 @@
 			[
 				"page css",
 				"css\\page.scss"
-			],
-			[
-				"not-s",
-				"css\\not-scss.css"
-			],
-			[
-				"post lay",
-				"_includes\\post-layout-element.html"
-			],
-			[
-				"tutorial",
-				"_layouts\\tutorial.html"
 			]
 		],
 		"width": 0.0

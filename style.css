@@ -1089,7 +1089,7 @@ li img {
   overflow: auto;
 }
 /* line 153, sass/_partials/_post.scss */
-.blog-content p > code, .blog-content li > code {
+.blog-content p > code, .blog-content li > code, .blog-content .alert code {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   background: #eaeaea;
