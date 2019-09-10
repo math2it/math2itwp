@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"thi",
+				"thi_count"
+			],
+			[
 				"text",
 				"text-decoration\tproperty"
 			],
@@ -172,19 +176,19 @@
 		"selected_items":
 		[
 			[
-				"insta",
-				"Package Control: Install Package"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
+				"inst",
+				"Package Control: Install Package"
 			],
 			[
-				"inst",
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -229,46 +233,78 @@
 	],
 	"file_history":
 	[
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/single-normal.php",
+		"/C/Users/dinha/Documents/GitHub/dinhanhthi.com/_data/film.yml",
+		"/C/Users/dinha/Documents/GitHub/better-note/_config.yml",
+		"/C/Users/dinha/Documents/GitHub/note/_config.yml",
+		"/F/readme.txt",
+		"/E/apps/matlab_2017b/Readme_INSTALL.txt",
+		"/C/Users/dinha/Downloads/figure.tex",
+		"/C/Users/dinha/Documents/GitHub/dinhanhthi.com/_data/book.yml",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar.scss",
+		"/C/Dropbox/python/quick_test.py",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_post.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_font.scss",
+		"/C/Dropbox/french/practice-oral/laptop-casse.txt",
+		"/C/Users/dinha/Documents/GitHub/TaniaJekyll/_config.yml",
+		"/C/Users/dinha/Downloads/fb.py",
+		"/C/Users/dinha/Documents/GitHub/note/search.html",
+		"/C/Users/dinha/Downloads/snap-4.1.0-4.1-Win-x64-py2.7/snap-4.1.0-4.1-Win-x64-py2.7/setup.py",
+		"/C/Users/dinha/Downloads/snap-4.1.0-4.1-Win-x64-py2.7/snap-4.1.0-4.1-Win-x64-py2.7/snap.py",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-template-tags.php",
+		"/C/Users/dinha/Documents/GitHub/note/assets/css/thi_scss.scss",
+		"/C/Users/dinha/Documents/GitHub/note/_sass/_toc.scss",
+		"/C/Users/dinha/Documents/GitHub/note/_sass/_box.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/css-js.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_jsxgraph.scss",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/header.php",
+		"/C/Users/dinha/Documents/GitHub/note/_sass/_image.scss",
+		"/C/office16pro/office/setup.exe",
+		"/C/Users/dinha/Downloads/style.css",
+		"/C/Users/dinha/Documents/GitHub/note/_sass/_font.scss",
+		"/C/Users/dinha/Documents/GitHub/note/_sass/_heading.scss",
+		"/C/Users/dinha/Documents/GitHub/note/Gemfile",
+		"/C/Users/dinha/Documents/GitHub/js-drawing/jsxgraphcore.js",
+		"/C/Users/dinha/Documents/GitHub/js-drawing/index.html",
+		"/C/Users/dinha/Documents/GitHub/js-drawing/jsxgraph.css",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/style.scss",
+		"/C/Users/dinha/Documents/GitHub/js-drawing/jsxgraphcore.min.js",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/style.css",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/config.rb",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/single-normal.php",
+		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sidebar.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-admin.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-manage.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-options.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-setup.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-taxonomy.php",
+		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries.css",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_image.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/index.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_series.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_toc.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions-files/css-js.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/hasno_series.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/hasno_series.css",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/style.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_series.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/hasno_sidebar.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar.css",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/css/has_sidebar_bk.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/functions.php",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/style.css",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/bk/img/math_default_icon.svg",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-utility.php",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/bootstrap.php",
-		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries.php",
-		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-admin.php",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeriesLightTheme.css",
-		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-setup.php",
-		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-taxonomy.php",
-		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-template-tags.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/category-book.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/cat-tag-layout.php",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/seriestoc.php",
 		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/readme.txt",
-		"/C/wamp64/www/math2it/wp-content/plugins/organize-series/orgSeries-options.php",
 		"/C/Users/dinha/Documents/simple/_data/social.yml",
 		"/C/wamp64/www/math2it/wp-content/plugins/code-syntax-block/assets/prism/prism-languages.js",
 		"/C/Users/dinha/Downloads/backup.py",
 		"/C/Users/dinha/Documents/simple/_sass/_font.scss",
 		"/C/Users/dinha/Documents/simple/_sass/_page.scss",
 		"/C/Users/dinha/Downloads/test/test.py",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_font.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_header.scss",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/header.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_newsletter.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/page-about.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/sec-cat-header.php",
@@ -297,7 +333,6 @@
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_ghostkit.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_404.scss",
 		"/C/Users/dinha/Downloads/tho2.txt",
-		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sidebar.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/taxonomy-series.php",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_category.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_layout_photo_behind.scss",
@@ -325,42 +360,11 @@
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/sass/_partials/_nav.scss",
 		"/C/wamp64/www/math2it/wp-content/themes/math2itwp/parts/nav.php",
 		"/C/Github/Data_Science_Learning/Titanic/train.csv",
-		"/C/Users/dinha/Documents/simple/_includes/heading-title.html",
-		"/C/Users/dinha/Documents/simple/vietnam-corner.md",
-		"/C/Users/dinha/Documents/simple/index.html",
-		"/C/Users/dinha/Documents/simple/_sass/_heading.scss",
-		"/C/Dropbox/git/noteLocal/_layouts/default.html",
-		"/C/Dropbox/git/noteLocal/_layouts/page.html",
-		"/C/Dropbox/git/noteLocal/_layouts/post.html",
-		"/C/Users/dinha/Documents/simple/_includes/list_post.html",
-		"/C/Dropbox/git/noteLocal/_data/categories.yml",
-		"/C/Users/dinha/Downloads/sql-population-queries-solution/population_queries_final.sql",
-		"/C/Users/dinha/Downloads/input01.txt",
-		"/C/Users/dinha/Documents/simple/_sass/_header.scss",
-		"/C/Users/dinha/Documents/simple/_data/book.yml",
-		"/C/Users/dinha/Documents/simple/_includes/list_reading.html",
-		"/C/Users/dinha/Documents/simple/_data/film.yml",
-		"/C/Users/dinha/Downloads/test2.py",
-		"/C/Users/dinha/Downloads/test.py",
-		"/C/Users/dinha/Documents/simple/about.md",
-		"/C/Users/dinha/Documents/simple/css/main.scss",
-		"/C/Users/dinha/Documents/simple/_sass/_box.scss",
-		"/C/Users/dinha/Documents/simple/_includes/head.html",
-		"/C/Users/dinha/Documents/simple/_drafts/2019-05-25-understand-confusion-matrix-and-f1-score.md",
-		"/C/Dropbox/ML-Data/CV/main_data_french/cv_dinh_fr.tex",
-		"/C/Dropbox/ML-Data/CV/style/emerald.sty",
-		"/C/Dropbox/ML-Data/CV/style/altacv.cls",
-		"/C/Users/dinha/Documents/simple/_sass/_insert-img.scss",
-		"/C/Github/Data_Science_Learning/onogone_interview/exerciceDS.csv",
-		"/C/Users/dinha/Downloads/nlp_class/nlp_class/spam2.py",
-		"/C/Users/dinha/Downloads/nlp_class/nlp_class/spam.csv",
-		"/C/Users/dinha/Downloads/nlp_class/nlp_class/sentiment.py",
-		"/C/Users/dinha/Downloads/nlp_class/nlp_class/stopwords.txt",
-		"/C/Github/Data_Science_Learning/onogone_interview/yelp_labelled.txt"
+		"/C/Users/dinha/Documents/simple/_includes/heading-title.html"
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -374,6 +378,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"False",
+			"True",
+			"pre",
+			"#toc-bar ul li, #toc-bar ol li",
+			"#toc-bar",
+			".js",
+			"tgreen",
+			"h3",
+			"max_num",
+			"total",
+			"foreach($posts_in_series as $seriespost) {",
+			"get_series_posts",
+			"series_link",
 			"last-",
 			".wp-block-gallery",
 			"has",
@@ -443,6 +460,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"No",
+			"Yes",
 			"\"\""
 		],
 		"reverse": false,
@@ -466,7 +485,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -492,7 +511,7 @@
 		"cols":
 		[
 			0.0,
-			0.448333333333,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -518,7 +537,7 @@
 	"project": "sublime-project-windows.sublime-project",
 	"replace":
 	{
-		"height": 60.0
+		"height": 58.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -532,20 +551,36 @@
 				"css\\has_sidebar.scss"
 			],
 			[
-				"single",
-				"single-normal.php"
-			],
-			[
 				"post",
 				"sass\\_partials\\_post.scss"
 			],
 			[
-				"image",
-				"sass\\_partials\\_image.scss"
+				"head",
+				"header.php"
+			],
+			[
+				"jsx",
+				"sass\\_partials\\_jsxgraph.scss"
+			],
+			[
+				"css",
+				"functions-files\\css-js.php"
 			],
 			[
 				"style",
 				"sass\\style.scss"
+			],
+			[
+				"side",
+				"sidebar.php"
+			],
+			[
+				"single",
+				"single-normal.php"
+			],
+			[
+				"image",
+				"sass\\_partials\\_image.scss"
 			],
 			[
 				"series",
@@ -558,14 +593,6 @@
 			[
 				"has side",
 				"css\\has_sidebar.css"
-			],
-			[
-				"css",
-				"functions-files\\css-js.php"
-			],
-			[
-				"side",
-				"css\\has_sidebar.scss"
 			],
 			[
 				"sin",
@@ -598,10 +625,6 @@
 			[
 				"header",
 				"sass\\_partials\\_header.scss"
-			],
-			[
-				"head",
-				"header.php"
 			],
 			[
 				"sec hea",
@@ -1034,10 +1057,6 @@
 			[
 				"gemfi",
 				"Gemfile"
-			],
-			[
-				"page css",
-				"css\\page.scss"
 			]
 		],
 		"width": 0.0

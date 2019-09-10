@@ -38,13 +38,17 @@ function math2itwp_tocsidebar() {
   $series_id = $series[0]->term_id;
 
   $has_toc = get_field('toc_on_sidebar',$post_id);
-  $has_series = get_field('display_series',$post_id) and $series_id;
 
-  if ($has_toc or $has_series ):
+  if ($has_toc or (get_field('display_series',$post_id)==true and $series_id) ):
     wp_enqueue_style( 'has_sidebar', get_template_directory_uri() . '/css/has_sidebar.css' );
   else:
     wp_enqueue_style( 'hasno_sidebar', get_template_directory_uri() . '/css/hasno_sidebar.css' );
   endif;
 
+  if (get_field('jsxgraph',$post_id)==true){
+    wp_enqueue_script( 'jsxgraph',get_template_directory_uri() . '/js/jsxgraphcore.min.js', array(), '0.99.7', false );
+    // in head
+  }
 }
 add_action( 'wp_enqueue_scripts', 'math2itwp_tocsidebar' );
+

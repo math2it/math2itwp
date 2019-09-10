@@ -121,7 +121,19 @@ the_post();
 				endif;
 			?>
 
+      <!-- main content -->
 			<div class="col-12 col-lg-10 col-xl-8 blog-content post-font">
+
+        <?php
+        if (get_field('display_series',$post_id)==true and $series_id):
+        ?>
+        <div class="series-bar">
+          Bài này nằm trong loạt bài <?php echo '<a target="_blank" href="'.$series_link.'">'.$series_name.'</a>'; ?>.
+        </div>
+        <?php
+        endif;
+        ?>
+
 				<?php
 					if ($cat_slug == 'tool'){
 						// only display for cat cong-cu
@@ -130,6 +142,7 @@ the_post();
 				<?php	} ?>
 
 				<?php	the_content(); ?>
+
 			</div>
 
 			<?php
