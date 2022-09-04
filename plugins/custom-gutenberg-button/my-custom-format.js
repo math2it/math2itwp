@@ -19,7 +19,7 @@
 		'my-custom-format/inline-code-button', {
 			title: 'Insert an inline code',
 			tagName: 'code',
-			className: null,
+			className: 'inline-code',
 			edit: inlineCodeButton,
 		}
 	);
@@ -45,8 +45,8 @@
 	wp.richText.registerFormatType(
 		'my-custom-format/keyboard-button', {
 			title: 'Keyboard button',
-			tagName: 'kbd',
-			className: null,
+			tagName: 'span',
+			className: 'kbd',
 			edit: keyboardButton,
 		}
 	);
@@ -73,7 +73,7 @@
 		'my-custom-format/mark-button', {
 			title: 'Highlight button',
 			tagName: 'mark',
-			className: null,
+			className: 'mark',
 			edit: markButton,
 		}
 	);
@@ -99,8 +99,8 @@
 	wp.richText.registerFormatType(
 		'my-custom-format/bbt-button', {
 			title: 'Big number button',
-			tagName: 'bbt',
-			className: null,
+			tagName: 'span',
+			className: 'bbt',
 			edit: bbtButton,
 		}
 	);
@@ -127,8 +127,8 @@
 	wp.richText.registerFormatType(
 		'my-custom-format/pink-button', {
 			title: 'Pink text',
-			tagName: 'tpink',
-			className: null,
+			tagName: 'span',
+			className: 'tpink',
 			edit: pinkButton,
 		}
 	);
@@ -155,8 +155,8 @@
 	wp.richText.registerFormatType(
 		'my-custom-format/green-button', {
 			title: 'Green text',
-			tagName: 'tgreen',
-			className: null,
+			tagName: 'span',
+			className: 'tgreen',
 			edit: greenButton,
 		}
 	);
